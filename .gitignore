@@ -1,0 +1,8 @@
+# Local Python bytecode and editor noise; generated catalog JSON is tracked.
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# The current manuscript is not released through the public companion yet.
+paper/AI_for_Games_in_the_Foundation_Model_Era.pdf
+paper/AI_for_Games_in_the_Foundation_Model_Era_Overleaf.zip

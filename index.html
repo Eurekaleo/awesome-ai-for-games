@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A curated collection of research on AI systems that play, model, design, build, adapt, and test games.">
+    <meta name="theme-color" content="#101b2d">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Awesome AI for Games">
+    <meta property="og:description" content="A direct, searchable reading list for AI and foundation models in games.">
+    <meta property="og:url" content="https://github.com/Eurekaleo/awesome-ai-for-games">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://github.com/Eurekaleo/awesome-ai-for-games">
+    <title>Awesome AI for Games</title>
+    <link rel="icon" href="assets/site-icon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site/guide.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#papers">Skip to papers</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="Awesome AI for Games home">
+          <img src="assets/site-icon.svg" width="34" height="34" alt="">
+          <span><strong>Awesome AI for Games</strong><small>curated research collection</small></span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#collections">Collections</a>
+          <a href="#papers">Papers</a>
+          <a href="https://github.com/Eurekaleo/awesome-ai-for-games" target="_blank" rel="noopener">GitHub ↗</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Curated and openly accessible</p>
+          <h1>Awesome<br><em>AI for Games</em></h1>
+          <p class="hero-lede">Research on AI systems that play games, model worlds and players, create game content, build software, adapt live experiences, and test the result.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#papers">Browse the papers</a>
+            <a class="button button-secondary" href="https://github.com/Eurekaleo/awesome-ai-for-games" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+          <p class="paper-note">Companion bibliography for the forthcoming survey <cite>AI for Games in the Foundation Model Era</cite>.</p>
+        </div>
+        <aside class="hero-panel" aria-label="Collection summary">
+          <img src="assets/site-icon.svg" width="76" height="76" alt="">
+          <div class="hero-stat"><strong id="paper-count">334</strong><span>curated works</span></div>
+          <div class="hero-stat"><strong>6</strong><span>research collections</span></div>
+          <div class="hero-stat"><strong>2026</strong><span>latest catalog year</span></div>
+        </aside>
+      </section>
+
+      <section class="about shell" id="about">
+        <div>
+          <p class="section-kicker">About this list</p>
+          <h2>A direct map of a fast-moving field.</h2>
+        </div>
+        <div class="about-copy">
+          <p>This repository collects papers and technical reports on AI that directly participates in interactive games and game creation. It includes foundational work alongside recent systems built with language models, multimodal models, world models, code agents, and tool-using agents.</p>
+          <p>Every title below links to its canonical paper or project page. Use the topic collections, search, and year filter to move through the literature.</p>
+        </div>
+      </section>
+
+      <section class="collections" id="collections">
+        <div class="shell">
+          <div class="section-heading">
+            <div><p class="section-kicker">Browse by topic</p><h2>Six practical collections</h2></div>
+            <p>Select a collection to filter the complete bibliography.</p>
+          </div>
+          <div class="collection-grid">
+            <button class="collection-card collection-play" type="button" data-role="play">
+              <span class="collection-index">01</span><h3>Game-Playing Agents</h3><p>Policies, planners, embodied control, cooperation, and generalist agents.</p><strong><span data-count="play">80</span> works →</strong>
+            </button>
+            <button class="collection-card collection-model" type="button" data-role="model">
+              <span class="collection-index">02</span><h3>Game &amp; Player Models</h3><p>World models, learned simulators, state representations, and player modeling.</p><strong><span data-count="model">105</span> works →</strong>
+            </button>
+            <button class="collection-card collection-design" type="button" data-role="design">
+              <span class="collection-index">03</span><h3>Game Design &amp; Content</h3><p>Levels, worlds, mechanics, narratives, assets, and co-creative systems.</p><strong><span data-count="design">36</span> works →</strong>
+            </button>
+            <button class="collection-card collection-build" type="button" data-role="build">
+              <span class="collection-index">04</span><h3>Development &amp; Maintenance</h3><p>Code, scenes, engine projects, debugging, repair, and revision.</p><strong><span data-count="build">7</span> works →</strong>
+            </button>
+            <button class="collection-card collection-runtime" type="button" data-role="runtime">
+              <span class="collection-index">05</span><h3>Runtime Generation</h3><p>Characters, dialogue, narrative, personalization, and live adaptation.</p><strong><span data-count="runtime">12</span> works →</strong>
+            </button>
+            <button class="collection-card collection-test" type="button" data-role="test">
+              <span class="collection-index">06</span><h3>Testing &amp; Evaluation</h3><p>Playtesting, verification, benchmarks, model judges, and player evidence.</p><strong><span data-count="test">94</span> works →</strong>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="paper-section shell" id="papers">
+        <div class="section-heading">
+          <div><p class="section-kicker">Complete bibliography</p><h2>Find a paper</h2></div>
+          <p>Search titles and tags, or narrow the list by collection and year.</p>
+        </div>
+
+        <div class="toolbar" role="search">
+          <label class="search-field">
+            <span aria-hidden="true">⌕</span>
+            <span class="sr-only">Search papers</span>
+            <input id="paper-search" type="search" placeholder="Search titles, topics, or venues…" autocomplete="off">
+          </label>
+          <label>
+            <span class="sr-only">Filter by collection</span>
+            <select id="role-filter"><option value="">All collections</option></select>
+          </label>
+          <label>
+            <span class="sr-only">Filter by year</span>
+            <select id="year-filter"><option value="">All years</option></select>
+          </label>
+          <button id="clear-filters" class="clear-button" type="button">Clear</button>
+        </div>
+
+        <div class="results-head">
+          <p id="catalog-status" aria-live="polite">Loading papers…</p>
+          <span>Newest first</span>
+        </div>
+        <div class="paper-list" id="paper-list" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <h3>No matching papers</h3>
+          <p>Try a broader search or clear the active filters.</p>
+        </div>
+      </section>
+
+      <section class="contribute">
+        <div class="shell contribute-inner">
+          <div><p class="section-kicker">Keep the list useful</p><h2>Missing an important work?</h2><p>Suggest a canonical paper link and the best matching collection. Short, factual additions are welcome.</p></div>
+          <a class="button button-light" href="https://github.com/Eurekaleo/awesome-ai-for-games/issues/new/choose" target="_blank" rel="noopener">Suggest a paper ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div class="footer-brand"><img src="assets/site-icon.svg" width="30" height="30" alt=""><span><strong>Awesome AI for Games</strong><small>An open research collection</small></span></div>
+        <div class="footer-links"><a href="#collections">Collections</a><a href="#papers">Papers</a><a href="https://github.com/Eurekaleo/awesome-ai-for-games" target="_blank" rel="noopener">GitHub ↗</a><a href="#top">Back to top ↑</a></div>
+      </div>
+    </footer>
+    <script src="site/guide.js" defer></script>
+  </body>
+</html>

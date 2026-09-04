@@ -1,0 +1,66 @@
+name: Suggest a paper
+description: Propose a paper or technical report for the collection.
+title: "[Paper] "
+labels:
+  - paper-suggestion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Awesome AI for Games. Please link to the canonical paper page and keep the description factual.
+  - type: input
+    id: title
+    attributes:
+      label: Paper title
+      placeholder: Full title of the work
+    validations:
+      required: true
+  - type: input
+    id: paper_url
+    attributes:
+      label: Canonical paper URL
+      description: Prefer a DOI, publisher page, proceedings page, OpenReview page, or arXiv abstract page.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: year_venue
+    attributes:
+      label: Year and venue or status
+      placeholder: 2026 · Conference, journal, or arXiv
+    validations:
+      required: true
+  - type: dropdown
+    id: collection
+    attributes:
+      label: Best matching collection
+      options:
+        - Game-Playing Agents
+        - Game and Player Models
+        - Game Design and Content Generation
+        - Game Development and Maintenance
+        - Runtime Generation and Adaptation
+        - Game Testing and Evaluation
+    validations:
+      required: true
+  - type: input
+    id: resources
+    attributes:
+      label: Official code, data, model, or demo (optional)
+      placeholder: https://...
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why it belongs
+      description: In one or two sentences, explain the work's main contribution and why this collection is the best fit.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the repository and did not find this paper already listed.
+          required: true
+        - label: The linked work is publicly accessible and the information above is accurate.
+          required: true

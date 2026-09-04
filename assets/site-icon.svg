@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">AI for Games mark</title>
+  <desc id="desc">A game controller with a six-point spark</desc>
+  <defs>
+    <linearGradient id="g" x1="18" y1="14" x2="109" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5de3c3"/>
+      <stop offset="1" stop-color="#8797ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="#0e1a2b"/>
+  <path d="M26 60.5c1.4-14.1 13.2-24.8 27.4-24.8h21.2C88.8 35.7 100.6 46.4 102 60.5l3.5 24.8c1.4 10.1-5.4 18.9-14.9 18.9-5.1 0-9.9-2.7-12.6-7.1l-4.9-7.9H54.9L50 97.1c-2.7 4.4-7.5 7.1-12.6 7.1-9.5 0-16.3-8.8-14.9-18.9z" fill="url(#g)"/>
+  <path d="M40 62h18M49 53v18" stroke="#0e1a2b" stroke-width="5.5" stroke-linecap="round"/>
+  <circle cx="83" cy="59" r="4.5" fill="#0e1a2b"/>
+  <circle cx="93" cy="69" r="4.5" fill="#0e1a2b"/>
+  <path d="m64 15 3.3 9.2L77 27.5l-9.7 3.3L64 40l-3.3-9.2L51 27.5l9.7-3.3z" fill="#ffbf7a"/>
+</svg>
