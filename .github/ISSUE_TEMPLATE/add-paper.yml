@@ -35,12 +35,13 @@ body:
     attributes:
       label: Best matching collection
       options:
-        - Game-Playing Agents
-        - Game and Player Models
-        - Game Design and Content Generation
-        - Game Development and Maintenance
-        - Runtime Generation and Adaptation
-        - Game Testing and Evaluation
+        - Play and Act
+        - Model Games and Players
+        - Design
+        - Build and Maintain
+        - Generate and Adapt at Runtime
+        - Test and Evaluate
+        - Foundations and Context
     validations:
       required: true
   - type: input

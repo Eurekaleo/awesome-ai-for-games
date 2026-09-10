@@ -1,0 +1,22 @@
+name: Validate collection
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check catalog and README
+        run: node tools/check.mjs
+      - name: Build the static project site
+        run: node tools/build.mjs

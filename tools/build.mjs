@@ -25,7 +25,7 @@ const gameFiles = [
 // Publish an explicit public-file allowlist. Never copy a parent directory,
 // manuscript, Git metadata, source credentials, or local review material.
 const files = [
-  'index.html', 'site/guide.css', 'site/guide.js', 'site/catalog.mjs',
+  '.nojekyll', 'index.html', 'site/guide.css', 'site/guide.js', 'site/catalog.mjs',
   'data/references.json', 'data/survey-references.bib', 'assets/site-icon.svg', 'assets/game-world.webp',
   'assets/CREDITS.md',
   ...['sec_intro', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6', 'sec7']

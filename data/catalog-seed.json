@@ -2,6 +2,62 @@
   "schemaVersion": "1.0",
   "papers": [
     {
+      "id": "2609.10540",
+      "title": "Programmable World Model",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "state-and-mechanics",
+        "generation-toolchain"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.10540"
+    },
+    {
+      "id": "2609.09418",
+      "title": "Valerant: An Automatic Navigable Game Map Generator via Action-Conditioned World Model Exploration",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "design",
+      "topics": [
+        "world-modeling",
+        "generation-toolchain",
+        "spatial-memory"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.09418"
+    },
+    {
+      "id": "2609.09059",
+      "title": "PlayTrain: An Efficient Reinforcement Learning Framework for LLM-Generated Adaptable JavaScript Games",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "build",
+      "topics": [
+        "generation-toolchain",
+        "executable-feedback",
+        "agent-training"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.09059"
+    },
+    {
+      "id": "2609.06563",
+      "title": "MARBO: Relational Belief Grounding for LLM Agents in Social Deduction Games",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "play",
+      "topics": [
+        "social-agents",
+        "belief-modeling",
+        "multi-agent-games"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.06563"
+    },
+    {
       "id": "landmark:add-trajectory",
       "title": "Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models",
       "year": 2026,

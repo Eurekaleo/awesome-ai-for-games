@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {readFile, writeFile} from 'node:fs/promises';
 
 const bibPath = new URL('../data/survey-references.bib', import.meta.url);
-const oldPath = new URL('../data/papers.json', import.meta.url);
+const seedPath = new URL('../data/catalog-seed.json', import.meta.url);
 const rolePath = new URL('../data/role-citations.json', import.meta.url);
 const outputPath = new URL('../data/references.json', import.meta.url);
 
@@ -101,16 +101,16 @@ function shortAuthors(value){
 
 const source=await readFile(bibPath,'utf8');
 const parsed=parseBibtex(source);
-const {papers:oldPapers}=JSON.parse(await readFile(oldPath,'utf8'));
+const {papers:seedPapers}=JSON.parse(await readFile(seedPath,'utf8'));
 const {roles:roleCitations}=JSON.parse(await readFile(rolePath,'utf8'));
-const byTitle=new Map(oldPapers.map(p=>[norm(p.title),p]));
-const byUrl=new Map(oldPapers.filter(p=>p.url).map(p=>[normUrl(p.url),p]));
-const usedOld=new Set();
+const byTitle=new Map(seedPapers.map(p=>[norm(p.title),p]));
+const byUrl=new Map(seedPapers.filter(p=>p.url).map(p=>[normUrl(p.url),p]));
+const usedSeed=new Set();
 const papers=parsed.map(({type,key,fields})=>{
   const title=cleanTex(fields.title||key);
   const url=linkFor(fields);
   const match=byUrl.get(normUrl(url))||byTitle.get(norm(title));
-  if(match)usedOld.add(match.id);
+  if(match)usedSeed.add(match.id);
   const citedRoles=roleCitations[key]||[];
   const primaryRole=match&&citedRoles.includes(match.primaryRole)?match.primaryRole:citedRoles[0]||match?.primaryRole||'context';
   const authorField=fields.author||fields.editor||'';
@@ -123,10 +123,9 @@ const papers=parsed.map(({type,key,fields})=>{
   if(title==='Diffusion Models Are Real-Time Game Engines')record.aliases=['GameNGen'];
   return record;
 });
-assert.equal(parsed.length,417,'Expected the current manuscript bibliography');
+assert(parsed.length>=417,'The public bibliography unexpectedly lost records');
 assert.equal(new Set(papers.map(p=>p.id)).size,papers.length,'Duplicate citation keys');
-const unmatchedOld=oldPapers.filter(p=>!usedOld.has(p.id));
-if(unmatchedOld.length)console.warn(`Role map did not match ${unmatchedOld.length} legacy records: ${unmatchedOld.slice(0,12).map(p=>p.title).join(' | ')}`);
+const unmatchedSeed=seedPapers.filter(p=>!usedSeed.has(p.id));
 await writeFile(outputPath,JSON.stringify({schemaVersion:'2.0',source:'Survey bibliography',papers},null,2)+'\n');
 const roleCounts=Object.fromEntries(['play','model','design','build','runtime','test','context'].map(role=>[role,papers.filter(p=>p.primaryRole===role).length]));
-console.log(`Wrote ${papers.length} references. Matched ${usedOld.size}/${oldPapers.length} role-indexed records.`,roleCounts);
+console.log(`Wrote ${papers.length} references. Reused metadata for ${usedSeed.size} records; ${unmatchedSeed.length} seed-only records remain outside the bibliography.`,roleCounts);

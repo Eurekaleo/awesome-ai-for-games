@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 .DS_Store
 
+# Local build and hosting state are generated from the tracked website source.
+/dist/
+/.openai/
+
 # The current manuscript is not released through the public companion yet.
 paper/AI_for_Games_in_the_Foundation_Model_Era.pdf
 paper/AI_for_Games_in_the_Foundation_Model_Era_Overleaf.zip

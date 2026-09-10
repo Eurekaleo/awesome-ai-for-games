@@ -3,6 +3,93 @@
   "source": "Survey bibliography",
   "papers": [
     {
+      "id": "huang2026programmableworld",
+      "title": "Programmable World Model",
+      "year": 2026,
+      "month": 9,
+      "authors": "Zheng-Hui Huang and Guixu Lin and Jiacheng Lin and Yi-Chuan Huang and Ruihan Yu and Muyao Niu and Siqi Yang and Yu-Lun Liu and Yung-Yu Chuang and Kaipeng Zhang and Zhixiang Wang",
+      "shortAuthors": "Huang et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model",
+        "design",
+        "runtime"
+      ],
+      "topics": [
+        "world-modeling",
+        "state-and-mechanics",
+        "generation-toolchain"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.10540",
+      "kind": "misc"
+    },
+    {
+      "id": "qiao2026valerant",
+      "title": "Valerant: An Automatic Navigable Game Map Generator via Action-Conditioned World Model Exploration",
+      "year": 2026,
+      "month": 9,
+      "authors": "Yiran Qiao and Feng Wang and Jing Ma",
+      "shortAuthors": "Qiao et al.",
+      "primaryRole": "design",
+      "roles": [
+        "design",
+        "model",
+        "build"
+      ],
+      "topics": [
+        "world-modeling",
+        "generation-toolchain",
+        "spatial-memory"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.09418",
+      "kind": "misc"
+    },
+    {
+      "id": "truong2026playtrain",
+      "title": "PlayTrain: An Efficient Reinforcement Learning Framework for LLM-Generated Adaptable JavaScript Games",
+      "year": 2026,
+      "month": 9,
+      "authors": "Ryan Truong and Lance Ying and Samuel J. Gershman and Kazuki Irie",
+      "shortAuthors": "Truong et al.",
+      "primaryRole": "build",
+      "roles": [
+        "build",
+        "play",
+        "test"
+      ],
+      "topics": [
+        "generation-toolchain",
+        "executable-feedback",
+        "agent-training"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.09059",
+      "kind": "misc"
+    },
+    {
+      "id": "hwang2026marbo",
+      "title": "MARBO: Relational Belief Grounding for LLM Agents in Social Deduction Games",
+      "year": 2026,
+      "month": 9,
+      "authors": "Hwang, Yechan and Bae, Sangjun and Kim, Jeongmo and Bang, Sangwoo and Han, Seungyul",
+      "shortAuthors": "Hwang et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play",
+        "model"
+      ],
+      "topics": [
+        "social-agents",
+        "belief-modeling",
+        "multi-agent-games"
+      ],
+      "venue": "Accepted to EMNLP 2026",
+      "url": "https://arxiv.org/abs/2609.06563",
+      "kind": "misc"
+    },
+    {
       "id": "decart2024oasis",
       "title": "Oasis: A Universe in a Transformer",
       "year": 2024,
