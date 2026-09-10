@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {ROLES, searchPapers, sortPapers, safePaperUrl, escapeHtml} from '../site/catalog.mjs';
+
+const {papers} = JSON.parse(await readFile(new URL('../data/papers.json', import.meta.url)));
+assert.equal(papers.length, 334);
+assert.equal(new Set(papers.map(p => p.id)).size, papers.length);
+assert(papers.every(p => Object.hasOwn(ROLES, p.primaryRole)));
+assert(papers.every(p => safePaperUrl(p.url)));
+assert.equal(searchPapers(papers).length, papers.length);
+assert.equal(searchPapers(papers, {role:'build'}).length, 7);
+assert(searchPapers(papers, {query:'MarioGPT'}).some(p => p.title.includes('MarioGPT')));
+assert.equal(searchPapers(papers, {query:'GameNGen'}).length, 1);
+assert.equal(searchPapers(papers, {query:'GameNGen', role:'model', year:'2024'}).length, 1);
+assert.equal(searchPapers(papers, {query:'GameNGen', role:'play'}).length, 0);
+assert.equal(searchPapers(papers, {query:'nonexistent-paper-zzz'}).length, 0);
+assert(searchPapers(papers, {year:'2026'}).every(p => p.year === 2026));
+assert.equal(safePaperUrl('javascript:alert(1)'), null);
+assert.equal(safePaperUrl('data:text/html,hello'), null);
+assert.equal(escapeHtml('<img src="x">'), '&lt;img src=&quot;x&quot;&gt;');
+const sorted = sortPapers(papers);
+assert(sorted.every((p, i) => !i || Number(p.year) <= Number(sorted[i-1].year)));
+assert.notEqual(sorted, papers);
+console.log('Catalog checks passed: records, categories, combined filters, search, sort, URLs, and escaping.');
