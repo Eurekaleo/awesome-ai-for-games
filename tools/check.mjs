@@ -23,4 +23,16 @@ assert.equal(escapeHtml('<img src="x">'), '&lt;img src=&quot;x&quot;&gt;');
 const sorted = sortPapers(papers);
 assert(sorted.every((p, i) => !i || Number(p.year) <= Number(sorted[i-1].year)));
 assert.notEqual(sorted, papers);
+const gameManifest = JSON.parse(await readFile(new URL('../games/little-worlds/data/manifest.json', import.meta.url)));
+for (const gameId of ['moon-garden', 'aurora-outpost']) {
+  const game = gameManifest.games[gameId];
+  assert(game, `Missing playable game manifest entry: ${gameId}`);
+  const levels = JSON.parse(await readFile(new URL(`../games/little-worlds/data/levels/${gameId}.json`, import.meta.url)));
+  assert(Array.isArray(levels) && levels.length === 3, `${gameId} must expose three playable levels`);
+  const kernel = await import(new URL(`../games/little-worlds/data/kernels/${gameId}.mjs`, import.meta.url));
+  assert.equal(typeof kernel.createGame, 'function');
+  assert.equal(typeof kernel.stepGame, 'function');
+  const state = kernel.createGame(levels[0]);
+  assert(state && typeof state === 'object', `${gameId} did not create an initial game state`);
+}
 console.log('Catalog checks passed: records, categories, combined filters, search, sort, URLs, and escaping.');

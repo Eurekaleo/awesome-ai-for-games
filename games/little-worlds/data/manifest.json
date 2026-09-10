@@ -1,0 +1,33 @@
+{
+  "schema": "ai-for-games.playable-demo.v1",
+  "games": {
+    "moon-garden": {
+      "defaultRun": "moon-garden-none-initial",
+      "kernelUrl": "./data/kernels/moon-garden.mjs",
+      "levelsUrl": "./data/levels/moon-garden.json",
+      "runs": [
+        {
+          "id": "moon-garden-none-initial",
+          "kernelUrl": "./data/kernels/moon-garden.mjs",
+          "kind": "generated",
+          "condition": "baseline / initial",
+          "model": "Codex-generated rule kernel; exact model ID was not recorded by the original CLI run"
+        }
+      ]
+    },
+    "aurora-outpost": {
+      "defaultRun": "aurora-outpost-none-initial",
+      "kernelUrl": "./data/kernels/aurora-outpost.mjs",
+      "levelsUrl": "./data/levels/aurora-outpost.json",
+      "runs": [
+        {
+          "id": "aurora-outpost-none-initial",
+          "kernelUrl": "./data/kernels/aurora-outpost.mjs",
+          "kind": "generated",
+          "condition": "baseline / initial",
+          "model": "Codex-generated rule kernel; exact model ID was not recorded by the original CLI run"
+        }
+      ]
+    }
+  }
+}

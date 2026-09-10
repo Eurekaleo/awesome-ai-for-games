@@ -5,6 +5,22 @@ import assert from 'node:assert/strict';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const out = path.join(root, 'dist');
+const gameFiles = [
+  'games/little-worlds/index.html',
+  'games/little-worlds/styles.css',
+  'games/little-worlds/app.js',
+  'games/little-worlds/audio.js',
+  'games/little-worlds/moon-scene.js',
+  'games/little-worlds/aurora-scene.js',
+  'games/little-worlds/data/manifest.json',
+  'games/little-worlds/data/levels/moon-garden.json',
+  'games/little-worlds/data/levels/aurora-outpost.json',
+  'games/little-worlds/data/kernels/moon-garden.mjs',
+  'games/little-worlds/data/kernels/aurora-outpost.mjs',
+  'games/little-worlds/vendor/three.module.js',
+  'games/little-worlds/vendor/three.core.js',
+  'games/little-worlds/vendor/THREE-LICENSE',
+];
 
 // Publish an explicit public-file allowlist. Never copy a parent directory,
 // manuscript, Git metadata, source credentials, or local review material.
@@ -16,6 +32,9 @@ const files = [
     .map(name => `assets/survey-map/${name}.webp`),
   ...['sophy', 'gamengen', 'mariogpt', 'gamecraft', 'nights', 'ea-testing']
     .map(name => `assets/gallery/${name}.webp`),
+  ...['moon-garden', 'aurora-outpost']
+    .map(name => `assets/playable/${name}.webp`),
+  ...gameFiles,
 ];
 for (const file of files) {
   const info = await stat(path.join(root, file));
@@ -35,10 +54,20 @@ assert.equal(new Set(ids).size, ids.length, 'Duplicate HTML IDs');
 for (const [, ref] of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
   if (ref.startsWith('#')) assert(ids.includes(ref.slice(1)), `Missing anchor: ${ref}`);
   else if (!/^(https?:|data:|mailto:)/.test(ref)) {
-    assert(files.includes(ref.split(/[?#]/)[0]), `Unlisted local dependency: ${ref}`);
+    const localPath = ref.split(/[?#]/)[0];
+    const publicPath = localPath.endsWith('/') ? `${localPath}index.html` : localPath;
+    assert(files.includes(publicPath), `Unlisted local dependency: ${ref}`);
   }
 }
 assert(!/\.pdf(?:["?#\s]|$)|\.tex\b/i.test(html), 'A PDF or TeX source was linked from the public page');
+const gameHtml = await readFile(path.join(out, 'games/little-worlds/index.html'), 'utf8');
+assert(!/\b(?:href|src)="\//.test(gameHtml), 'Playable game page contains a root-relative local reference');
+const gameManifest = JSON.parse(await readFile(path.join(out, 'games/little-worlds/data/manifest.json'), 'utf8'));
+assert.deepEqual(Object.keys(gameManifest.games).sort(), ['aurora-outpost', 'moon-garden']);
+for (const game of Object.values(gameManifest.games)) {
+  assert(game.kernelUrl.startsWith('./data/kernels/'));
+  assert(game.levelsUrl.startsWith('./data/levels/'));
+}
 const publicFiles=await Promise.all(files.map(async file=>({file,info:await stat(path.join(out,file))})));
 assert(publicFiles.every(({file})=>!file.toLowerCase().endsWith('.pdf')),'The site build must never contain the manuscript PDF');
 const bytes = publicFiles.reduce((n, {info}) => n+info.size, 0);

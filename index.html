@@ -30,10 +30,10 @@
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="#top" aria-label="AI for Games home"><img src="assets/site-icon.svg" width="32" height="32" alt=""><span>AI <span class="brand-for">for</span> GAMES<span class="brand-plus">+</span></span></a>
-      <nav class="site-nav" aria-label="Primary navigation"><a href="#about">Overview</a><a href="#map">Survey map</a><a href="#findings">Findings</a><a href="#papers">Literature</a><a class="nav-github" href="https://github.com/Eurekaleo/awesome-ai-for-games" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg><span>GitHub</span><svg class="icon small"><use href="#i-north"/></svg></a></nav>
+      <nav class="site-nav" aria-label="Primary navigation"><a href="#about">Overview</a><a href="#map">Survey map</a><a href="#findings">Findings</a><a href="#playable-games">Play</a><a href="#papers">Literature</a><a class="nav-github" href="https://github.com/Eurekaleo/awesome-ai-for-games" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg><span>GitHub</span><svg class="icon small"><use href="#i-north"/></svg></a></nav>
       <button id="menu-toggle" class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
     </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#about">Overview</a><a href="#map">Survey map</a><a href="#findings">Findings</a><a href="#papers">Literature</a><a href="https://github.com/Eurekaleo/awesome-ai-for-games">GitHub</a></nav>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#about">Overview</a><a href="#map">Survey map</a><a href="#findings">Findings</a><a href="#playable-games">Play</a><a href="#papers">Literature</a><a href="https://github.com/Eurekaleo/awesome-ai-for-games">GitHub</a></nav>
   </header>
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
@@ -112,6 +112,46 @@
         </div>
       </div>
       <div class="shell exchange-strip" aria-label="Demonstrated cross-role exchanges"><span>Interaction traces</span><span>Learned environments</span><span>Specifications &amp; rules</span><span>Execution &amp; test evidence</span><span>Player models &amp; profiles</span></div>
+    </section>
+
+    <section id="playable-games" class="playable-games section-light" aria-labelledby="playable-title">
+      <div class="shell">
+        <div class="playable-head">
+          <div><p class="section-label"><span>PLAY</span> TWO AI-BUILT WORLDS</p><h2 id="playable-title">Don’t just read it.<br><em>Play it.</em></h2></div>
+          <p>Two browser games from an AI-assisted game-making study. Their Codex-generated rule kernels were exercised against executable trajectories; here, readers can try the resulting mechanics directly.</p>
+        </div>
+        <div class="playable-grid">
+          <article class="playable-card moon-game">
+            <a class="playable-media" href="games/little-worlds/?game=moon-garden" target="_blank" rel="noopener noreferrer" aria-label="Play Moonlight Garden in a new tab">
+              <img src="assets/playable/moon-garden.webp" width="1280" height="720" loading="lazy" alt="Moonlight Garden spatial puzzle with a robot, planters, moonlit goals, and a bridge">
+              <span class="play-orbit" aria-hidden="true"><svg class="icon"><use href="#i-play"/></svg></span>
+              <span class="game-number">WORLD 01</span>
+            </a>
+            <div class="playable-card-body">
+              <div class="game-kicker"><span>Spatial puzzle</span><span>3 levels</span></div>
+              <h3>Moonlight Garden <small>月光花园</small></h3>
+              <p>Push planters onto moonlit goals, hold pressure plates, open the bridge, and undo mistakes while solving three compact spatial puzzles.</p>
+              <div class="game-meta"><span>WASD / arrows</span><span>Z · undo</span><span>R · restart</span></div>
+              <div class="game-card-foot"><div class="game-roles"><span>Design</span><span>Build</span><span>Test</span></div><a class="play-link" href="games/little-worlds/?game=moon-garden" target="_blank" rel="noopener noreferrer">Play now <svg class="icon"><use href="#i-north"/></svg></a></div>
+            </div>
+          </article>
+          <article class="playable-card aurora-game">
+            <a class="playable-media" href="games/little-worlds/?game=aurora-outpost" target="_blank" rel="noopener noreferrer" aria-label="Play Aurora Outpost in a new tab">
+              <img src="assets/playable/aurora-outpost.webp" width="1280" height="720" loading="lazy" alt="Aurora Outpost turn-based strategy board with a robot, beacons, energy, and storm cells">
+              <span class="play-orbit" aria-hidden="true"><svg class="icon"><use href="#i-play"/></svg></span>
+              <span class="game-number">WORLD 02</span>
+            </a>
+            <div class="playable-card-body">
+              <div class="game-kicker"><span>Turn-based strategy</span><span>3 levels</span></div>
+              <h3>Aurora Outpost <small>极光哨站</small></h3>
+              <p>Read the next storm footprint, manage scarce energy, activate every beacon, and return safely using dash, shield, and wait.</p>
+              <div class="game-meta"><span>WASD / arrows</span><span>Shift · dash</span><span>E · shield</span><span>Space · wait</span></div>
+              <div class="game-card-foot"><div class="game-roles"><span>Design</span><span>Build</span><span>Test</span></div><a class="play-link" href="games/little-worlds/?game=aurora-outpost" target="_blank" rel="noopener noreferrer">Play now <svg class="icon"><use href="#i-north"/></svg></a></div>
+            </div>
+          </article>
+        </div>
+        <div class="playable-note"><span>Playable in the browser</span><span>No installation</span><span>Keyboard and pointer controls</span></div>
+      </div>
     </section>
 
     <section id="research" class="research section-dark" aria-labelledby="research-title">

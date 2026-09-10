@@ -17,4 +17,6 @@ The research gallery reproduces illustrative material from the following public 
 
 The gallery files are WebP conversions of previously collected source-attributed images. No paper PDF is included in the website or repository.
 
+The two files in `playable/` are screenshots of this project's own playable prototypes, *Moonlight Garden* and *Aurora Outpost*. The browser games use Codex-generated rule kernels from an AI-assisted game-making study; their presentation layer was assembled within the same assisted workflow. They are presented as interactive demonstrations, not as evidence of fully autonomous end-to-end game production.
+
 For attribution corrections or removal requests, please [open an issue](https://github.com/Eurekaleo/awesome-ai-for-games/issues).
