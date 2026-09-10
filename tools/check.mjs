@@ -3,6 +3,11 @@ import {readFile} from 'node:fs/promises';
 import {FILTER_LABELS, searchPapers, sortPapers, safePaperUrl, escapeHtml} from '../site/catalog.mjs';
 
 const {papers} = JSON.parse(await readFile(new URL('../data/references.json', import.meta.url)));
+const expectedRoles = {
+  play: 'Play & Act', model: 'Model Games & Players', design: 'Design',
+  build: 'Build & Maintain', runtime: 'Generate & Adapt at Runtime', test: 'Test & Evaluate',
+};
+assert.deepEqual(Object.fromEntries(Object.entries(FILTER_LABELS).filter(([key]) => key !== 'context')), expectedRoles);
 assert.equal(papers.length, 417);
 assert.equal(new Set(papers.map(p => p.id)).size, papers.length);
 assert(papers.every(p => Object.hasOwn(FILTER_LABELS, p.primaryRole)));

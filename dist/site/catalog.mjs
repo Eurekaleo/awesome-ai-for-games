@@ -1,6 +1,6 @@
 export const ROLES = {
-  play: 'Game-playing agents', model: 'World & player models', design: 'Design & content',
-  build: 'Development', runtime: 'Runtime generation', test: 'Testing & evaluation',
+  play: 'Play & Act', model: 'Model Games & Players', design: 'Design',
+  build: 'Build & Maintain', runtime: 'Generate & Adapt at Runtime', test: 'Test & Evaluate',
 };
 export const FILTER_LABELS = {...ROLES, context: 'Foundations & context'};
 export function searchPapers(papers, {query = '', role = '', year = ''} = {}) {
