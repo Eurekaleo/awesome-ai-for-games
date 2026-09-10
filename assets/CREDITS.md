@@ -2,6 +2,8 @@
 
 The opening game-world illustration was generated specifically for this project. It is concept artwork, not a research result or an image of a functioning system.
 
+The seven images in `survey-map/` are web renditions of the project's own survey schematics: the six-role overview and the chapter maps for Play, Model, Design, Build, Runtime, and Test. They are explanatory figures, not screenshots of evaluated systems. The website contains these raster renditions only; it does not contain the paper PDF.
+
 The research gallery reproduces illustrative material from the following public projects. These images are not covered by the repository's MIT software license. Copyright and other rights remain with their respective creators and owners; inclusion does not imply endorsement.
 
 | Image | Project and source | Context |
@@ -13,6 +15,6 @@ The research gallery reproduces illustrative material from the following public 
 | `gallery/nights.webp` | [1001 Nights](https://www.1001nights.ai/) · [source artwork](https://static.wixstatic.com/media/08a4c9_bb44d5b9a3204ea78ca30125df7bfe3d~mv2.png) | Official project artwork, not a player-study screenshot. |
 | `gallery/ea-testing.webp` | [EA SEED research announcement](https://www.ea.com/seed/news/cog23-challenges-deploying-rl-agents-game-testing) · [research paper](https://arxiv.org/abs/2307.11105) | Battlefield 2042 helicopter navigation from Figure 3(c), including the original testing overlay. |
 
-The gallery files are WebP conversions of previously collected source-attributed images. No manuscript pages, unpublished figures, or draft PDFs are included in the website.
+The gallery files are WebP conversions of previously collected source-attributed images. No paper PDF is included in the website or repository.
 
 For attribution corrections or removal requests, please [open an issue](https://github.com/Eurekaleo/awesome-ai-for-games/issues).

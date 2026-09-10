@@ -1,17 +1,19 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {ROLES, searchPapers, sortPapers, safePaperUrl, escapeHtml} from '../site/catalog.mjs';
+import {FILTER_LABELS, searchPapers, sortPapers, safePaperUrl, escapeHtml} from '../site/catalog.mjs';
 
-const {papers} = JSON.parse(await readFile(new URL('../data/papers.json', import.meta.url)));
-assert.equal(papers.length, 334);
+const {papers} = JSON.parse(await readFile(new URL('../data/references.json', import.meta.url)));
+assert.equal(papers.length, 417);
 assert.equal(new Set(papers.map(p => p.id)).size, papers.length);
-assert(papers.every(p => Object.hasOwn(ROLES, p.primaryRole)));
-assert(papers.every(p => safePaperUrl(p.url)));
+assert(papers.every(p => Object.hasOwn(FILTER_LABELS, p.primaryRole)));
+assert(papers.every(p => !p.url || safePaperUrl(p.url)));
+assert(papers.every(p => p.primaryRole==='context' || p.roles.includes(p.primaryRole)));
+assert.equal(papers.filter(p=>p.primaryRole==='context').length,25);
 assert.equal(searchPapers(papers).length, papers.length);
-assert.equal(searchPapers(papers, {role:'build'}).length, 7);
+assert.equal(searchPapers(papers, {role:'build'}).length, 20);
 assert(searchPapers(papers, {query:'MarioGPT'}).some(p => p.title.includes('MarioGPT')));
 assert.equal(searchPapers(papers, {query:'GameNGen'}).length, 1);
-assert.equal(searchPapers(papers, {query:'GameNGen', role:'model', year:'2024'}).length, 1);
+assert.equal(searchPapers(papers, {query:'GameNGen', role:'model', year:'2025'}).length, 1);
 assert.equal(searchPapers(papers, {query:'GameNGen', role:'play'}).length, 0);
 assert.equal(searchPapers(papers, {query:'nonexistent-paper-zzz'}).length, 0);
 assert(searchPapers(papers, {year:'2026'}).every(p => p.year === 2026));

@@ -1,0 +1,1077 @@
+{
+  "schemaVersion": "1.0",
+  "roles": {
+    "wang2023voyager": [
+      "play"
+    ],
+    "sima2024": [
+      "play"
+    ],
+    "magne2026nitrogen": [
+      "play"
+    ],
+    "shannon1950chess": [
+      "play"
+    ],
+    "samuel1959checkers": [
+      "play"
+    ],
+    "mnih2015dqn": [
+      "play"
+    ],
+    "silver2016alphago": [
+      "play"
+    ],
+    "silver2017alphagozero": [
+      "play"
+    ],
+    "silver2018alphazero": [
+      "play"
+    ],
+    "vinyals2019alphastar": [
+      "play"
+    ],
+    "berner2019dota": [
+      "play"
+    ],
+    "ye2020moba": [
+      "play"
+    ],
+    "wurman2022sophy": [
+      "play"
+    ],
+    "genesereth2005ggp": [
+      "play"
+    ],
+    "perezliebana2018gvgai": [
+      "play"
+    ],
+    "hafner2025dreamerv3": [
+      "play",
+      "model"
+    ],
+    "cobbe2020procgen": [
+      "play"
+    ],
+    "chen2021decisiontransformer": [
+      "play"
+    ],
+    "reed2022gato": [
+      "play"
+    ],
+    "lee2022multigamedt": [
+      "play"
+    ],
+    "fan2022minedojo": [
+      "play"
+    ],
+    "sima22025": [
+      "play"
+    ],
+    "wang2025gametars": [
+      "play"
+    ],
+    "tan2025cradle": [
+      "play"
+    ],
+    "park2025orak": [
+      "play"
+    ],
+    "wu2023spring": [
+      "play"
+    ],
+    "hafner2022crafter": [
+      "play"
+    ],
+    "zhu2023gitm": [
+      "play"
+    ],
+    "wang2023deps": [
+      "play"
+    ],
+    "wang2023jarvis1": [
+      "play"
+    ],
+    "yuan2023plan4mc": [
+      "play"
+    ],
+    "lifshitz2023steve1": [
+      "play"
+    ],
+    "zhou2025minedreamer": [
+      "play"
+    ],
+    "baker2022vpt": [
+      "play"
+    ],
+    "jarvisvla2025": [
+      "play"
+    ],
+    "chen2025combatvla": [
+      "play"
+    ],
+    "wang2024omnijarvis": [
+      "play"
+    ],
+    "parisotto2020gtrxl": [
+      "play"
+    ],
+    "cai2024rocket1": [
+      "play"
+    ],
+    "shao2024swarmbrain": [
+      "play"
+    ],
+    "sridhar2025regent": [
+      "play"
+    ],
+    "shi2026s3gym": [
+      "play"
+    ],
+    "skoutnev2026twin": [
+      "play"
+    ],
+    "lehrach2025cwm": [
+      "play",
+      "model"
+    ],
+    "li2026emembench": [
+      "play"
+    ],
+    "zhang2026gameverse": [
+      "play"
+    ],
+    "li2024optimus": [
+      "play"
+    ],
+    "ahn2025flashadventure": [
+      "play"
+    ],
+    "albrecht2017autonomous": [
+      "play"
+    ],
+    "mirsky2022survey": [
+      "play"
+    ],
+    "feng2024socialagents": [
+      "play"
+    ],
+    "lanctot2017unified": [
+      "play"
+    ],
+    "jaderberg2019human": [
+      "play"
+    ],
+    "oel2021xland": [
+      "play"
+    ],
+    "brown2020combining": [
+      "play"
+    ],
+    "brown2019superhuman": [
+      "play"
+    ],
+    "sunehag2017value": [
+      "play"
+    ],
+    "rashid2018qmix": [
+      "play"
+    ],
+    "yu2021surprising": [
+      "play"
+    ],
+    "samvelyan2019starcraft": [
+      "play"
+    ],
+    "bard2020hanabi": [
+      "play"
+    ],
+    "leibo2021meltingpot": [
+      "play"
+    ],
+    "rabinowitz2018machine": [
+      "play"
+    ],
+    "foerster2017learning": [
+      "play"
+    ],
+    "serrino2019finding": [
+      "play"
+    ],
+    "carroll2019overcooked": [
+      "play"
+    ],
+    "hu2020otherplay": [
+      "play"
+    ],
+    "strouse2021fcp": [
+      "play"
+    ],
+    "zhao2021maximum": [
+      "play"
+    ],
+    "yu2023learning": [
+      "play"
+    ],
+    "zhang2024proagent": [
+      "play"
+    ],
+    "gong2024mindagent": [
+      "play"
+    ],
+    "dong2024villageragent": [
+      "play"
+    ],
+    "lewis2017deal": [
+      "play"
+    ],
+    "fair2022cicero": [
+      "play"
+    ],
+    "xu2023exploring": [
+      "play"
+    ],
+    "xu2023language": [
+      "play"
+    ],
+    "wang2023avalon": [
+      "play"
+    ],
+    "light2023avalonbench": [
+      "play"
+    ],
+    "bailis2024werewolf": [
+      "play"
+    ],
+    "mccoy2013promweek": [
+      "play"
+    ],
+    "park2023generativeagents": [
+      "play",
+      "model",
+      "runtime"
+    ],
+    "al2024project": [
+      "play"
+    ],
+    "piao2025agentsociety": [
+      "play"
+    ],
+    "xu2026cascade": [
+      "play"
+    ],
+    "shi2026fairgamer": [
+      "play",
+      "test"
+    ],
+    "yan2026proact": [
+      "play",
+      "runtime"
+    ],
+    "sutton1990dyna": [
+      "model"
+    ],
+    "oh2015actionconditional": [
+      "model"
+    ],
+    "chiappa2017res": [
+      "model"
+    ],
+    "ha2018worldmodels": [
+      "model"
+    ],
+    "hafner2019planet": [
+      "model"
+    ],
+    "hafner2020dreamer": [
+      "model"
+    ],
+    "racaniere2017i2a": [
+      "model"
+    ],
+    "schrittwieser2020muzero": [
+      "model"
+    ],
+    "kaiser2020simple": [
+      "model"
+    ],
+    "hafner2025dreamer4": [
+      "model"
+    ],
+    "kim2020gamegan": [
+      "model"
+    ],
+    "bruce2024genie": [
+      "model"
+    ],
+    "valevski2024gamengen": [
+      "model"
+    ],
+    "che2024gamegenx": [
+      "model"
+    ],
+    "tang2025hgc2": [
+      "model"
+    ],
+    "parkerholder2024genie2": [
+      "model"
+    ],
+    "parkerholder2025genie3": [
+      "model"
+    ],
+    "kanervisto2025wham": [
+      "model"
+    ],
+    "yang2024playgen": [
+      "model"
+    ],
+    "guo2025mineworld": [
+      "model"
+    ],
+    "ding2026playworld": [
+      "model",
+      "test"
+    ],
+    "hu2025agent2world": [
+      "model",
+      "build",
+      "test"
+    ],
+    "micheli2023iris": [
+      "model"
+    ],
+    "alonso2024diamond": [
+      "model"
+    ],
+    "chua2018pets": [
+      "model"
+    ],
+    "sekar2020planning": [
+      "model"
+    ],
+    "yu2020mopo": [
+      "model"
+    ],
+    "kidambi2020morel": [
+      "model"
+    ],
+    "chen2026reworld": [
+      "model"
+    ],
+    "zhang2025frame": [
+      "model"
+    ],
+    "cai2025mixture": [
+      "model"
+    ],
+    "xiao2025worldmem": [
+      "model"
+    ],
+    "yu2025context": [
+      "model"
+    ],
+    "garcin2026persist": [
+      "model"
+    ],
+    "nam2026worldcam": [
+      "model"
+    ],
+    "li2025vmem": [
+      "model"
+    ],
+    "chen2025modelgame": [
+      "model"
+    ],
+    "lin2026stateplaystateawaregameworld": [
+      "model"
+    ],
+    "deng2026worldminddecoupledgameworld": [
+      "model"
+    ],
+    "meng2026marionettepredictingworldstates": [
+      "model"
+    ],
+    "tang2024worldcoder": [
+      "model"
+    ],
+    "dainese2024generating": [
+      "model"
+    ],
+    "yannakakis2013playermodeling": [
+      "model"
+    ],
+    "smith2011inclusive": [
+      "model"
+    ],
+    "hooshyar2018data": [
+      "model"
+    ],
+    "yannakakis2011edpcg": [
+      "model",
+      "design",
+      "runtime"
+    ],
+    "thue2007passage": [
+      "model",
+      "runtime"
+    ],
+    "holmgard2019playtesting": [
+      "model",
+      "test"
+    ],
+    "wang2024player2vec": [
+      "model"
+    ],
+    "smirnov2024behaviorstructformer": [
+      "model"
+    ],
+    "dehpanah2021player": [
+      "model"
+    ],
+    "gray2021player": [
+      "model"
+    ],
+    "zhu2021open": [
+      "model"
+    ],
+    "mcilroyyoung2020aligning": [
+      "model"
+    ],
+    "mcilroyyoung2020learning": [
+      "model"
+    ],
+    "tang2024maia2": [
+      "model"
+    ],
+    "monroe2026chessformer": [
+      "model"
+    ],
+    "tang2025maia4all": [
+      "model"
+    ],
+    "zhang2025learning": [
+      "model"
+    ],
+    "herbrich2006trueskill": [
+      "model"
+    ],
+    "zhang2022quickskill": [
+      "model"
+    ],
+    "boberirizar2024skill": [
+      "model"
+    ],
+    "drachen2012guns": [
+      "model"
+    ],
+    "bauckhage2015clustering": [
+      "model"
+    ],
+    "drachen2014comparison": [
+      "model"
+    ],
+    "sifa2013behavior": [
+      "model"
+    ],
+    "green2022predicting": [
+      "model"
+    ],
+    "lu2026personalized": [
+      "model",
+      "runtime"
+    ],
+    "hafnar2025zeroshot": [
+      "model",
+      "runtime"
+    ],
+    "yannakakis2023affective": [
+      "model",
+      "runtime"
+    ],
+    "melhart2021arousal": [
+      "model"
+    ],
+    "makantasis2019pixels": [
+      "model"
+    ],
+    "makantasis2021pixels": [
+      "model"
+    ],
+    "pinitas2023predicting": [
+      "model"
+    ],
+    "goel2024label": [
+      "model"
+    ],
+    "wang2026vision": [
+      "model"
+    ],
+    "perianez2017churn": [
+      "model"
+    ],
+    "drachen2016rapid": [
+      "model"
+    ],
+    "jang2021analyzing": [
+      "model"
+    ],
+    "guitart2019winning": [
+      "model"
+    ],
+    "roohi2020predicting": [
+      "model"
+    ],
+    "barthet2022generative": [
+      "model"
+    ],
+    "li2026meeplelm": [
+      "model"
+    ],
+    "collins2025gameevaluations": [
+      "model",
+      "test"
+    ],
+    "zhang2025beyond": [
+      "model"
+    ],
+    "yu2025gamefactory": [
+      "model"
+    ],
+    "tong2026scope": [
+      "model"
+    ],
+    "shen2026game2world": [
+      "model"
+    ],
+    "zhu2026incantationnaturallanguageaction": [
+      "model"
+    ],
+    "wang2026reactivegwmsteeringnpcreactive": [
+      "model"
+    ],
+    "chen2026h3world": [
+      "model"
+    ],
+    "he2025matrixgame2": [
+      "model"
+    ],
+    "forgewm2026": [
+      "model"
+    ],
+    "chen2024diffusionforcing": [
+      "model"
+    ],
+    "savva2026solaris": [
+      "model"
+    ],
+    "hu2026multiplayerwm": [
+      "model"
+    ],
+    "po2026multigen": [
+      "model",
+      "runtime"
+    ],
+    "yin2024slow": [
+      "model"
+    ],
+    "huang2025self": [
+      "model"
+    ],
+    "togelius2011searchpcg": [
+      "design"
+    ],
+    "smith2011tanagra": [
+      "design"
+    ],
+    "compton2006procedural": [
+      "design"
+    ],
+    "smith2011asp": [
+      "design"
+    ],
+    "summerville2018pcgml": [
+      "design"
+    ],
+    "khalifa2020pcgrl": [
+      "design"
+    ],
+    "summerville2016mario": [
+      "design"
+    ],
+    "volz2018mariogan": [
+      "design"
+    ],
+    "dai2024singlediffusion": [
+      "design"
+    ],
+    "sudhakaran2023mariogpt": [
+      "design"
+    ],
+    "huang2025word2minecraft": [
+      "design"
+    ],
+    "todd2023level": [
+      "design"
+    ],
+    "nasir2023practical": [
+      "design"
+    ],
+    "nie2025moonshine": [
+      "design"
+    ],
+    "schrum2025mariodiffusion": [
+      "design"
+    ],
+    "taveekitworachai2023chatgpt4pcg": [
+      "design"
+    ],
+    "taveekitworachai2024chatgpt4pcg2": [
+      "design"
+    ],
+    "llms4pcg2025": [
+      "design"
+    ],
+    "baek2026multiverse": [
+      "design"
+    ],
+    "whitehead2025conversational": [
+      "design"
+    ],
+    "earle2024dreamcraft": [
+      "design"
+    ],
+    "xu2025database3d": [
+      "design"
+    ],
+    "nelson2007automated": [
+      "design"
+    ],
+    "browne2010evolutionary": [
+      "design"
+    ],
+    "zook2014mechanics": [
+      "design"
+    ],
+    "cook2017angelina1": [
+      "design"
+    ],
+    "cook2013mechanicminer": [
+      "design"
+    ],
+    "cook2022puck": [
+      "design"
+    ],
+    "hu2024gamegeneration": [
+      "design"
+    ],
+    "todd2024gavel": [
+      "design"
+    ],
+    "nasir2025mortar": [
+      "design"
+    ],
+    "zhou2025story2game": [
+      "design",
+      "build"
+    ],
+    "earle2025scriptdoctor": [
+      "design"
+    ],
+    "vanstegeren2021quests": [
+      "design"
+    ],
+    "weir2024knudge": [
+      "design"
+    ],
+    "kumaran2023scenecraft": [
+      "design"
+    ],
+    "kumaran2024narrativegenie": [
+      "design",
+      "runtime"
+    ],
+    "zhang2026rpgagent": [
+      "design",
+      "build"
+    ],
+    "earle2025dreamgarden": [
+      "design",
+      "build"
+    ],
+    "liapis2013sketchbook": [
+      "design"
+    ],
+    "lanzi2023llmco": [
+      "design"
+    ],
+    "barth2023ghostwriter": [
+      "design"
+    ],
+    "geheeb2026spine": [
+      "design"
+    ],
+    "yang2025unigen": [
+      "build"
+    ],
+    "yin2026autoue": [
+      "build"
+    ],
+    "huang2026guigames": [
+      "build",
+      "test"
+    ],
+    "songtang-etal-2025-unrealllm": [
+      "build"
+    ],
+    "liu2026mage": [
+      "build"
+    ],
+    "luo2026gamecraft": [
+      "build"
+    ],
+    "gamecraft2026results": [
+      "build"
+    ],
+    "serapio2026gamecwm": [
+      "build"
+    ],
+    "jimenez2024swebench": [
+      "build"
+    ],
+    "yang2024sweagent": [
+      "build"
+    ],
+    "jiang2026opengame": [
+      "build"
+    ],
+    "unity2026aitools": [
+      "build"
+    ],
+    "openai2026playbot": [
+      "build"
+    ],
+    "chi2026gamedevbench": [
+      "build"
+    ],
+    "sun2026jamer": [
+      "build"
+    ],
+    "la2026gameenginebench": [
+      "build",
+      "test"
+    ],
+    "chen2026gamexpert": [
+      "build"
+    ],
+    "cai2025sage": [
+      "build",
+      "test"
+    ],
+    "mu2025smart": [
+      "build",
+      "test"
+    ],
+    "mateas2005facade": [
+      "runtime"
+    ],
+    "riedl2010narrative": [
+      "runtime"
+    ],
+    "riedl2013interactive": [
+      "runtime"
+    ],
+    "urbanek2019light": [
+      "runtime"
+    ],
+    "volum2022craft": [
+      "runtime"
+    ],
+    "zhu2023calypso": [
+      "runtime"
+    ],
+    "vezhnevets2025concordia": [
+      "runtime"
+    ],
+    "buongiorno2024pangea": [
+      "runtime"
+    ],
+    "sun2023language": [
+      "runtime"
+    ],
+    "sun2025dramallama": [
+      "runtime"
+    ],
+    "ashby2023quests": [
+      "runtime"
+    ],
+    "jennings2024gromit": [
+      "runtime"
+    ],
+    "drake2025worldcrafting": [
+      "runtime"
+    ],
+    "hsu2026ifcargo": [
+      "runtime"
+    ],
+    "singh2026robloxcube": [
+      "runtime"
+    ],
+    "mateas2001poetics": [
+      "runtime"
+    ],
+    "li2025unbounded": [
+      "runtime"
+    ],
+    "cheng2025animegamer": [
+      "runtime"
+    ],
+    "ma2026ncpbench": [
+      "runtime",
+      "test"
+    ],
+    "mortazavi2024dynamic": [
+      "runtime"
+    ],
+    "zohaib2018dynamic": [
+      "runtime"
+    ],
+    "paraschos2023game": [
+      "runtime"
+    ],
+    "chanel2011emotion": [
+      "runtime"
+    ],
+    "lopes2025closing": [
+      "runtime"
+    ],
+    "barthet2024affectively": [
+      "runtime"
+    ],
+    "melhart2025large": [
+      "runtime"
+    ],
+    "hunicke2005dda": [
+      "runtime"
+    ],
+    "xue2017dynamic": [
+      "runtime"
+    ],
+    "pfau2020dungeons": [
+      "runtime"
+    ],
+    "elshamy2026adaptive": [
+      "runtime"
+    ],
+    "wu2025enhanced": [
+      "runtime"
+    ],
+    "salen2003rules": [
+      "runtime"
+    ],
+    "wardripfruin2009agency": [
+      "runtime"
+    ],
+    "ryan2006motivation": [
+      "runtime"
+    ],
+    "peng2024emergence": [
+      "runtime",
+      "test"
+    ],
+    "rao2024collaborative": [
+      "runtime"
+    ],
+    "emmerich2018companions": [
+      "runtime"
+    ],
+    "bickmore2005relationships": [
+      "runtime"
+    ],
+    "figueiredo2025scaffolded": [
+      "runtime"
+    ],
+    "hsu2026doubleedged": [
+      "runtime"
+    ],
+    "lee2026leaguebot": [
+      "runtime"
+    ],
+    "villareale2022i": [
+      "runtime"
+    ],
+    "yin2026contextualized": [
+      "runtime"
+    ],
+    "roso2026latency": [
+      "runtime"
+    ],
+    "denisova2015adaptation": [
+      "runtime"
+    ],
+    "ang2017comparing": [
+      "runtime"
+    ],
+    "ang2019representation": [
+      "runtime"
+    ],
+    "constant2019dynamic": [
+      "runtime"
+    ],
+    "zhu2021player": [
+      "runtime"
+    ],
+    "xiao2024llms": [
+      "runtime"
+    ],
+    "ubisoft2025teammates": [
+      "runtime"
+    ],
+    "krafton2026allyduo": [
+      "runtime"
+    ],
+    "nvidia2026pubgally": [
+      "runtime"
+    ],
+    "latitude2026aidungeon": [
+      "runtime"
+    ],
+    "epic2025vader": [
+      "runtime"
+    ],
+    "karapanos2009uxovertime": [
+      "runtime"
+    ],
+    "zheng2019wuji": [
+      "test"
+    ],
+    "jia2026gamegenverifier": [
+      "test"
+    ],
+    "albaghajati2020assessment": [
+      "test"
+    ],
+    "politowski2021survey": [
+      "test"
+    ],
+    "bergdahl2021augmenting": [
+      "test"
+    ],
+    "gordillo2021improving": [
+      "test"
+    ],
+    "ferdous2025curiosity": [
+      "test"
+    ],
+    "ariyurek2021testing": [
+      "test"
+    ],
+    "ariyurek2021playtesting": [
+      "test"
+    ],
+    "butt2023deriving": [
+      "test"
+    ],
+    "chen2021glib": [
+      "test"
+    ],
+    "macklon2022automatically": [
+      "test"
+    ],
+    "ling2024using": [
+      "test"
+    ],
+    "yi2025hybrid": [
+      "test"
+    ],
+    "tufano2022using": [
+      "test"
+    ],
+    "liu2022inspector": [
+      "test"
+    ],
+    "abdelfattah2023preference": [
+      "test"
+    ],
+    "zhao2025llm": [
+      "test"
+    ],
+    "jiang2026gbqa": [
+      "test"
+    ],
+    "roque2025literature": [
+      "test"
+    ],
+    "gillberg2023productiontesting": [
+      "test"
+    ],
+    "prasetya2022agent": [
+      "test"
+    ],
+    "ouyang2026gameworld": [
+      "test"
+    ],
+    "adaikkappan2026ca2": [
+      "test"
+    ],
+    "wang2025titan": [
+      "test"
+    ],
+    "gu2024survey": [
+      "test"
+    ],
+    "li2024generation": [
+      "test"
+    ],
+    "taesiri2023glitchbench": [
+      "test"
+    ],
+    "taesiri2025videogameqa": [
+      "test"
+    ],
+    "zheng2026open": [
+      "test"
+    ],
+    "lu2026far": [
+      "test"
+    ],
+    "yu2026resp": [
+      "test"
+    ],
+    "macklon2025exploring": [
+      "test"
+    ],
+    "jin2024bugdetection": [
+      "test"
+    ],
+    "panickssery2024selfpreference": [
+      "test"
+    ],
+    "ye2024justice": [
+      "test"
+    ],
+    "chen2024mllm": [
+      "test"
+    ],
+    "yamauchi2025empirical": [
+      "test"
+    ],
+    "tan2024judgebench": [
+      "test"
+    ],
+    "calderon2025alternative": [
+      "test"
+    ],
+    "zhuge2024agent": [
+      "test"
+    ],
+    "helff2026llms": [
+      "test"
+    ],
+    "thaman2026reward": [
+      "test"
+    ],
+    "chen2026mimicpy": [
+      "test"
+    ]
+  }
+}

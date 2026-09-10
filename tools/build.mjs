@@ -10,8 +10,10 @@ const out = path.join(root, 'dist');
 // manuscript, Git metadata, source credentials, or local review material.
 const files = [
   'index.html', 'site/guide.css', 'site/guide.js', 'site/catalog.mjs',
-  'data/papers.json', 'assets/site-icon.svg', 'assets/game-world.webp',
+  'data/references.json', 'data/survey-references.bib', 'assets/site-icon.svg', 'assets/game-world.webp',
   'assets/CREDITS.md',
+  ...['sec_intro', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6', 'sec7']
+    .map(name => `assets/survey-map/${name}.webp`),
   ...['sophy', 'gamengen', 'mariogpt', 'gamecraft', 'nights', 'ea-testing']
     .map(name => `assets/gallery/${name}.webp`),
 ];
@@ -36,6 +38,8 @@ for (const [, ref] of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
     assert(files.includes(ref.split(/[?#]/)[0]), `Unlisted local dependency: ${ref}`);
   }
 }
-assert(!/\.pdf(?:["?#\s]|$)|\.tex\b|RQ[123]\b|chapter\s*\d/i.test(html), 'Private manuscript reference in public HTML');
-const bytes = (await Promise.all(files.map(f => stat(path.join(out, f))))).reduce((n, s) => n+s.size, 0);
+assert(!/\.pdf(?:["?#\s]|$)|\.tex\b/i.test(html), 'A PDF or TeX source was linked from the public page');
+const publicFiles=await Promise.all(files.map(async file=>({file,info:await stat(path.join(out,file))})));
+assert(publicFiles.every(({file})=>!file.toLowerCase().endsWith('.pdf')),'The site build must never contain the manuscript PDF');
+const bytes = publicFiles.reduce((n, {info}) => n+info.size, 0);
 console.log(`Public build ready: ${files.length} files, ${(bytes/1024/1024).toFixed(2)} MB. All local references and anchors resolved.`);

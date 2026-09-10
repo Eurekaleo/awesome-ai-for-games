@@ -1,4 +1,4 @@
-import {ROLES, searchPapers, sortPapers, safePaperUrl, escapeHtml as e} from './catalog.mjs';
+import {ROLES, FILTER_LABELS, searchPapers, sortPapers, safePaperUrl, escapeHtml as e} from './catalog.mjs';
 
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
@@ -8,7 +8,7 @@ const ui = {search: $('#paper-search'), role: $('#role-filter'), year: $('#year-
 
 const collections = {
   play: {
-    number:'01', label:'AGENTS', count:80, title:'Learning to act.<br>Learning to cooperate.',
+    number:'01', label:'AGENTS', count:104, title:'Learning to act.<br>Learning to cooperate.',
     description:'From specialist policies to language-guided agents, this literature studies how AI perceives a game, chooses actions, and coordinates with other players.',
     topics:['Generalist policies','Planning & memory','Human–AI teamwork'],
     image:'sophy.webp', alt:'Gran Turismo 7 racing scene from an official GT Sophy announcement', caption:'Gran Turismo 7 / GT Sophy',
@@ -24,7 +24,7 @@ const collections = {
     example:'GameNGen generates the next DOOM frame from past observations and actions, turning a video model into an interactive simulator for a specific game.',
   },
   design: {
-    number:'03', label:'DESIGN & CONTENT', count:36, title:'Imagine the rules.<br>Shape the possibility.',
+    number:'03', label:'DESIGN & CONTENT', count:47, title:'Imagine the rules.<br>Shape the possibility.',
     description:'Generative methods propose levels, mechanics, stories, and assets. The research asks how to make those proposals controllable, valid, and useful to designers.',
     topics:['Levels & worlds','Rules & mechanics','Co-creative tools'],
     image:'mariogpt.webp', alt:'Text-conditioned Mario level generation from the MarioGPT project', caption:'Text-to-level generation / MarioGPT',
@@ -32,7 +32,7 @@ const collections = {
     example:'MarioGPT turns text descriptions into tile-based levels, making familiar design elements accessible through a language interface.',
   },
   build: {
-    number:'04', label:'DEVELOPMENT', count:7, title:'From an idea<br>to a running game.',
+    number:'04', label:'DEVELOPMENT', count:20, title:'From an idea<br>to a running game.',
     description:'Development systems use code, tools, and engine feedback to assemble scenes, implement mechanics, diagnose failures, and revise projects.',
     topics:['Code & engine tools','Execution feedback','Debugging & repair'],
     image:'gamecraft.webp', alt:'Signal Rail Dispatcher game in the GameCraft-Bench public gallery', caption:'Signal Rail Dispatcher / GameCraft-Bench gallery',
@@ -40,7 +40,7 @@ const collections = {
     example:'Signal Rail Dispatcher is a Seele02-pro example from GameCraft-Bench’s public gallery of generated games.',
   },
   runtime: {
-    number:'05', label:'LIVE EXPERIENCES', count:12, title:'A story that<br>answers back.',
+    number:'05', label:'LIVE EXPERIENCES', count:56, title:'A story that<br>answers back.',
     description:'Runtime systems create dialogue, quests, characters, or content during play. Player input becomes part of an experience that can change as it unfolds.',
     topics:['Dialogue & characters','Interactive narrative','Personalization'],
     image:'nights.webp', alt:'Official artwork for the AI storytelling game 1001 Nights', caption:'Co-creative storytelling / 1001 Nights',
@@ -48,7 +48,7 @@ const collections = {
     example:'Official artwork for 1001 Nights, where player storytelling becomes part of AI-generated narrative and imagery.',
   },
   test: {
-    number:'06', label:'TESTING & EVALUATION', count:94, title:'Play it.<br>Then question it.',
+    number:'06', label:'TESTING & EVALUATION', count:60, title:'Play it.<br>Then question it.',
     description:'Automated players explore game behavior; oracles decide whether something went wrong. Benchmarks and human studies test different kinds of claims.',
     topics:['Automated playtesting','Bug detection','Benchmarks & validation'],
     image:'ea-testing.webp', alt:'Battlefield 2042 helicopter navigation under an EA SEED production test with debug overlays', caption:'Battlefield 2042 / EA SEED production testing',
@@ -56,6 +56,99 @@ const collections = {
     example:'EA SEED studied reinforcement-learning agents for production testing. The image shows the Battlefield 2042 helicopter task, with its original test overlay.',
   },
 };
+
+const roleAtlas = {
+  play: {
+    number:'01', label:'PLAY AND ACT', title:'AI that Plays and Acts', image:'sec2.webp',
+    alt:'Research directions for AI that plays and acts, including generalist agents, adaptation, teammates, and control hierarchies',
+    caption:'Research directions for AI that plays and acts: specialist-to-generalist policies, test-time adaptation, control hierarchies, and NPCs and teammates.',
+    description:'AI selects actions, plans, or messages inside a game. Foundation models broaden perception and planning, while the path to native controls remains game-specific.',
+    output:'Actions · plans · messages', applications:'Players · teammates · NPCs', claim:'Action quality',
+    focus:['Player and generalist agents','Learning and control hierarchies','Test-time adaptation and memory','Opponents, teammates, NPCs, and companions'],
+    insights:['A common interface relocates the learning problem.','Adaptation includes the information supplied.','Playing well with others is a separate transfer problem.'],
+    citations:[['Voyager','https://arxiv.org/abs/2305.16291'],['SIMA 2','https://arxiv.org/abs/2512.04797'],['NitroGen','https://arxiv.org/abs/2601.02427']],
+  },
+  model: {
+    number:'02', label:'MODEL GAMES AND PLAYERS', title:'AI that Models Games and Players', image:'sec3.webp',
+    alt:'Research directions for AI that models games and players, including learned simulation, world state, player behavior, and long-horizon interaction',
+    caption:'Research directions for modeling games and players: planning, training, and simulation; world-state representation; player behavior modeling; and long-horizon interaction.',
+    description:'AI predicts game dynamics, state, trajectories, or player behavior. What a model must preserve depends on whether its consumer is a planner, policy learner, player, or adaptive system.',
+    output:'States · transitions · player forecasts', applications:'Planning · simulation · player models', claim:'Predictive quality · policy transfer',
+    focus:['Planning models, training environments, and interactive simulators','Representation, uncertainty, and persistent state','Player models and behavioral inference','Action interfaces and long-horizon consistency'],
+    insights:["Prediction quality is a task-dependent property.",'Memory and mechanics solve different omissions.','A player predictor is not yet an adaptation policy.'],
+    citations:[['MuZero','https://arxiv.org/abs/1911.08265'],['GameNGen','https://arxiv.org/abs/2408.14837'],['StatePlay','https://arxiv.org/abs/2607.26754']],
+  },
+  design: {
+    number:'03', label:'DESIGN', title:'AI that Designs Games', image:'sec4.webp',
+    alt:'Research directions for AI that designs games, including content, mechanics, narrative, and co-creation',
+    caption:'Research directions for AI that designs games: assets, levels, and worlds; rules and mechanics; and narrative and co-creative design.',
+    description:'AI proposes levels, rules, mechanics, story structures, or assets. The central problem is turning an intention into a valid and controllable design, then selecting for the play it should create.',
+    output:'Levels · rules · story structures', applications:'PCG · automated design · co-creation', claim:'Validity · control',
+    focus:['Assets, levels, and worlds','Rules and mechanics','Narrative and co-creative design'],
+    insights:['Pretraining helps when it supplies knowledge the design data lack.',"Selection can inherit the evaluator's taste.",'Control depends on what the designer can edit.'],
+    citations:[['MarioGPT','https://arxiv.org/abs/2302.05981'],['GAVEL','https://arxiv.org/abs/2407.09388'],['DreamGarden','https://arxiv.org/abs/2410.01791']],
+  },
+  build: {
+    number:'04', label:'BUILD AND MAINTAIN', title:'AI that Builds and Maintains Games', image:'sec5.webp',
+    alt:'Research directions for AI that builds and maintains games, including engine development, tool use, debugging, and maintenance',
+    caption:'Research directions for AI that builds and maintains games: code, scenes, and engine projects; tool-using agents; execution and repair; and maintenance and handoff.',
+    description:'AI turns specifications into code, scenes, and project edits. A running game requires coordination across scripts, assets, scene bindings, engine conventions, tests, and later revisions.',
+    output:'Code · scenes · project edits', applications:'Engine agents · debugging · repair', claim:'Working software',
+    focus:['Code, scenes, and engine projects','Tool-using development agents','Execution, debugging, and repair','Revision, maintenance, and handoff'],
+    insights:['Feedback exposes different parts of a project.','Implementation quality has competing failure modes.','Maintenance requires deciding what should change.'],
+    citations:[['GameCraft-Bench','https://arxiv.org/abs/2606.17861'],['Play2Code','https://arxiv.org/abs/2605.28258'],['GameEngineBench','https://arxiv.org/abs/2607.03525']],
+  },
+  runtime: {
+    number:'05', label:'GENERATE AND ADAPT AT RUNTIME', title:'AI that Generates and Adapts at Runtime', image:'sec6.webp',
+    alt:'Research directions for AI that generates and adapts at runtime, including content, memory, rules, and personalization',
+    caption:'Research directions for runtime AI: generative content; long-term memory; dynamic rules and mechanics; and personalization.',
+    description:'AI changes a live, player-facing experience through dialogue, quests, content, rules, or personalization. Outputs must arrive in time, agree with state, and create value for the player.',
+    output:'Dialogue · quests · live content', applications:'Characters · adaptive narrative', claim:'Consistent content · player response',
+    focus:['Generative characters, narrative, and content','Runtime rules, mechanics, and worlds','State consistency and long-term memory','Personalization, adaptation, and deployment'],
+    insights:['Dialogue freedom expands proposals, not necessarily actions.','Constraints can support player control.','Personalization changes the data used to personalize.'],
+    citations:[['NarrativeGenie','https://doi.org/10.1609/aiide.v20i1.31868'],['IF:CARGO','https://arxiv.org/abs/2608.12195'],['1001 Nights','https://www.1001nights.ai/']],
+  },
+  test: {
+    number:'06', label:'TEST AND EVALUATE', title:'AI that Tests and Evaluates Games', image:'sec7.webp',
+    alt:'Research directions for AI that tests games, including playtesting, mechanic verification, model judges, and player coverage',
+    caption:'Research directions for game testing: automated playtesting, mechanic verification, model-based judgement, and player coverage.',
+    description:'AI explores behavior, produces traces, checks mechanics, or judges quality. Reaching a state, recognizing a fault, and representing the intended players are separate achievements.',
+    output:'Traces · verdicts · diagnoses', applications:'Playtesting · verification · judging', claim:'State coverage · verdict accuracy',
+    focus:['Automated playtesting','Software and mechanic verification','Model-based judges','Player representativeness and human relevance'],
+    insights:['Discovery and judgment have different bottlenecks.','Diversity is not representativeness.','Using a verdict for repair changes its risk.'],
+    citations:[['EA production testing','https://arxiv.org/abs/2307.11105'],['GameGen-Verifier','https://arxiv.org/abs/2605.07442'],['PlayWorld','https://arxiv.org/abs/2608.13552']],
+  },
+};
+
+function setRoleAtlas(key, focus = false) {
+  const d=roleAtlas[key];
+  if(!d) return;
+  $$('.atlas-tabs [role="tab"]').forEach(button=>{
+    const selected=button.dataset.roleTab===key;
+    button.setAttribute('aria-selected',String(selected));button.tabIndex=selected?0:-1;
+    if(selected&&focus) button.focus();
+  });
+  const panel=$('#role-panel');panel.dataset.role=key;panel.setAttribute('aria-labelledby','role-tab-'+key);
+  const image=$('#atlas-image');image.src='assets/survey-map/'+d.image;image.alt=d.alt;
+  $('#atlas-caption').textContent=d.caption;$('#atlas-kicker').textContent=d.number+' / '+d.label;
+  $('#atlas-title').textContent=d.title;$('#atlas-description').textContent=d.description;
+  $('#atlas-output').textContent=d.output;$('#atlas-applications').textContent=d.applications;$('#atlas-claim').textContent=d.claim;
+  $('#atlas-focus').replaceChildren(...d.focus.map(text=>{const li=document.createElement('li');li.textContent=text;return li;}));
+  $('#atlas-insights').replaceChildren(...d.insights.map(text=>{const li=document.createElement('li');li.textContent=text;return li;}));
+  const cites=$('#atlas-citations');const label=document.createElement('span');label.textContent='Representative anchors';
+  cites.replaceChildren(label,...d.citations.map(([name,url])=>{const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=name+' ↗';return a;}));
+  panel.classList.remove('panel-updated');requestAnimationFrame(()=>panel.classList.add('panel-updated'));
+}
+
+$$('.atlas-tabs [role="tab"]').forEach(button=>{
+  button.addEventListener('click',()=>setRoleAtlas(button.dataset.roleTab));
+  button.addEventListener('keydown',event=>{
+    const keys=Object.keys(roleAtlas),current=keys.indexOf(button.dataset.roleTab);let next;
+    if(event.key==='ArrowRight') next=(current+1)%keys.length;if(event.key==='ArrowLeft') next=(current+keys.length-1)%keys.length;
+    if(event.key==='Home') next=0;if(event.key==='End') next=keys.length-1;
+    if(next!==undefined){event.preventDefault();setRoleAtlas(keys[next],true);}
+  });
+});
 
 function setCollection(key, focus = false) {
   const d=collections[key];
@@ -116,7 +209,8 @@ function paperRow(p){
   const topics=(p.topics||[]).slice(0,2).map(t=>'<span class="topic">'+e(t.replaceAll('-',' '))+'</span>').join('');
   const venue=p.venue && !p.venue.includes('listed venue')?p.venue:(p.venue||'').split(' / ')[0];
   const link=url?'<a class="paper-title" href="'+e(url)+'" target="_blank" rel="noopener noreferrer">'+title+'</a>':'<span class="paper-title">'+title+'</span>';
-  return '<article class="paper-row"><span class="paper-year">'+e(p.year)+'</span><div class="paper-main">'+link+'<div class="paper-meta"><span class="venue">'+e(venue)+'</span><span>'+e(ROLES[p.primaryRole]||'Research')+'</span>'+topics+'</div></div>'+(url?'<a class="paper-link" href="'+e(url)+'" target="_blank" rel="noopener noreferrer" aria-label="Open '+title+'"><svg class="icon"><use href="#i-north"/></svg></a>':'')+'</article>';
+  const authors=p.shortAuthors||p.authors||'';
+  return '<article class="paper-row"><span class="paper-year">'+e(p.year||'—')+'</span><div class="paper-main">'+link+(authors?'<p class="paper-authors">'+e(authors)+'</p>':'')+'<div class="paper-meta"><span class="venue">'+e(venue)+'</span><span>'+e(FILTER_LABELS[p.primaryRole]||'Research')+'</span>'+topics+'</div></div>'+(url?'<a class="paper-link" href="'+e(url)+'" target="_blank" rel="noopener noreferrer" aria-label="Open '+title+'"><svg class="icon"><use href="#i-north"/></svg></a>':'')+'</article>';
 }
 function render({reset=false,updateUrl=true}={}){
   if(!state.loaded) return;
@@ -124,7 +218,7 @@ function render({reset=false,updateUrl=true}={}){
   const filters=getFilters();
   const matches=searchPapers(state.papers,filters);
   ui.list.innerHTML=matches.slice(0,state.visible).map(paperRow).join('');
-  ui.status.textContent=matches.length+' '+(matches.length===1?'work':'works')+(filters.role?' · '+ROLES[filters.role]:' in the collection');
+  ui.status.textContent=matches.length+' '+(matches.length===1?'reference':'references')+(filters.role?' · '+FILTER_LABELS[filters.role]:' in the bibliography');
   ui.empty.hidden=matches.length>0;
   ui.more.hidden=matches.length<=state.visible;
   if(!ui.more.hidden) ui.more.innerHTML='Show '+Math.min(pageSize,matches.length-state.visible)+' more papers <span aria-hidden="true">↓</span>';
@@ -137,7 +231,7 @@ function render({reset=false,updateUrl=true}={}){
 }
 function setRole(role){
   if(!state.loaded) return;
-  ui.role.value=Object.hasOwn(ROLES,role)?role:'';
+  ui.role.value=Object.hasOwn(FILTER_LABELS,role)?role:'';
   render({reset:true});
 }
 function resetFilters(){
@@ -147,11 +241,11 @@ function resetFilters(){
 function restoreFilters(){
   const p=new URLSearchParams(location.search);
   ui.search.value=p.get('q')||'';
-  ui.role.value=Object.hasOwn(ROLES,p.get('collection'))?p.get('collection'):'';
+  ui.role.value=Object.hasOwn(FILTER_LABELS,p.get('collection'))?p.get('collection'):'';
   ui.year.value=[...ui.year.options].some(o=>o.value===p.get('year'))?p.get('year'):'';
 }
 function populate(){
-  for(const [key,label] of Object.entries(ROLES)){
+  for(const [key,label] of Object.entries(FILTER_LABELS)){
     const option=new Option(label,key);ui.role.add(option);
     const n=state.papers.filter(p=>p.primaryRole===key).length;
     $$('[data-count="'+key+'"]').forEach(el=>{el.textContent=n;});
@@ -162,12 +256,12 @@ function populate(){
 }
 async function load(){
   try{
-    const response=await fetch('data/papers.json');
+    const response=await fetch('data/references.json');
     if(!response.ok) throw Error('Catalog unavailable');
     const data=await response.json();
     if(!Array.isArray(data.papers)) throw Error('Catalog format invalid');
-    state.papers=sortPapers(data.papers.filter(p=>p.status!=='context'));
-    state.loaded=true;populate();restoreFilters();render({updateUrl:false});
+    state.papers=sortPapers(data.papers);
+    state.loaded=true;populate();setCollection($('#research-panel').dataset.active);restoreFilters();render({updateUrl:false});
   }catch(error){
     ui.status.textContent='The collection could not be loaded.';
     ui.list.innerHTML='<div class="empty-state"><h3>The reading list is still available.</h3><p>Open the <a href="https://github.com/Eurekaleo/awesome-ai-for-games#contents">complete GitHub collection</a> to browse every paper.</p><button type="button" class="button load-more" id="retry-catalog">Try again</button></div>';
@@ -198,5 +292,5 @@ menu.addEventListener('click',()=>{
 });
 $$('#mobile-nav a').forEach(a=>a.addEventListener('click',closeMenu));
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!menuPanel.hidden){closeMenu();menu.focus();}});
-window.matchMedia('(min-width:601px)').addEventListener('change',event=>{if(event.matches) closeMenu();});
+window.matchMedia('(min-width:901px)').addEventListener('change',event=>{if(event.matches) closeMenu();});
 load();

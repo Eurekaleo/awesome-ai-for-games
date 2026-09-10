@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10131b">
   <title>AI for Games in the Foundation Model Era</title>
-  <meta name="description" content="Explore AI and foundation models for games: a visual research companion with a curated, searchable collection of 334 public papers.">
+  <meta name="description" content="Explore AI and foundation models for games through six research roles, chapter schematics, cross-role findings, and a searchable bibliography of 417 cited sources.">
   <link rel="icon" type="image/svg+xml" href="assets/site-icon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,10 +30,10 @@
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="#top" aria-label="AI for Games home"><img src="assets/site-icon.svg" width="32" height="32" alt=""><span>AI <span class="brand-for">for</span> GAMES<span class="brand-plus">+</span></span></a>
-      <nav class="site-nav" aria-label="Primary navigation"><a href="#about">Overview</a><a href="#research">Research</a><a href="#papers">Paper collection</a><a class="nav-github" href="https://github.com/Eurekaleo/awesome-ai-for-games" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg><span>GitHub</span><svg class="icon small"><use href="#i-north"/></svg></a></nav>
+      <nav class="site-nav" aria-label="Primary navigation"><a href="#about">Overview</a><a href="#map">Survey map</a><a href="#findings">Findings</a><a href="#papers">Literature</a><a class="nav-github" href="https://github.com/Eurekaleo/awesome-ai-for-games" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg><span>GitHub</span><svg class="icon small"><use href="#i-north"/></svg></a></nav>
       <button id="menu-toggle" class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
     </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#about">Overview</a><a href="#research">Research</a><a href="#papers">Paper collection</a><a href="https://github.com/Eurekaleo/awesome-ai-for-games">GitHub</a></nav>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#about">Overview</a><a href="#map">Survey map</a><a href="#findings">Findings</a><a href="#papers">Literature</a><a href="https://github.com/Eurekaleo/awesome-ai-for-games">GitHub</a></nav>
   </header>
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
@@ -43,14 +43,14 @@
           <p class="eyebrow"><span class="eyebrow-rule"></span> THE FOUNDATION MODEL ERA</p>
           <h1 id="hero-title">AI for <em>Games</em><span>in the Foundation<br>Model Era</span></h1>
           <p class="hero-statement">The next move is<br>more than playing.</p>
-          <p class="hero-description">Explore the research changing how games are played, imagined, built, and experienced.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#papers">Explore the literature <svg class="icon"><use href="#i-arrow"/></svg></a><a class="button button-ghost" href="https://github.com/Eurekaleo/awesome-ai-for-games" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> GitHub collection</a></div>
-          <p class="publication-note">A research companion · Survey forthcoming</p>
+          <p class="hero-description">A visual companion to the survey of how foundation models play, model, design, build, adapt, and test games.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#map">Enter the survey map <svg class="icon"><use href="#i-arrow"/></svg></a><a class="button button-ghost" href="#papers"><svg class="icon"><use href="#i-search"/></svg> Browse the literature</a></div>
+          <p class="publication-note">Survey companion · Concepts, evidence, and an open reading collection</p>
         </div>
         <div class="hero-art-note"><span>01 / A WORLD IN THE MAKING</span><span>Concept artwork</span></div>
       </div>
       <div class="shell hero-bottom">
-        <div class="hero-index"><div><strong id="paper-count">334</strong><span>indexed works</span></div><div><strong>1950–2026</strong><span>research across generations</span></div><div><strong>06</strong><span>topic collections</span></div></div>
+        <div class="hero-index"><div><strong id="paper-count">417</strong><span>cited sources</span></div><div><strong>06</strong><span>roles across the lifecycle</span></div><div><strong>03</strong><span>questions across every role</span></div></div>
         <a class="scroll-cue" href="#about">Start exploring <span>↓</span></a>
       </div>
     </section>
@@ -58,14 +58,65 @@
     <section id="about" class="overview section-light">
       <div class="shell overview-grid">
         <div class="section-label"><span>01</span> THE BIG PICTURE</div>
-        <div class="overview-copy"><h2>Not just the player.<br><em>The possibilities of play.</em></h2><p class="lead">Games have always been a meeting point for intelligence and imagination. Foundation models are opening new ways to participate in both.</p><p>AI can control a character, predict a world, propose a level, work inside a game engine, generate a conversation, or help find a bug. These applications share tools and model families, but they solve different problems.</p><p>This collection brings their literature together—from foundational Game AI to recent language, vision, and code-based systems. Browse by topic, follow a concrete example, or go straight to the original work.</p><a class="text-link" href="#research">Explore the research landscape <svg class="icon"><use href="#i-arrow"/></svg></a></div>
-        <aside class="overview-aside"><span class="aside-caption">A SHIFT IN PERSPECTIVE</span><p>From AI<br>inside the game<br>to AI helping<br><em>shape the game.</em></p><div class="aside-foot">Playing · Modeling · Creating · Testing</div></aside>
+        <div class="overview-copy"><h2>The game is no longer<br><em>only given.</em></h2><p class="lead">Game AI has never been limited to playing. The foundation-model era makes the field’s wider shape impossible to miss.</p><p>AI can now act as a player or character, model a world or its players, propose content and rules, operate inside a game engine, change a live experience, and produce testing evidence. The same pretrained model family may touch several of these tasks, but each role still depends on different interfaces, constraints, and forms of evidence.</p><p>The survey therefore follows the immediate use of AI output. This separates a proposed mechanic from its implementation, a player forecast from the adaptation it informs, and a tester’s action from the verdict it supports.</p><a class="text-link" href="#map">See the organizing map <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+        <aside class="overview-aside"><span class="aside-caption">WHY FOUNDATION MODELS?</span><p>Shared interfaces for<br><em>language, vision, code, actions, and tools.</em></p><div class="aside-foot">Broader access does not remove game-specific rules, controls, state, engines, or player contexts.</div></aside>
       </div>
+    </section>
+
+    <section id="map" class="survey-map section-light" aria-labelledby="map-title">
+      <div class="shell">
+        <div class="section-heading map-heading"><div><p class="section-label"><span>02</span> THE ORGANIZING MAP</p><h2 id="map-title">Six roles around<br><em>a playable game.</em></h2></div><p>The roles classify what an output is used for. The connectors show selective inputs and feedback—not a required architecture.</p></div>
+        <figure class="map-figure"><img src="assets/survey-map/sec_intro.webp" width="2400" height="1419" loading="lazy" alt="Diagram organizing AI for Games into six roles: design, build and maintain, model games and players, test and evaluate, generate and adapt at runtime, and play and act"><figcaption><span>Figure 2 · Survey overview</span><p>Six uses of AI output around an executable, player-facing game.</p></figcaption></figure>
+        <div class="question-intro"><span class="aside-caption">THREE QUESTIONS, REPEATED ACROSS EVERY ROLE</span><p>These questions turn the foundation-model era from a date label into a common analytical lens.</p></div>
+        <div class="question-grid">
+          <article><span>01</span><h3>Boundary</h3><p>What is supplied by the game or workflow, and what is assigned to AI?</p></article>
+          <article><span>02</span><h3>Transfer &amp; reuse</h3><p>Which capabilities transfer, which artifacts can be reused, and what remains setting-specific?</p></article>
+          <article><span>03</span><h3>Evidence</h3><p>What claims does evaluation support where the output is used?</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="roles" class="role-atlas section-dark" aria-labelledby="roles-title">
+      <div class="shell">
+        <div class="section-heading"><div><p class="section-label"><span>03</span> THE ROLE ATLAS</p><h2 id="roles-title">Inside each<br><em>research role.</em></h2></div><p>Each chapter follows a different output, operating context, and empirical claim. Select a role to see its research structure and synthesis.</p></div>
+        <div class="atlas-tabs" role="tablist" aria-label="Survey roles">
+          <button id="role-tab-play" role="tab" aria-selected="true" aria-controls="role-panel" data-role-tab="play"><span>01</span>Play &amp; Act</button>
+          <button id="role-tab-model" role="tab" aria-selected="false" aria-controls="role-panel" tabindex="-1" data-role-tab="model"><span>02</span>Model</button>
+          <button id="role-tab-design" role="tab" aria-selected="false" aria-controls="role-panel" tabindex="-1" data-role-tab="design"><span>03</span>Design</button>
+          <button id="role-tab-build" role="tab" aria-selected="false" aria-controls="role-panel" tabindex="-1" data-role-tab="build"><span>04</span>Build</button>
+          <button id="role-tab-runtime" role="tab" aria-selected="false" aria-controls="role-panel" tabindex="-1" data-role-tab="runtime"><span>05</span>Runtime</button>
+          <button id="role-tab-test" role="tab" aria-selected="false" aria-controls="role-panel" tabindex="-1" data-role-tab="test"><span>06</span>Test</button>
+        </div>
+        <div id="role-panel" class="atlas-panel" role="tabpanel" aria-labelledby="role-tab-play" data-role="play">
+          <figure class="atlas-figure"><img id="atlas-image" src="assets/survey-map/sec2.webp" width="2400" height="826" loading="lazy" alt="Research directions for AI that plays and acts"><figcaption id="atlas-caption">Research directions for AI that plays and acts.</figcaption></figure>
+          <div class="atlas-copy">
+            <p class="atlas-kicker" id="atlas-kicker">01 / PLAY AND ACT</p>
+            <h3 id="atlas-title">AI that Plays and Acts</h3>
+            <p id="atlas-description">AI selects actions, plans, or messages inside a game. Foundation models broaden perception and planning, while the path to native controls remains game-specific.</p>
+            <dl class="role-facts"><div><dt>Output</dt><dd id="atlas-output">Actions · plans · messages</dd></div><div><dt>Applications</dt><dd id="atlas-applications">Players · teammates · NPCs</dd></div><div><dt>Main claim</dt><dd id="atlas-claim">Action quality</dd></div></dl>
+            <div class="atlas-focus"><span class="aside-caption">CHAPTER STRUCTURE</span><ul id="atlas-focus"><li>Player and generalist agents</li><li>Learning and control hierarchies</li><li>Test-time adaptation and memory</li><li>Opponents, teammates, NPCs, and companions</li></ul></div>
+            <div class="atlas-insight"><span class="aside-caption">SURVEY SYNTHESIS</span><ul id="atlas-insights"><li>A common interface relocates the learning problem.</li><li>Adaptation includes the information supplied.</li><li>Playing well with others is a separate transfer problem.</li></ul></div>
+            <div id="atlas-citations" class="atlas-citations"><span>Representative anchors</span><a href="https://arxiv.org/abs/2305.16291" target="_blank" rel="noopener noreferrer">Voyager ↗</a><a href="https://arxiv.org/abs/2512.04797" target="_blank" rel="noopener noreferrer">SIMA 2 ↗</a><a href="https://arxiv.org/abs/2601.02427" target="_blank" rel="noopener noreferrer">NitroGen ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="findings" class="findings section-light" aria-labelledby="findings-title">
+      <div class="shell findings-grid">
+        <div class="findings-lead"><p class="section-label"><span>04</span> CROSS-ROLE FINDINGS</p><h2 id="findings-title">What changes—and<br><em>what still resists abstraction.</em></h2><p>Connections matter when another role can use the output. The receiving system still needs evidence that the exchange improved its own task.</p></div>
+        <div class="finding-list">
+          <article><span>01</span><div><h3>Broader interfaces, persistent specificity</h3><p>Pretraining makes language, vision, code, actions, and tools easier to connect. Controls, rules, engine conventions, state, and player contexts remain setting-specific.</p><div class="finding-citations"><a href="https://arxiv.org/abs/2410.01791" target="_blank" rel="noopener noreferrer">DreamGarden ↗</a><a href="https://arxiv.org/abs/2605.28258" target="_blank" rel="noopener noreferrer">Play2Code ↗</a><a href="https://arxiv.org/abs/2608.12195" target="_blank" rel="noopener noreferrer">IF:CARGO ↗</a></div></div></article>
+          <article><span>02</span><div><h3>Gameplay travels beyond the score</h3><p>Trajectories can train world models, imagined experience can train policies, and play traces can diagnose software. The record must preserve the state, actions, and requirements its next user needs.</p><div class="finding-citations"><a href="https://arxiv.org/abs/2408.14837" target="_blank" rel="noopener noreferrer">GameNGen ↗</a><a href="https://arxiv.org/abs/2509.24527" target="_blank" rel="noopener noreferrer">Dreamer 4 ↗</a><a href="https://arxiv.org/abs/2512.22336" target="_blank" rel="noopener noreferrer">Agent2World ↗</a></div></div></article>
+          <article><span>03</span><div><h3>Evidence belongs at the destination</h3><p>A reusable artifact does not carry a reusable verdict. A player profile, generated design, simulator, or test trace must be validated again through the outcome it is used to produce.</p><div class="finding-citations"><a href="https://arxiv.org/abs/2605.07442" target="_blank" rel="noopener noreferrer">GameGen-Verifier ↗</a><a href="https://arxiv.org/abs/2608.13552" target="_blank" rel="noopener noreferrer">PlayWorld ↗</a><a href="https://arxiv.org/abs/2608.16196" target="_blank" rel="noopener noreferrer">Beyond Asking ↗</a></div></div></article>
+        </div>
+      </div>
+      <div class="shell exchange-strip" aria-label="Demonstrated cross-role exchanges"><span>Interaction traces</span><span>Learned environments</span><span>Specifications &amp; rules</span><span>Execution &amp; test evidence</span><span>Player models &amp; profiles</span></div>
     </section>
 
     <section id="research" class="research section-dark" aria-labelledby="research-title">
       <div class="shell">
-        <div class="section-heading"><div><p class="section-label"><span>02</span> RESEARCH, IN VIEW</p><h2 id="research-title">Many ways to<br><em>change the game.</em></h2></div><p>Six research collections, seen through real projects. Discover the ideas, then explore the work behind them.</p></div>
+        <div class="section-heading"><div><p class="section-label"><span>05</span> PROJECTS, IN VIEW</p><h2 id="research-title">Ideas made<br><em>concrete.</em></h2></div><p>Six roles, seen through public project imagery. Each example links to its original source and is described at the level its evidence supports.</p></div>
         <div class="research-tabs" role="tablist" aria-label="Research collections">
           <button type="button" id="tab-play" role="tab" aria-selected="true" aria-controls="research-panel" data-collection="play"><svg class="icon"><use href="#i-play"/></svg><span>Agents</span><small>01</small></button>
           <button type="button" id="tab-model" role="tab" aria-selected="false" aria-controls="research-panel" tabindex="-1" data-collection="model"><svg class="icon"><use href="#i-model"/></svg><span>Worlds &amp; players</span><small>02</small></button>
@@ -76,7 +127,7 @@
         </div>
         <div id="research-panel" class="research-panel" role="tabpanel" aria-labelledby="tab-play" tabindex="0" data-active="play">
           <figure class="research-media"><img id="research-image" src="assets/gallery/sophy.webp" width="1280" height="720" loading="lazy" alt="Gran Turismo 7 racing scene from an official GT Sophy announcement"><figcaption><span id="media-caption">Gran Turismo 7 / GT Sophy</span><a id="media-source" href="https://www.gran-turismo.com/us/news/00_4957003.html" target="_blank" rel="noopener noreferrer">Original project <svg class="icon small"><use href="#i-north"/></svg></a></figcaption></figure>
-          <div class="research-detail"><div class="detail-meta"><span id="detail-code">01 / AGENTS</span><span><b id="detail-count">80</b> works</span></div><h3 id="detail-title">Learning to act.<br>Learning to cooperate.</h3><p id="detail-description">From specialist policies to language-guided agents, this literature studies how AI perceives a game, chooses actions, and coordinates with other players.</p><div class="detail-topics" id="detail-topics"><span>Generalist policies</span><span>Planning &amp; memory</span><span>Human–AI teamwork</span></div><div class="detail-example"><span class="aside-caption">IN THE IMAGE</span><p id="detail-example">GT Sophy brings learned racing behavior into Gran Turismo 7, connecting research in real-time control with a game people can play.</p></div><a id="collection-link" class="button button-outline" href="#papers" data-browse="play">Explore this collection <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+          <div class="research-detail"><div class="detail-meta"><span id="detail-code">01 / AGENTS</span><span><b id="detail-count">104</b> works</span></div><h3 id="detail-title">Learning to act.<br>Learning to cooperate.</h3><p id="detail-description">From specialist policies to language-guided agents, this literature studies how AI perceives a game, chooses actions, and coordinates with other players.</p><div class="detail-topics" id="detail-topics"><span>Generalist policies</span><span>Planning &amp; memory</span><span>Human–AI teamwork</span></div><div class="detail-example"><span class="aside-caption">IN THE IMAGE</span><p id="detail-example">GT Sophy brings learned racing behavior into Gran Turismo 7, connecting research in real-time control with a game people can play.</p></div><a id="collection-link" class="button button-outline" href="#papers" data-browse="play">Explore this collection <svg class="icon"><use href="#i-arrow"/></svg></a></div>
         </div>
         <div class="research-foot"><p>Illustrations from the cited projects; rights remain with their respective owners.</p><span>← → to navigate collections</span></div>
       </div>
@@ -84,12 +135,12 @@
 
     <section id="papers" class="paper-section section-light" aria-labelledby="papers-title">
       <div class="shell">
-        <div class="section-heading"><div><p class="section-label"><span>03</span> THE READING ROOM</p><h2 id="papers-title">Follow your curiosity.</h2></div><p>Explore the public collection by topic, year, or keyword. Every entry leads to the original paper or project.</p></div>
+        <div class="section-heading"><div><p class="section-label"><span>06</span> THE READING ROOM</p><h2 id="papers-title">Follow your curiosity.</h2></div><p>Search the complete survey bibliography by topic, year, or keyword. Role filters distinguish the core research map from supporting foundations and context.</p></div>
         <div class="library-layout">
-          <aside class="library-sidebar" aria-label="Collection navigation"><span class="sidebar-label">COLLECTIONS</span><div id="collection-filters"><button class="filter-button active" data-filter="" aria-pressed="true"><span>All research</span><b>334</b></button><button class="filter-button" data-filter="play" aria-pressed="false"><span>Game-playing agents</span><b data-count="play">80</b></button><button class="filter-button" data-filter="model" aria-pressed="false"><span>World &amp; player models</span><b data-count="model">105</b></button><button class="filter-button" data-filter="design" aria-pressed="false"><span>Design &amp; content</span><b data-count="design">36</b></button><button class="filter-button" data-filter="build" aria-pressed="false"><span>Development</span><b data-count="build">7</b></button><button class="filter-button" data-filter="runtime" aria-pressed="false"><span>Runtime generation</span><b data-count="runtime">12</b></button><button class="filter-button" data-filter="test" aria-pressed="false"><span>Testing &amp; evaluation</span><b data-count="test">94</b></button></div><div class="sidebar-note"><svg class="icon"><use href="#i-github"/></svg><p>Prefer a reading list?</p><a href="https://github.com/Eurekaleo/awesome-ai-for-games#contents" target="_blank" rel="noopener noreferrer">Open the awesome repo <span>↗</span></a></div></aside>
+          <aside class="library-sidebar" aria-label="Collection navigation"><span class="sidebar-label">COLLECTIONS</span><div id="collection-filters"><button class="filter-button active" data-filter="" aria-pressed="true"><span>All references</span><b>417</b></button><button class="filter-button" data-filter="play" aria-pressed="false"><span>Game-playing agents</span><b data-count="play">104</b></button><button class="filter-button" data-filter="model" aria-pressed="false"><span>World &amp; player models</span><b data-count="model">105</b></button><button class="filter-button" data-filter="design" aria-pressed="false"><span>Design &amp; content</span><b data-count="design">47</b></button><button class="filter-button" data-filter="build" aria-pressed="false"><span>Development</span><b data-count="build">20</b></button><button class="filter-button" data-filter="runtime" aria-pressed="false"><span>Runtime generation</span><b data-count="runtime">56</b></button><button class="filter-button" data-filter="test" aria-pressed="false"><span>Testing &amp; evaluation</span><b data-count="test">60</b></button><button class="filter-button context-filter" data-filter="context" aria-pressed="false"><span>Foundations &amp; context</span><b data-count="context">25</b></button></div><div class="sidebar-note"><svg class="icon"><use href="#i-github"/></svg><p>Prefer a role-indexed reading list?</p><a href="https://github.com/Eurekaleo/awesome-ai-for-games#contents" target="_blank" rel="noopener noreferrer">Open the awesome repo <span>↗</span></a></div></aside>
           <div class="library-main">
             <div class="toolbar" role="search"><label class="search-field"><svg class="icon"><use href="#i-search"/></svg><span class="sr-only">Search papers</span><input id="paper-search" type="search" placeholder="Search a paper, topic, or venue…" autocomplete="off"></label><label class="year-label"><span class="sr-only">Filter by year</span><select id="year-filter"><option value="">All years</option></select></label><select id="role-filter" aria-label="Collection" hidden><option value="">All collections</option></select></div>
-            <div class="results-head"><p id="catalog-status" role="status" aria-live="polite">334 works in the collection</p><div><span>Newest first</span><button id="clear-filters" type="button">Reset filters</button></div></div>
+            <div class="results-head"><p id="catalog-status" role="status" aria-live="polite">417 references in the bibliography</p><div><a class="bib-download" href="data/survey-references.bib" download>Download BibTeX ↓</a><span>Newest first</span><button id="clear-filters" type="button">Reset filters</button></div></div>
             <div id="paper-list" class="paper-list"></div>
             <div id="empty-state" class="empty-state" hidden><svg class="icon"><use href="#i-search"/></svg><h3>No matching papers.</h3><p>Try another title or topic, or reset your filters.</p></div>
             <button id="load-more" class="button load-more" type="button" hidden>Show more papers <span>↓</span></button>
