@@ -48,7 +48,7 @@ const oldReadme = await readFile(readmePath, 'utf8').catch(() => '');
 const featuredTitles = new Set(
   [...oldReadme.matchAll(/^- ⭐ \[([^\]]+)\]\(/gm)].map(([, title]) => title.replaceAll('\\[', '[').replaceAll('\\]', ']')),
 );
-const {papers} = JSON.parse(await readFile(referencesPath, 'utf8'));
+const {papers, sourceCounts} = JSON.parse(await readFile(referencesPath, 'utf8'));
 
 const escapeMarkdown = value => String(value ?? '')
   .replaceAll('\\', '\\\\')
@@ -105,6 +105,7 @@ const lines = [
   '**[Explore the project website →](https://eurekaleo.github.io/awesome-ai-for-games/)**',
   '',
   'The collection accompanies the survey **AI for Games in the Foundation Model Era**. The manuscript PDF is intentionally not distributed in this repository.',
+  `The living index currently combines **${sourceCounts.manuscript} manuscript references** with **${sourceCounts.livingAdditions} later public additions**.`,
   '',
   '> Each entry appears once under its primary research role. Cross-role relationships, visual examples, and searchable filters are available on the project website.',
   '',

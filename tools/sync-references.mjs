@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import {readFile, writeFile} from 'node:fs/promises';
 
+const paperBibPath = new URL('../data/paper-references.bib', import.meta.url);
+const additionsBibPath = new URL('../data/living-additions.bib', import.meta.url);
 const bibPath = new URL('../data/survey-references.bib', import.meta.url);
 const seedPath = new URL('../data/catalog-seed.json', import.meta.url);
 const rolePath = new URL('../data/role-citations.json', import.meta.url);
@@ -99,8 +101,19 @@ function shortAuthors(value){
   return `${surname(names[0])} et al.`;
 }
 
-const source=await readFile(bibPath,'utf8');
+const paperSource=await readFile(paperBibPath,'utf8');
+const additionsSource=await readFile(additionsBibPath,'utf8');
+const source=[
+  '% Generated public bibliography: current manuscript references plus living-catalog additions.',
+  paperSource.trim(),
+  additionsSource.trim(),
+].join('\n\n')+'\n';
+await writeFile(bibPath,source);
 const parsed=parseBibtex(source);
+const sourceCounts={
+  manuscript:parseBibtex(paperSource).length,
+  livingAdditions:parseBibtex(additionsSource).length,
+};
 const {papers:seedPapers}=JSON.parse(await readFile(seedPath,'utf8'));
 const {roles:roleCitations}=JSON.parse(await readFile(rolePath,'utf8'));
 const byTitle=new Map(seedPapers.map(p=>[norm(p.title),p]));
@@ -126,6 +139,6 @@ const papers=parsed.map(({type,key,fields})=>{
 assert(parsed.length>=417,'The public bibliography unexpectedly lost records');
 assert.equal(new Set(papers.map(p=>p.id)).size,papers.length,'Duplicate citation keys');
 const unmatchedSeed=seedPapers.filter(p=>!usedSeed.has(p.id));
-await writeFile(outputPath,JSON.stringify({schemaVersion:'2.0',source:'Survey bibliography',papers},null,2)+'\n');
+await writeFile(outputPath,JSON.stringify({schemaVersion:'2.0',source:'Living project bibliography',sourceCounts,papers},null,2)+'\n');
 const roleCounts=Object.fromEntries(['play','model','design','build','runtime','test','context'].map(role=>[role,papers.filter(p=>p.primaryRole===role).length]));
 console.log(`Wrote ${papers.length} references. Reused metadata for ${usedSeed.size} records; ${unmatchedSeed.length} seed-only records remain outside the bibliography.`,roleCounts);

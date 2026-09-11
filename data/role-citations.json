@@ -1,32 +1,13 @@
 {
   "schemaVersion": "1.0",
   "roles": {
-    "huang2026programmableworld": [
-      "model",
-      "design",
-      "runtime"
-    ],
-    "qiao2026valerant": [
-      "design",
-      "model",
-      "build"
-    ],
-    "truong2026playtrain": [
-      "build",
-      "play",
-      "test"
-    ],
-    "hwang2026marbo": [
-      "play",
-      "model"
-    ],
     "wang2023voyager": [
       "play"
     ],
-    "sima2024": [
+    "magne2026nitrogen": [
       "play"
     ],
-    "magne2026nitrogen": [
+    "sima2024": [
       "play"
     ],
     "shannon1950chess": [
@@ -96,10 +77,10 @@
     "park2025orak": [
       "play"
     ],
-    "wu2023spring": [
+    "hafner2022crafter": [
       "play"
     ],
-    "hafner2022crafter": [
+    "wu2023spring": [
       "play"
     ],
     "zhu2023gitm": [

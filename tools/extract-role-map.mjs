@@ -5,8 +5,12 @@ import {readFile, writeFile} from 'node:fs/promises';
 const sectionsDir=process.argv[2];
 assert(sectionsDir,'Usage: node tools/extract-role-map.mjs /absolute/path/to/sections');
 const roleFiles={
-  play:'04_agents.tex',model:'05_world_models.tex',design:'06_design.tex',
-  build:'06_build.tex',runtime:'07_runtime.tex',test:'07_testing.tex',
+  play:'03_play_and_act.tex',
+  model:'04_model_games_and_players.tex',
+  design:'05_design_games.tex',
+  build:'06_build_and_maintain.tex',
+  runtime:'07_runtime_generation_and_adaptation.tex',
+  test:'08_test_and_evaluate.tex',
 };
 const records={};
 for(const [role,file] of Object.entries(roleFiles)){

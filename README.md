@@ -20,6 +20,7 @@ This repository is the public literature index for research in which AI directly
 **[Explore the project website →](https://eurekaleo.github.io/awesome-ai-for-games/)**
 
 The collection accompanies the survey **AI for Games in the Foundation Model Era**. The manuscript PDF is intentionally not distributed in this repository.
+The living index currently combines **417 manuscript references** with **4 later public additions**.
 
 > Each entry appears once under its primary research role. Cross-role relationships, visual examples, and searchable filters are available on the project website.
 
@@ -296,7 +297,7 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 
 ### 2023
 
-- [Affective Game Computing: A Survey](https://arxiv.org/abs/2309.14104) — *Proceedings of the IEEE, 2023*.
+- [Affective Game Computing: A Survey](https://arxiv.org/abs/2309.14104) — *Proceedings of the IEEE*.
 - [Predicting Player Engagement in Tom Clancy's The Division 2: A Multimodal Approach via Pixels and Gamepad Actions](https://arxiv.org/abs/2310.06136) — *arXiv*.
 - [Transformers Are Sample-Efficient World Models](https://arxiv.org/abs/2209.00588) — *International Conference on Learning Representations*.
 
@@ -332,7 +333,7 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 
 - [From Pixels to Affect: A Study on Games and Player Experience](https://arxiv.org/abs/1907.02288) — *arXiv*.
 - ⭐ [Learning Latent Dynamics for Planning from Pixels](https://proceedings.mlr.press/v97/hafner19a.html) — *Proceedings of the 36th International Conference on Machine Learning*.
-- [The Winning Solution to the IEEE CIG 2017 Game Data Mining Competition](https://arxiv.org/abs/1901.05147) — *Machine Learning and Knowledge Extraction, 1(1), 252-264, 2019*.
+- [The Winning Solution to the IEEE CIG 2017 Game Data Mining Competition](https://arxiv.org/abs/1901.05147) — *Machine Learning and Knowledge Extraction*.
 
 ### 2018
 
@@ -361,7 +362,7 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 
 ### 2013
 
-- [Behavior evolution in Tomb Raider Underworld](https://doi.org/10.1109/cig.2013.6633637) — *2013 IEEE Conference on Computational Inteligence in Games (CIG)*.
+- [Behavior evolution in Tomb Raider Underworld](https://doi.org/10.1109/cig.2013.6633637) — *2013 IEEE Conference on Computational Intelligence in Games (CIG)*.
 - [Player Modeling](https://drops.dagstuhl.de/entities/document/10.4230/DFU.Vol6.12191.45) — *Artificial and Computational Intelligence in Games*.
 
 ### 2012
@@ -563,7 +564,7 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 ### 2023
 
 - [CALYPSO: LLMs as Dungeon Masters' Assistants](https://doi.org/10.1609/aiide.v19i1.27534) — *Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment*.
-- [Game Difficulty Adaptation and Experience Personalization: A Literature Review](https://doi.org/10.1080/10447318.2021.2020008) — *International Journal of Human–Computer Interaction*.
+- [Game Difficulty Adaptation and Experience Personalization: A Literature Review](https://doi.org/10.1080/10447318.2021.2020008) — *International Journal of Human-Computer Interaction*.
 - [Language as Reality: A Co-Creative Storytelling Game Experience in 1001 Nights Using Generative AI](https://arxiv.org/abs/2308.12915) — *Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment*.
 - [Personalized Quest and Dialogue Generation in Role-Playing Games: A Knowledge Graph- and Language Model-based Approach](https://doi.org/10.1145/3544548.3581441) — *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems*.
 
@@ -684,7 +685,6 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [LLM Evaluators Recognize and Favor Their Own Generations](https://proceedings.neurips.cc/paper_files/paper/2024/hash/7f1f0218e45f5414c79c0679633e47bc-Abstract-Conference.html) — *Advances in Neural Information Processing Systems*.
 - [MLLM-as-a-Judge: Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark](https://arxiv.org/abs/2402.04788) — *arXiv*.
 - [Player-Driven Emergence in LLM-Driven Game Narrative](https://arxiv.org/abs/2404.17027) — *2024 IEEE Conference on Games*.
-- [Using Deep Convolutional Neural Networks to Detect Rendered Glitches in Video Games](https://arxiv.org/abs/2406.08231) — *arXiv*.
 
 ### 2023
 
@@ -705,7 +705,7 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 
 ### 2021
 
-- [A Survey of Video Game Testing](https://arxiv.org/abs/2103.06431) — *arXiv*.
+- [A Survey of Video Game Testing](https://doi.org/10.1109/AST52587.2021.00018) — *2021 IEEE/ACM International Conference on Automation of Software Test (AST)*.
 - ⭐ [Automated Video Game Testing Using Synthetic and Humanlike Agents](https://doi.org/10.1109/TG.2019.2947597) — *IEEE Transactions on Games*.
 - [GLIB: Towards Automated Test Oracle for Graphically-Rich Applications](https://arxiv.org/abs/2106.10507) — *arXiv*.
 - [Improving Playtesting Coverage via Curiosity Driven Reinforcement Learning Agents](https://arxiv.org/abs/2103.13798) — *arXiv*.
@@ -715,6 +715,7 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [Augmenting Automated Game Testing with Deep Reinforcement Learning](https://ieee-cog.org/2020/papers/paper_215.pdf) — *2020 IEEE Conference on Games (CoG)*.
 - [Interactive Fiction Games: A Colossal Adventure](https://doi.org/10.1609/aaai.v34i05.6297) — *Proceedings of the AAAI Conference on Artificial Intelligence*.
 - [The NetHack Learning Environment](https://arxiv.org/abs/2006.13760) — *Advances in Neural Information Processing Systems 33*.
+- [Using Deep Convolutional Neural Networks to Detect Rendered Glitches in Video Games](https://doi.org/10.1609/aiide.v16i1.7409) — *Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment*.
 
 ### 2019
 

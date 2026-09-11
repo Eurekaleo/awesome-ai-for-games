@@ -2,13 +2,21 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {FILTER_LABELS, searchPapers, sortPapers, safePaperUrl, escapeHtml} from '../site/catalog.mjs';
 
-const {papers} = JSON.parse(await readFile(new URL('../data/references.json', import.meta.url)));
+const {papers, sourceCounts} = JSON.parse(await readFile(new URL('../data/references.json', import.meta.url)));
+const paperBib = await readFile(new URL('../data/paper-references.bib', import.meta.url), 'utf8');
+const additionsBib = await readFile(new URL('../data/living-additions.bib', import.meta.url), 'utf8');
+const countBibEntries = source => [...source.matchAll(/^@\w+\s*\{/gm)].length;
+const paperReferenceCount = countBibEntries(paperBib);
+const livingAdditionCount = countBibEntries(additionsBib);
 const expectedRoles = {
   play: 'Play & Act', model: 'Model Games & Players', design: 'Design',
   build: 'Build & Maintain', runtime: 'Generate & Adapt at Runtime', test: 'Test & Evaluate',
 };
 assert.deepEqual(Object.fromEntries(Object.entries(FILTER_LABELS).filter(([key]) => key !== 'context')), expectedRoles);
-assert(papers.length >= 417, 'The public collection unexpectedly lost records');
+assert.equal(paperReferenceCount, 417, 'The manuscript bibliography is not synchronized with the current paper');
+assert.equal(livingAdditionCount, 4, 'The living catalog additions changed unexpectedly');
+assert.equal(papers.length, paperReferenceCount + livingAdditionCount, 'The public collection is not the manuscript bibliography plus living additions');
+assert.deepEqual(sourceCounts, {manuscript:paperReferenceCount,livingAdditions:livingAdditionCount});
 assert.equal(new Set(papers.map(p => p.id)).size, papers.length);
 assert(papers.every(p => p.title && p.authors && p.year > 0 && p.url), 'Every reference needs a title, authors, year, and URL');
 assert(papers.every(p => Object.hasOwn(FILTER_LABELS, p.primaryRole)));
@@ -57,7 +65,7 @@ const contextCount = searchPapers(papers, {role:'context'}).length;
 const coreCount = papers.length - contextCount;
 assert(readme.includes(`references-${papers.length}`), 'README reference badge is stale');
 assert(readme.includes(`core%20works-${coreCount}`), 'README core-work badge is stale');
-assert(html.includes(`bibliography of ${papers.length} references`), 'Website description count is stale');
+assert(html.includes(`living bibliography of ${papers.length} references`), 'Website description count is stale');
 assert(html.includes(`id="paper-count">${papers.length}</strong>`), 'Website hero count is stale');
 for (const [role, label] of Object.entries(expectedRoles)) {
   const readmeLabel = label.replaceAll('&', 'and');

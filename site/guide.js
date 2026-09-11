@@ -59,7 +59,7 @@ const collections = {
 
 const roleAtlas = {
   play: {
-    number:'01', label:'PLAY AND ACT', title:'AI that Plays and Acts', image:'sec2.webp',
+    number:'01', label:'PLAY AND ACT', title:'AI that Plays and Acts', image:'sec2.webp', width:2400, height:826,
     alt:'Research directions for AI that plays and acts, including generalist agents, adaptation, teammates, and control hierarchies',
     caption:'Research directions for AI that plays and acts: specialist-to-generalist policies, test-time adaptation, control hierarchies, and NPCs and teammates.',
     description:'AI selects actions, plans, or messages inside a game. Foundation models broaden perception and planning, while the path to native controls remains game-specific.',
@@ -69,7 +69,7 @@ const roleAtlas = {
     citations:[['Voyager','https://arxiv.org/abs/2305.16291'],['SIMA 2','https://arxiv.org/abs/2512.04797'],['NitroGen','https://arxiv.org/abs/2601.02427']],
   },
   model: {
-    number:'02', label:'MODEL GAMES AND PLAYERS', title:'AI that Models Games and Players', image:'sec3.webp',
+    number:'02', label:'MODEL GAMES AND PLAYERS', title:'AI that Models Games and Players', image:'sec3.webp', width:2400, height:767,
     alt:'Research directions for AI that models games and players, including learned simulation, world state, player behavior, and long-horizon interaction',
     caption:'Research directions for modeling games and players: planning, training, and simulation; world-state representation; player behavior modeling; and long-horizon interaction.',
     description:'AI predicts game dynamics, state, trajectories, or player behavior. What a model must preserve depends on whether its consumer is a planner, policy learner, player, or adaptive system.',
@@ -79,7 +79,7 @@ const roleAtlas = {
     citations:[['MuZero','https://arxiv.org/abs/1911.08265'],['GameNGen','https://arxiv.org/abs/2408.14837'],['StatePlay','https://arxiv.org/abs/2607.26754']],
   },
   design: {
-    number:'03', label:'DESIGN', title:'AI that Designs Games', image:'sec4.webp',
+    number:'03', label:'DESIGN', title:'AI that Designs Games', image:'sec4.webp', width:2400, height:465,
     alt:'Research directions for AI that designs games, including content, mechanics, narrative, and co-creation',
     caption:'Research directions for AI that designs games: assets, levels, and worlds; rules and mechanics; and narrative and co-creative design.',
     description:'AI proposes levels, rules, mechanics, story structures, or assets. The central problem is turning an intention into a valid and controllable design, then selecting for the play it should create.',
@@ -89,9 +89,9 @@ const roleAtlas = {
     citations:[['MarioGPT','https://arxiv.org/abs/2302.05981'],['GAVEL','https://arxiv.org/abs/2407.09388'],['DreamGarden','https://arxiv.org/abs/2410.01791']],
   },
   build: {
-    number:'04', label:'BUILD AND MAINTAIN', title:'AI that Builds and Maintains Games', image:'sec5.webp',
+    number:'04', label:'BUILD AND MAINTAIN', title:'AI that Builds and Maintains Games', image:'sec5.webp', width:2400, height:385,
     alt:'Research directions for AI that builds and maintains games, including engine development, tool use, debugging, and maintenance',
-    caption:'Research directions for AI that builds and maintains games: code, scenes, and engine projects; tool-using agents; execution and repair; and maintenance and handoff.',
+    caption:'Research directions for AI that builds and maintains games: code, scenes, and engine projects; tool-using development agents; execution, debugging, and repair; and revision, maintenance, and handoff.',
     description:'AI turns specifications into code, scenes, and project edits. A running game requires coordination across scripts, assets, scene bindings, engine conventions, tests, and later revisions.',
     output:'Code · scenes · project edits', applications:'Engine agents · debugging · repair', claim:'Working software',
     focus:['Code, scenes, and engine projects','Tool-using development agents','Execution, debugging, and repair','Revision, maintenance, and handoff'],
@@ -99,9 +99,9 @@ const roleAtlas = {
     citations:[['GameCraft-Bench','https://arxiv.org/abs/2606.17861'],['Play2Code','https://arxiv.org/abs/2605.28258'],['GameEngineBench','https://arxiv.org/abs/2607.03525']],
   },
   runtime: {
-    number:'05', label:'GENERATE AND ADAPT AT RUNTIME', title:'AI that Generates and Adapts at Runtime', image:'sec6.webp',
+    number:'05', label:'GENERATE AND ADAPT AT RUNTIME', title:'AI that Generates and Adapts at Runtime', image:'sec6.webp', width:2400, height:430,
     alt:'Research directions for AI that generates and adapts at runtime, including content, memory, rules, and personalization',
-    caption:'Research directions for runtime AI: generative content; long-term memory; dynamic rules and mechanics; and personalization.',
+    caption:'Research directions for AI that generates and adapts at runtime: generative content for dialogues, props, and tasks; long-term memory across characters, state agreement, and shared sessions; dynamic rules and mechanics with engine-side validation; and personalization through affect models, difficulty adaptation, and adaptive characters.',
     description:'AI changes a live, player-facing experience through dialogue, quests, content, rules, or personalization. Outputs must arrive in time, agree with state, and create value for the player.',
     output:'Dialogue · quests · live content', applications:'Characters · adaptive narrative', claim:'Consistent content · player response',
     focus:['Generative characters, narrative, and content','Runtime rules, mechanics, and worlds','State consistency and long-term memory','Personalization, adaptation, and deployment'],
@@ -109,9 +109,9 @@ const roleAtlas = {
     citations:[['NarrativeGenie','https://doi.org/10.1609/aiide.v20i1.31868'],['IF:CARGO','https://arxiv.org/abs/2608.12195'],['1001 Nights','https://www.1001nights.ai/']],
   },
   test: {
-    number:'06', label:'TEST AND EVALUATE', title:'AI that Tests and Evaluates Games', image:'sec7.webp',
+    number:'06', label:'TEST AND EVALUATE', title:'AI that Tests and Evaluates Games', image:'sec7.webp', width:2400, height:457,
     alt:'Research directions for AI that tests games, including playtesting, mechanic verification, model judges, and player coverage',
-    caption:'Research directions for game testing: automated playtesting, mechanic verification, model-based judgement, and player coverage.',
+    caption:'Research directions for AI that tests and evaluates games: automated playtesting through exploration objectives, procedural personas, and pixel- or GUI-based agents; mechanic verification with executable oracles and coverage-guided regression selection; human-likeness and player coverage; and model-based judgement with QA benchmarks, agreement metrics, and meta-evaluation.',
     description:'AI explores behavior, produces traces, checks mechanics, or judges quality. Reaching a state, recognizing a fault, and representing the intended players are separate achievements.',
     output:'Traces · verdicts · diagnoses', applications:'Playtesting · verification · judging', claim:'State coverage · verdict accuracy',
     focus:['Automated playtesting','Software and mechanic verification','Model-based judges','Player representativeness and human relevance'],
@@ -129,7 +129,7 @@ function setRoleAtlas(key, focus = false) {
     if(selected&&focus) button.focus();
   });
   const panel=$('#role-panel');panel.dataset.role=key;panel.setAttribute('aria-labelledby','role-tab-'+key);
-  const image=$('#atlas-image');image.src='assets/survey-map/'+d.image;image.alt=d.alt;
+  const image=$('#atlas-image');image.src='assets/survey-map/'+d.image;image.alt=d.alt;image.width=d.width;image.height=d.height;
   $('#atlas-caption').textContent=d.caption;$('#atlas-kicker').textContent=d.number+' / '+d.label;
   $('#atlas-title').textContent=d.title;$('#atlas-description').textContent=d.description;
   $('#atlas-output').textContent=d.output;$('#atlas-applications').textContent=d.applications;$('#atlas-claim').textContent=d.claim;
