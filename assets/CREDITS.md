@@ -1,5 +1,7 @@
 # Visual credits
 
+The project logo is the same original AI-and-game-world mark used by the survey manuscript, keeping the paper, website, and repository under one visual identity.
+
 The opening game-world illustration was generated specifically for this project. It is concept artwork, not a research result or an image of a functioning system.
 
 The seven images in `survey-map/` are web renditions of the project's own survey schematics: the six-role overview and the chapter maps for Play, Model, Design, Build, Runtime, and Test. They are explanatory figures, not screenshots of evaluated systems. The website contains these raster renditions only; it does not contain the paper PDF.

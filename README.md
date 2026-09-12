@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/site-icon.svg" width="92" alt="AI for Games icon"></a>
+  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/project-logo.png" width="112" alt="AI for Games project logo"></a>
   <h1>Awesome AI for Games</h1>
   <p><strong>A curated, browsable collection of research on AI and foundation models for games.</strong></p>
   <p>Play and act · model games and players · design · build and maintain · generate and adapt at runtime · test and evaluate</p>

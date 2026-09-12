@@ -33,7 +33,8 @@ const aiCraftedGameFiles = [
 // manuscript, Git metadata, source credentials, or local review material.
 const files = [
   '.nojekyll', 'index.html', 'site/guide.css', 'site/guide.js', 'site/catalog.mjs',
-  'data/references.json', 'data/survey-references.bib', 'assets/site-icon.svg', 'assets/game-world.webp',
+  'data/references.json', 'data/survey-references.bib',
+  'assets/project-logo.png', 'assets/project-favicon.png', 'assets/game-world.webp',
   'assets/CREDITS.md',
   ...['sec_intro', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6', 'sec7']
     .map(name => `assets/survey-map/${name}.webp`),
