@@ -18,7 +18,7 @@ export class MoonScene {
     this.renderer.shadowMap.enabled = true;
     this.renderer.shadowMap.type = THREE.PCFShadowMap;
     this.renderer.setClearColor(0x000000, 0);
-    this.renderer.domElement.setAttribute('aria-label', '月光花园棋盘：花盆、月光花台、压板与小小园丁');
+    this.renderer.domElement.setAttribute('aria-label', 'Moonlight Garden board with flower boxes, moonlit pedestals, pressure plates, and a small gardener');
     this.renderer.domElement.setAttribute('role', 'img');
     container.appendChild(this.renderer.domElement);
     this.scene.add(new THREE.HemisphereLight(0xcbded2, 0x243a37, 2.8));

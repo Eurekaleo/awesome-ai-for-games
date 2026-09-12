@@ -21,6 +21,13 @@ const gameFiles = [
   'games/little-worlds/vendor/three.core.js',
   'games/little-worlds/vendor/THREE-LICENSE',
 ];
+const aiCraftedGameFiles = [
+  'games/ai-crafted-worlds/index.html',
+  'games/ai-crafted-worlds/assets/game.js',
+  'games/ai-crafted-worlds/assets/standalone.css',
+  ...['lulu-snow-night', 'snow-dragon-rescue', 'snow-fox-survival', 'revised-platform-route']
+    .map(name => `games/ai-crafted-worlds/data/${name}.json`),
+];
 
 // Publish an explicit public-file allowlist. Never copy a parent directory,
 // manuscript, Git metadata, source credentials, or local review material.
@@ -32,9 +39,10 @@ const files = [
     .map(name => `assets/survey-map/${name}.webp`),
   ...['sophy', 'gamengen', 'mariogpt', 'gamecraft', 'nights', 'ea-testing']
     .map(name => `assets/gallery/${name}.webp`),
-  ...['moon-garden', 'aurora-outpost']
+  ...['moon-garden', 'aurora-outpost', 'lulu-snow-night', 'snow-dragon-rescue', 'snow-fox-survival', 'revised-platform-route']
     .map(name => `assets/playable/${name}.webp`),
   ...gameFiles,
+  ...aiCraftedGameFiles,
 ];
 for (const file of files) {
   const info = await stat(path.join(root, file));

@@ -21,6 +21,8 @@
 @media(max-width:900px){.playable-head{grid-template-columns:1fr;gap:24px}.playable-head>p{max-width:650px}.playable-card-body{padding:23px}.playable-grid{gap:16px}}
 @media(max-width:700px){.playable-games{padding:64px 0 58px}.playable-head{margin-bottom:28px}.playable-head h2{font-size:2.7rem}.playable-grid{grid-template-columns:1fr;gap:20px}.playable-card h3{font-size:1.7rem}.play-orbit{width:54px;height:54px}.game-card-foot{align-items:flex-end}.playable-note{justify-content:flex-start;gap:7px 18px;margin-top:23px}}
 
+.playable-card.lulu-game{--game-accent:#aa8bff}.playable-card.lighthouse-game{--game-accent:#58c9ff}.playable-card.garden-watch-game{--game-accent:#ff7b9f}.playable-card.cloud-game{--game-accent:#f5bd52}
+
 /* Keep every role view on the same six-role labels and color system. */
 .research-tabs [data-collection=play]{--role:#72afe0}.research-tabs [data-collection=model]{--role:#89c668}.research-tabs [data-collection=design]{--role:#9692e5}.research-tabs [data-collection=build]{--role:#e48748}.research-tabs [data-collection=runtime]{--role:#46d7d7}.research-tabs [data-collection=test]{--role:#d2ad39}.research-tabs [aria-selected=true],.research-tabs [aria-selected=true] small{color:var(--role)}.research-tabs [aria-selected=true]:after{background:var(--role)}.research-panel[data-active=play]{--role:#72afe0}.research-panel[data-active=model]{--role:#89c668}.research-panel[data-active=design]{--role:#9692e5}.research-panel[data-active=build]{--role:#e48748}.research-panel[data-active=runtime]{--role:#46d7d7}.research-panel[data-active=test]{--role:#d2ad39}.research-panel .detail-meta>span:first-child{color:var(--role)}
 

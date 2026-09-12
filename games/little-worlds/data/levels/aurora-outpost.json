@@ -1,8 +1,8 @@
 [
   {
     "id": "outpost-01",
-    "title": "穿过极光",
-    "hint": "亮起的格子会在本次行动后受到风暴冲击。启动两座信标，再走到右下方出口。",
+    "title": "Through the Aurora",
+    "hint": "Lit cells will be struck after this action. Activate both beacons, then reach the exit in the lower-right corner.",
     "width": 7,
     "height": 5,
     "walls": [
@@ -162,8 +162,8 @@
   },
   {
     "id": "outpost-02",
-    "title": "风暴间隙",
-    "hint": "冲刺跨过中间格，不会拾取其中的电池；必要时原地开盾等待下一轮。",
+    "title": "Between Two Storms",
+    "hint": "A dash skips the middle cell and its battery. When necessary, raise a shield and wait for the next turn.",
     "width": 8,
     "height": 6,
     "walls": [
@@ -381,8 +381,8 @@
   },
   {
     "id": "outpost-03",
-    "title": "最后一次回航",
-    "hint": "能量有限，风暴会轮流封住两条通路。抵达出口时仍要承受本轮攻击。",
+    "title": "The Last Return",
+    "hint": "Energy is limited, and the storm alternates between two routes. You still take this turn's strike when entering the exit.",
     "width": 8,
     "height": 7,
     "walls": [

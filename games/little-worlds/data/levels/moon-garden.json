@@ -1,8 +1,8 @@
 [
   {
     "id": "garden-01",
-    "title": "第一束月光",
-    "hint": "站到花箱后面，把它推上发光底座。走错时可以撤回。",
+    "title": "The First Moonbeam",
+    "hint": "Stand behind a flower box and push it onto a glowing pedestal. You can undo a mistaken move.",
     "width": 7,
     "height": 6,
     "walls": [
@@ -116,8 +116,8 @@
   },
   {
     "id": "garden-02",
-    "title": "月桥初开",
-    "hint": "先让花箱留在压板上，打开栈桥，再把另一只送到对岸。",
+    "title": "The Moon Bridge Opens",
+    "hint": "Leave one flower box on the pressure plate to open the bridge, then guide the other across.",
     "width": 8,
     "height": 7,
     "walls": [
@@ -281,8 +281,8 @@
   },
   {
     "id": "garden-03",
-    "title": "双星同辉",
-    "hint": "两块压板必须同时被花箱压住。门开之后，最后一只花箱才能穿过。",
+    "title": "Two Stars Aligned",
+    "hint": "Both pressure plates must hold flower boxes at the same time. Only then can the last box pass the gate.",
     "width": 9,
     "height": 7,
     "walls": [

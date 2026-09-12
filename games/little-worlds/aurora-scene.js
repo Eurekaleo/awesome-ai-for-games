@@ -5,7 +5,7 @@ export class AuroraScene {
   constructor(container, onCell) {
     this.container = container; this.onCell = onCell;
     this.svg = document.createElementNS(SVG_NS, 'svg'); this.svg.classList.add('tactical-map');
-    this.svg.setAttribute('role', 'img'); this.svg.setAttribute('aria-label', '极光哨站战术地图：方形格网中的机器人、信标、出口和橙色风暴预告');
+    this.svg.setAttribute('role', 'img'); this.svg.setAttribute('aria-label', 'Aurora Outpost tactical map with a robot, beacons, an exit, and orange storm forecasts on a square grid');
     this.svg.setAttribute('viewBox', '0 0 820 680'); this.svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
     this.svg.addEventListener('click', (event) => { const cell = event.target.closest('[data-cell]'); if (cell && this.onCell) this.onCell([Number(cell.dataset.x), Number(cell.dataset.y)]); });
     container.appendChild(this.svg); this.level = null; this.state = null; this.draws = 0; this.lastAction = null; this.effectTimer = null;

@@ -12,22 +12,22 @@ window.addEventListener('unhandledrejection', (event) => errors.push({ time: per
 
 const copy = {
   'moon-garden': {
-    title: '月光花园', number: '01 / SPATIAL LOGIC', symbol: '☽', kicker: 'A QUIET PUZZLE',
-    intro: '欢迎来到月光花园', introCopy: '把花箱推到发光的花台上，<br>让这座夜晚的花园重新绽放。',
-    start: '走进花园', footnote: '不必着急，每一步都可以撤回。',
-    coordinate: 'THE MOON GARDEN / NIGHT WALK', note: '没有时限 · 慢慢想', flavor: '让每一盆花，都走到月光里。',
-    objective: '月光花台', levelKickers: ['THE FIRST GARDEN', 'A BRIDGE IN MOONLIGHT', 'TWO STARS ALIGN'],
-    rules: '<p><strong>推动花箱</strong>：方向键或 WASD 移动；站在花箱旁，向它前进就能推一格。花箱无法拉动，也不能一次推两只。</p><p><strong>打开月桥</strong>：所有压板都被花箱压住时，桥门才会打开。园丁踩上去不会触发。</p><p><strong>让花园绽放</strong>：每座金色花台上都有花箱就完成。按 Z 撤回，按 R 重开。</p>',
-    legend: '<span class="legend-item"><i class="legend-symbol">◎</i>月光花台</span><span class="legend-item"><i class="legend-symbol plate">◇</i>压板</span><span class="legend-item"><i class="legend-symbol">▥</i>月桥</span>',
+    title: 'Moonlight Garden', number: '01 / SPATIAL LOGIC', symbol: '☽', kicker: 'A QUIET PUZZLE',
+    intro: 'Welcome to Moonlight Garden', introCopy: 'Push the flower boxes onto the glowing pedestals,<br>and let the night garden bloom again.',
+    start: 'Enter the garden', footnote: 'Take your time. Every step can be undone.',
+    coordinate: 'THE MOON GARDEN / NIGHT WALK', note: 'No time limit · Think slowly', flavor: 'Bring every flower into the moonlight.',
+    objective: 'Moonlit pedestals', levelKickers: ['THE FIRST GARDEN', 'A BRIDGE IN MOONLIGHT', 'TWO STARS ALIGN'],
+    rules: '<p><strong>Push flower boxes.</strong> Move with the arrow keys or WASD. Walk into a neighboring box to push it one cell. Boxes cannot be pulled, and only one can move at a time.</p><p><strong>Open the moon bridge.</strong> Every pressure plate must hold a flower box before the gate opens. The gardener alone will not trigger it.</p><p><strong>Let the garden bloom.</strong> Place a box on every golden pedestal. Press Z to undo and R to restart.</p>',
+    legend: '<span class="legend-item"><i class="legend-symbol">◎</i>Pedestal</span><span class="legend-item"><i class="legend-symbol plate">◇</i>Pressure plate</span><span class="legend-item"><i class="legend-symbol">▥</i>Moon bridge</span>',
   },
   'aurora-outpost': {
-    title: '极光哨站', number: '02 / TURN-BASED STRATEGY', symbol: '⌁', kicker: 'FIND YOUR WAY HOME',
-    intro: '风暴来临，点亮归途', introCopy: '启动全部信标，再回到出口。<br>橙色条纹标出本次行动后会受袭的格子。',
-    start: '开启任务', footnote: '没有实时倒计时。观察预告，再做决定。',
-    coordinate: 'ARCTIC FIELD / ROUTE PLANNING', note: '行动之后 · 风暴来袭', flavor: '看清下一场风暴，再向前一步。',
-    objective: '信标连接', levelKickers: ['FIRST CONTACT', 'BETWEEN TWO STORMS', 'THE LAST RETURN'],
-    rules: '<p><strong>连接与返回</strong>：方向键或 WASD 移动，抵达信标会自动启动。全部启动后，要活着回到出口。</p><p><strong>读懂预告</strong>：橙色条纹是本次行动后受袭的区域。站在其中会失去 1 点生命。</p><p><strong>调度能量</strong>：Shift ＋方向冲刺两格，耗 2 能量；E 原地开盾，耗 1 能量并挡住本轮伤害；Space 原地等待。电池补充 2 能量，每块只用一次。</p><p>冲刺跳过的中间格不会触发信标、电池或伤害。撞墙或能量不足不会推进回合。按 R 重新开始。</p>',
-    legend: '<span class="legend-item"><i class="legend-symbol">◉</i>信标</span><span class="legend-item"><i class="legend-symbol battery">ϟ</i>电池</span><span class="legend-item"><i class="legend-symbol">⌂</i>出口</span><span class="legend-item"><i class="legend-symbol danger">▨</i>风暴预告</span>',
+    title: 'Aurora Outpost', number: '02 / TURN-BASED STRATEGY', symbol: '⌁', kicker: 'FIND YOUR WAY HOME',
+    intro: 'The storm is coming. Light the way home.', introCopy: 'Activate every beacon, then return to the exit.<br>Orange stripes mark cells the storm will strike after this action.',
+    start: 'Begin the mission', footnote: 'There is no real-time countdown. Read the forecast, then decide.',
+    coordinate: 'ARCTIC FIELD / ROUTE PLANNING', note: 'After each action · The storm advances', flavor: 'Read the next storm before taking another step.',
+    objective: 'Beacon network', levelKickers: ['FIRST CONTACT', 'BETWEEN TWO STORMS', 'THE LAST RETURN'],
+    rules: '<p><strong>Connect and return.</strong> Move with the arrow keys or WASD. Beacons activate when you reach them. After activating all of them, return to the exit alive.</p><p><strong>Read the forecast.</strong> Orange stripes show the cells the storm will strike after this action. Standing there costs one health.</p><p><strong>Manage energy.</strong> Hold Shift and choose a direction to dash two cells for two energy. Press E to spend one energy on a one-turn shield; Space waits. Each battery restores two energy once.</p><p>A dash skips the middle cell without triggering its beacon, battery, or damage. Blocked moves do not advance the turn. Press R to restart.</p>',
+    legend: '<span class="legend-item"><i class="legend-symbol">◉</i>Beacon</span><span class="legend-item"><i class="legend-symbol battery">ϟ</i>Battery</span><span class="legend-item"><i class="legend-symbol">⌂</i>Exit</span><span class="legend-item"><i class="legend-symbol danger">▨</i>Storm forecast</span>',
   },
 };
 
@@ -38,24 +38,24 @@ const audio = new GameAudio();
 
 async function boot() {
   if (!gameId) return;
-  if (!copy[gameId]) throw new Error('找不到这个游戏。请从首页重新选择。');
+  if (!copy[gameId]) throw new Error('This game was not found. Please choose it again from the home page.');
   $('home').hidden = true; $('loading').hidden = false;
   const manifestResponse = await fetch('./data/manifest.json', { cache: 'no-store' });
-  if (!manifestResponse.ok) throw new Error(`游戏清单未就绪（HTTP ${manifestResponse.status}）。请稍后刷新。`);
+  if (!manifestResponse.ok) throw new Error(`The game manifest is unavailable (HTTP ${manifestResponse.status}). Please refresh shortly.`);
   const manifest = await manifestResponse.json();
   const entry = manifest.games?.[gameId];
-  if (!entry) throw new Error('当前清单中没有这个游戏的内核。');
+  if (!entry) throw new Error('The current manifest does not include this game kernel.');
   const requestedRun = params.get('run') || entry.defaultRun;
   const runList = Array.isArray(entry.runs) ? entry.runs : Object.entries(entry.runs || {}).map(([id, value]) => ({ id, ...value }));
   const selected = runList.find((run) => run.id === requestedRun);
-  if (!selected && params.has('run')) throw new Error('找不到指定的实验运行；请移除 run 参数后重试。');
+  if (!selected && params.has('run')) throw new Error('The requested experimental run was not found. Remove the run parameter and try again.');
   const kernelUrl = selected?.kernelUrl || entry.kernelUrl;
-  provenance = { id: requestedRun, kind: selected?.kind || 'unknown', condition: selected?.condition || '未记录', model: selected?.model || '运行记录未提供具体模型标识', kernelUrl, manifestSchema: manifest.schema || 'unknown', ...selected };
+  provenance = { id: requestedRun, kind: selected?.kind || 'unknown', condition: selected?.condition || 'Not recorded', model: selected?.model || 'No model identifier in the run record', kernelUrl, manifestSchema: manifest.schema || 'unknown', ...selected };
   const [module, levelResponse] = await Promise.all([import(kernelUrl), fetch(entry.levelsUrl || `./data/levels/${gameId}.json`, { cache: 'no-store' })]);
-  if (!levelResponse.ok) throw new Error(`关卡加载失败（HTTP ${levelResponse.status}）。`);
+  if (!levelResponse.ok) throw new Error(`The level failed to load (HTTP ${levelResponse.status}).`);
   levels = await levelResponse.json();
-  if (!Array.isArray(levels) || !levels.length) throw new Error('没有可用的关卡。');
-  if (typeof module.createGame !== 'function' || typeof module.stepGame !== 'function') throw new Error('当前内核缺少 createGame / stepGame 接口。');
+  if (!Array.isArray(levels) || !levels.length) throw new Error('No levels are available.');
+  if (typeof module.createGame !== 'function' || typeof module.stepGame !== 'function') throw new Error('The active kernel does not provide the createGame / stepGame interface.');
   kernel = { createGame: module.createGame, stepGame: module.stepGame };
   const queryLevel = params.get('level');
   if (queryLevel) { const index = levels.findIndex((level) => level.id === queryLevel); levelIndex = index >= 0 ? index : Math.max(0, Math.min(levels.length - 1, (Number(queryLevel) || 1) - 1)); }
@@ -68,15 +68,15 @@ async function boot() {
 
 function configure() {
   const info = copy[gameId];
-  document.title = `${info.title} · 小世界`;
+  document.title = `${info.title} · Little Worlds`;
   $('game').classList.toggle('aurora', gameId === 'aurora-outpost');
   $('game-number').textContent = info.number; $('game-title').textContent = info.title;
   $('scene-coordinate').textContent = info.coordinate; $('scene-note').textContent = info.note;
   $('world-flavor').textContent = info.flavor; $('objective-label').textContent = info.objective;
   $('rules-copy').innerHTML = info.rules; $('board-legend').innerHTML = info.legend;
-  if (gameId === 'moon-garden') $('special-controls').innerHTML = '<button id="undo" class="special-button" type="button"><span>↶ 撤回一步</span><span>Z</span></button>';
-  else $('special-controls').innerHTML = '<button id="dash" class="special-button" type="button" aria-pressed="false"><span>↠ 冲刺模式</span><span>Shift ＋方向 · 2ϟ</span></button><button id="shield" class="special-button" type="button"><span>◇ 原地开盾</span><span>E · 1ϟ</span></button><button id="wait" class="special-button" type="button"><span>◷ 等待一轮</span><span>Space</span></button>';
-  const rows = [ ['规则内核', provenance.kind === 'reference' ? '参考实现（用于联调，不是模型生成样本）' : provenance.kind === 'generated' || provenance.kind === 'model-generated' ? 'Codex 生成实现' : `${provenance.kind}（按运行记录标注）`], ['运行 ID', provenance.id], ['实验条件', provenance.condition], ['模型记录', provenance.model], ['规则文件', provenance.kernelUrl] ];
+  if (gameId === 'moon-garden') $('special-controls').innerHTML = '<button id="undo" class="special-button" type="button"><span>↶ Undo one move</span><span>Z</span></button>';
+  else $('special-controls').innerHTML = '<button id="dash" class="special-button" type="button" aria-pressed="false"><span>↠ Dash mode</span><span>Shift + direction · 2ϟ</span></button><button id="shield" class="special-button" type="button"><span>◇ Raise shield</span><span>E · 1ϟ</span></button><button id="wait" class="special-button" type="button"><span>◷ Wait one turn</span><span>Space</span></button>';
+  const rows = [ ['Rules kernel', provenance.kind === 'reference' ? 'Reference implementation for integration testing; not a model-generated sample' : provenance.kind === 'generated' || provenance.kind === 'model-generated' ? 'Codex-generated implementation' : `${provenance.kind} (as recorded)`], ['Run ID', provenance.id], ['Condition', provenance.condition], ['Model record', provenance.model], ['Rules file', provenance.kernelUrl] ];
   const dl = $('provenance'); dl.replaceChildren();
   rows.forEach(([label, value]) => { const dt = document.createElement('dt'); const dd = document.createElement('dd'); dt.textContent = label; dd.textContent = typeof value === 'string' ? value : JSON.stringify(value); dl.append(dt, dd); });
 }
@@ -100,21 +100,21 @@ function updateHUD() {
     const completed = state.level.goals.filter((goal) => state.crates.some((crate) => samePoint(goal, crate))).length;
     $('objective-count').textContent = `${completed} / ${state.level.goals.length}`;
     $('progress-pips').innerHTML = state.level.goals.map((goal) => `<i class="${state.crates.some((crate) => samePoint(goal, crate)) ? 'filled' : ''}"></i>`).join('');
-    $('objective-detail').textContent = completed === state.level.goals.length ? '每一盆花，都找到了自己的月光。' : '把每只花箱推到金色圆环的花台上。';
-    $('resources').innerHTML = `<div class="resource-row"><span>已经走过</span><span class="resource-amount mono">${state.moves} 步</span></div>${state.level.doors.length ? `<div class="resource-row"><span>月桥</span><span class="resource-amount door-state">${state.doorsOpen ? '已打开 ◇' : '等待压板 ▥'}</span></div>` : '<div class="resource-row"><span>撤回</span><span class="resource-amount">随时可以 ↶</span></div>'}`;
+    $('objective-detail').textContent = completed === state.level.goals.length ? 'Every flower box has found its moonlight.' : 'Push each flower box onto a golden-ringed pedestal.';
+    $('resources').innerHTML = `<div class="resource-row"><span>Moves</span><span class="resource-amount mono">${state.moves}</span></div>${state.level.doors.length ? `<div class="resource-row"><span>Moon bridge</span><span class="resource-amount door-state">${state.doorsOpen ? 'Open ◇' : 'Waiting for plates ▥'}</span></div>` : '<div class="resource-row"><span>Undo</span><span class="resource-amount">Available anytime ↶</span></div>'}`;
     $('move-summary').textContent = `${String(state.moves).padStart(2, '0')} STEPS`;
     $('undo').disabled = !active || !state.history.length;
-    $('status-caption').textContent = provenance.kind === 'reference' ? '参考内核联调 · 方向移动 / Z 撤回' : '方向移动 / Z 撤回 / R 重开';
+    $('status-caption').textContent = provenance.kind === 'reference' ? 'Reference-kernel integration · Move / Z undo' : 'Move / Z undo / R restart';
   } else {
     const completed = state.activated.length;
     $('objective-count').textContent = `${completed} / ${state.level.beacons.length}`;
     $('progress-pips').innerHTML = state.level.beacons.map((_, index) => `<i class="${state.activated.includes(index) ? 'filled' : ''}"></i>`).join('');
-    $('objective-detail').textContent = completed === state.level.beacons.length ? '信标全部连接。现在回到出口 ⌂' : '抵达信标启动连接，再活着回到出口。';
-    $('resources').innerHTML = `<div class="resource-row"><span>生命</span><span class="resource-amount">${Array.from({ length: state.level.initialHp }, (_, i) => `<span class="heart ${i < state.hp ? '' : 'empty'}">♥</span>`).join('')}</span></div><div class="resource-row"><span>能量</span><span class="resource-amount"><span class="energy-bars">${Array.from({ length: state.level.maxEnergy }, (_, i) => `<i class="${i < state.energy ? 'full' : ''}"></i>`).join('')}</span><span class="mono">${state.energy}/${state.level.maxEnergy}</span></span></div><div class="resource-row"><span>剩余行动</span><span class="resource-amount mono">${Math.max(0, state.level.maxTurns - state.turn)} / ${state.level.maxTurns}</span></div>`;
+    $('objective-detail').textContent = completed === state.level.beacons.length ? 'All beacons are connected. Return to the exit ⌂' : 'Reach each beacon, activate it, and return to the exit alive.';
+    $('resources').innerHTML = `<div class="resource-row"><span>Health</span><span class="resource-amount">${Array.from({ length: state.level.initialHp }, (_, i) => `<span class="heart ${i < state.hp ? '' : 'empty'}">♥</span>`).join('')}</span></div><div class="resource-row"><span>Energy</span><span class="resource-amount"><span class="energy-bars">${Array.from({ length: state.level.maxEnergy }, (_, i) => `<i class="${i < state.energy ? 'full' : ''}"></i>`).join('')}</span><span class="mono">${state.energy}/${state.level.maxEnergy}</span></span></div><div class="resource-row"><span>Actions left</span><span class="resource-amount mono">${Math.max(0, state.level.maxTurns - state.turn)} / ${state.level.maxTurns}</span></div>`;
     $('move-summary').textContent = `TURN ${String(state.turn).padStart(2, '0')} / ${state.level.maxTurns}`;
     $('dash').disabled = disabled; $('shield').disabled = disabled; $('wait').disabled = disabled;
-    $('dash').setAttribute('aria-pressed', String(dashMode)); $('dash').firstElementChild.textContent = dashMode ? '↠ 选择冲刺方向' : '↠ 冲刺模式';
-    $('status-caption').textContent = provenance.kind === 'reference' ? '参考内核联调 · 每次有效行动后，风暴推进一轮' : dashMode ? '冲刺模式：按方向前进两格，消耗 2 能量' : '每次有效行动后，风暴推进一轮';
+    $('dash').setAttribute('aria-pressed', String(dashMode)); $('dash').firstElementChild.textContent = dashMode ? '↠ Choose dash direction' : '↠ Dash mode';
+    $('status-caption').textContent = provenance.kind === 'reference' ? 'Reference-kernel integration · Storm advances after every valid action' : dashMode ? 'Dash mode: move two cells for two energy' : 'The storm advances after every valid action';
   }
 }
 
@@ -122,7 +122,7 @@ function showIntroduction() {
   const info = copy[gameId]; $('overlay').hidden = false; $('overlay-symbol').textContent = info.symbol;
   $('overlay-kicker').textContent = info.kicker; $('overlay-title').textContent = info.intro; $('overlay-copy').innerHTML = info.introCopy;
   $('overlay-footnote').textContent = info.footnote;
-  $('overlay-facts').innerHTML = gameId === 'moon-garden' ? '<div class="overlay-fact"><strong>↑↓←→</strong>移动与推动</div><div class="overlay-fact"><strong>Z</strong>撤回一步</div>' : '<div class="overlay-fact"><strong>↑↓←→</strong>移动</div><div class="overlay-fact"><strong>Shift</strong>＋方向冲刺</div><div class="overlay-fact"><strong>E</strong>原地开盾</div>';
+  $('overlay-facts').innerHTML = gameId === 'moon-garden' ? '<div class="overlay-fact"><strong>↑↓←→</strong>Move and push</div><div class="overlay-fact"><strong>Z</strong>Undo one move</div>' : '<div class="overlay-fact"><strong>↑↓←→</strong>Move</div><div class="overlay-fact"><strong>Shift</strong>+ direction to dash</div><div class="overlay-fact"><strong>E</strong>Raise a shield</div>';
   setPrimary(info.start, start); $('secondary-action').hidden = true;
 }
 
@@ -140,11 +140,11 @@ function showTerminal() {
   mode = state.won ? 'won' : 'lost'; $('overlay').hidden = false;
   $('overlay-symbol').textContent = state.won ? '✦' : '⌁';
   $('overlay-kicker').textContent = state.won ? gameId === 'moon-garden' ? 'THE GARDEN BLOOMS' : 'SIGNAL RESTORED' : 'CONNECTION LOST';
-  $('overlay-title').textContent = state.won ? gameId === 'moon-garden' ? '今夜，花园绽放' : '归途，已经点亮' : state.hp === 0 ? '风暴淹没了信号' : '返航窗口已经关闭';
-  $('overlay-copy').innerHTML = state.won ? gameId === 'moon-garden' ? '每一盆花都停在了月光里。<br>把这份安静，留给下一座花园。' : '全部信标连接成功。<br>你与这片雪原，重新建立了联系。' : state.hp === 0 ? '生命耗尽，任务暂时中断。<br>下一次，让风暴预告为你指路。' : '行动次数耗尽，仍未完成返航。<br>试试用冲刺节省路程。';
-  $('overlay-facts').innerHTML = gameId === 'moon-garden' ? `<div class="overlay-fact"><strong>${state.moves}</strong>完成步数</div><div class="overlay-fact"><strong>${state.crates.length}</strong>花台绽放</div>` : `<div class="overlay-fact"><strong>${state.turn}</strong>已用回合</div><div class="overlay-fact"><strong>${state.activated.length}/${state.level.beacons.length}</strong>信标连接</div><div class="overlay-fact"><strong>${state.hp}</strong>剩余生命</div>`;
-  $('overlay-footnote').textContent = state.won && levelIndex === levels.length - 1 ? '这一程已经完成。也可以回来，寻找不同的走法。' : state.won ? '下一关，会把熟悉的规则重新组合。' : '失去一次信号，不会失去重新开始的机会。';
-  setPrimary(state.won && levelIndex < levels.length - 1 ? '前往下一关' : '重新开始', () => state.won && levelIndex < levels.length - 1 ? loadLevel(levelIndex + 1) : reset('terminal-button'));
+  $('overlay-title').textContent = state.won ? gameId === 'moon-garden' ? 'The garden blooms tonight' : 'The way home is lit' : state.hp === 0 ? 'The storm swallowed the signal' : 'The return window has closed';
+  $('overlay-copy').innerHTML = state.won ? gameId === 'moon-garden' ? 'Every flower box rests in the moonlight.<br>Carry this quiet into the next garden.' : 'Every beacon is connected.<br>You have found your link to the snowfield again.' : state.hp === 0 ? 'Your health is gone, and the mission pauses here.<br>Next time, let the forecast guide you.' : 'The action limit has passed before your return.<br>Try dashing to save distance.';
+  $('overlay-facts').innerHTML = gameId === 'moon-garden' ? `<div class="overlay-fact"><strong>${state.moves}</strong>Moves</div><div class="overlay-fact"><strong>${state.crates.length}</strong>Flowers placed</div>` : `<div class="overlay-fact"><strong>${state.turn}</strong>Turns used</div><div class="overlay-fact"><strong>${state.activated.length}/${state.level.beacons.length}</strong>Beacons</div><div class="overlay-fact"><strong>${state.hp}</strong>Health</div>`;
+  $('overlay-footnote').textContent = state.won && levelIndex === levels.length - 1 ? 'The journey is complete. You can always return to find another route.' : state.won ? 'The next level recombines the rules you now know.' : 'Losing one signal never removes the chance to begin again.';
+  setPrimary(state.won && levelIndex < levels.length - 1 ? 'Continue to the next level' : 'Restart', () => state.won && levelIndex < levels.length - 1 ? loadLevel(levelIndex + 1) : reset('terminal-button'));
   $('secondary-action').hidden = gameId !== 'moon-garden' || !state.history.length;
   $('secondary-action').onclick = () => dispatch({ type: 'undo' }, 'terminal-button');
 }
@@ -159,32 +159,32 @@ function dispatch(action, source) {
   const previous = clone(state);
   try {
     const result = kernel.stepGame(state, clone(action));
-    if (!result || typeof result !== 'object') throw new Error('规则内核没有返回可显示的状态。');
+    if (!result || typeof result !== 'object') throw new Error('The rules kernel did not return a displayable state.');
     state = result;
     const accepted = canonical(previous) !== canonical(state);
     inputLog.push({ atMs: performance.now() - sessionStart, source, action: clone(action), accepted });
     stateLog.push({ atMs: performance.now() - sessionStart, inputIndex: inputLog.length - 1, state: clone(state) });
     scene.update(state, previous, action);
-    if (action.type === 'reset') { dashMode = false; active = true; mode = 'playing'; hideOverlay(); audio.play('reset'); toast('重新出发'); }
-    else if (!accepted) { audio.play('blocked'); toast(action.type === 'undo' ? '已经在最初的位置' : state.won || state.lost ? '本关已经结束' : gameId === 'moon-garden' ? '前路受阻，试着换个方向' : '这一步不可执行：方向受阻或能量不足'); }
+    if (action.type === 'reset') { dashMode = false; active = true; mode = 'playing'; hideOverlay(); audio.play('reset'); toast('Starting again'); }
+    else if (!accepted) { audio.play('blocked'); toast(action.type === 'undo' ? 'You are already at the first move' : state.won || state.lost ? 'This level has ended' : gameId === 'moon-garden' ? 'That way is blocked—try another direction' : 'That action is blocked or needs more energy'); }
     else if (gameId === 'moon-garden') {
-      if (action.type === 'undo') { hideOverlay(); mode = 'playing'; audio.play('undo'); toast('回到上一步'); }
-      else if (!previous.doorsOpen && state.doorsOpen) { audio.play('beacon'); toast('压板齐备，月桥打开了'); }
+      if (action.type === 'undo') { hideOverlay(); mode = 'playing'; audio.play('undo'); toast('Returned to the previous move'); }
+      else if (!previous.doorsOpen && state.doorsOpen) { audio.play('beacon'); toast('Every plate is held—the moon bridge is open'); }
       else if (canonical(previous.crates) !== canonical(state.crates)) audio.play('push');
       else audio.play('move');
     } else if (accepted) {
       const notes = [];
-      if (state.activated.length > previous.activated.length) notes.push('信标已连接');
-      if (state.collected.length > previous.collected.length) notes.push('电池已收集');
-      if (state.hp < previous.hp) notes.push('风暴命中，生命 −1');
-      if (action.type === 'shield') notes.push('护盾保护本轮行动');
+      if (state.activated.length > previous.activated.length) notes.push('Beacon connected');
+      if (state.collected.length > previous.collected.length) notes.push('Battery collected');
+      if (state.hp < previous.hp) notes.push('Storm hit: health −1');
+      if (action.type === 'shield') notes.push('Shield protected this turn');
       if (notes.length) toast(notes.join(' · '), state.hp < previous.hp);
       audio.play(state.hp < previous.hp ? 'damage' : state.activated.length > previous.activated.length ? 'beacon' : state.collected.length > previous.collected.length ? 'battery' : ['dash', 'shield'].includes(action.type) ? action.type : 'move');
     }
     updateHUD();
     if ((state.won || state.lost) && !(previous.won || previous.lost)) { audio.play(state.won ? 'win' : 'loss'); showTerminal(); }
     else if (!state.won && !state.lost) mode = 'playing';
-  } catch (error) { errors.push({ time: performance.now(), action: clone(action), message: String(error) }); toast('规则执行遇到错误，已保留操作记录。', true); console.error(error); }
+  } catch (error) { errors.push({ time: performance.now(), action: clone(action), message: String(error) }); toast('The rules engine encountered an error; the action was retained in the log.', true); console.error(error); }
 }
 
 function direction(dx, dy, source, dash = false) { dispatch({ type: gameId === 'aurora-outpost' && (dash || dashMode) ? 'dash' : 'move', dx, dy }, source); }
@@ -194,9 +194,9 @@ function clickCell(point) {
   const dx = point[0] - state.player[0], dy = point[1] - state.player[1];
   if (Math.abs(dx) + Math.abs(dy) === 1) direction(dx, dy, 'map-click');
   else if (dashMode && (Math.abs(dx) === 2 && dy === 0 || Math.abs(dy) === 2 && dx === 0)) direction(Math.sign(dx), Math.sign(dy), 'map-click', true);
-  else toast('点击相邻格移动；远行时可使用方向键');
+  else toast('Click a neighboring cell to move; use the direction keys for longer routes');
 }
-function updateSoundButton() { $('mute-label').textContent = audio.enabled ? '音效开启' : '音效关闭'; $('mute').setAttribute('aria-label', audio.enabled ? '关闭音效' : '开启音效'); }
+function updateSoundButton() { $('mute-label').textContent = audio.enabled ? 'Sound on' : 'Sound off'; $('mute').setAttribute('aria-label', audio.enabled ? 'Disable sound' : 'Enable sound'); }
 
 function wireEvents() {
   $('scene').tabIndex = 0;
@@ -211,7 +211,7 @@ function wireEvents() {
   $('level-prev').addEventListener('click', () => loadLevel(Math.max(0, levelIndex - 1)));
   $('level-next').addEventListener('click', () => loadLevel(Math.min(levels.length - 1, levelIndex + 1)));
   $('undo')?.addEventListener('click', () => dispatch({ type: 'undo' }, 'undo-button'));
-  $('dash')?.addEventListener('click', () => { dashMode = !dashMode; updateHUD(); if (dashMode) toast('冲刺模式：按方向前进两格'); });
+  $('dash')?.addEventListener('click', () => { dashMode = !dashMode; updateHUD(); if (dashMode) toast('Dash mode: choose a direction to move two cells'); });
   $('shield')?.addEventListener('click', () => dispatch({ type: 'shield' }, 'shield-button'));
   $('wait')?.addEventListener('click', () => dispatch({ type: 'wait' }, 'wait-button'));
   $('export-run').addEventListener('click', () => { const blob = new Blob([JSON.stringify({ ...exportCurrent(), previousSessions: sessions }, null, 2)], { type: 'application/json' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = `${gameId}-${levels[levelIndex].id}-playlog.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); });
