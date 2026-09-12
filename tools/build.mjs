@@ -8,6 +8,7 @@ const out = path.join(root, 'dist');
 const gameFiles = [
   'games/little-worlds/index.html',
   'games/little-worlds/styles.css',
+  'games/little-worlds/responsive.css',
   'games/little-worlds/app.js',
   'games/little-worlds/audio.js',
   'games/little-worlds/moon-scene.js',
@@ -25,6 +26,7 @@ const aiCraftedGameFiles = [
   'games/ai-crafted-worlds/index.html',
   'games/ai-crafted-worlds/assets/game.js',
   'games/ai-crafted-worlds/assets/standalone.css',
+  'games/ai-crafted-worlds/assets/responsive.css',
   ...['lulu-snow-night', 'snow-dragon-rescue', 'snow-fox-survival', 'revised-platform-route']
     .map(name => `games/ai-crafted-worlds/data/${name}.json`),
 ];
