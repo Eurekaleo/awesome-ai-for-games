@@ -284,9 +284,10 @@ for (const collection of collections) {
   for (const paper of entries) {
     if (paper.year !== currentYear) {
       currentYear = paper.year;
-      lines.push('', `### ${currentYear} · ${perYear.get(currentYear)} works`, '');
+      const yearCount = perYear.get(currentYear);
+      lines.push('', `### ${currentYear} · ${yearCount} ${yearCount === 1 ? 'work' : 'works'}`, '');
     }
-    lines.push(`- [${escapeMarkdown(paper.title)}](${paper.url}) · ${venueBadge(paper)}`);
+    lines.push(`- [${escapeMarkdown(paper.title)}](${paper.url})&nbsp;${venueBadge(paper)}`);
   }
 }
 
