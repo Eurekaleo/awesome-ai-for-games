@@ -5,8 +5,8 @@
   <p>Play and act · model games and players · design · build and maintain · generate and adapt at runtime · test and evaluate</p>
 
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
-  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-421-168f91?style=flat-square" alt="421 references"></a>
-  <img src="https://img.shields.io/badge/core%20works-396-c78b1e?style=flat-square" alt="396 core works">
+  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-439-168f91?style=flat-square" alt="439 references"></a>
+  <img src="https://img.shields.io/badge/core%20works-414-c78b1e?style=flat-square" alt="414 core works">
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/project-website-6f63d9?style=flat-square" alt="Project website"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-475569?style=flat-square" alt="MIT license"></a>
 </div>
@@ -20,18 +20,24 @@ This repository is the public literature index for research in which AI directly
 **[Explore the project website →](https://eurekaleo.github.io/awesome-ai-for-games/)**
 
 The collection accompanies the survey **AI for Games in the Foundation Model Era**. The manuscript PDF is intentionally not distributed in this repository.
-The living index currently combines **417 manuscript references** with **4 later public additions**.
+The living index currently combines **436 manuscript references** with **3 additional public works not in the manuscript**.
 
 > Each entry appears once under its primary research role. Cross-role relationships, visual examples, and searchable filters are available on the project website.
 
+## Survey lens
+
+Across all six roles, the survey asks what the game or workflow supplies versus what AI contributes; which capabilities transfer versus which artifacts are merely reused; and what the evaluation actually establishes at the point where an output is used.
+
+The synthesis distinguishes visual quality from mechanics and persistent state in learned worlds, a new map from a new game in transfer studies, and demonstrated cross-role exchanges from proposed end-to-end workflows. [Explore the figures and evidence guide →](https://eurekaleo.github.io/awesome-ai-for-games/#map)
+
 ## Contents
 
-- [Play and Act](#play-and-act) (105)
-- [Model Games and Players](#model-games-and-players) (106)
-- [Design](#design) (48)
-- [Build and Maintain](#build-and-maintain) (21)
+- [Play and Act](#play-and-act) (116)
+- [Model Games and Players](#model-games-and-players) (109)
+- [Design](#design) (53)
+- [Build and Maintain](#build-and-maintain) (19)
 - [Generate and Adapt at Runtime](#generate-and-adapt-at-runtime) (56)
-- [Test and Evaluate](#test-and-evaluate) (60)
+- [Test and Evaluate](#test-and-evaluate) (61)
 - [Foundations and Context](#foundations-and-context) (25)
 - [Contributing](#contributing)
 
@@ -39,15 +45,15 @@ The living index currently combines **417 manuscript references** with **4 later
 
 | Collection | Focus | Works |
 | --- | --- | ---: |
-| **[Play and Act](#play-and-act)** | Policies, planners, generalist agents, embodied control, cooperation, and situated action. | 105 |
-| **[Model Games and Players](#model-games-and-players)** | World models, learned simulators, state representations, dynamics prediction, and player modeling. | 106 |
-| **[Design](#design)** | Assets, levels, worlds, rules, mechanics, narratives, procedural generation, and co-creative tools. | 48 |
-| **[Build and Maintain](#build-and-maintain)** | Code, scenes, engine projects, development agents, debugging, repair, revision, and maintenance. | 21 |
+| **[Play and Act](#play-and-act)** | Policies, planners, generalist agents, embodied control, cooperation, and situated action. | 116 |
+| **[Model Games and Players](#model-games-and-players)** | World models, learned simulators, state representations, dynamics prediction, and player modeling. | 109 |
+| **[Design](#design)** | Assets, levels, worlds, rules, mechanics, narratives, procedural generation, and co-creative tools. | 53 |
+| **[Build and Maintain](#build-and-maintain)** | Code, scenes, engine projects, development agents, debugging, repair, revision, and maintenance. | 19 |
 | **[Generate and Adapt at Runtime](#generate-and-adapt-at-runtime)** | Characters, dialogue, quests, narratives, personalization, mechanics, and content generated during play. | 56 |
-| **[Test and Evaluate](#test-and-evaluate)** | Automated playtesting, verification, model judges, behavioral coverage, and player-grounded evidence. | 60 |
+| **[Test and Evaluate](#test-and-evaluate)** | Automated playtesting, verification, model judges, behavioral coverage, and player-grounded evidence. | 61 |
 | **[Foundations and Context](#foundations-and-context)** | Foundational methods, historical context, adjacent surveys, and supporting technical references. | 25 |
 
-The six core roles contain **396 works**; **25 supporting references** are listed separately as foundations and context. Entries are ordered newest first. ⭐ marks a foundational or widely used reference selected in the catalog.
+The six core roles contain **414 works**; **25 supporting references** are listed separately as foundations and context. Entries are ordered newest first. ⭐ marks a foundational or widely used reference selected in the catalog.
 
 ## Play and Act
 
@@ -57,6 +63,7 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 
 - [A Survey on Large Language Model-Based Game Agents](https://arxiv.org/abs/2404.02039) — *ACM Computing Surveys*.
 - [Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond](https://arxiv.org/abs/2604.22748) — *arXiv*.
+- [AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents](https://arxiv.org/abs/2607.02255v1) — *arXiv*.
 - [AI-Native Games: A Survey and Roadmap](https://arxiv.org/abs/2607.00527) — *arXiv*.
 - ⭐ [CASCADE: A Cascading Architecture for Social Coordination with Controllable Emergence at Low Cost](https://arxiv.org/abs/2604.03091) — *Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems*.
 - [EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents](https://arxiv.org/abs/2601.16690) — *arXiv*.
@@ -66,6 +73,8 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [NitroGen: An Open Foundation Model for Generalist Gaming Agents](https://arxiv.org/abs/2601.02427) — *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*.
 - ⭐ [One Policy, Infinite NPCs: Persona-Traceable Shared RL Policies for Scalable Game Agents](https://arxiv.org/abs/2605.23652) — *arXiv*.
 - [Orak: A Foundational Benchmark for Training and Evaluating LLM Agents on Diverse Video Games](https://arxiv.org/abs/2506.03610) — *International Conference on Learning Representations*.
+- [PUBG: BATTLEGROUNDS Patch Notes-Update 42.1](https://www.pubg.com/en/news/10179) — *Official patch notes*.
+- [Q&A: How KRAFTON Built PUBG Ally, a Co-Playable Character Powered by NVIDIA ACE](https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace/) — *NVIDIA Technical Blog*.
 - [S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?](https://arxiv.org/abs/2608.31100v1) — *arXiv*.
 - [Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse](https://arxiv.org/abs/2605.09965) — *arXiv*.
 - [Twin: Playing an Unknown Game with a Test-Time Digital Twin](https://arxiv.org/abs/2608.14490) — *arXiv*.
@@ -83,14 +92,18 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play Visual Games with Keyboards and Mouse](https://aclanthology.org/2025.findings-acl.920/) — *Findings of the Association for Computational Linguistics: ACL 2025*.
 - [Mastering Diverse Control Tasks through World Models](https://www.nature.com/articles/s41586-025-08744-2) — *Nature*.
 - [MineDreamer: Learning to Follow Instructions via Chain-of-Imagination for Simulated-World Control](https://arxiv.org/abs/2403.12037v2) — *2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)*.
+- [Pixels to Play: A Foundation Model for 3D Gameplay](https://arxiv.org/abs/2508.14295v1) — *2025 IEEE Conference on Games (CoG)*.
 - [REGENT: A Retrieval-Augmented Generalist Agent That Can Act In-Context in New Environments](https://openreview.net/forum?id=dKfzQ8eL89) — *International Conference on Learning Representations*.
 - [ROCKET-1: Mastering Open-World Interaction with Visual-Temporal Context Prompting](https://arxiv.org/abs/2410.17856) — *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*.
 - [SIMA 2: A Generalist Embodied Agent for Virtual Worlds](https://arxiv.org/abs/2512.04797) — *arXiv*.
+- [Training Agents Inside of Scalable World Models](https://arxiv.org/abs/2509.24527) — *arXiv*.
+- [Ubisoft Reveals Teammates-An AI Experiment to Change the Game](https://news.ubisoft.com/en-us/article/3mWlITIuWuu0MoVuR6o8ps/ubisoft-reveals-teammates-an-ai-experiment-to-change-the-game) — *Ubisoft News*.
 - [VideoGameBench: Can Vision-Language Models Complete Popular Video Games?](https://arxiv.org/abs/2505.18134) — *arXiv*.
 
 ### 2024
 
 - [A Survey on Game Playing Agents and Large Models: Methods, Applications, and Challenges](https://arxiv.org/abs/2403.10249) — *arXiv*.
+- [Collaborative Quest Completion with LLM-Driven Non-Player Characters in Minecraft](https://arxiv.org/abs/2407.03460) — *arXiv*.
 - [Large Language Models and Games: A Survey and Roadmap](https://arxiv.org/abs/2402.18659) — *IEEE Transactions on Games*.
 - [Large Language Models and Video Games: A Preliminary Scoping Review](https://doi.org/10.1145/3640794.3665582) — *Proceedings of the 6th ACM Conference on Conversational User Interfaces*.
 - [MindAgent: Emergent Gaming Interaction](https://aclanthology.org/2024.findings-naacl.200/) — *Findings of the Association for Computational Linguistics: NAACL 2024*.
@@ -142,7 +155,9 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 
 - ⭐ [Agent57: Outperforming the Atari Human Benchmark](https://proceedings.mlr.press/v119/badia20a.html) — *Proceedings of the 37th International Conference on Machine Learning*.
 - [Combining Deep Reinforcement Learning and Search for Imperfect-Information Games](https://arxiv.org/abs/2007.13544) — *arXiv*.
+- ⭐ [Dream to Control: Learning Behaviors by Latent Imagination](https://openreview.net/forum?id=S1lOTC4tDS) — *International Conference on Learning Representations*.
 - [Leveraging Procedural Generation to Benchmark Reinforcement Learning](https://proceedings.mlr.press/v119/cobbe20a.html) — *Proceedings of the 37th International Conference on Machine Learning*.
+- ⭐ [Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model](https://doi.org/10.1038/s41586-020-03051-4) — *Nature*.
 - [Other-Play for Zero-Shot Coordination](https://proceedings.mlr.press/v119/hu20a.html) — *Proceedings of the 37th International Conference on Machine Learning*.
 - [Stabilizing Transformers for Reinforcement Learning](https://proceedings.mlr.press/v119/parisotto20a.html) — *Proceedings of the 37th International Conference on Machine Learning*.
 - [The Hanabi Challenge: A New Frontier for AI Research](https://doi.org/10.1016/j.artint.2019.103216) — *Artificial Intelligence*.
@@ -163,6 +178,7 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 
 - [A General Reinforcement Learning Algorithm That Masters Chess, Shogi, and Go through Self-Play](https://doi.org/10.1126/science.aar6404) — *Science*.
 - [Artificial Intelligence and Games](https://doi.org/10.1007/978-3-319-63519-4) — *Springer*.
+- [Generalization and Regularization in DQN](https://arxiv.org/abs/1810.00123) — *arXiv*.
 - [Machine Theory of Mind](https://arxiv.org/abs/1802.07740) — *arXiv*.
 - [QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning](https://proceedings.mlr.press/v80/rashid18a.html) — *Proceedings of the 35th International Conference on Machine Learning*.
 
@@ -171,6 +187,7 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [A Unified Game-Theoretic Approach to Multiagent Reinforcement Learning](https://arxiv.org/abs/1711.00832) — *arXiv*.
 - [Autonomous Agents Modelling Other Agents: A Comprehensive Survey and Open Problems](https://arxiv.org/abs/1709.08071) — *arXiv*.
 - [Deal or No Deal? End-to-End Learning for Negotiation Dialogues](https://arxiv.org/abs/1706.05125) — *arXiv*.
+- ⭐ [Imagination-Augmented Agents for Deep Reinforcement Learning](https://proceedings.neurips.cc/paper/2017/hash/9e82757e9a1c12cb710ad680db11f6f1-Abstract.html) — *Advances in Neural Information Processing Systems*.
 - [Learning with Opponent-Learning Awareness](https://arxiv.org/abs/1709.04326) — *arXiv*.
 - ⭐ [Mastering the Game of Go without Human Knowledge](https://doi.org/10.1038/nature24270) — *Nature*.
 - [Value-Decomposition Networks For Cooperative Multi-Agent Learning](https://arxiv.org/abs/1706.05296) — *arXiv*.
@@ -226,33 +243,42 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 
 - ⭐ [ActWorld: From Explorable to Interactive World Model via Action-Aware Memory](https://arxiv.org/abs/2606.17730) — *arXiv*.
 - [Advancing Open-Source World Models](https://arxiv.org/abs/2601.20540) — *arXiv*.
+- [Alaya-EVOKE: From Linear-Scaling Supervision to Endless World](https://arxiv.org/abs/2608.13546v2) — *arXiv*.
+- [AlayaWorld: Interactive Long-Horizon World Modeling-Full Technical Report (v1.1)](https://arxiv.org/abs/2608.13492v1) — *arXiv*.
 - [BadWorld: Adversarial Attacks on World Models](https://arxiv.org/abs/2606.16519) — *arXiv*.
 - [Beyond Asking: A Pipeline for Personalized Game Generation That Reads Players from Behavior](https://arxiv.org/abs/2608.16196) — *arXiv*.
 - [Beyond Pixel Histories: World Models with Persistent 3D State](https://arxiv.org/abs/2603.03482) — *International Conference on Machine Learning*.
 - [Chessformer: A Unified Architecture for Chess Modeling](https://proceedings.iclr.cc/paper_files/paper/2026/hash/3d167db04a90885ad5208fe8b273668b-Abstract-Conference.html) — *International Conference on Learning Representations*.
 - [Code World Models for General Game Playing](https://arxiv.org/abs/2510.04542) — *International Conference on Learning Representations*.
 - [Do Vision Language Models Understand Human Engagement in Games?](https://arxiv.org/abs/2603.18480) — *arXiv*.
+- [DreamX-World 1.0: A General-Purpose Interactive World Model](https://arxiv.org/abs/2606.16993) — *arXiv*.
 - [ForgeWM: Progressive Causal Training for Few-Step Action-Conditioned Video World Models](https://arxiv.org/abs/2608.14022) — *arXiv*.
-- [From Pixels to States: Rethinking Interactive World Models as Game Engines](https://arxiv.org/abs/2607.14076) — *arXiv*.
+- [From Pixels to States: Rethinking Interactive World Models as Game Engines](https://arxiv.org/abs/2607.14076v1) — *arXiv*.
 - ⭐ [Game2World Engine: Unlocking In-the-Wild Gameplay Videos for World Model Training](https://arxiv.org/abs/2608.24680) — *arXiv*.
+- [Generative World Renderer](https://arxiv.org/abs/2604.02329v1) — *arXiv*.
+- [Generative World Renderer at the Speed of Play](https://arxiv.org/abs/2607.18703v1) — *arXiv*.
 - [H3-World: Turning Language Understanding into World Control](https://arxiv.org/abs/2609.01560v1) — *arXiv*.
 - [Incantation: Natural Language as the Action Interface for Multi-Entity Video World Models](https://arxiv.org/abs/2605.18601) — *arXiv*.
 - ⭐ [Learning to Imitate with Less: Efficient Individual Behavior Modeling in Chess](https://openreview.net/forum?id=iw4kjcw319) — *Transactions on Machine Learning Research*.
 - [Marionette: Predicting World States, Rendering Geometry, Painting Appearance](https://arxiv.org/abs/2608.14530) — *arXiv*.
+- [MASS: Multiplayer World Models with Authoritative Shared State](https://arxiv.org/abs/2608.06257v2) — *arXiv*.
 - [Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory](https://arxiv.org/abs/2604.08995) — *arXiv*.
 - [MeepleLM: A Virtual Playtester Simulating Diverse Subjective Experiences](https://arxiv.org/abs/2601.07251) — *arXiv*.
 - [minWM: A Full-Stack Open-Source Framework for Real-Time Interactive Video World Models](https://arxiv.org/abs/2605.30263) — *arXiv*.
 - [MultiGen: Level-Design for Editable Multiplayer Worlds in Diffusion Game Engines](https://arxiv.org/abs/2603.06679) — *arXiv*.
 - [Multiplayer Interactive World Models with Representation Autoencoders](https://arxiv.org/abs/2607.05352) — *arXiv*.
-- [Programmable World Model](https://arxiv.org/abs/2609.10540) — *arXiv*.
+- [Programmable World Model](https://arxiv.org/abs/2609.10540v1) — *arXiv*.
 - [ReactiveGWM: Steering NPC in Reactive Game World Models](https://arxiv.org/abs/2605.15256) — *arXiv*.
 - ⭐ [ReWorld: An Interactive World Model with Long-Horizon Memory](https://arxiv.org/abs/2608.23565) — *arXiv*.
 - [SCOPE: Simulating Cross-Game Operations in Playable Environments for FPS World Models](https://arxiv.org/abs/2605.23345) — *arXiv*.
+- [ShadowDancer: Teaching Video World Models Any Action by Learning Unified Dynamics Representations from a Video and Its Shadow](https://arxiv.org/abs/2607.28362) — *arXiv*.
 - [Solaris: Building a Multiplayer Video World Model in Minecraft](https://arxiv.org/abs/2602.22208) — *arXiv*.
 - [StatePlay: State-Aware Game World Models for Mechanics-Consistent Generation](https://arxiv.org/abs/2607.26754) — *arXiv*.
 - [Towards Interactive Video World Modeling: Frontiers, Challenges, Benchmarks, and Future Trends](https://arxiv.org/abs/2606.01164) — *arXiv*.
+- [WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG](https://arxiv.org/abs/2603.23497) — *arXiv*.
 - [WorldCam: Interactive Autoregressive 3D Gaming Worlds with Camera Pose as a Unifying Geometric Representation](https://arxiv.org/abs/2603.16871) — *arXiv*.
 - [WorldMind: Decoupled Game World Model for State-Aware NPC Behavior](https://arxiv.org/abs/2608.21439) — *arXiv*.
+- [WorldRover: A Scalable Synthetic Video Data Engine for World Exploration with Rich Annotations](https://arxiv.org/abs/2608.15659v2) — *arXiv*.
 
 ### 2025
 
@@ -260,7 +286,6 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [Beyond Playtesting: A Generative Multi-Agent Simulation System for Massively Multiplayer Online Games](https://arxiv.org/abs/2512.02358) — *arXiv*.
 - [Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval](https://arxiv.org/abs/2506.03141) — *arXiv*.
 - [Diffusion Models Are Real-Time Game Engines](https://arxiv.org/abs/2408.14837) — *International Conference on Learning Representations*.
-- [Evaluating Language Models' Evaluations of Games](https://arxiv.org/abs/2510.10930v3) — *arXiv*.
 - [Frame Context Packing and Drift Prevention in Next-Frame-Prediction Video Diffusion Models](https://arxiv.org/abs/2504.12626) — *arXiv*.
 - [GameFactory: Creating New Games with Generative Interactive Videos](https://arxiv.org/abs/2501.08325) — *Proceedings of the IEEE/CVF International Conference on Computer Vision*.
 - [GameGen-X: Interactive Open-World Game Video Generation](https://arxiv.org/abs/2411.00769) — *International Conference on Learning Representations*.
@@ -273,11 +298,10 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [Mixture of Contexts for Long Video Generation](https://arxiv.org/abs/2508.21058) — *arXiv*.
 - [Model as a Game: On Numerical and Spatial Consistency for Generative Games](https://arxiv.org/abs/2503.21172) — *arXiv*.
 - [Self Forcing: Bridging the Train-Test Gap in Autoregressive Video Diffusion](https://arxiv.org/abs/2506.08009) — *arXiv*.
-- [Training Agents Inside of Scalable World Models](https://arxiv.org/abs/2509.24527) — *arXiv*.
 - [VMem: Consistent Interactive Video Scene Generation with Surfel-Indexed View Memory](https://arxiv.org/abs/2506.18903) — *arXiv*.
 - [World and Human Action Models towards Gameplay Ideation](https://www.nature.com/articles/s41586-025-08600-3) — *Nature*.
 - [WorldMem: Long-Term Consistent World Simulation with Memory](https://arxiv.org/abs/2504.12369) — *arXiv*.
-- [Zero-Shot Reasoning: Personalized Content Generation Without the Cold Start Problem](https://doi.org/10.1109/TG.2024.3421590) — *IEEE Transactions on Games*.
+- [Yume-1.5: A Text-Controlled Interactive World Generation Model](https://arxiv.org/abs/2512.22096) — *arXiv*.
 
 ### 2024
 
@@ -318,10 +342,8 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 ### 2020
 
 - [Aligning Superhuman AI with Human Behavior: Chess as a Model System](https://arxiv.org/abs/2006.01855) — *arXiv*.
-- ⭐ [Dream to Control: Learning Behaviors by Latent Imagination](https://openreview.net/forum?id=S1lOTC4tDS) — *International Conference on Learning Representations*.
 - [Learning Models of Individual Behavior in Chess](https://arxiv.org/abs/2008.10086) — *arXiv*.
 - [Learning to Simulate Dynamic Environments with GameGAN](https://arxiv.org/abs/2005.12126) — *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*.
-- ⭐ [Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model](https://doi.org/10.1038/s41586-020-03051-4) — *Nature*.
 - ⭐ [Model-Based Reinforcement Learning for Atari](https://arxiv.org/abs/1903.00374) — *International Conference on Learning Representations*.
 - [MOPO: Model-based Offline Policy Optimization](https://arxiv.org/abs/2005.13239) — *arXiv*.
 - [MOReL : Model-Based Offline Reinforcement Learning](https://arxiv.org/abs/2005.05951) — *arXiv*.
@@ -343,7 +365,6 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 
 ### 2017
 
-- ⭐ [Imagination-Augmented Agents for Deep Reinforcement Learning](https://proceedings.neurips.cc/paper/2017/hash/9e82757e9a1c12cb710ad680db11f6f1-Abstract.html) — *Advances in Neural Information Processing Systems*.
 - ⭐ [Recurrent Environment Simulators](https://openreview.net/forum?id=B1s6xvqlx) — *International Conference on Learning Representations*.
 
 ### 2016
@@ -373,10 +394,6 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 
 - [An inclusive view of player modeling](https://doi.org/10.1145/2159365.2159419) — *Proceedings of the 6th International Conference on Foundations of Digital Games*.
 
-### 2007
-
-- ⭐ [Interactive Storytelling: A Player Modelling Approach](https://ojs.aaai.org/index.php/AIIDE/article/view/18780) — *Proceedings of the Third Artificial Intelligence and Interactive Digital Entertainment Conference*.
-
 ### 2006
 
 - [TrueSkill: A Bayesian Skill Rating System](https://proceedings.neurips.cc/paper/2006/hash/f44ee263952e65b3610b8ba51229d1f9-Abstract.html) — *Advances in Neural Information Processing Systems 19*.
@@ -391,16 +408,20 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 
 ### 2026
 
+- [AutoBG: A Board Game Design Assistant with Interactive Ideation, Iterative Rulebook Generation, and Individualized Feedback](https://arxiv.org/abs/2606.01976v2) — *arXiv*.
+- [CubePart: An Open-Vocabulary Part-Controllable 3D Generator](https://arxiv.org/abs/2605.28763v1) — *arXiv*.
 - [Generative AI in Game Development: A Qualitative Research Synthesis](https://doi.org/10.1145/3772318.3791206) — *Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems*.
 - ⭐ [LLMs are the Ideal Candidate for Mixed-Initiative Game Design Pillar Workflows](https://arxiv.org/abs/2605.09767) — *arXiv*.
 - [Mortar: Evolving Mechanics for Automatic Game Design](https://doi.org/10.1145/3795095.3805100) — *Proceedings of the Genetic and Evolutionary Computation Conference*.
 - [Multiverse: Language-Conditioned Multi-Game Level Blending via Shared Representation](https://arxiv.org/abs/2603.26782v2) — *arXiv*.
 - [RPGAgent: Driving Coherent Story-to-Play Generation with an LLM-Based Multi-Agent System](https://doi.org/10.1145/3772318.3790326) — *Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems*.
 - [Valerant: An Automatic Navigable Game Map Generator via Action-Conditioned World Model Exploration](https://arxiv.org/abs/2609.09418) — *arXiv*.
+- [WorldSculpt: Generating Compositional Worlds from Grounded Videos](https://arxiv.org/abs/2609.05416v2) — *arXiv*.
 
 ### 2025
 
 - [A Database-Driven Framework for 3D Level Generation with LLMs](https://doi.org/10.1609/aiide.v21i1.36840) — *Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment*.
+- [Audio2Face-3D: ACE Unreal Plugin](https://docs.nvidia.com/ace/latest/workflows/kairos/ace-unreal-plugin-audio2face.html) — *Developer documentation*.
 - [Conversational Interactions with Procedural Generators using Large Language Models](https://www.pcgworkshop.com/archive/whitehead2025conversational.pdf) — *Proceedings of the 20th International Conference on the Foundations of Digital Games*.
 - [DreamGarden: A Designer Assistant for Growing Games from a Single Prompt](https://doi.org/10.1145/3706598.3714233) — *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*.
 - [LLMs4PCG 2025: Competition Rules and Evaluation Platform](https://chatgpt4pcg.github.io/2025-llms4pcg/) — *Project or technical resource*.
@@ -408,6 +429,7 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - ⭐ [Pixie: Code-Level Mechanic Generation for Game Designers](https://ojs.aaai.org/index.php/AIIDE/article/view/36824) — *Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment*.
 - [ScriptDoctor: Automatic Generation of PuzzleScript Games via Large Language Models and Tree Search](https://arxiv.org/abs/2506.06524v1) — *2025 IEEE Conference on Games (CoG)*.
 - [Text-to-Level Diffusion Models with Various Text Encoders for Super Mario Bros](https://ojs.aaai.org/index.php/AIIDE/article/view/36815) — *Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment*.
+- [UnrealLLM: Towards Highly Controllable and Interactable 3D Scene Generation by LLM-powered Procedural Content Generation](https://aclanthology.org/2025.findings-acl.994/) — *Findings of the Association for Computational Linguistics: ACL 2025*.
 - [Word2Minecraft: Generating 3D Game Levels through Large Language Models](https://arxiv.org/abs/2503.16536) — *arXiv*.
 
 ### 2024
@@ -511,8 +533,6 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 
 - [90% Faster, 100% Code-Free: MLLM-Driven Zero-Code 3D Game Development](https://arxiv.org/abs/2509.26161) — *arXiv*.
 - [STORY2GAME: Generating (Almost) Everything in an Interactive Fiction Game](https://arxiv.org/abs/2505.03547) — *arXiv*.
-- [Synergizing Code Coverage and Gameplay Intent: Coverage-Aware Game Playtesting with LLM-Guided Reinforcement Learning](https://arxiv.org/abs/2512.12706v1) — *arXiv*.
-- [UnrealLLM: Towards Highly Controllable and Interactable 3D Scene Generation by LLM-powered Procedural Content Generation](https://aclanthology.org/2025.findings-acl.994/) — *Findings of the Association for Computational Linguistics: ACL 2025*.
 
 ### 2024
 
@@ -533,8 +553,6 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [IF:CARGO: LLM-Based Semantic Compilation for AI-Native Rule Programming Games](https://arxiv.org/abs/2608.12195) — *AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment*.
 - [LeagueBot: A Voice LLM Companion of Cognitive and Emotional Support for Novice Players in Competitive Games](https://arxiv.org/abs/2602.01213) — *arXiv*.
 - [Proact-VL: A Proactive VideoLLM for Real-Time AI Companions](https://arxiv.org/abs/2603.03447) — *International Conference on Machine Learning*.
-- [PUBG: BATTLEGROUNDS Patch Notes-Update 42.1](https://www.pubg.com/en/news/10179) — *Official patch notes*.
-- [Q&A: How KRAFTON Built PUBG Ally, a Co-Playable Character Powered by NVIDIA ACE](https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace/) — *NVIDIA Technical Blog*.
 - [The Double-Edged Sword of Open-Ended Interaction: How LLM-Driven NPCs Affect Players' Cognitive Load and Gaming Experience](https://arxiv.org/abs/2604.10107) — *arXiv*.
 - [When NPCs take their time: Token latency effects in LLM-driven game conversations](https://doi.org/10.1016/j.entcom.2026.101213) — *Entertainment Computing*.
 
@@ -549,16 +567,17 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [Symbolically Scaffolded Play: Designing Role-Sensitive Prompts for Generative NPC Dialogue](https://arxiv.org/abs/2510.25820) — *arXiv*.
 - [This Will Be a Day Long Remembered: Speak with Darth Vader in Fortnite](https://www.fortnite.com/news/this-will-be-a-day-long-remembered-speak-with-darth-vader-in-fortnite?lang=en-US) — *Project or technical resource*.
 - [Towards Enhanced Immersion and Agency for LLM-based Interactive Drama](https://arxiv.org/abs/2502.17878) — *arXiv*.
-- [Ubisoft Reveals Teammates-An AI Experiment to Change the Game](https://news.ubisoft.com/en-us/article/3mWlITIuWuu0MoVuR6o8ps/ubisoft-reveals-teammates-an-ai-experiment-to-change-the-game) — *Ubisoft News*.
 - ⭐ [Unbounded: A Generative Infinite Game of Character Life Simulation](https://arxiv.org/abs/2410.18975) — *International Conference on Learning Representations*.
+- [Zero-Shot Reasoning: Personalized Content Generation Without the Cold Start Problem](https://doi.org/10.1109/TG.2024.3421590) — *IEEE Transactions on Games*.
 
 ### 2024
 
 - [Affectively Framework: Towards Human-like Affect-Based Agents](https://arxiv.org/abs/2407.18316) — *arXiv*.
-- [Collaborative Quest Completion with LLM-Driven Non-Player Characters in Minecraft](https://arxiv.org/abs/2407.03460) — *arXiv*.
 - [Dynamic difficulty adjustment approaches in video games: a systematic literature review](https://doi.org/10.1007/s11042-024-18768-x) — *Multimedia Tools and Applications*.
 - [LLMs May Not Be Human-Level Players, But They Can Be Testers: Measuring Game Difficulty with LLM Agents](https://arxiv.org/abs/2410.02829) — *arXiv*.
+- [NVIDIA ACE & Digital Human Technologies Showcased In First Game, Mecha BREAK](https://www.nvidia.com/en-us/geforce/news/mecha-break-nvidia-ace-nims-rtx-pc-laptop-games-apps/) — *Official technology demonstration*.
 - [PANGeA: Procedural Artificial Narrative Using Generative AI for Turn-Based, Role-Playing Video Games](https://doi.org/10.1609/aiide.v20i1.31876) — *Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment*.
+- [Player-Driven Emergence in LLM-Driven Game Narrative](https://arxiv.org/abs/2404.17027) — *2024 IEEE Conference on Games*.
 - [What's the Game, then? Opportunities and Challenges for Runtime Behavior Generation](https://doi.org/10.1145/3654777.3676358) — *Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology*.
 
 ### 2023
@@ -618,6 +637,10 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [Agency Reconsidered](https://doi.org/10.26503/dl.v2009i1.369) — *Proceedings of the 2009 Digital Games Research Association Conference*.
 - [User Experience over Time: An Initial Framework](https://doi.org/10.1145/1518701.1518814) — *Proceedings of the SIGCHI Conference on Human Factors in Computing Systems*.
 
+### 2007
+
+- ⭐ [Interactive Storytelling: A Player Modelling Approach](https://ojs.aaai.org/index.php/AIIDE/article/view/18780) — *Proceedings of the Third Artificial Intelligence and Interactive Digital Entertainment Conference*.
+
 ### 2006
 
 - [The Motivational Pull of Video Games: A Self-Determination Theory Approach](https://doi.org/10.1007/s11031-006-9051-8) — *Motivation and Emotion*.
@@ -664,10 +687,12 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [An Empirical Study of LLM-as-a-Judge: How Design Choices Impact Evaluation Reliability](https://arxiv.org/abs/2506.13639) — *arXiv*.
 - [BALROG: Benchmarking Agentic LLM and VLM Reasoning on Games](https://arxiv.org/abs/2411.13543) — *International Conference on Learning Representations*.
 - [Curiosity Driven Multi-agent Reinforcement Learning for 3D Game Testing](https://arxiv.org/abs/2502.14606) — *arXiv*.
+- [Evaluating Language Models' Evaluations of Games](https://arxiv.org/abs/2510.10930v3) — *arXiv*.
 - [Exploring the Capabilities of Vision-Language Models to Detect Visual Bugs in HTML5 <canvas> Applications](https://arxiv.org/abs/2501.09236) — *arXiv*.
 - [Leveraging LLM Agents for Automated Video Game Testing](https://arxiv.org/abs/2509.22170) — *arXiv*.
 - [PuzzleJAX: A Benchmark for Reasoning and Learning](https://arxiv.org/abs/2508.16821v1) — *arXiv*.
 - ⭐ [SAGE: Semantic-Aware Gray-Box Game Regression Testing with Large Language Models](https://arxiv.org/abs/2512.00560) — *arXiv*.
+- [Synergizing Code Coverage and Gameplay Intent: Coverage-Aware Game Playtesting with LLM-Guided Reinforcement Learning](https://arxiv.org/abs/2512.12706v1) — *arXiv*.
 - [TextArena](https://arxiv.org/abs/2504.11442) — *arXiv*.
 - [TextAtari: 100K Frames Game Playing with Language Agents](https://arxiv.org/abs/2506.04098) — *arXiv*.
 - [The Alternative Annotator Test for LLM-as-a-Judge: How to Statistically Justify Replacing Human Annotators with LLMs](https://arxiv.org/abs/2501.10970) — *arXiv*.
@@ -684,7 +709,6 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge](https://arxiv.org/abs/2410.02736) — *arXiv*.
 - [LLM Evaluators Recognize and Favor Their Own Generations](https://proceedings.neurips.cc/paper_files/paper/2024/hash/7f1f0218e45f5414c79c0679633e47bc-Abstract-Conference.html) — *Advances in Neural Information Processing Systems*.
 - [MLLM-as-a-Judge: Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark](https://arxiv.org/abs/2402.04788) — *arXiv*.
-- [Player-Driven Emergence in LLM-Driven Game Narrative](https://arxiv.org/abs/2404.17027) — *2024 IEEE Conference on Games*.
 
 ### 2023
 
@@ -736,7 +760,6 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [ARC-AGI-3: A New Challenge for Frontier Agentic Intelligence](https://arxiv.org/abs/2603.24621v2) — *arXiv*.
 - [Book of Infinity: 1001 Nights: Demo and AI Content Disclosure](https://store.steampowered.com/app/2542850/1001_Nights/) — *Official game store page*.
 - [Claude Opus 5: Verified ARC-AGI Results](https://arcprize.org/results/anthropic-claude-opus-5) — *Official benchmark results*.
-- [DreamX-World 1.0: A General-Purpose Interactive World Model](https://arxiv.org/abs/2606.16993) — *arXiv*.
 - [GameDevBench: Official Repository and Results](https://github.com/waynchi/gamedevbench/blob/3a80dfdfd01209485185909cb88ac1687dff925e/results/leaderboard.csv) — *Official project repository*.
 - [GPT-5.6 Series: Verified ARC-AGI Results](https://arcprize.org/results/openai-gpt-5-6) — *Official benchmark results*.
 - [GPT-6 Astra: Verified ARC-AGI Results](https://arcprize.org/results/openai-gpt-6-astra) — *Official benchmark results*.
@@ -745,12 +768,12 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 - [iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework](https://arxiv.org/abs/2605.03941) — *International Conference on Machine Learning*.
 - [OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics](https://arxiv.org/abs/2606.09826) — *arXiv*.
 - [WorldExam: Benchmarking World Models from Apparent Appearance to Inherent Reactivity](https://arxiv.org/abs/2608.02603) — *arXiv*.
+- [WorldMark: A Unified Benchmark Suite for Interactive Video World Models](https://arxiv.org/abs/2604.21686v2) — *arXiv*.
 - [WorldRoamBench: An Open-World Benchmark for Long-Horizon Stability of Interactive World Models](https://arxiv.org/abs/2606.31672) — *arXiv*.
 
 ### 2025
 
 - [Gran Turismo Sophy 2.1 Arrives, Adding Support to Custom Races!](https://www.gran-turismo.com/us/news/00_4957003.html) — *Official Gran Turismo news*.
-- [Pixels to Play: A Foundation Model for 3D Gameplay](https://arxiv.org/abs/2508.14295v1) — *2025 IEEE Conference on Games (CoG)*.
 - [Reinforcement Learning for Human-AI Collaboration: Challenges, Mechanisms, and Methods](https://doi.org/10.1007/s12559-025-10500-7) — *Cognitive Computation*.
 
 ### 2024
@@ -767,6 +790,10 @@ The six core roles contain **396 works**; **25 supporting references** are liste
 ### 2021
 
 - [Deep Reinforcement Learning at the Edge of the Statistical Precipice](https://arxiv.org/abs/2108.13264) — *Advances in Neural Information Processing Systems*.
+
+### 2018
+
+- [Towards Accurate Generative Models of Video: A New Metric & Challenges](https://arxiv.org/abs/1812.01717v2) — *arXiv*.
 
 ### 2017
 

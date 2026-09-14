@@ -38,7 +38,8 @@ const files = [
   'data/references.json', 'data/survey-references.bib',
   'assets/project-logo.png', 'assets/project-favicon.png', 'assets/game-world.webp',
   'assets/CREDITS.md',
-  ...['sec_intro', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6', 'sec7']
+  ...['sec_intro', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6', 'sec7',
+    'figure-3-timeline', 'figure-4a-knowledge', 'figure-4b-knowledge']
     .map(name => `assets/survey-map/${name}.webp`),
   ...['sophy', 'gamengen', 'mariogpt', 'gamecraft', 'nights', 'ea-testing']
     .map(name => `assets/gallery/${name}.webp`),

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "roles": {
     "wang2023voyager": [
       "play"
@@ -71,6 +71,9 @@
     "wang2025gametars": [
       "play"
     ],
+    "farebrother2018generalization": [
+      "play"
+    ],
     "tan2025cradle": [
       "play"
     ],
@@ -129,7 +132,8 @@
       "play"
     ],
     "skoutnev2026twin": [
-      "play"
+      "play",
+      "model"
     ],
     "lehrach2025cwm": [
       "play",
@@ -142,6 +146,9 @@
       "play"
     ],
     "li2024optimus": [
+      "play"
+    ],
+    "cheng2026agenticsts": [
       "play"
     ],
     "ahn2025flashadventure": [
@@ -214,7 +221,8 @@
       "play"
     ],
     "zhang2024proagent": [
-      "play"
+      "play",
+      "model"
     ],
     "gong2024mindagent": [
       "play"
@@ -244,7 +252,8 @@
       "play"
     ],
     "mccoy2013promweek": [
-      "play"
+      "play",
+      "runtime"
     ],
     "park2023generativeagents": [
       "play",
@@ -278,25 +287,30 @@
       "model"
     ],
     "ha2018worldmodels": [
-      "model"
+      "model",
+      "play"
     ],
     "hafner2019planet": [
       "model"
     ],
     "hafner2020dreamer": [
-      "model"
+      "model",
+      "play"
     ],
     "racaniere2017i2a": [
-      "model"
+      "model",
+      "play"
     ],
     "schrittwieser2020muzero": [
-      "model"
+      "model",
+      "play"
     ],
     "kaiser2020simple": [
       "model"
     ],
     "hafner2025dreamer4": [
-      "model"
+      "model",
+      "play"
     ],
     "kim2020gamegan": [
       "model"
@@ -320,7 +334,8 @@
       "model"
     ],
     "kanervisto2025wham": [
-      "model"
+      "model",
+      "design"
     ],
     "yang2024playgen": [
       "model"
@@ -338,10 +353,12 @@
       "test"
     ],
     "micheli2023iris": [
-      "model"
+      "model",
+      "play"
     ],
     "alonso2024diamond": [
-      "model"
+      "model",
+      "play"
     ],
     "chua2018pets": [
       "model"
@@ -379,14 +396,23 @@
     "li2025vmem": [
       "model"
     ],
-    "chen2025modelgame": [
+    "alayaworld2026full": [
       "model"
+    ],
+    "yin2026evoke": [
+      "model"
+    ],
+    "chen2025modelgame": [
+      "model",
+      "runtime"
     ],
     "lin2026stateplaystateawaregameworld": [
       "model"
     ],
     "deng2026worldminddecoupledgameworld": [
-      "model"
+      "model",
+      "play",
+      "runtime"
     ],
     "meng2026marionettepredictingworldstates": [
       "model"
@@ -395,6 +421,18 @@
       "model"
     ],
     "dainese2024generating": [
+      "model"
+    ],
+    "li2026wildworld": [
+      "model"
+    ],
+    "li2026pixelstates": [
+      "model"
+    ],
+    "xu2026worldrover": [
+      "model"
+    ],
+    "huang2026worldrenderer": [
       "model"
     ],
     "yannakakis2013playermodeling": [
@@ -525,14 +563,17 @@
       "model"
     ],
     "li2026meeplelm": [
-      "model"
+      "model",
+      "design",
+      "test"
     ],
     "collins2025gameevaluations": [
       "model",
       "test"
     ],
     "zhang2025beyond": [
-      "model"
+      "model",
+      "test"
     ],
     "yu2025gamefactory": [
       "model"
@@ -543,11 +584,17 @@
     "shen2026game2world": [
       "model"
     ],
-    "zhu2026incantationnaturallanguageaction": [
+    "cao2026shadowdancer": [
       "model"
     ],
+    "zhu2026incantationnaturallanguageaction": [
+      "model",
+      "runtime"
+    ],
     "wang2026reactivegwmsteeringnpcreactive": [
-      "model"
+      "model",
+      "play",
+      "runtime"
     ],
     "chen2026h3world": [
       "model"
@@ -560,6 +607,14 @@
     ],
     "chen2024diffusionforcing": [
       "model"
+    ],
+    "mao2025yume15": [
+      "model",
+      "runtime"
+    ],
+    "lin2026rendererflash": [
+      "model",
+      "runtime"
     ],
     "savva2026solaris": [
       "model"
@@ -575,6 +630,9 @@
       "model"
     ],
     "huang2025self": [
+      "model"
+    ],
+    "cai2026mass": [
       "model"
     ],
     "togelius2011searchpcg": [
@@ -643,6 +701,18 @@
     "xu2025database3d": [
       "design"
     ],
+    "zhu2026cubepart": [
+      "design"
+    ],
+    "niu2026worldsculpt": [
+      "design"
+    ],
+    "barth2023ghostwriter": [
+      "design"
+    ],
+    "nvidia2025audio2faceplugin": [
+      "design"
+    ],
     "nelson2007automated": [
       "design"
     ],
@@ -672,10 +742,13 @@
     ],
     "zhou2025story2game": [
       "design",
-      "build"
+      "build",
+      "runtime"
     ],
     "earle2025scriptdoctor": [
-      "design"
+      "design",
+      "build",
+      "test"
     ],
     "vanstegeren2021quests": [
       "design"
@@ -704,8 +777,9 @@
     "lanzi2023llmco": [
       "design"
     ],
-    "barth2023ghostwriter": [
-      "design"
+    "li2026autobg": [
+      "design",
+      "test"
     ],
     "geheeb2026spine": [
       "design"
@@ -721,7 +795,8 @@
       "test"
     ],
     "songtang-etal-2025-unrealllm": [
-      "build"
+      "build",
+      "design"
     ],
     "liu2026mage": [
       "build"
@@ -787,9 +862,20 @@
       "runtime"
     ],
     "zhu2023calypso": [
-      "runtime"
+      "runtime",
+      "design"
     ],
     "vezhnevets2025concordia": [
+      "runtime",
+      "play"
+    ],
+    "figueiredo2025scaffolded": [
+      "runtime"
+    ],
+    "nvidia2024mechabreak": [
+      "runtime"
+    ],
+    "epic2025vader": [
       "runtime"
     ],
     "buongiorno2024pangea": [
@@ -799,13 +885,16 @@
       "runtime"
     ],
     "sun2025dramallama": [
-      "runtime"
+      "runtime",
+      "design"
     ],
     "ashby2023quests": [
-      "runtime"
+      "runtime",
+      "design"
     ],
     "jennings2024gromit": [
-      "runtime"
+      "runtime",
+      "build"
     ],
     "drake2025worldcrafting": [
       "runtime"
@@ -814,7 +903,8 @@
       "runtime"
     ],
     "singh2026robloxcube": [
-      "runtime"
+      "runtime",
+      "build"
     ],
     "mateas2001poetics": [
       "runtime"
@@ -823,7 +913,8 @@
       "runtime"
     ],
     "cheng2025animegamer": [
-      "runtime"
+      "runtime",
+      "model"
     ],
     "ma2026ncpbench": [
       "runtime",
@@ -879,15 +970,13 @@
       "test"
     ],
     "rao2024collaborative": [
-      "runtime"
+      "runtime",
+      "play"
     ],
     "emmerich2018companions": [
       "runtime"
     ],
     "bickmore2005relationships": [
-      "runtime"
-    ],
-    "figueiredo2025scaffolded": [
       "runtime"
     ],
     "hsu2026doubleedged": [
@@ -924,18 +1013,18 @@
       "runtime"
     ],
     "ubisoft2025teammates": [
-      "runtime"
+      "runtime",
+      "play"
     ],
     "krafton2026allyduo": [
-      "runtime"
+      "runtime",
+      "play"
     ],
     "nvidia2026pubgally": [
-      "runtime"
+      "runtime",
+      "play"
     ],
     "latitude2026aidungeon": [
-      "runtime"
-    ],
-    "epic2025vader": [
       "runtime"
     ],
     "karapanos2009uxovertime": [
@@ -1072,6 +1161,210 @@
     ],
     "chen2026mimicpy": [
       "test"
+    ],
+    "yue2025pixels": [
+      "play"
+    ],
+    "hong2026pcsp": [
+      "play"
+    ],
+    "xiong2026actworld": [
+      "model"
+    ],
+    "huang2026programmable": [
+      "model",
+      "build",
+      "runtime"
+    ],
+    "wang2026matrixgame3": [
+      "model"
+    ],
+    "gao2026lingbot": [
+      "model"
+    ],
+    "dreamxteam2026dreamxworld10generalpurposeinteractive": [
+      "model"
+    ],
+    "cook2025pixie": [
+      "design",
+      "build"
+    ],
+    "peng2026playcoder": [
+      "build",
+      "test"
     ]
+  },
+  "primary": {
+    "baker2022vpt": "play",
+    "reed2022gato": "play",
+    "lee2022multigamedt": "play",
+    "hafner2025dreamerv3": "play",
+    "lifshitz2023steve1": "play",
+    "sima2024": "play",
+    "sima22025": "play",
+    "wang2025gametars": "play",
+    "jarvisvla2025": "play",
+    "wang2024omnijarvis": "play",
+    "chen2025combatvla": "play",
+    "magne2026nitrogen": "play",
+    "yue2025pixels": "play",
+    "wang2023deps": "play",
+    "yuan2023plan4mc": "play",
+    "wang2023voyager": "play",
+    "zhu2023gitm": "play",
+    "zhou2025minedreamer": "play",
+    "wang2023jarvis1": "play",
+    "li2024optimus": "play",
+    "sridhar2025regent": "play",
+    "skoutnev2026twin": "play",
+    "lehrach2025cwm": "model",
+    "cheng2026agenticsts": "play",
+    "zhang2024proagent": "play",
+    "gong2024mindagent": "play",
+    "dong2024villageragent": "play",
+    "shao2024swarmbrain": "play",
+    "mccoy2013promweek": "play",
+    "park2023generativeagents": "play",
+    "hong2026pcsp": "play",
+    "ha2018worldmodels": "model",
+    "schrittwieser2020muzero": "play",
+    "hafner2020dreamer": "play",
+    "racaniere2017i2a": "play",
+    "oh2015actionconditional": "model",
+    "chiappa2017res": "model",
+    "micheli2023iris": "model",
+    "alonso2024diamond": "model",
+    "hafner2025dreamer4": "play",
+    "kim2020gamegan": "model",
+    "bruce2024genie": "model",
+    "valevski2024gamengen": "model",
+    "yang2024playgen": "model",
+    "guo2025mineworld": "model",
+    "kanervisto2025wham": "model",
+    "yu2025gamefactory": "model",
+    "che2024gamegenx": "model",
+    "tang2025hgc2": "model",
+    "tong2026scope": "model",
+    "zhu2026incantationnaturallanguageaction": "model",
+    "chen2026h3world": "model",
+    "xiong2026actworld": "model",
+    "mao2025yume15": "model",
+    "cao2026shadowdancer": "model",
+    "chen2025modelgame": "model",
+    "lin2026stateplaystateawaregameworld": "model",
+    "wang2026reactivegwmsteeringnpcreactive": "model",
+    "deng2026worldminddecoupledgameworld": "model",
+    "meng2026marionettepredictingworldstates": "model",
+    "xiao2025worldmem": "model",
+    "garcin2026persist": "model",
+    "nam2026worldcam": "model",
+    "chen2026reworld": "model",
+    "huang2026worldrenderer": "model",
+    "lin2026rendererflash": "model",
+    "huang2026programmable": "model",
+    "alayaworld2026full": "model",
+    "yin2026evoke": "model",
+    "wang2026matrixgame3": "model",
+    "gao2026lingbot": "model",
+    "dreamxteam2026dreamxworld10generalpurposeinteractive": "model",
+    "hu2026multiplayerwm": "model",
+    "parkerholder2024genie2": "model",
+    "parkerholder2025genie3": "model",
+    "cai2026mass": "model",
+    "ding2026playworld": "test",
+    "smith2011tanagra": "design",
+    "liapis2013sketchbook": "design",
+    "cook2017angelina1": "design",
+    "cook2013mechanicminer": "design",
+    "zhu2026cubepart": "design",
+    "niu2026worldsculpt": "design",
+    "li2026autobg": "design",
+    "sudhakaran2023mariogpt": "design",
+    "todd2023level": "design",
+    "nasir2023practical": "design",
+    "baek2026multiverse": "design",
+    "schrum2025mariodiffusion": "design",
+    "nie2025moonshine": "design",
+    "whitehead2025conversational": "design",
+    "huang2025word2minecraft": "design",
+    "earle2024dreamcraft": "design",
+    "xu2025database3d": "design",
+    "todd2024gavel": "design",
+    "earle2025scriptdoctor": "design",
+    "nasir2025mortar": "design",
+    "weir2024knudge": "design",
+    "vanstegeren2021quests": "design",
+    "songtang-etal-2025-unrealllm": "design",
+    "earle2025dreamgarden": "design",
+    "zhang2026rpgagent": "design",
+    "geheeb2026spine": "design",
+    "cook2025pixie": "design",
+    "barth2023ghostwriter": "design",
+    "zhou2025story2game": "build",
+    "yang2025unigen": "build",
+    "yin2026autoue": "build",
+    "jiang2026opengame": "build",
+    "huang2026guigames": "build",
+    "hu2025agent2world": "model",
+    "unity2026aitools": "build",
+    "openai2026playbot": "build",
+    "liu2026mage": "build",
+    "peng2026playcoder": "build",
+    "zhu2023calypso": "runtime",
+    "vezhnevets2025concordia": "runtime",
+    "ashby2023quests": "runtime",
+    "kumaran2024narrativegenie": "design",
+    "sun2025dramallama": "runtime",
+    "buongiorno2024pangea": "runtime",
+    "sun2023language": "runtime",
+    "li2025unbounded": "runtime",
+    "cheng2025animegamer": "runtime",
+    "jennings2024gromit": "runtime",
+    "drake2025worldcrafting": "runtime",
+    "hsu2026ifcargo": "runtime",
+    "peng2024emergence": "runtime",
+    "rao2024collaborative": "play",
+    "yan2026proact": "runtime",
+    "figueiredo2025scaffolded": "runtime",
+    "hsu2026doubleedged": "runtime",
+    "yin2026contextualized": "runtime",
+    "roso2026latency": "runtime",
+    "lee2026leaguebot": "runtime",
+    "hafnar2025zeroshot": "runtime",
+    "latitude2026aidungeon": "runtime",
+    "nvidia2024mechabreak": "runtime",
+    "epic2025vader": "runtime",
+    "ubisoft2025teammates": "play",
+    "krafton2026allyduo": "play",
+    "nvidia2026pubgally": "play",
+    "singh2026robloxcube": "runtime",
+    "holmgard2019playtesting": "test",
+    "zheng2019wuji": "test",
+    "ariyurek2021testing": "test",
+    "gillberg2023productiontesting": "test",
+    "adaikkappan2026ca2": "test",
+    "cai2025sage": "test",
+    "mu2025smart": "test",
+    "chen2026mimicpy": "test",
+    "wang2025titan": "test",
+    "jia2026gamegenverifier": "test",
+    "taesiri2025videogameqa": "test",
+    "jin2024bugdetection": "test",
+    "collins2025gameevaluations": "test",
+    "wang2024player2vec": "model",
+    "smirnov2024behaviorstructformer": "model",
+    "herbrich2006trueskill": "model",
+    "mcilroyyoung2020aligning": "model",
+    "mcilroyyoung2020learning": "model",
+    "tang2024maia2": "model",
+    "tang2025maia4all": "model",
+    "monroe2026chessformer": "model",
+    "thue2007passage": "runtime",
+    "lu2026personalized": "model",
+    "makantasis2021pixels": "model",
+    "pinitas2023predicting": "model",
+    "wang2026vision": "model",
+    "li2026meeplelm": "model",
+    "zhang2025beyond": "model"
   }
 }

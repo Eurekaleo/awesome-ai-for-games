@@ -30,3 +30,25 @@
 .evidence-guide{padding:104px 0 112px;border-top:1px solid var(--line);background:#eef3f1}.evidence-heading h2 em{color:#237a76}.evidence-heading>p{max-width:390px}.evidence-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#d8e1df;border:1px solid #d8e1df}.evidence-grid article{--role:#72afe0;min-height:290px;padding:27px 28px 30px;border-top:3px solid var(--role);background:#fbfcfc}.evidence-grid article[data-role=model]{--role:#89c668}.evidence-grid article[data-role=design]{--role:#9692e5}.evidence-grid article[data-role=build]{--role:#e48748}.evidence-grid article[data-role=runtime]{--role:#46d7d7}.evidence-grid article[data-role=test]{--role:#d2ad39}.evidence-role{display:flex;align-items:center;justify-content:space-between;color:var(--role)}.evidence-role .icon{width:21px;height:21px}.evidence-role span{font:500 .75rem var(--display);letter-spacing:.08em}.evidence-grid h3{font:500 1.22rem/1.3 var(--display);letter-spacing:-.025em;margin-top:20px}.evidence-grid p{font-size:.875rem;line-height:1.65;color:var(--muted);margin-top:14px}.evidence-grid p+p{padding-top:13px;border-top:1px solid var(--line)}.evidence-grid strong{color:#31444a;font-weight:650}
 @media(max-width:900px){.evidence-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.evidence-grid article{min-height:265px}.site-nav{gap:16px}.site-nav a{font-size:.78rem}.library-layout{grid-template-columns:minmax(0,1fr)}.library-sidebar,.library-main,#collection-filters{min-width:0;max-width:100%}}
 @media(max-width:600px){.evidence-guide{padding:64px 0 70px}.evidence-grid{grid-template-columns:1fr}.evidence-grid article{min-height:0;padding:24px 23px 27px}}
+
+/* Manuscript visual index: previews stay compact; each opens at full resolution. */
+.figure-index-head{display:flex;align-items:baseline;justify-content:space-between;gap:32px;margin:54px 0 18px}
+.figure-index-head p{max-width:650px;color:var(--muted);font-size:.9rem;line-height:1.6}
+.figure-index{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.figure-index-card{min-width:0;border:1px solid var(--line);background:#fff;color:var(--ink);text-decoration:none;transition:border-color .2s ease,transform .2s ease}
+.figure-index-card:hover{border-color:#81b0ad;transform:translateY(-3px)}
+.figure-index-preview{display:block;height:255px;overflow:hidden;background:#f8faf9}
+.figure-index-preview img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
+.figure-index-caption{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding:15px 17px;font-size:.8rem}
+.figure-index-caption b{font-weight:650}.figure-index-caption>span{color:#397e79;white-space:nowrap}
+.emerging-route{display:grid;grid-template-columns:235px minmax(0,1fr);gap:35px;border-top:1px solid var(--line);margin-top:30px;padding-top:25px}
+.emerging-route p{max-width:950px;color:var(--muted);font-size:.91rem;line-height:1.7}
+.emerging-route a,.evidence-distinction-grid a{color:#236f6b;text-decoration:underline;text-underline-offset:3px}
+.evidence-distinction-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+.evidence-distinction-grid article{border:1px solid #d8e1df;background:#fbfcfc;padding:27px 30px 29px}
+.evidence-distinction-grid h3{font:500 1.25rem var(--display);letter-spacing:-.025em;margin-top:13px}
+.evidence-distinction-grid p{font-size:.88rem;line-height:1.7;color:var(--muted);margin-top:13px}
+.evidence-distinction-grid b{color:#31444a;font-weight:650}
+.evidence-distinction-grid .finding-citations{margin-top:17px}
+@media(max-width:900px){.figure-index-preview{height:205px}.figure-index-head{display:block}.figure-index-head p{margin-top:10px}.emerging-route{grid-template-columns:1fr;gap:11px}}
+@media(max-width:650px){.figure-index{grid-template-columns:1fr}.figure-index-preview{height:220px}.figure-index-caption{padding:13px 14px}.evidence-distinction-grid{grid-template-columns:1fr}.evidence-distinction-grid article{padding:23px}.emerging-route{margin-top:25px}}

@@ -104,7 +104,7 @@ function shortAuthors(value){
 const paperSource=await readFile(paperBibPath,'utf8');
 const additionsSource=await readFile(additionsBibPath,'utf8');
 const source=[
-  '% Generated public bibliography: current manuscript references plus living-catalog additions.',
+  '% Generated public bibliography: current manuscript references plus nonduplicate catalog-only additions.',
   paperSource.trim(),
   additionsSource.trim(),
 ].join('\n\n')+'\n';
@@ -115,7 +115,7 @@ const sourceCounts={
   livingAdditions:parseBibtex(additionsSource).length,
 };
 const {papers:seedPapers}=JSON.parse(await readFile(seedPath,'utf8'));
-const {roles:roleCitations}=JSON.parse(await readFile(rolePath,'utf8'));
+const {roles:roleCitations,primary:tablePrimary={}}=JSON.parse(await readFile(rolePath,'utf8'));
 const byTitle=new Map(seedPapers.map(p=>[norm(p.title),p]));
 const byUrl=new Map(seedPapers.filter(p=>p.url).map(p=>[normUrl(p.url),p]));
 const usedSeed=new Set();
@@ -125,7 +125,7 @@ const papers=parsed.map(({type,key,fields})=>{
   const match=byUrl.get(normUrl(url))||byTitle.get(norm(title));
   if(match)usedSeed.add(match.id);
   const citedRoles=roleCitations[key]||[];
-  const primaryRole=match&&citedRoles.includes(match.primaryRole)?match.primaryRole:citedRoles[0]||match?.primaryRole||'context';
+  const primaryRole=tablePrimary[key]||(match&&citedRoles.includes(match.primaryRole)?match.primaryRole:citedRoles[0]||match?.primaryRole||'context');
   const authorField=fields.author||fields.editor||'';
   const record={
     id:key,title,year:Number(cleanTex(fields.year))||0,month:monthNumber(fields.month),

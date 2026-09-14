@@ -2,8 +2,8 @@
   "schemaVersion": "2.0",
   "source": "Living project bibliography",
   "sourceCounts": {
-    "manuscript": 417,
-    "livingAdditions": 4
+    "manuscript": 436,
+    "livingAdditions": 3
   },
   "papers": [
     {
@@ -159,7 +159,8 @@
       "shortAuthors": "Anupam Singh",
       "primaryRole": "runtime",
       "roles": [
-        "runtime"
+        "runtime",
+        "build"
       ],
       "topics": [],
       "venue": "Roblox Engineering",
@@ -354,9 +355,10 @@
       "month": 0,
       "authors": "O'Connor, Daniel",
       "shortAuthors": "O'Connor, Daniel",
-      "primaryRole": "runtime",
+      "primaryRole": "play",
       "roles": [
-        "runtime"
+        "runtime",
+        "play"
       ],
       "topics": [],
       "venue": "Ubisoft News",
@@ -370,9 +372,10 @@
       "month": 0,
       "authors": "KRAFTON",
       "shortAuthors": "KRAFTON",
-      "primaryRole": "runtime",
+      "primaryRole": "play",
       "roles": [
-        "runtime"
+        "runtime",
+        "play"
       ],
       "topics": [],
       "venue": "Official patch notes",
@@ -386,9 +389,10 @@
       "month": 0,
       "authors": "Singh, Phillip",
       "shortAuthors": "Singh, Phillip",
-      "primaryRole": "runtime",
+      "primaryRole": "play",
       "roles": [
-        "runtime"
+        "runtime",
+        "play"
       ],
       "topics": [],
       "venue": "NVIDIA Technical Blog",
@@ -453,7 +457,7 @@
       "month": 0,
       "authors": "Collins, Katherine M. and Zhang, Cedegao E. and Todd, Graham and Ying, Lance and Barba da Costa, Mauricio and Liu, Ryan and Sharma, Prafull and Weller, Adrian and Kuperwajs, Ionatan and Wong, Lionel and Tenenbaum, Joshua B. and Griffiths, Thomas L.",
       "shortAuthors": "Collins et al.",
-      "primaryRole": "model",
+      "primaryRole": "test",
       "roles": [
         "model",
         "test"
@@ -472,7 +476,8 @@
       "shortAuthors": "Cheng et al.",
       "primaryRole": "runtime",
       "roles": [
-        "runtime"
+        "runtime",
+        "model"
       ],
       "topics": [],
       "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
@@ -951,7 +956,7 @@
       "title": "From Pixels to States: Rethinking Interactive World Models as Game Engines",
       "year": 2026,
       "month": 0,
-      "authors": "Zhen Li and Zian Meng and Shuwei Shi and others",
+      "authors": "Zhen Li and Zian Meng and Shuwei Shi and Mingliang Zhai and Jiaming Tan and Chuanhao Li and Kaipeng Zhang",
       "shortAuthors": "Li et al.",
       "primaryRole": "model",
       "roles": [
@@ -962,7 +967,7 @@
         "survey"
       ],
       "venue": "arXiv preprint arXiv:2607.14076",
-      "url": "https://arxiv.org/abs/2607.14076",
+      "url": "https://arxiv.org/abs/2607.14076v1",
       "kind": "article"
     },
     {
@@ -1120,9 +1125,10 @@
       "month": 0,
       "authors": "Danijar Hafner and Wilson Yan and Timothy Lillicrap",
       "shortAuthors": "Hafner et al.",
-      "primaryRole": "model",
+      "primaryRole": "play",
       "roles": [
-        "model"
+        "model",
+        "play"
       ],
       "topics": [
         "world-modeling"
@@ -1290,7 +1296,8 @@
       "shortAuthors": "Kanervisto et al.",
       "primaryRole": "model",
       "roles": [
-        "model"
+        "model",
+        "design"
       ],
       "topics": [
         "learning-training"
@@ -1706,9 +1713,10 @@
       "month": 0,
       "authors": "Sudha Rao and Weijia Xu and Michael Xu and Jorge J. G. Leandro and Ken Lobb and Gabriel DesGarennes and Chris Brockett and Bill Dolan",
       "shortAuthors": "Rao et al.",
-      "primaryRole": "runtime",
+      "primaryRole": "play",
       "roles": [
-        "runtime"
+        "runtime",
+        "play"
       ],
       "topics": [
         "multi-agent-social",
@@ -1726,7 +1734,7 @@
       "month": 0,
       "authors": "Davor Hafnar and Jure Demsar",
       "shortAuthors": "Hafnar & Demsar",
-      "primaryRole": "model",
+      "primaryRole": "runtime",
       "roles": [
         "model",
         "runtime"
@@ -1849,7 +1857,8 @@
       "primaryRole": "build",
       "roles": [
         "design",
-        "build"
+        "build",
+        "runtime"
       ],
       "topics": [
         "generation-toolchain",
@@ -1866,9 +1875,10 @@
       "month": 0,
       "authors": "Song Tang and Kaiyong Zhao and Lei Wang and Yuliang Li and Xuebo Liu and Junyi Zou and Qiang Wang and Xiaowen Chu",
       "shortAuthors": "Tang et al.",
-      "primaryRole": "build",
+      "primaryRole": "design",
       "roles": [
-        "build"
+        "build",
+        "design"
       ],
       "topics": [
         "generation-toolchain",
@@ -2180,7 +2190,8 @@
       "shortAuthors": "Skoutnev et al.",
       "primaryRole": "play",
       "roles": [
-        "play"
+        "play",
+        "model"
       ],
       "topics": [
         "world-modeling",
@@ -2259,7 +2270,8 @@
       "shortAuthors": "Chen et al.",
       "primaryRole": "model",
       "roles": [
-        "model"
+        "model",
+        "runtime"
       ],
       "topics": [
         "memory-adaptation",
@@ -2565,7 +2577,8 @@
       "shortAuthors": "McCoy et al.",
       "primaryRole": "play",
       "roles": [
-        "play"
+        "play",
+        "runtime"
       ],
       "topics": [
         "multi-agent-social",
@@ -2582,7 +2595,7 @@
       "month": 0,
       "authors": "David Thue and Vadim Bulitko and Marcia Spetch and Eric Wasylishen",
       "shortAuthors": "Thue et al.",
-      "primaryRole": "model",
+      "primaryRole": "runtime",
       "roles": [
         "model",
         "runtime"
@@ -2840,7 +2853,8 @@
       "shortAuthors": "Ha & Schmidhuber",
       "primaryRole": "model",
       "roles": [
-        "model"
+        "model",
+        "play"
       ],
       "topics": [
         "world-modeling",
@@ -2953,9 +2967,10 @@
       "month": 0,
       "authors": "Julian Schrittwieser and Ioannis Antonoglou and Thomas Hubert and others",
       "shortAuthors": "Schrittwieser et al.",
-      "primaryRole": "model",
+      "primaryRole": "play",
       "roles": [
-        "model"
+        "model",
+        "play"
       ],
       "topics": [
         "world-modeling",
@@ -3093,9 +3108,10 @@
       "month": 0,
       "authors": "Danijar Hafner and Timothy Lillicrap and Jimmy Ba and Mohammad Norouzi",
       "shortAuthors": "Hafner et al.",
-      "primaryRole": "model",
+      "primaryRole": "play",
       "roles": [
-        "model"
+        "model",
+        "play"
       ],
       "topics": [
         "world-modeling",
@@ -3246,7 +3262,8 @@
       "shortAuthors": "Jennings et al.",
       "primaryRole": "runtime",
       "roles": [
-        "runtime"
+        "runtime",
+        "build"
       ],
       "topics": [
         "generation-toolchain",
@@ -3340,9 +3357,10 @@
       "month": 0,
       "authors": "Sebastien Racaniere and Theophane Weber and David P. Reichert and others",
       "shortAuthors": "Racaniere et al.",
-      "primaryRole": "model",
+      "primaryRole": "play",
       "roles": [
-        "model"
+        "model",
+        "play"
       ],
       "topics": [
         "world-modeling",
@@ -3609,7 +3627,8 @@
       "shortAuthors": "Micheli et al.",
       "primaryRole": "model",
       "roles": [
-        "model"
+        "model",
+        "play"
       ],
       "topics": [
         "world-modeling",
@@ -3628,7 +3647,8 @@
       "shortAuthors": "Alonso et al.",
       "primaryRole": "model",
       "roles": [
-        "model"
+        "model",
+        "play"
       ],
       "topics": [
         "world-modeling"
@@ -3665,7 +3685,8 @@
       "shortAuthors": "Zhu et al.",
       "primaryRole": "runtime",
       "roles": [
-        "runtime"
+        "runtime",
+        "design"
       ],
       "topics": [
         "generation-toolchain",
@@ -3682,7 +3703,7 @@
       "month": 0,
       "authors": "Xiangyu Peng and Jessica Quaye and Sudha Rao and Weijia Xu and Portia Botchway and Chris Brockett and Nebojsa Jojic and Gabriel DesGarennes and Ken Lobb and Michael Xu and Jorge Leandro and Claire Jin and Bill Dolan",
       "shortAuthors": "Peng et al.",
-      "primaryRole": "test",
+      "primaryRole": "runtime",
       "roles": [
         "runtime",
         "test"
@@ -4161,7 +4182,8 @@
       "shortAuthors": "Michael Cook",
       "primaryRole": "design",
       "roles": [
-        "design"
+        "design",
+        "build"
       ],
       "topics": [
         "generation-toolchain",
@@ -4199,7 +4221,8 @@
       "shortAuthors": "Peng et al.",
       "primaryRole": "build",
       "roles": [
-        "build"
+        "build",
+        "test"
       ],
       "topics": [
         "generation-toolchain",
@@ -4310,7 +4333,9 @@
       "shortAuthors": "Deng et al.",
       "primaryRole": "model",
       "roles": [
-        "model"
+        "model",
+        "play",
+        "runtime"
       ],
       "topics": [
         "world-modeling",
@@ -4350,7 +4375,9 @@
       "shortAuthors": "Wang et al.",
       "primaryRole": "model",
       "roles": [
-        "model"
+        "model",
+        "play",
+        "runtime"
       ],
       "topics": [
         "world-modeling",
@@ -4370,7 +4397,8 @@
       "shortAuthors": "Zhu et al.",
       "primaryRole": "model",
       "roles": [
-        "model"
+        "model",
+        "runtime"
       ],
       "topics": [
         "world-modeling",
@@ -4388,8 +4416,10 @@
       "month": 0,
       "authors": "DreamX Team and Yancheng Bai and Rui Chen and Xiangxiang Chu and Rujing Dang and Hao Dou and Bingjie Gao and Qiwen Gu and Siyu Hong and Jiachen Lei and Geng Li and Jifan Li and Ruimin Lin and Qingfeng Shi and Bingze Song and Lei Sun and Jing Tang and Ruitian Tian and Jun Wang and Jiahong Wu and Pengfei Zhang and Shen Zhang and Jiashu Zhu",
       "shortAuthors": "Team et al.",
-      "primaryRole": "context",
-      "roles": [],
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
       "topics": [],
       "venue": "arXiv preprint arXiv:2606.16993",
       "url": "https://arxiv.org/abs/2606.16993",
@@ -4583,7 +4613,8 @@
       "shortAuthors": "Zhang et al.",
       "primaryRole": "play",
       "roles": [
-        "play"
+        "play",
+        "model"
       ],
       "topics": [],
       "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
@@ -4696,7 +4727,7 @@
       "month": 0,
       "authors": "Enhong Mu and Minami Yoda and Yan Zhang and Mingyue Zhang and Yutaka Matsuno and Jialong Li",
       "shortAuthors": "Mu et al.",
-      "primaryRole": "build",
+      "primaryRole": "test",
       "roles": [
         "build",
         "test"
@@ -4761,7 +4792,8 @@
       "shortAuthors": "Sun et al.",
       "primaryRole": "runtime",
       "roles": [
-        "runtime"
+        "runtime",
+        "design"
       ],
       "topics": [],
       "venue": "arXiv preprint arXiv:2501.09099",
@@ -5261,7 +5293,9 @@
       "shortAuthors": "Li et al.",
       "primaryRole": "model",
       "roles": [
-        "model"
+        "model",
+        "design",
+        "test"
       ],
       "topics": [],
       "venue": "arXiv preprint arXiv:2601.07251",
@@ -5405,7 +5439,8 @@
       "shortAuthors": "Zhang et al.",
       "primaryRole": "model",
       "roles": [
-        "model"
+        "model",
+        "test"
       ],
       "topics": [],
       "venue": "arXiv preprint arXiv:2512.02358",
@@ -6818,7 +6853,9 @@
       "shortAuthors": "Earle et al.",
       "primaryRole": "design",
       "roles": [
-        "design"
+        "design",
+        "build",
+        "test"
       ],
       "topics": [],
       "venue": "2025 IEEE Conference on Games (CoG)",
@@ -6900,8 +6937,10 @@
       "month": 0,
       "authors": "Yue, Yuguang and Green, Chris and Hunt, Samuel and Salia, Irakli and Shi, Wenzhe and Hunt, Jonathan J",
       "shortAuthors": "Yue et al.",
-      "primaryRole": "context",
-      "roles": [],
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
       "topics": [],
       "venue": "2025 IEEE Conference on Games (CoG)",
       "url": "https://arxiv.org/abs/2508.14295v1",
@@ -6951,7 +6990,8 @@
       "shortAuthors": "Vezhnevets et al.",
       "primaryRole": "runtime",
       "roles": [
-        "runtime"
+        "runtime",
+        "play"
       ],
       "topics": [],
       "venue": "arXiv",
@@ -7103,7 +7143,8 @@
       "shortAuthors": "Ashby et al.",
       "primaryRole": "runtime",
       "roles": [
-        "runtime"
+        "runtime",
+        "design"
       ],
       "topics": [],
       "venue": "Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems",
@@ -7321,23 +7362,312 @@
       "kind": "misc"
     },
     {
-      "id": "huang2026programmableworld",
-      "title": "Programmable World Model",
+      "id": "farebrother2018generalization",
+      "title": "Generalization and Regularization in DQN",
+      "year": 2018,
+      "month": 0,
+      "authors": "Jesse Farebrother and Marlos C. Machado and Michael Bowling",
+      "shortAuthors": "Farebrother et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:1810.00123",
+      "url": "https://arxiv.org/abs/1810.00123",
+      "kind": "article"
+    },
+    {
+      "id": "unterthiner2018fvd",
+      "title": "Towards Accurate Generative Models of Video: A New Metric & Challenges",
+      "year": 2018,
+      "month": 0,
+      "authors": "Thomas Unterthiner and Sjoerd van Steenkiste and Karol Kurach and Raphael Marinier and Marcin Michalski and Sylvain Gelly",
+      "shortAuthors": "Unterthiner et al.",
+      "primaryRole": "context",
+      "roles": [],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:1812.01717",
+      "url": "https://arxiv.org/abs/1812.01717v2",
+      "kind": "article"
+    },
+    {
+      "id": "li2026wildworld",
+      "title": "WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG",
       "year": 2026,
-      "month": 9,
-      "authors": "Zheng-Hui Huang and Guixu Lin and Jiacheng Lin and Yi-Chuan Huang and Ruihan Yu and Muyao Niu and Siqi Yang and Yu-Lun Liu and Yung-Yu Chuang and Kaipeng Zhang and Zhixiang Wang",
+      "month": 0,
+      "authors": "Zhen Li and Zian Meng and Shuwei Shi and Wenshuo Peng and Yuwei Wu and Bo Zheng and Chuanhao Li and Kaipeng Zhang",
+      "shortAuthors": "Li et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2603.23497",
+      "url": "https://arxiv.org/abs/2603.23497",
+      "kind": "article"
+    },
+    {
+      "id": "huang2026worldrenderer",
+      "title": "Generative World Renderer",
+      "year": 2026,
+      "month": 0,
+      "authors": "Zheng-Hui Huang and Zhixiang Wang and Jiaming Tan and Ruihan Yu and Yidan Zhang and Bo Zheng and Yu-Lun Liu and Yung-Yu Chuang and Kaipeng Zhang",
       "shortAuthors": "Huang et al.",
       "primaryRole": "model",
       "roles": [
         "model"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2604.02329",
+      "url": "https://arxiv.org/abs/2604.02329v1",
+      "kind": "article"
+    },
+    {
+      "id": "lin2026rendererflash",
+      "title": "Generative World Renderer at the Speed of Play",
+      "year": 2026,
+      "month": 0,
+      "authors": "Guixu Lin and Zheng-Hui Huang and Siqi Yang and Ming-Hsuan Yang and Kaipeng Zhang and Zhixiang Wang",
+      "shortAuthors": "Lin et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model",
+        "runtime"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2607.18703",
+      "url": "https://arxiv.org/abs/2607.18703v1",
+      "kind": "article"
+    },
+    {
+      "id": "xu2026worldmark",
+      "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+      "year": 2026,
+      "month": 0,
+      "authors": "Xiaojie Xu and Zhengyuan Lin and Kang He and Yukang Feng and Xiaofeng Mao and Yuanyang Yin and Yongtao Ge and Kaipeng Zhang",
+      "shortAuthors": "Xu et al.",
+      "primaryRole": "context",
+      "roles": [],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2604.21686",
+      "url": "https://arxiv.org/abs/2604.21686v2",
+      "kind": "article"
+    },
+    {
+      "id": "li2026autobg",
+      "title": "AutoBG: A Board Game Design Assistant with Interactive Ideation, Iterative Rulebook Generation, and Individualized Feedback",
+      "year": 2026,
+      "month": 0,
+      "authors": "Zizhen Li and Chuanhao Li and Yibin Wang and Jianwen Sun and Yukang Feng and Fanrui Zhang and Mingzhu Sun and Yifei Huang and Kaipeng Zhang",
+      "shortAuthors": "Li et al.",
+      "primaryRole": "design",
+      "roles": [
+        "design",
+        "test"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2606.01976",
+      "url": "https://arxiv.org/abs/2606.01976v2",
+      "kind": "article"
+    },
+    {
+      "id": "cheng2026agenticsts",
+      "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+      "year": 2026,
+      "month": 0,
+      "authors": "Xiangchen Cheng and Yunwei Jiang and Jianwen Sun and Zizhen Li and Chuanhao Li and Xiangcheng Cao and Yihao Liu and Fanrui Zhang and Li Jin and Kaipeng Zhang",
+      "shortAuthors": "Cheng et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2607.02255",
+      "url": "https://arxiv.org/abs/2607.02255v1",
+      "kind": "article"
+    },
+    {
+      "id": "cao2026shadowdancer",
+      "title": "ShadowDancer: Teaching Video World Models Any Action by Learning Unified Dynamics Representations from a Video and Its Shadow",
+      "year": 2026,
+      "month": 0,
+      "authors": "Jin Cao and Zian Meng and Kaipeng Zhang",
+      "shortAuthors": "Cao et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2607.28362",
+      "url": "https://arxiv.org/abs/2607.28362",
+      "kind": "article"
+    },
+    {
+      "id": "cai2026mass",
+      "title": "MASS: Multiplayer World Models with Authoritative Shared State",
+      "year": 2026,
+      "month": 0,
+      "authors": "Ziqi Cai and Siqi Yang and Yimu Wang and Zixian Gao and Yunheng Liu and Shuchen Weng and Erwin Wu and Kaipeng Zhang and Boxin Shi",
+      "shortAuthors": "Cai et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2608.06257",
+      "url": "https://arxiv.org/abs/2608.06257v2",
+      "kind": "article"
+    },
+    {
+      "id": "xu2026worldrover",
+      "title": "WorldRover: A Scalable Synthetic Video Data Engine for World Exploration with Rich Annotations",
+      "year": 2026,
+      "month": 0,
+      "authors": "Xiaojie Xu and Zhengyuan Lin and Runyi Li and Yihao Liu and Kaipeng Zhang and Yongtao Ge",
+      "shortAuthors": "Xu et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2608.15659",
+      "url": "https://arxiv.org/abs/2608.15659v2",
+      "kind": "article"
+    },
+    {
+      "id": "niu2026worldsculpt",
+      "title": "WorldSculpt: Generating Compositional Worlds from Grounded Videos",
+      "year": 2026,
+      "month": 0,
+      "authors": "Muyao Niu and Jixuan He and Ruihan Yu and Lian Fu and Yonghao Yu and Zheng-Hui Huang and Yifan Zhan and Fengbo Lan and Yongtao Ge and Yinqiang Zheng and Kaipeng Zhang and Zhixiang Wang",
+      "shortAuthors": "Niu et al.",
+      "primaryRole": "design",
+      "roles": [
+        "design"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2609.05416",
+      "url": "https://arxiv.org/abs/2609.05416v2",
+      "kind": "article"
+    },
+    {
+      "id": "huang2026programmable",
+      "title": "Programmable World Model",
+      "year": 2026,
+      "month": 0,
+      "authors": "Zheng-Hui Huang and Guixu Lin and Jiacheng Lin and Yi-Chuan Huang and Ruihan Yu and Muyao Niu and Siqi Yang and Yu-Lun Liu and Yung-Yu Chuang and Kaipeng Zhang and Zhixiang Wang",
+      "shortAuthors": "Huang et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model",
+        "build",
+        "runtime"
       ],
       "topics": [
         "world-modeling",
         "state-and-mechanics",
         "generation-toolchain"
       ],
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2609.10540",
+      "venue": "arXiv preprint arXiv:2609.10540",
+      "url": "https://arxiv.org/abs/2609.10540v1",
+      "kind": "article"
+    },
+    {
+      "id": "mao2025yume15",
+      "title": "Yume-1.5: A Text-Controlled Interactive World Generation Model",
+      "year": 2025,
+      "month": 0,
+      "authors": "Xiaofeng Mao and Zhen Li and Chuanhao Li and Xiaojie Xu and Kaining Ying and Tong He and Jiangmiao Pang and Yu Qiao and Kaipeng Zhang",
+      "shortAuthors": "Mao et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model",
+        "runtime"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2512.22096",
+      "url": "https://arxiv.org/abs/2512.22096",
+      "kind": "article"
+    },
+    {
+      "id": "zhu2026cubepart",
+      "title": "CubePart: An Open-Vocabulary Part-Controllable 3D Generator",
+      "year": 2026,
+      "month": 0,
+      "authors": "Yiheng Zhu and Kangle Deng and Jean-Philippe Fauconnier and Inaki Navarro and Daiqing Li and Ava Pun and Yinan Zhang and Peiye Zhuang and Xiaoxia Sun and Maneesh Agrawala and Kiran Bhat and Tinghui Zhou",
+      "shortAuthors": "Zhu et al.",
+      "primaryRole": "design",
+      "roles": [
+        "design"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2605.28763",
+      "url": "https://arxiv.org/abs/2605.28763v1",
+      "kind": "article"
+    },
+    {
+      "id": "alayaworld2026full",
+      "title": "AlayaWorld: Interactive Long-Horizon World Modeling-Full Technical Report (v1.1)",
+      "year": 2026,
+      "month": 0,
+      "authors": "AlayaWorld Team",
+      "shortAuthors": "AlayaWorld Team",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2608.13492",
+      "url": "https://arxiv.org/abs/2608.13492v1",
+      "kind": "article"
+    },
+    {
+      "id": "yin2026evoke",
+      "title": "Alaya-EVOKE: From Linear-Scaling Supervision to Endless World",
+      "year": 2026,
+      "month": 0,
+      "authors": "Yuanyang Yin and Gongxuan Wang and Yifan Zhan and Chuanhao Li and Kaipeng Zhang and Feng Zhao",
+      "shortAuthors": "Yin et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [],
+      "venue": "arXiv preprint arXiv:2608.13546",
+      "url": "https://arxiv.org/abs/2608.13546v2",
+      "kind": "article"
+    },
+    {
+      "id": "nvidia2024mechabreak",
+      "title": "NVIDIA ACE & Digital Human Technologies Showcased In First Game, Mecha BREAK",
+      "year": 2024,
+      "month": 0,
+      "authors": "NVIDIA",
+      "shortAuthors": "NVIDIA",
+      "primaryRole": "runtime",
+      "roles": [
+        "runtime"
+      ],
+      "topics": [],
+      "venue": "Official technology demonstration",
+      "url": "https://www.nvidia.com/en-us/geforce/news/mecha-break-nvidia-ace-nims-rtx-pc-laptop-games-apps/",
+      "kind": "misc"
+    },
+    {
+      "id": "nvidia2025audio2faceplugin",
+      "title": "Audio2Face-3D: ACE Unreal Plugin",
+      "year": 2025,
+      "month": 0,
+      "authors": "NVIDIA",
+      "shortAuthors": "NVIDIA",
+      "primaryRole": "design",
+      "roles": [
+        "design"
+      ],
+      "topics": [],
+      "venue": "Developer documentation",
+      "url": "https://docs.nvidia.com/ace/latest/workflows/kairos/ace-unreal-plugin-audio2face.html",
       "kind": "misc"
     },
     {

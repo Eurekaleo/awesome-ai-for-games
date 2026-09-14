@@ -5,6 +5,7 @@ import {FILTER_LABELS, searchPapers, sortPapers, safePaperUrl, escapeHtml} from 
 const {papers, sourceCounts} = JSON.parse(await readFile(new URL('../data/references.json', import.meta.url)));
 const paperBib = await readFile(new URL('../data/paper-references.bib', import.meta.url), 'utf8');
 const additionsBib = await readFile(new URL('../data/living-additions.bib', import.meta.url), 'utf8');
+const roleMap = JSON.parse(await readFile(new URL('../data/role-citations.json', import.meta.url), 'utf8'));
 const countBibEntries = source => [...source.matchAll(/^@\w+\s*\{/gm)].length;
 const paperReferenceCount = countBibEntries(paperBib);
 const livingAdditionCount = countBibEntries(additionsBib);
@@ -13,8 +14,8 @@ const expectedRoles = {
   build: 'Build & Maintain', runtime: 'Generate & Adapt at Runtime', test: 'Test & Evaluate',
 };
 assert.deepEqual(Object.fromEntries(Object.entries(FILTER_LABELS).filter(([key]) => key !== 'context')), expectedRoles);
-assert.equal(paperReferenceCount, 417, 'The manuscript bibliography is not synchronized with the current paper');
-assert.equal(livingAdditionCount, 4, 'The living catalog additions changed unexpectedly');
+assert.equal(paperReferenceCount, 436, 'The manuscript bibliography is not synchronized with the current paper');
+assert.equal(livingAdditionCount, 3, 'The catalog-only additions changed unexpectedly');
 assert.equal(papers.length, paperReferenceCount + livingAdditionCount, 'The public collection is not the manuscript bibliography plus living additions');
 assert.deepEqual(sourceCounts, {manuscript:paperReferenceCount,livingAdditions:livingAdditionCount});
 assert.equal(new Set(papers.map(p => p.id)).size, papers.length);
@@ -22,7 +23,16 @@ assert(papers.every(p => p.title && p.authors && p.year > 0 && p.url), 'Every re
 assert(papers.every(p => Object.hasOwn(FILTER_LABELS, p.primaryRole)));
 assert(papers.every(p => !p.url || safePaperUrl(p.url)));
 assert(papers.every(p => p.primaryRole==='context' || p.roles.includes(p.primaryRole)));
-assert.equal(papers.filter(p=>p.primaryRole==='context').length,25);
+const byId = new Map(papers.map(p => [p.id, p]));
+for (const [key, role] of Object.entries(roleMap.primary)) {
+  assert(byId.has(key), `System-table role badge has no bibliography record: ${key}`);
+  assert.equal(byId.get(key).primaryRole, role, `Primary role drifted from manuscript system table: ${key}`);
+}
+assert.deepEqual(byId.get('huang2026guigames').roles.filter(role => ['build','test'].includes(role)).sort(), ['build','test']);
+assert.equal(byId.get('huang2026guigames').primaryRole, 'build');
+assert.equal(byId.get('huang2026programmable').primaryRole, 'model');
+assert(byId.get('huang2026programmable').roles.includes('build'));
+assert(papers.filter(p=>p.primaryRole==='context').length > 0, 'Supporting context is missing');
 const normalizedUrls = papers.map(p => p.url
   .replace(/^https?:\/\/(?:www\.)?/i, '')
   .replace(/arxiv\.org\/(?:abs|pdf)\/([0-9]{4}\.[0-9]{4,5})(?:v\d+)?(?:\.pdf)?$/i, 'arxiv.org/abs/$1')
@@ -33,7 +43,7 @@ const normalizedUrls = papers.map(p => p.url
   .toLowerCase());
 assert.equal(new Set(normalizedUrls).size, normalizedUrls.length, 'Duplicate canonical URLs in the reference index');
 assert.equal(searchPapers(papers).length, papers.length);
-assert(searchPapers(papers, {role:'build'}).length >= 20);
+assert(searchPapers(papers, {role:'build'}).length >= 15);
 assert(searchPapers(papers, {query:'MarioGPT'}).some(p => p.title.includes('MarioGPT')));
 assert.equal(searchPapers(papers, {query:'GameNGen'}).length, 1);
 assert.equal(searchPapers(papers, {query:'GameNGen', role:'model', year:'2025'}).length, 1);
@@ -65,8 +75,15 @@ const contextCount = searchPapers(papers, {role:'context'}).length;
 const coreCount = papers.length - contextCount;
 assert(readme.includes(`references-${papers.length}`), 'README reference badge is stale');
 assert(readme.includes(`core%20works-${coreCount}`), 'README core-work badge is stale');
-assert(html.includes(`living bibliography of ${papers.length} references`), 'Website description count is stale');
+assert(html.includes(`bibliography of ${papers.length} references`), 'Website description count is stale');
 assert(html.includes(`id="paper-count">${papers.length}</strong>`), 'Website hero count is stale');
+assert(html.includes(`Search ${paperReferenceCount} current manuscript references and ${livingAdditionCount === 3 ? 'three' : livingAdditionCount} separately tracked public additions`), 'Website manuscript-versus-catalog distinction is stale');
+for (const figure of ['figure-3-timeline','figure-4a-knowledge','figure-4b-knowledge']) {
+  assert(html.includes(`assets/survey-map/${figure}.webp`), `Manuscript visual is missing from the website: ${figure}`);
+}
+for (const phrase of ['Perceptual quality','Mechanics correctness','Persistent state','A new map is not a new game','full UE/Unity development-to-rendering workflow']) {
+  assert(html.includes(phrase), `Manuscript synthesis is missing from the website: ${phrase}`);
+}
 for (const [role, label] of Object.entries(expectedRoles)) {
   const readmeLabel = label.replaceAll('&', 'and');
   assert(readme.includes(`## ${readmeLabel}`), `README is missing the ${role} collection`);

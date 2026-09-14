@@ -4,7 +4,7 @@ The project logo is the same original AI-and-game-world mark used by the survey 
 
 The opening game-world illustration was generated specifically for this project. It is concept artwork, not a research result or an image of a functioning system.
 
-The seven images in `survey-map/` are web renditions of the project's own survey schematics: the six-role overview and the chapter maps for Play, Model, Design, Build, Runtime, and Test. They are explanatory figures, not screenshots of evaluated systems. The website contains these raster renditions only; it does not contain the paper PDF.
+The ten images in `survey-map/` are web renditions of the manuscript's six-role overview, six chapter maps, selected-work timeline, and two-page knowledge map. They are explanatory figures, not screenshots of evaluated systems. The website contains raster renditions only; it does not contain the paper PDF.
 
 The research gallery reproduces illustrative material from the following public projects. These images are not covered by the repository's MIT software license. Copyright and other rights remain with their respective creators and owners; inclusion does not imply endorsement.
 
@@ -19,6 +19,6 @@ The research gallery reproduces illustrative material from the following public 
 
 The gallery files are WebP conversions of previously collected source-attributed images. No paper PDF is included in the website or repository.
 
-The two files in `playable/` are screenshots of this project's own playable prototypes, *Moonlight Garden* and *Aurora Outpost*. The browser games use Codex-generated rule kernels from an AI-assisted game-making study; their presentation layer was assembled within the same assisted workflow. They are presented as interactive demonstrations, not as evidence of fully autonomous end-to-end game production.
+The six files in `playable/` are screenshots of this project's browser-game demonstrations: *Moonlight Garden*, *Aurora Outpost*, *Lulu Snow Night*, *Snow Dragon Rescue*, *Snow Fox Survival*, and *Revised Platform Route*. These are illustrative project demos, not empirical results of the survey or evidence of fully autonomous end-to-end game production. The first two use AI-generated rule kernels; the remaining four are AI-created or AI-revised prototypes presented without online interaction services.
 
 For attribution corrections or removal requests, please [open an issue](https://github.com/Eurekaleo/awesome-ai-for-games/issues).
