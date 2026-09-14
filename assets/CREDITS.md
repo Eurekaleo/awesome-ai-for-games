@@ -2,7 +2,7 @@
 
 The project logo is the same original AI-and-game-world mark used by the survey manuscript, keeping the paper, website, and repository under one visual identity.
 
-The opening game-world illustration was generated specifically for this project. It is concept artwork, not a research result or an image of a functioning system.
+The game-world illustration used on the website and README was generated specifically for this project. It is concept artwork, not a research result or an image of a functioning system. The README's six role icons and navigation cards reuse the website's role iconography and colors; its venue chips are original interface assets.
 
 The ten images in `survey-map/` are web renditions of the manuscript's six-role overview, six chapter maps, selected-work timeline, and two-page knowledge map. They are explanatory figures, not screenshots of evaluated systems. The website contains raster renditions only; it does not contain the paper PDF.
 

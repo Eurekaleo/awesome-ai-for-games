@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
+import {access, readFile} from 'node:fs/promises';
 import {FILTER_LABELS, searchPapers, sortPapers, safePaperUrl, escapeHtml} from '../site/catalog.mjs';
 
 const {papers, sourceCounts} = JSON.parse(await readFile(new URL('../data/references.json', import.meta.url)));
@@ -75,6 +75,10 @@ const contextCount = searchPapers(papers, {role:'context'}).length;
 const coreCount = papers.length - contextCount;
 assert(readme.includes(`references-${papers.length}`), 'README reference badge is stale');
 assert(readme.includes(`core%20works-${coreCount}`), 'README core-work badge is stale');
+assert(readme.includes('assets/game-world.webp'), 'README project artwork is missing');
+for (const [, source] of readme.matchAll(/<img\s+[^>]*src="([^"]+)"/g)) {
+  if (!/^https?:\/\//i.test(source)) await access(new URL(`../${source}`, import.meta.url));
+}
 assert(html.includes(`bibliography of ${papers.length} references`), 'Website description count is stale');
 assert(html.includes(`id="paper-count">${papers.length}</strong>`), 'Website hero count is stale');
 assert(html.includes(`Search ${paperReferenceCount} current manuscript references and ${livingAdditionCount === 3 ? 'three' : livingAdditionCount} separately tracked public additions`), 'Website manuscript-versus-catalog distinction is stale');
@@ -87,6 +91,7 @@ for (const phrase of ['Perceptual quality','Mechanics correctness','Persistent s
 for (const [role, label] of Object.entries(expectedRoles)) {
   const readmeLabel = label.replaceAll('&', 'and');
   assert(readme.includes(`## ${readmeLabel}`), `README is missing the ${role} collection`);
+  assert(readme.includes(`assets/readme/role-${role}.svg`), `README role card is missing: ${role}`);
   const listed = searchPapers(papers, {role}).length;
   const section = readme.split(`## ${readmeLabel}`)[1]?.split('\n## ')[0] ?? '';
   assert.equal((section.match(/^- (?:⭐ )?\[/gm) ?? []).length, listed, `README ${role} count does not match the data`);
