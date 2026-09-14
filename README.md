@@ -308,7 +308,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 
 ### 2023 · 3 works
 
-- [Affective Game Computing: A Survey](https://arxiv.org/abs/2309.14104) · <img src="assets/readme/venues/conference-proceedings-of-the-ieee.svg" alt="Proceedings of the IEEE" title="Proceedings of the IEEE" height="20">
+- [Affective Game Computing: A Survey](https://arxiv.org/abs/2309.14104) · <img src="assets/readme/venues/journal-proceedings-of-the-ieee.svg" alt="Proceedings of the IEEE" title="Proceedings of the IEEE" height="20">
 - [Predicting Player Engagement in Tom Clancy's The Division 2: A Multimodal Approach via Pixels and Gamepad Actions](https://arxiv.org/abs/2310.06136) · <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2310.06136" height="20">
 - [Transformers Are Sample-Efficient World Models](https://arxiv.org/abs/2209.00588) · <img src="assets/readme/venues/conference-iclr.svg" alt="ICLR" title="International Conference on Learning Representations" height="20">
 
@@ -371,7 +371,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 ### 2013 · 2 works
 
 - [Behavior evolution in Tomb Raider Underworld](https://doi.org/10.1109/cig.2013.6633637) · <img src="assets/readme/venues/conference-ieee-cig.svg" alt="IEEE CIG" title="2013 IEEE Conference on Computational Intelligence in Games (CIG)" height="20">
-- [Player Modeling](https://drops.dagstuhl.de/entities/document/10.4230/DFU.Vol6.12191.45) · <img src="assets/readme/venues/book-ieee-cog.svg" alt="IEEE CoG" title="Artificial and Computational Intelligence in Games" height="20">
+- [Player Modeling](https://drops.dagstuhl.de/entities/document/10.4230/DFU.Vol6.12191.45) · <img src="assets/readme/venues/book-book-chapter.svg" alt="Book chapter" title="Artificial and Computational Intelligence in Games" height="20">
 
 ### 2012 · 1 works
 
@@ -582,7 +582,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 
 ### 2022 · 2 works
 
-- ["I Want To See How Smart This AI Really Is": Player Mental Model Development of an Adversarial AI Player](https://doi.org/10.1145/3549482) · <img src="assets/readme/venues/conference-pacm-hci.svg" alt="PACM HCI" title="Proceedings of the ACM on Human-Computer Interaction" height="20">
+- ["I Want To See How Smart This AI Really Is": Player Mental Model Development of an Adversarial AI Player](https://doi.org/10.1145/3549482) · <img src="assets/readme/venues/journal-pacm-hci.svg" alt="PACM HCI" title="Proceedings of the ACM on Human-Computer Interaction" height="20">
 - [Craft an Iron Sword: Dynamically Generating Interactive Game Characters by Prompting Large Language Models Tuned on Code](https://aclanthology.org/2022.wordplay-1.3/) · <img src="assets/readme/venues/conference-wordplay-workshop.svg" alt="Wordplay Workshop" title="Proceedings of the 3rd Wordplay: When Language Meets Games Workshop (Wordplay 2022)" height="20">
 
 ### 2021 · 1 works

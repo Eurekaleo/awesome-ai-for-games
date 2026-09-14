@@ -100,7 +100,8 @@ const venueLabel = value => {
   if (/Advances in Computer Entertainment Technology/i.test(venue)) return 'ACE';
   if (/Canadian Conference on Artificial Intelligence/i.test(venue)) return 'Canadian AI';
   if (/Computing Frontiers Conference/i.test(venue)) return 'Computing Frontiers';
-  if (/Computational Intelligence (?:and|in) Games|IEEE Conference on Games/i.test(venue)) return /\bCIG\b/i.test(venue) ? 'IEEE CIG' : 'IEEE CoG';
+  if (/IEEE Conference on (?:Computational Intelligence (?:and|in) Games|Games)/i.test(venue)) return /\bCIG\b/i.test(venue) ? 'IEEE CIG' : 'IEEE CoG';
+  if (/^Artificial and Computational Intelligence in Games$/i.test(venue)) return 'Book chapter';
   if (/Genetic and Evolutionary Computation/i.test(venue)) return 'GECCO';
   if (/AAAI Conference on Artificial Intelligence|Twenty-Fifth International Joint Conference on Artificial Intelligence/i.test(venue)) return /Joint Conference/i.test(venue) ? 'IJCAI' : 'AAAI';
   if (/User Interface Software and Technology/i.test(venue)) return 'UIST';
@@ -150,6 +151,7 @@ const sourceType = paper => {
   const label = venueLabel(venue);
   if (/^arXiv|^CoRR$/i.test(venue)) return 'preprint';
   if (/^Official|technical announcement|Technical Blog|customer case study|Developer documentation|Project or technical resource|Ubisoft News|Unity Blog|Roblox Engineering/i.test(venue)) return 'industry';
+  if (/^Proceedings of the (?:IEEE|ACM on Human-Computer Interaction)$/i.test(venue)) return 'journal';
   if (/Conference|Proceedings|Symposium|Workshop|\bAAAI\b|\bICLR\b|\bICML\b|\bCoG\b|\bCIG\b|\bEMNLP\b|\bFDG\b/i.test(venue)
     || /^(?:NeurIPS(?: D&B| C&D)?|Findings of (?:ACL|NAACL)|ACL|CVPR|ICCV|AIIDE|ECML|EvoApplications)$/.test(label)) return 'conference';
   if (paper.kind === 'book' || paper.kind === 'incollection') return 'book';
