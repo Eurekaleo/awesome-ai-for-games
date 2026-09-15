@@ -68,7 +68,7 @@ const collections = [
   },
 ];
 
-const {papers, sourceCounts} = JSON.parse(await readFile(referencesPath, 'utf8'));
+const {papers} = JSON.parse(await readFile(referencesPath, 'utf8'));
 
 const escapeMarkdown = value => String(value ?? '')
   .replaceAll('\\', '\\\\')
@@ -258,12 +258,12 @@ const lines = [
   '',
   '## About the survey',
   '',
-  'Foundation models are changing more than how AI plays a given game. They can model game worlds and players, propose content and rules, build executable projects, generate and adapt live experiences, and produce evidence for testing. The survey organizes this expanding landscape by the immediate use of an AI output, keeping distinct the claims made for actions, predictions, designs, software, runtime changes, and test evidence.',
+  'Foundation models now do more than play a given game: they can model games and players, design content and rules, build executable projects, shape live experiences, and support testing. This repository organizes the survey literature into six roles according to how each AI output is used.',
   '',
   '> [!IMPORTANT]',
   '> **Three questions guide the synthesis across every role.** **Boundary:** what is supplied by the game or workflow, and what is assigned to AI? **Transfer and reuse:** which capabilities transfer, which artifacts can be reused, and what remains setting-specific? **Evidence:** what claims does evaluation support where the output is actually used?',
   '',
-  '**Start here:** [Read the paper](paper/AI_for_Games_in_the_Foundation_Model_Era.pdf) · [Explore the project website](https://eurekaleo.github.io/awesome-ai-for-games/) · [Open the visual survey map](https://eurekaleo.github.io/awesome-ai-for-games/#map) · [Search the literature](https://eurekaleo.github.io/awesome-ai-for-games/#papers) · [Play the AI-crafted games](https://eurekaleo.github.io/awesome-ai-for-games/#playable-games)',
+  '**Explore:** [Visual survey map](https://eurekaleo.github.io/awesome-ai-for-games/#map) · [Literature search](https://eurekaleo.github.io/awesome-ai-for-games/#papers) · [AI-crafted games](https://eurekaleo.github.io/awesome-ai-for-games/#playable-games)',
   '',
   '<p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/readme/survey-banner.webp" width="1000" alt="Panoramic AI for Games project banner connecting design, build, modeling, runtime generation, play, and testing"></a></p>',
   '',
@@ -273,7 +273,7 @@ const lines = [
   '',
   '## Choose a research role',
   '',
-  'The six paths below follow what an AI output is used to do in a game or development workflow. Select a role to jump straight to its papers.',
+  'Select a role to jump directly to its papers.',
   '',
   '<p align="center">',
   ...collections.filter(collection => collection.accent).flatMap((collection, index) => [
@@ -282,15 +282,11 @@ const lines = [
   ]),
   '</p>',
   '',
-  `**${sourceCounts.manuscript} survey references + ${sourceCounts.livingAdditions} living additions.** [Search all papers](https://eurekaleo.github.io/awesome-ai-for-games/#papers) · [Suggest a paper](https://github.com/Eurekaleo/awesome-ai-for-games/issues/new/choose)`,
-  '',
   '## Reading the index',
   '',
-  'Each work appears once under its primary role. Where a role has a sparse early tail, those years are consolidated into a “Before YEAR” group and the exact year remains beside every title. Years follow the publication or source year recorded in the bibliography; an older arXiv identifier may therefore appear under a later venue year. Venue-chip colors identify source type, not paper quality.',
+  'Each work appears once under its primary role and carries a source-type badge. Sparse early years are consolidated into a “Before YEAR” group, with the exact year retained beside each title.',
   '',
   '<p><img src="assets/readme/legend-conference.svg" alt="Conference source" height="20"> <img src="assets/readme/legend-journal.svg" alt="Journal source" height="20"> <img src="assets/readme/legend-preprint.svg" alt="Preprint source" height="20"> <img src="assets/readme/legend-industry.svg" alt="Official or industry source" height="20"> <img src="assets/readme/legend-book.svg" alt="Book source" height="20"></p>',
-  '',
-  'Across roles, the survey asks what the game supplies versus what AI contributes, what transfers between settings, and what the evidence establishes. [The project site](https://eurekaleo.github.io/awesome-ai-for-games/) shows the manuscript figures, cross-role examples, and searchable filters.',
   '',
   `[Foundations and context →](#foundations-and-context) · [Contributing →](#contributing)`,
 ];
@@ -299,11 +295,6 @@ for (const collection of collections) {
   const roleIcon = collection.accent ? `<img src="assets/readme/icon-${collection.key}.svg" alt="" width="24" height="24"> ` : '';
   lines.push('', '---', '', `## ${collection.title}`, '', `${roleIcon}${collection.focus}`);
   const entries = sorted.filter(paper => paper.primaryRole === collection.key);
-  const perYear = new Map();
-  for (const paper of entries) perYear.set(paper.year, (perYear.get(paper.year) ?? 0) + 1);
-  const earlyCount = collection.groupBefore
-    ? entries.filter(paper => Number(paper.year) < collection.groupBefore).length
-    : 0;
   let currentGroup;
   for (const paper of entries) {
     const isEarly = Boolean(collection.groupBefore) && Number(paper.year) < collection.groupBefore;
@@ -311,8 +302,7 @@ for (const collection of collections) {
     if (group !== currentGroup) {
       currentGroup = group;
       const groupLabel = isEarly ? `Before ${collection.groupBefore}` : paper.year;
-      const groupCount = isEarly ? earlyCount : perYear.get(paper.year);
-      lines.push('', `### ${groupLabel} · ${groupCount} ${groupCount === 1 ? 'work' : 'works'}`, '');
+      lines.push('', `### ${groupLabel}`, '');
     }
     const yearPrefix = isEarly ? `**${paper.year}** · ` : '';
     lines.push(`- ${yearPrefix}[${escapeMarkdown(paper.title)}](${paper.url})&nbsp;${venueBadge(paper)}`);

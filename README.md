@@ -14,12 +14,12 @@
 
 ## About the survey
 
-Foundation models are changing more than how AI plays a given game. They can model game worlds and players, propose content and rules, build executable projects, generate and adapt live experiences, and produce evidence for testing. The survey organizes this expanding landscape by the immediate use of an AI output, keeping distinct the claims made for actions, predictions, designs, software, runtime changes, and test evidence.
+Foundation models now do more than play a given game: they can model games and players, design content and rules, build executable projects, shape live experiences, and support testing. This repository organizes the survey literature into six roles according to how each AI output is used.
 
 > [!IMPORTANT]
 > **Three questions guide the synthesis across every role.** **Boundary:** what is supplied by the game or workflow, and what is assigned to AI? **Transfer and reuse:** which capabilities transfer, which artifacts can be reused, and what remains setting-specific? **Evidence:** what claims does evaluation support where the output is actually used?
 
-**Start here:** [Read the paper](paper/AI_for_Games_in_the_Foundation_Model_Era.pdf) · [Explore the project website](https://eurekaleo.github.io/awesome-ai-for-games/) · [Open the visual survey map](https://eurekaleo.github.io/awesome-ai-for-games/#map) · [Search the literature](https://eurekaleo.github.io/awesome-ai-for-games/#papers) · [Play the AI-crafted games](https://eurekaleo.github.io/awesome-ai-for-games/#playable-games)
+**Explore:** [Visual survey map](https://eurekaleo.github.io/awesome-ai-for-games/#map) · [Literature search](https://eurekaleo.github.io/awesome-ai-for-games/#papers) · [AI-crafted games](https://eurekaleo.github.io/awesome-ai-for-games/#playable-games)
 
 <p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/readme/survey-banner.webp" width="1000" alt="Panoramic AI for Games project banner connecting design, build, modeling, runtime generation, play, and testing"></a></p>
 
@@ -29,7 +29,7 @@ Foundation models are changing more than how AI plays a given game. They can mod
 
 ## Choose a research role
 
-The six paths below follow what an AI output is used to do in a game or development workflow. Select a role to jump straight to its papers.
+Select a role to jump directly to its papers.
 
 <p align="center">
   <a href="#play-and-act"><img src="assets/readme/role-play.svg" width="246" alt="Play and Act: 116 works"></a>
@@ -41,15 +41,11 @@ The six paths below follow what an AI output is used to do in a game or developm
   <a href="#test-and-evaluate"><img src="assets/readme/role-test.svg" width="246" alt="Test and Evaluate: 61 works"></a>
 </p>
 
-**436 survey references + 3 living additions.** [Search all papers](https://eurekaleo.github.io/awesome-ai-for-games/#papers) · [Suggest a paper](https://github.com/Eurekaleo/awesome-ai-for-games/issues/new/choose)
-
 ## Reading the index
 
-Each work appears once under its primary role. Where a role has a sparse early tail, those years are consolidated into a “Before YEAR” group and the exact year remains beside every title. Years follow the publication or source year recorded in the bibliography; an older arXiv identifier may therefore appear under a later venue year. Venue-chip colors identify source type, not paper quality.
+Each work appears once under its primary role and carries a source-type badge. Sparse early years are consolidated into a “Before YEAR” group, with the exact year retained beside each title.
 
 <p><img src="assets/readme/legend-conference.svg" alt="Conference source" height="20"> <img src="assets/readme/legend-journal.svg" alt="Journal source" height="20"> <img src="assets/readme/legend-preprint.svg" alt="Preprint source" height="20"> <img src="assets/readme/legend-industry.svg" alt="Official or industry source" height="20"> <img src="assets/readme/legend-book.svg" alt="Book source" height="20"></p>
-
-Across roles, the survey asks what the game supplies versus what AI contributes, what transfers between settings, and what the evidence establishes. [The project site](https://eurekaleo.github.io/awesome-ai-for-games/) shows the manuscript figures, cross-role examples, and searchable filters.
 
 [Foundations and context →](#foundations-and-context) · [Contributing →](#contributing)
 
@@ -59,7 +55,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 
 <img src="assets/readme/icon-play.svg" alt="" width="24" height="24"> Policies, planners, generalist agents, embodied control, cooperation, and situated action.
 
-### 2026 · 17 works
+### 2026
 
 - [A Survey on Large Language Model-Based Game Agents](https://arxiv.org/abs/2404.02039)&nbsp;<img src="assets/readme/venues/journal-acm-csur.svg" alt="ACM CSUR" title="ACM Computing Surveys" height="20">
 - [Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond](https://arxiv.org/abs/2604.22748)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2604.22748" height="20">
@@ -79,7 +75,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse](https://arxiv.org/abs/2605.09965)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2605.09965" height="20">
 - [Twin: Playing an Unknown Game with a Test-Time Digital Twin](https://arxiv.org/abs/2608.14490)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2608.14490" height="20">
 
-### 2025 · 18 works
+### 2025
 
 - [A Survey on Large Language Model-Based Social Agents in Game-Theoretic Scenarios](https://openreview.net/forum?id=CsoSWpR5xC)&nbsp;<img src="assets/readme/venues/journal-tmlr.svg" alt="TMLR" title="Transactions on Machine Learning Research" height="20">
 - [AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors and Society](https://arxiv.org/abs/2502.08691)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2502.08691" height="20">
@@ -100,7 +96,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Ubisoft Reveals Teammates-An AI Experiment to Change the Game](https://news.ubisoft.com/en-us/article/3mWlITIuWuu0MoVuR6o8ps/ubisoft-reveals-teammates-an-ai-experiment-to-change-the-game)&nbsp;<img src="assets/readme/venues/industry-ubisoft-news.svg" alt="Ubisoft News" title="Ubisoft News" height="20">
 - [VideoGameBench: Can Vision-Language Models Complete Popular Video Games?](https://arxiv.org/abs/2505.18134)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2505.18134" height="20">
 
-### 2024 · 13 works
+### 2024
 
 - [A Survey on Game Playing Agents and Large Models: Methods, Applications, and Challenges](https://arxiv.org/abs/2403.10249)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2403.10249" height="20">
 - [Collaborative Quest Completion with LLM-Driven Non-Player Characters in Minecraft](https://arxiv.org/abs/2407.03460)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2407.03460" height="20">
@@ -116,7 +112,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [VillagerAgent: A Graph-Based Multi-Agent Framework for Coordinating Complex Task Dependencies in Minecraft](https://aclanthology.org/2024.findings-acl.964/)&nbsp;<img src="assets/readme/venues/conference-findings-of-acl.svg" alt="Findings of ACL" title="Findings of the Association for Computational Linguistics: ACL 2024" height="20">
 - [Werewolf Arena: A Case Study in LLM Evaluation via Social Deduction](https://arxiv.org/abs/2407.13943)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2407.13943" height="20">
 
-### 2023 · 12 works
+### 2023
 
 - [Avalon's Game of Thoughts: Battle Against Deception through Recursive Contemplation](https://arxiv.org/abs/2310.01320)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2310.01320" height="20">
 - [AvalonBench: Evaluating LLMs Playing the Game of Avalon](https://arxiv.org/abs/2310.05036)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2310.05036" height="20">
@@ -131,7 +127,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [STEVE-1: A Generative Model for Text-to-Behavior in Minecraft](https://arxiv.org/abs/2306.00937)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="CoRR" height="20">
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2305.16291" height="20">
 
-### 2022 · 8 works
+### 2022
 
 - [A Generalist Agent](https://arxiv.org/abs/2205.06175)&nbsp;<img src="assets/readme/venues/journal-tmlr.svg" alt="TMLR" title="Transactions on Machine Learning Research" height="20">
 - [A Survey of Ad Hoc Teamwork Research](https://arxiv.org/abs/2202.10450)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2202.10450" height="20">
@@ -142,7 +138,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Outracing champion Gran Turismo drivers with deep reinforcement learning](https://doi.org/10.1038/s41586-021-04357-7)&nbsp;<img src="assets/readme/venues/journal-nature.svg" alt="Nature" title="Nature" height="20">
 - [Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos](https://arxiv.org/abs/2206.11795)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
 
-### 2021 · 6 works
+### 2021
 
 - [Collaborating with Humans without Human Data](https://arxiv.org/abs/2110.08176)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
 - [Decision Transformer: Reinforcement Learning via Sequence Modeling](https://arxiv.org/abs/2106.01345)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
@@ -151,7 +147,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Scalable Evaluation of Multi-Agent Reinforcement Learning with Melting Pot](https://proceedings.mlr.press/v139/leibo21a.html)&nbsp;<img src="assets/readme/venues/conference-icml.svg" alt="ICML" title="Proceedings of the 38th International Conference on Machine Learning" height="20">
 - [The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games](https://arxiv.org/abs/2103.01955)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2103.01955" height="20">
 
-### 2020 · 9 works
+### 2020
 
 - [Agent57: Outperforming the Atari Human Benchmark](https://proceedings.mlr.press/v119/badia20a.html)&nbsp;<img src="assets/readme/venues/conference-icml.svg" alt="ICML" title="Proceedings of the 37th International Conference on Machine Learning" height="20">
 - [Combining Deep Reinforcement Learning and Search for Imperfect-Information Games](https://arxiv.org/abs/2007.13544)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2007.13544" height="20">
@@ -163,7 +159,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [The Hanabi Challenge: A New Frontier for AI Research](https://doi.org/10.1016/j.artint.2019.103216)&nbsp;<img src="assets/readme/venues/journal-artificial-intelligence.svg" alt="Artificial Intelligence" title="Artificial Intelligence" height="20">
 - [Towards Playing Full MOBA Games with Deep Reinforcement Learning](https://arxiv.org/abs/2011.12692)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems 33" height="20">
 
-### 2019 · 8 works
+### 2019
 
 - [Dota 2 with Large Scale Deep Reinforcement Learning](https://arxiv.org/abs/1912.06680)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1912.06680" height="20">
 - [Finding Friend and Foe in Multi-Agent Games](https://arxiv.org/abs/1906.02330)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1906.02330" height="20">
@@ -174,7 +170,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Superhuman AI for multiplayer poker](https://doi.org/10.1126/science.aay2400)&nbsp;<img src="assets/readme/venues/journal-science.svg" alt="Science" title="Science" height="20">
 - [The StarCraft Multi-Agent Challenge](https://arxiv.org/abs/1902.04043)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1902.04043" height="20">
 
-### 2018 · 5 works
+### 2018
 
 - [A General Reinforcement Learning Algorithm That Masters Chess, Shogi, and Go through Self-Play](https://doi.org/10.1126/science.aar6404)&nbsp;<img src="assets/readme/venues/journal-science.svg" alt="Science" title="Science" height="20">
 - [Artificial Intelligence and Games](https://doi.org/10.1007/978-3-319-63519-4)&nbsp;<img src="assets/readme/venues/book-springer.svg" alt="Springer" title="Springer" height="20">
@@ -182,7 +178,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Machine Theory of Mind](https://arxiv.org/abs/1802.07740)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1802.07740" height="20">
 - [QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning](https://proceedings.mlr.press/v80/rashid18a.html)&nbsp;<img src="assets/readme/venues/conference-icml.svg" alt="ICML" title="Proceedings of the 35th International Conference on Machine Learning" height="20">
 
-### 2017 · 7 works
+### 2017
 
 - [A Unified Game-Theoretic Approach to Multiagent Reinforcement Learning](https://arxiv.org/abs/1711.00832)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1711.00832" height="20">
 - [Autonomous Agents Modelling Other Agents: A Comprehensive Survey and Open Problems](https://arxiv.org/abs/1709.08071)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1709.08071" height="20">
@@ -192,7 +188,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Mastering the Game of Go without Human Knowledge](https://doi.org/10.1038/nature24270)&nbsp;<img src="assets/readme/venues/journal-nature.svg" alt="Nature" title="Nature" height="20">
 - [Value-Decomposition Networks For Cooperative Multi-Agent Learning](https://arxiv.org/abs/1706.05296)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1706.05296" height="20">
 
-### Before 2017 · 13 works
+### Before 2017
 
 - **2016** · [Mastering the Game of Go with Deep Neural Networks and Tree Search](https://doi.org/10.1038/nature16961)&nbsp;<img src="assets/readme/venues/journal-nature.svg" alt="Nature" title="Nature" height="20">
 - **2016** · [The Malmo Platform for Artificial Intelligence Experimentation](https://www.ijcai.org/Proceedings/16/Papers/643.pdf)&nbsp;<img src="assets/readme/venues/conference-ijcai.svg" alt="IJCAI" title="Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence" height="20">
@@ -214,7 +210,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 
 <img src="assets/readme/icon-model.svg" alt="" width="24" height="24"> Player modeling, world models, learned simulators, state representations, and dynamics prediction.
 
-### 2026 · 38 works
+### 2026
 
 - [ActWorld: From Explorable to Interactive World Model via Action-Aware Memory](https://arxiv.org/abs/2606.17730)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2606.17730" height="20">
 - [Advancing Open-Source World Models](https://arxiv.org/abs/2601.20540)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2601.20540" height="20">
@@ -255,7 +251,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [WorldMind: Decoupled Game World Model for State-Aware NPC Behavior](https://arxiv.org/abs/2608.21439)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2608.21439" height="20">
 - [WorldRover: A Scalable Synthetic Video Data Engine for World Exploration with Rich Annotations](https://arxiv.org/abs/2608.15659v2)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2608.15659" height="20">
 
-### 2025 · 20 works
+### 2025
 
 - [Agent2World: Learning to Generate Symbolic World Models via Adaptive Multi-Agent Feedback](https://arxiv.org/abs/2512.22336)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2512.22336" height="20">
 - [Beyond Playtesting: A Generative Multi-Agent Simulation System for Massively Multiplayer Online Games](https://arxiv.org/abs/2512.02358)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2512.02358" height="20">
@@ -278,7 +274,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [WorldMem: Long-Term Consistent World Simulation with Memory](https://arxiv.org/abs/2504.12369)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2504.12369" height="20">
 - [Yume-1.5: A Text-Controlled Interactive World Generation Model](https://arxiv.org/abs/2512.22096)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2512.22096" height="20">
 
-### 2024 · 13 works
+### 2024
 
 - [Behavior Structformer: Learning Players Representations with Structured Tokenization](https://arxiv.org/abs/2406.05274)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2406.05274" height="20">
 - [Diffusion for World Modeling: Visual Details Matter in Atari](https://arxiv.org/abs/2405.12399)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
@@ -294,19 +290,19 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Skill Issues: An Analysis of CS:GO Skill Rating Systems](https://arxiv.org/abs/2410.02831)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2410.02831" height="20">
 - [WorldCoder, a Model-Based LLM Agent: Building World Models by Writing Code and Interacting with the Environment](https://arxiv.org/abs/2402.12275)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2402.12275" height="20">
 
-### 2023 · 3 works
+### 2023
 
 - [Affective Game Computing: A Survey](https://arxiv.org/abs/2309.14104)&nbsp;<img src="assets/readme/venues/journal-proceedings-of-the-ieee.svg" alt="Proceedings of the IEEE" title="Proceedings of the IEEE" height="20">
 - [Predicting Player Engagement in Tom Clancy's The Division 2: A Multimodal Approach via Pixels and Gamepad Actions](https://arxiv.org/abs/2310.06136)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2310.06136" height="20">
 - [Transformers Are Sample-Efficient World Models](https://arxiv.org/abs/2209.00588)&nbsp;<img src="assets/readme/venues/conference-iclr.svg" alt="ICLR" title="International Conference on Learning Representations" height="20">
 
-### 2022 · 3 works
+### 2022
 
 - [Generative Personas That Behave and Experience Like Humans](https://arxiv.org/abs/2209.00459)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2209.00459" height="20">
 - [Predicting Personas Using Mechanic Frequencies and Game State Traces](https://arxiv.org/abs/2203.13351)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2203.13351" height="20">
 - [QuickSkill: Novice Skill Estimation in Online Multiplayer Games](https://arxiv.org/abs/2208.07704)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2208.07704" height="20">
 
-### 2021 · 5 works
+### 2021
 
 - [On Analyzing Churn Prediction in Mobile Games](https://arxiv.org/abs/2104.05554)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2104.05554" height="20">
 - [Open Player Modeling: Empowering Players through Data Transparency](https://arxiv.org/abs/2110.05810)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2110.05810" height="20">
@@ -314,7 +310,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [The Arousal video Game AnnotatIoN (AGAIN) Dataset](https://arxiv.org/abs/2104.02643)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2104.02643" height="20">
 - [The Pixels and Sounds of Emotion: General-Purpose Representations of Arousal in Games](https://arxiv.org/abs/2101.10706)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2101.10706" height="20">
 
-### 2020 · 9 works
+### 2020
 
 - [Aligning Superhuman AI with Human Behavior: Chess as a Model System](https://arxiv.org/abs/2006.01855)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2006.01855" height="20">
 - [Learning Models of Individual Behavior in Chess](https://arxiv.org/abs/2008.10086)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2008.10086" height="20">
@@ -326,7 +322,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Player Modeling via Multi-Armed Bandits](https://arxiv.org/abs/2102.05264)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="International Conference on the Foundations of Digital Games" height="20">
 - [Predicting Game Difficulty and Churn Without Players](https://arxiv.org/abs/2008.12937)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2008.12937" height="20">
 
-### Before 2020 · 18 works
+### Before 2020
 
 - **2019** · [From Pixels to Affect: A Study on Games and Player Experience](https://arxiv.org/abs/1907.02288)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1907.02288" height="20">
 - **2019** · [Learning Latent Dynamics for Planning from Pixels](https://proceedings.mlr.press/v97/hafner19a.html)&nbsp;<img src="assets/readme/venues/conference-icml.svg" alt="ICML" title="Proceedings of the 36th International Conference on Machine Learning" height="20">
@@ -353,7 +349,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 
 <img src="assets/readme/icon-design.svg" alt="" width="24" height="24"> Assets, levels, worlds, rules, mechanics, narratives, procedural generation, and co-creative tools.
 
-### 2026 · 9 works
+### 2026
 
 - [AutoBG: A Board Game Design Assistant with Interactive Ideation, Iterative Rulebook Generation, and Individualized Feedback](https://arxiv.org/abs/2606.01976v2)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2606.01976" height="20">
 - [CubePart: An Open-Vocabulary Part-Controllable 3D Generator](https://arxiv.org/abs/2605.28763v1)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2605.28763" height="20">
@@ -365,7 +361,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Valerant: An Automatic Navigable Game Map Generator via Action-Conditioned World Model Exploration](https://arxiv.org/abs/2609.09418)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="20">
 - [WorldSculpt: Generating Compositional Worlds from Grounded Videos](https://arxiv.org/abs/2609.05416v2)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2609.05416" height="20">
 
-### 2025 · 11 works
+### 2025
 
 - [A Database-Driven Framework for 3D Level Generation with LLMs](https://doi.org/10.1609/aiide.v21i1.36840)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
 - [Audio2Face-3D: ACE Unreal Plugin](https://docs.nvidia.com/ace/latest/workflows/kairos/ace-unreal-plugin-audio2face.html)&nbsp;<img src="assets/readme/venues/industry-developer-documentation.svg" alt="Developer documentation" title="Developer documentation" height="20">
@@ -379,7 +375,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [UnrealLLM: Towards Highly Controllable and Interactable 3D Scene Generation by LLM-powered Procedural Content Generation](https://aclanthology.org/2025.findings-acl.994/)&nbsp;<img src="assets/readme/venues/conference-findings-of-acl.svg" alt="Findings of ACL" title="Findings of the Association for Computational Linguistics: ACL 2025" height="20">
 - [Word2Minecraft: Generating 3D Game Levels through Large Language Models](https://arxiv.org/abs/2503.16536)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2503.16536" height="20">
 
-### 2024 · 7 works
+### 2024
 
 - [ChatGPT4PCG 2 Competition: Prompt Engineering for Science Birds Level Generation](https://arxiv.org/abs/2403.02610)&nbsp;<img src="assets/readme/venues/conference-ieee-cog.svg" alt="IEEE CoG" title="2024 IEEE Conference on Games (CoG)" height="20">
 - [DreamCraft: Text-Guided Generation of Functional 3D Environments in Minecraft](https://arxiv.org/abs/2404.15538)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="Proceedings of the 19th International Conference on the Foundations of Digital Games" height="20">
@@ -389,7 +385,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Ontologically Faithful Generation of Non-Player Character Dialogues](https://aclanthology.org/2024.emnlp-main.520/)&nbsp;<img src="assets/readme/venues/conference-emnlp.svg" alt="EMNLP" title="Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing" height="20">
 - [Procedural Level Generation with Diffusion Models from a Single Example](https://ojs.aaai.org/index.php/AAAI/article/view/28865)&nbsp;<img src="assets/readme/venues/conference-aaai.svg" alt="AAAI" title="Proceedings of the AAAI Conference on Artificial Intelligence" height="20">
 
-### 2023 · 7 works
+### 2023
 
 - [ChatGPT and Other Large Language Models as Evolutionary Engines for Online Interactive Collaborative Game Design](https://arxiv.org/abs/2303.02155)&nbsp;<img src="assets/readme/venues/conference-gecco.svg" alt="GECCO" title="Proceedings of the Genetic and Evolutionary Computation Conference" height="20">
 - [ChatGPT4PCG Competition: Character-like Level Generation for Science Birds](https://arxiv.org/abs/2303.15662)&nbsp;<img src="assets/readme/venues/conference-ieee-cog.svg" alt="IEEE CoG" title="2023 IEEE Conference on Games (CoG)" height="20">
@@ -399,7 +395,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [SceneCraft: Automating Interactive Narrative Scene Generation in Digital Games with Large Language Models](https://doi.org/10.1609/aiide.v19i1.27504)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
 - [The Convergence of AI and Creativity: Introducing Ghostwriter](https://news.ubisoft.com/en-gb/article/7Cm07zbBGy4Xml6WgYi25d/the-convergence-of-ai-and-creativity-introducing-ghostwriter)&nbsp;<img src="assets/readme/venues/industry-ubisoft-news.svg" alt="Ubisoft News" title="Ubisoft News" height="20">
 
-### Before 2023 · 19 works
+### Before 2023
 
 - **2022** · [On Mixed-Initiative Content Creation for Video Games](https://doi.org/10.1109/TG.2022.3176215)&nbsp;<img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="20">
 - **2022** · [Puck: A Slow and Personal Automated Game Designer](https://doi.org/10.1609/aiide.v18i1.21968)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
@@ -427,7 +423,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 
 <img src="assets/readme/icon-build.svg" alt="" width="24" height="24"> Code, scenes, engine projects, development agents, debugging, repair, revision, and maintenance.
 
-### 2026 · 15 works
+### 2026
 
 - [Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models](https://arxiv.org/abs/2608.25518)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2608.25518" height="20">
 - [AutoUE: Automated Generation of 3D Games in Unreal Engine via Multi-Agent Systems](https://aclanthology.org/2026.findings-acl.111/)&nbsp;<img src="assets/readme/venues/conference-findings-of-acl.svg" alt="Findings of ACL" title="Findings of the Association for Computational Linguistics: ACL 2026" height="20">
@@ -445,12 +441,12 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [PlayTrain: An Efficient Reinforcement Learning Framework for LLM-Generated Adaptable JavaScript Games](https://arxiv.org/abs/2609.09059)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="20">
 - [Unity's AI Tools in Beta: What's Included and How to Get Started](https://unity.com/blog/unity-ai-how-to-get-started)&nbsp;<img src="assets/readme/venues/industry-unity-blog.svg" alt="Unity Blog" title="Unity Blog" height="20">
 
-### 2025 · 2 works
+### 2025
 
 - [90% Faster, 100% Code-Free: MLLM-Driven Zero-Code 3D Game Development](https://arxiv.org/abs/2509.26161)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2509.26161" height="20">
 - [STORY2GAME: Generating (Almost) Everything in an Interactive Fiction Game](https://arxiv.org/abs/2505.03547)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2505.03547" height="20">
 
-### 2024 · 2 works
+### 2024
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
 - [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html)&nbsp;<img src="assets/readme/venues/conference-iclr.svg" alt="ICLR" title="International Conference on Learning Representations" height="20">
@@ -461,7 +457,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 
 <img src="assets/readme/icon-runtime.svg" alt="" width="24" height="24"> Characters, dialogue, quests, narratives, personalization, mechanics, and content generated during play.
 
-### 2026 · 10 works
+### 2026
 
 - [Accelerating Creation, Powered by Roblox's Cube Foundation Model](https://about.roblox.com/newsroom/2026/02/accelerating-creation-powered-roblox-cube-foundation-model)&nbsp;<img src="assets/readme/venues/industry-roblox-engineering.svg" alt="Roblox Engineering" title="Roblox Engineering" height="20">
 - [Adaptive level modification via player skill classification and large language models](https://doi.org/10.1038/s41598-026-63084-z)&nbsp;<img src="assets/readme/venues/journal-scientific-reports.svg" alt="Scientific Reports" title="Scientific Reports" height="20">
@@ -474,7 +470,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [The Double-Edged Sword of Open-Ended Interaction: How LLM-Driven NPCs Affect Players' Cognitive Load and Gaming Experience](https://arxiv.org/abs/2604.10107)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2604.10107" height="20">
 - [When NPCs take their time: Token latency effects in LLM-driven game conversations](https://doi.org/10.1016/j.entcom.2026.101213)&nbsp;<img src="assets/readme/venues/journal-entertainment-computing.svg" alt="Entertainment Computing" title="Entertainment Computing" height="20">
 
-### 2025 · 11 works
+### 2025
 
 - [AnimeGamer: Infinite Anime Life Simulation with Next Game State Prediction](https://arxiv.org/abs/2504.01014)&nbsp;<img src="assets/readme/venues/conference-iccv.svg" alt="ICCV" title="Proceedings of the IEEE/CVF International Conference on Computer Vision" height="20">
 - [Can Large Language Models Capture Video Game Engagement?](https://arxiv.org/abs/2502.04379)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2502.04379" height="20">
@@ -488,7 +484,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Unbounded: A Generative Infinite Game of Character Life Simulation](https://arxiv.org/abs/2410.18975)&nbsp;<img src="assets/readme/venues/conference-iclr.svg" alt="ICLR" title="International Conference on Learning Representations" height="20">
 - [Zero-Shot Reasoning: Personalized Content Generation Without the Cold Start Problem](https://doi.org/10.1109/TG.2024.3421590)&nbsp;<img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="20">
 
-### 2024 · 7 works
+### 2024
 
 - [Affectively Framework: Towards Human-like Affect-Based Agents](https://arxiv.org/abs/2407.18316)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2407.18316" height="20">
 - [Dynamic difficulty adjustment approaches in video games: a systematic literature review](https://doi.org/10.1007/s11042-024-18768-x)&nbsp;<img src="assets/readme/venues/journal-multimedia-tools-apps.svg" alt="Multimedia Tools &amp; Apps" title="Multimedia Tools and Applications" height="20">
@@ -498,14 +494,14 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Player-Driven Emergence in LLM-Driven Game Narrative](https://arxiv.org/abs/2404.17027)&nbsp;<img src="assets/readme/venues/conference-ieee-cog.svg" alt="IEEE CoG" title="2024 IEEE Conference on Games" height="20">
 - [What's the Game, then? Opportunities and Challenges for Runtime Behavior Generation](https://doi.org/10.1145/3654777.3676358)&nbsp;<img src="assets/readme/venues/conference-uist.svg" alt="UIST" title="Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology" height="20">
 
-### 2023 · 4 works
+### 2023
 
 - [CALYPSO: LLMs as Dungeon Masters' Assistants](https://doi.org/10.1609/aiide.v19i1.27534)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
 - [Game Difficulty Adaptation and Experience Personalization: A Literature Review](https://doi.org/10.1080/10447318.2021.2020008)&nbsp;<img src="assets/readme/venues/journal-ijhci.svg" alt="IJHCI" title="International Journal of Human-Computer Interaction" height="20">
 - [Language as Reality: A Co-Creative Storytelling Game Experience in 1001 Nights Using Generative AI](https://arxiv.org/abs/2308.12915)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
 - [Personalized Quest and Dialogue Generation in Role-Playing Games: A Knowledge Graph- and Language Model-based Approach](https://doi.org/10.1145/3544548.3581441)&nbsp;<img src="assets/readme/venues/conference-chi.svg" alt="CHI" title="Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems" height="20">
 
-### Before 2023 · 24 works
+### Before 2023
 
 - **2022** · ["I Want To See How Smart This AI Really Is": Player Mental Model Development of an Adversarial AI Player](https://doi.org/10.1145/3549482)&nbsp;<img src="assets/readme/venues/journal-pacm-hci.svg" alt="PACM HCI" title="Proceedings of the ACM on Human-Computer Interaction" height="20">
 - **2022** · [Craft an Iron Sword: Dynamically Generating Interactive Game Characters by Prompting Large Language Models Tuned on Code](https://aclanthology.org/2022.wordplay-1.3/)&nbsp;<img src="assets/readme/venues/conference-wordplay-workshop.svg" alt="Wordplay Workshop" title="Proceedings of the 3rd Wordplay: When Language Meets Games Workshop (Wordplay 2022)" height="20">
@@ -538,7 +534,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 
 <img src="assets/readme/icon-test.svg" alt="" width="24" height="24"> Automated playtesting, verification, model judges, behavioral coverage, and player-grounded evidence.
 
-### 2026 · 14 works
+### 2026
 
 - [CA2: Code-Aware Agent for Automated Game Testing](https://proceedings.mlr.press/v318/adaikkappan26a.html)&nbsp;<img src="assets/readme/venues/conference-canadian-ai.svg" alt="Canadian AI" title="Proceedings of the 39th Canadian Conference on Artificial Intelligence" height="20">
 - [GameEngineBench: Evaluating Coding Agents on Real C++ Runtime Environments](https://arxiv.org/abs/2607.03525)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2607.03525" height="20">
@@ -555,7 +551,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [WebGameBench: Requirement-to-Application Evaluation for Coding Agents via Browser-Native Games](https://arxiv.org/abs/2605.17637)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2605.17637" height="20">
 - [WorldOlympiad: Can Your World Model Survive a Triathlon?](https://arxiv.org/abs/2606.11129)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2606.11129" height="20">
 
-### 2025 · 16 works
+### 2025
 
 - [A Hybrid Co-Finetuning Approach for Visual Bug Detection in Video Games](https://arxiv.org/abs/2510.03591)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2510.03591" height="20">
 - [A Literature Review of Software Testing Practices and Frameworks in the Video Gaming Industry](https://doi.org/10.1002/stvr.70001)&nbsp;<img src="assets/readme/venues/journal-stvr.svg" alt="STVR" title="Software Testing, Verification and Reliability" height="20">
@@ -574,7 +570,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Towards LLM-Based Automatic Playtest](https://arxiv.org/abs/2507.09490)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2507.09490" height="20">
 - [VideoGameQA-Bench: Evaluating Vision-Language Models for Video Game Quality Assurance](https://arxiv.org/abs/2505.15952)&nbsp;<img src="assets/readme/venues/conference-neurips-d-b.svg" alt="NeurIPS D&amp;B" title="Advances in Neural Information Processing Systems, Datasets and Benchmarks Track" height="20">
 
-### 2024 · 8 works
+### 2024
 
 - [A Survey on LLM-as-a-Judge](https://arxiv.org/abs/2411.15594)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2411.15594" height="20">
 - [Agent-as-a-Judge: Evaluate Agents with Agents](https://arxiv.org/abs/2410.10934)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2410.10934" height="20">
@@ -585,7 +581,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [LLM Evaluators Recognize and Favor Their Own Generations](https://proceedings.neurips.cc/paper_files/paper/2024/hash/7f1f0218e45f5414c79c0679633e47bc-Abstract-Conference.html)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
 - [MLLM-as-a-Judge: Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark](https://arxiv.org/abs/2402.04788)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2402.04788" height="20">
 
-### 2023 · 6 works
+### 2023
 
 - [Deriving and Evaluating a Detailed Taxonomy of Game Bugs](https://arxiv.org/abs/2311.16645)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2311.16645" height="20">
 - [GlitchBench: Can large multimodal models detect video game glitches?](https://arxiv.org/abs/2312.05291)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2312.05291" height="20">
@@ -594,7 +590,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Technical Challenges of Deploying Reinforcement Learning Agents for Game Testing in AAA Games](https://arxiv.org/abs/2307.11105)&nbsp;<img src="assets/readme/venues/conference-ieee-cog.svg" alt="IEEE CoG" title="Proceedings of the IEEE Conference on Games" height="20">
 - [Video Game Automated Testing Approaches: An Assessment Framework](https://doi.org/10.1109/TG.2020.3032796)&nbsp;<img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="20">
 
-### 2022 · 5 works
+### 2022
 
 - [An Agent-based Approach to Automated Game Testing: an Experience Report](https://arxiv.org/abs/2211.06386)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2211.06386" height="20">
 - [Automatically Detecting Visual Bugs in HTML5 <canvas> Games](https://arxiv.org/abs/2208.02335)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2208.02335" height="20">
@@ -602,21 +598,21 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Retrospective on the 2021 MineRL BASALT Competition on Learning from Human Feedback](https://proceedings.mlr.press/v176/shah22a.html)&nbsp;<img src="assets/readme/venues/conference-neurips-c-d.svg" alt="NeurIPS C&amp;D" title="Proceedings of the NeurIPS 2021 Competitions and Demonstrations Track" height="20">
 - [Using Reinforcement Learning for Load Testing of Video Games](https://arxiv.org/abs/2201.06865)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2201.06865" height="20">
 
-### 2021 · 4 works
+### 2021
 
 - [A Survey of Video Game Testing](https://doi.org/10.1109/AST52587.2021.00018)&nbsp;<img src="assets/readme/venues/conference-ast.svg" alt="AST" title="2021 IEEE/ACM International Conference on Automation of Software Test (AST)" height="20">
 - [Automated Video Game Testing Using Synthetic and Humanlike Agents](https://doi.org/10.1109/TG.2019.2947597)&nbsp;<img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="20">
 - [GLIB: Towards Automated Test Oracle for Graphically-Rich Applications](https://arxiv.org/abs/2106.10507)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2106.10507" height="20">
 - [Improving Playtesting Coverage via Curiosity Driven Reinforcement Learning Agents](https://arxiv.org/abs/2103.13798)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2103.13798" height="20">
 
-### 2020 · 4 works
+### 2020
 
 - [Augmenting Automated Game Testing with Deep Reinforcement Learning](https://ieee-cog.org/2020/papers/paper_215.pdf)&nbsp;<img src="assets/readme/venues/conference-ieee-cog.svg" alt="IEEE CoG" title="2020 IEEE Conference on Games (CoG)" height="20">
 - [Interactive Fiction Games: A Colossal Adventure](https://doi.org/10.1609/aaai.v34i05.6297)&nbsp;<img src="assets/readme/venues/conference-aaai.svg" alt="AAAI" title="Proceedings of the AAAI Conference on Artificial Intelligence" height="20">
 - [The NetHack Learning Environment](https://arxiv.org/abs/2006.13760)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems 33" height="20">
 - [Using Deep Convolutional Neural Networks to Detect Rendered Glitches in Video Games](https://doi.org/10.1609/aiide.v16i1.7409)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
 
-### Before 2020 · 4 works
+### Before 2020
 
 - **2019** · [Automated Playtesting with Procedural Personas through MCTS with Evolved Heuristics](https://doi.org/10.1109/TG.2018.2808198)&nbsp;<img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="20">
 - **2019** · [The MineRL 2019 Competition on Sample Efficient Reinforcement Learning Using Human Priors](https://arxiv.org/abs/1904.10079)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1904.10079" height="20">
@@ -629,7 +625,7 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 
 Foundational methods, historical context, adjacent surveys, and supporting technical references.
 
-### 2026 · 13 works
+### 2026
 
 - [ARC-AGI-3: A New Challenge for Frontier Agentic Intelligence](https://arxiv.org/abs/2603.24621v2)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="20">
 - [Book of Infinity: 1001 Nights: Demo and AI Content Disclosure](https://store.steampowered.com/app/2542850/1001_Nights/)&nbsp;<img src="assets/readme/venues/industry-game-store.svg" alt="Game store" title="Official game store page" height="20">
@@ -645,19 +641,19 @@ Foundational methods, historical context, adjacent surveys, and supporting techn
 - [WorldMark: A Unified Benchmark Suite for Interactive Video World Models](https://arxiv.org/abs/2604.21686v2)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2604.21686" height="20">
 - [WorldRoamBench: An Open-World Benchmark for Long-Horizon Stability of Interactive World Models](https://arxiv.org/abs/2606.31672)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2606.31672" height="20">
 
-### 2025 · 2 works
+### 2025
 
 - [Gran Turismo Sophy 2.1 Arrives, Adding Support to Custom Races!](https://www.gran-turismo.com/us/news/00_4957003.html)&nbsp;<img src="assets/readme/venues/industry-gran-turismo-news.svg" alt="Gran Turismo news" title="Official Gran Turismo news" height="20">
 - [Reinforcement Learning for Human-AI Collaboration: Challenges, Mechanisms, and Methods](https://doi.org/10.1007/s12559-025-10500-7)&nbsp;<img src="assets/readme/venues/journal-cognitive-computation.svg" alt="Cognitive Computation" title="Cognitive Computation" height="20">
 
-### 2024 · 4 works
+### 2024
 
 - [A Survey on Self-play Methods in Reinforcement Learning](https://arxiv.org/abs/2408.01072)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2408.01072" height="20">
 - [How to Measure Game Testing: a Survey of Coverage Metrics](https://doi.org/10.1145/3643658.3643920)&nbsp;<img src="assets/readme/venues/conference-games-se.svg" alt="Games &amp; SE" title="Proceedings of the ACM/IEEE 8th International Workshop on Games and Software Engineering" height="20">
 - [Oasis: A Universe in a Transformer](https://oasis-model.github.io/)&nbsp;<img src="assets/readme/venues/industry-official-demo.svg" alt="Official demo" title="Official technical report and demonstration" height="20">
 - [Procedural Content Generation in Games: A Survey with Insights on Emerging LLM Integration](https://doi.org/10.1609/aiide.v20i1.31877)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the Twentieth AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
 
-### Before 2024 · 6 works
+### Before 2024
 
 - **2022** · [Towards Automated Video Game Testing: Still a Long Way to Go](https://doi.org/10.1145/3524494.3527627)&nbsp;<img src="assets/readme/venues/conference-games-se.svg" alt="Games &amp; SE" title="Proceedings of the 6th IEEE/ACM International Workshop on Games and Software Engineering" height="20">
 - **2021** · [Deep Reinforcement Learning at the Edge of the Statistical Precipice](https://arxiv.org/abs/2108.13264)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
