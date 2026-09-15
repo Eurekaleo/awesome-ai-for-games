@@ -30,7 +30,7 @@ The six paths below follow what an AI output is used to do in a game or developm
 
 ## Reading the index
 
-Each work appears once under its primary role. Years follow the publication or source year recorded in the bibliography; within a year, titles are alphabetical. An older arXiv identifier may therefore appear under a later venue year. Venue chips distinguish conferences, journals, preprints, and official or industry sources. Their colors identify source type, not paper quality.
+Each work appears once under its primary role. Where a role has a sparse early tail, those years are consolidated into a “Before YEAR” group and the exact year remains beside every title. Years follow the publication or source year recorded in the bibliography; an older arXiv identifier may therefore appear under a later venue year. Venue-chip colors identify source type, not paper quality.
 
 <p><img src="assets/readme/legend-conference.svg" alt="Conference source" height="20"> <img src="assets/readme/legend-journal.svg" alt="Journal source" height="20"> <img src="assets/readme/legend-preprint.svg" alt="Preprint source" height="20"> <img src="assets/readme/legend-industry.svg" alt="Official or industry source" height="20"> <img src="assets/readme/legend-book.svg" alt="Book source" height="20"></p>
 
@@ -177,48 +177,21 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Mastering the Game of Go without Human Knowledge](https://doi.org/10.1038/nature24270)&nbsp;<img src="assets/readme/venues/journal-nature.svg" alt="Nature" title="Nature" height="20">
 - [Value-Decomposition Networks For Cooperative Multi-Agent Learning](https://arxiv.org/abs/1706.05296)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1706.05296" height="20">
 
-### 2016 · 2 works
+### Before 2017 · 13 works
 
-- [Mastering the Game of Go with Deep Neural Networks and Tree Search](https://doi.org/10.1038/nature16961)&nbsp;<img src="assets/readme/venues/journal-nature.svg" alt="Nature" title="Nature" height="20">
-- [The Malmo Platform for Artificial Intelligence Experimentation](https://www.ijcai.org/Proceedings/16/Papers/643.pdf)&nbsp;<img src="assets/readme/venues/conference-ijcai.svg" alt="IJCAI" title="Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence" height="20">
-
-### 2015 · 2 works
-
-- [A Panorama of Artificial and Computational Intelligence in Games](https://doi.org/10.1109/TCIAIG.2014.2339221)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
-- [Human-Level Control through Deep Reinforcement Learning](https://doi.org/10.1038/nature14236)&nbsp;<img src="assets/readme/venues/journal-nature.svg" alt="Nature" title="Nature" height="20">
-
-### 2013 · 2 works
-
-- [Prom Week: Designing Past the Game/Story Dilemma](https://mtreanor.com/publications/promWeek-FDG2013.pdf)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="Proceedings of the Eighth International Conference on the Foundations of Digital Games" height="20">
-- [The Arcade Learning Environment: An Evaluation Platform for General Agents](https://arxiv.org/abs/1207.4708)&nbsp;<img src="assets/readme/venues/journal-jair.svg" alt="JAIR" title="Journal of Artificial Intelligence Research" height="20">
-
-### 2012 · 1 work
-
-- [Game AI Revisited](https://doi.org/10.1145/2212908.2212954)&nbsp;<img src="assets/readme/venues/conference-computing-frontiers.svg" alt="Computing Frontiers" title="Proceedings of the Computing Frontiers Conference" height="20">
-
-### 2006 · 1 work
-
-- [Bandit Based Monte-Carlo Planning](https://doi.org/10.1007/11871842_29)&nbsp;<img src="assets/readme/venues/conference-ecml.svg" alt="ECML" title="Machine Learning: ECML 2006" height="20">
-
-### 2005 · 1 work
-
-- [General Game Playing: Overview of the AAAI Competition](https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1813)&nbsp;<img src="assets/readme/venues/journal-ai-magazine.svg" alt="AI Magazine" title="AI Magazine" height="20">
-
-### 2002 · 1 work
-
-- [Deep Blue](https://doi.org/10.1016/S0004-3702(01)00129-1)&nbsp;<img src="assets/readme/venues/journal-artificial-intelligence.svg" alt="Artificial Intelligence" title="Artificial Intelligence" height="20">
-
-### 1995 · 1 work
-
-- [Temporal Difference Learning and TD-Gammon](https://doi.org/10.1145/203330.203343)&nbsp;<img src="assets/readme/venues/journal-cacm.svg" alt="CACM" title="Communications of the ACM" height="20">
-
-### 1959 · 1 work
-
-- [Some Studies in Machine Learning Using the Game of Checkers](https://doi.org/10.1147/rd.33.0210)&nbsp;<img src="assets/readme/venues/journal-ibm-jrd.svg" alt="IBM JRD" title="IBM Journal of Research and Development" height="20">
-
-### 1950 · 1 work
-
-- [Programming a Computer for Playing Chess](https://doi.org/10.1080/14786445008521796)&nbsp;<img src="assets/readme/venues/journal-philosophical-magazine.svg" alt="Philosophical Magazine" title="The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science" height="20">
+- **2016** · [Mastering the Game of Go with Deep Neural Networks and Tree Search](https://doi.org/10.1038/nature16961)&nbsp;<img src="assets/readme/venues/journal-nature.svg" alt="Nature" title="Nature" height="20">
+- **2016** · [The Malmo Platform for Artificial Intelligence Experimentation](https://www.ijcai.org/Proceedings/16/Papers/643.pdf)&nbsp;<img src="assets/readme/venues/conference-ijcai.svg" alt="IJCAI" title="Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence" height="20">
+- **2015** · [A Panorama of Artificial and Computational Intelligence in Games](https://doi.org/10.1109/TCIAIG.2014.2339221)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
+- **2015** · [Human-Level Control through Deep Reinforcement Learning](https://doi.org/10.1038/nature14236)&nbsp;<img src="assets/readme/venues/journal-nature.svg" alt="Nature" title="Nature" height="20">
+- **2013** · [Prom Week: Designing Past the Game/Story Dilemma](https://mtreanor.com/publications/promWeek-FDG2013.pdf)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="Proceedings of the Eighth International Conference on the Foundations of Digital Games" height="20">
+- **2013** · [The Arcade Learning Environment: An Evaluation Platform for General Agents](https://arxiv.org/abs/1207.4708)&nbsp;<img src="assets/readme/venues/journal-jair.svg" alt="JAIR" title="Journal of Artificial Intelligence Research" height="20">
+- **2012** · [Game AI Revisited](https://doi.org/10.1145/2212908.2212954)&nbsp;<img src="assets/readme/venues/conference-computing-frontiers.svg" alt="Computing Frontiers" title="Proceedings of the Computing Frontiers Conference" height="20">
+- **2006** · [Bandit Based Monte-Carlo Planning](https://doi.org/10.1007/11871842_29)&nbsp;<img src="assets/readme/venues/conference-ecml.svg" alt="ECML" title="Machine Learning: ECML 2006" height="20">
+- **2005** · [General Game Playing: Overview of the AAAI Competition](https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1813)&nbsp;<img src="assets/readme/venues/journal-ai-magazine.svg" alt="AI Magazine" title="AI Magazine" height="20">
+- **2002** · [Deep Blue](https://doi.org/10.1016/S0004-3702(01)00129-1)&nbsp;<img src="assets/readme/venues/journal-artificial-intelligence.svg" alt="Artificial Intelligence" title="Artificial Intelligence" height="20">
+- **1995** · [Temporal Difference Learning and TD-Gammon](https://doi.org/10.1145/203330.203343)&nbsp;<img src="assets/readme/venues/journal-cacm.svg" alt="CACM" title="Communications of the ACM" height="20">
+- **1959** · [Some Studies in Machine Learning Using the Game of Checkers](https://doi.org/10.1147/rd.33.0210)&nbsp;<img src="assets/readme/venues/journal-ibm-jrd.svg" alt="IBM JRD" title="IBM Journal of Research and Development" height="20">
+- **1950** · [Programming a Computer for Playing Chess](https://doi.org/10.1080/14786445008521796)&nbsp;<img src="assets/readme/venues/journal-philosophical-magazine.svg" alt="Philosophical Magazine" title="The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science" height="20">
 
 ---
 
@@ -338,56 +311,26 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Player Modeling via Multi-Armed Bandits](https://arxiv.org/abs/2102.05264)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="International Conference on the Foundations of Digital Games" height="20">
 - [Predicting Game Difficulty and Churn Without Players](https://arxiv.org/abs/2008.12937)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2008.12937" height="20">
 
-### 2019 · 3 works
+### Before 2020 · 18 works
 
-- [From Pixels to Affect: A Study on Games and Player Experience](https://arxiv.org/abs/1907.02288)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1907.02288" height="20">
-- [Learning Latent Dynamics for Planning from Pixels](https://proceedings.mlr.press/v97/hafner19a.html)&nbsp;<img src="assets/readme/venues/conference-icml.svg" alt="ICML" title="Proceedings of the 36th International Conference on Machine Learning" height="20">
-- [The Winning Solution to the IEEE CIG 2017 Game Data Mining Competition](https://arxiv.org/abs/1901.05147)&nbsp;<img src="assets/readme/venues/journal-ml-knowledge-extraction.svg" alt="ML &amp; Knowledge Extraction" title="Machine Learning and Knowledge Extraction" height="20">
-
-### 2018 · 3 works
-
-- [Data-Driven Approaches to Game Player Modeling: A Systematic Literature Review](https://doi.org/10.1145/3145814)&nbsp;<img src="assets/readme/venues/journal-acm-csur.svg" alt="ACM CSUR" title="ACM Computing Surveys" height="20">
-- [Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models](https://arxiv.org/abs/1805.12114)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
-- [World Models](https://arxiv.org/abs/1803.10122)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="CoRR" height="20">
-
-### 2017 · 1 work
-
-- [Recurrent Environment Simulators](https://openreview.net/forum?id=B1s6xvqlx)&nbsp;<img src="assets/readme/venues/conference-iclr.svg" alt="ICLR" title="International Conference on Learning Representations" height="20">
-
-### 2016 · 2 works
-
-- [Churn Prediction in Mobile Social Games: Towards a Complete Assessment Using Survival Ensembles](https://arxiv.org/abs/1710.02264)&nbsp;<img src="assets/readme/venues/conference-ieee-dsaa.svg" alt="IEEE DSAA" title="IEEE International Conference on Data Science and Advanced Analytics (DSAA)" height="20">
-- [Rapid Prediction of Player Retention in Free-to-Play Mobile Games](https://arxiv.org/abs/1607.03202)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1607.03202" height="20">
-
-### 2015 · 2 works
-
-- [Action-Conditional Video Prediction Using Deep Networks in Atari Games](https://proceedings.neurips.cc/paper/2015/hash/6ba3af5d7b2790e73f0de32e5c8c1798-Abstract.html)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
-- [Clustering Game Behavior Data](https://doi.org/10.1109/tciaig.2014.2376982)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
-
-### 2014 · 1 work
-
-- [A Comparison of Methods for Player Clustering via Behavioral Telemetry](https://arxiv.org/abs/1407.3950)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1407.3950" height="20">
-
-### 2013 · 2 works
-
-- [Behavior evolution in Tomb Raider Underworld](https://doi.org/10.1109/cig.2013.6633637)&nbsp;<img src="assets/readme/venues/conference-ieee-cig.svg" alt="IEEE CIG" title="2013 IEEE Conference on Computational Intelligence in Games (CIG)" height="20">
-- [Player Modeling](https://drops.dagstuhl.de/entities/document/10.4230/DFU.Vol6.12191.45)&nbsp;<img src="assets/readme/venues/book-book-chapter.svg" alt="Book chapter" title="Artificial and Computational Intelligence in Games" height="20">
-
-### 2012 · 1 work
-
-- [Guns, swords and data: Clustering of player behavior in computer games in the wild](https://doi.org/10.1109/cig.2012.6374152)&nbsp;<img src="assets/readme/venues/conference-ieee-cig.svg" alt="IEEE CIG" title="2012 IEEE Conference on Computational Intelligence and Games (CIG)" height="20">
-
-### 2011 · 1 work
-
-- [An inclusive view of player modeling](https://doi.org/10.1145/2159365.2159419)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="Proceedings of the 6th International Conference on Foundations of Digital Games" height="20">
-
-### 2006 · 1 work
-
-- [TrueSkill: A Bayesian Skill Rating System](https://proceedings.neurips.cc/paper/2006/hash/f44ee263952e65b3610b8ba51229d1f9-Abstract.html)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems 19" height="20">
-
-### 1990 · 1 work
-
-- [Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming](https://doi.org/10.1016/B978-1-55860-141-3.50030-4)&nbsp;<img src="assets/readme/venues/conference-icml.svg" alt="ICML" title="International Conference on Machine Learning" height="20">
+- **2019** · [From Pixels to Affect: A Study on Games and Player Experience](https://arxiv.org/abs/1907.02288)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1907.02288" height="20">
+- **2019** · [Learning Latent Dynamics for Planning from Pixels](https://proceedings.mlr.press/v97/hafner19a.html)&nbsp;<img src="assets/readme/venues/conference-icml.svg" alt="ICML" title="Proceedings of the 36th International Conference on Machine Learning" height="20">
+- **2019** · [The Winning Solution to the IEEE CIG 2017 Game Data Mining Competition](https://arxiv.org/abs/1901.05147)&nbsp;<img src="assets/readme/venues/journal-ml-knowledge-extraction.svg" alt="ML &amp; Knowledge Extraction" title="Machine Learning and Knowledge Extraction" height="20">
+- **2018** · [Data-Driven Approaches to Game Player Modeling: A Systematic Literature Review](https://doi.org/10.1145/3145814)&nbsp;<img src="assets/readme/venues/journal-acm-csur.svg" alt="ACM CSUR" title="ACM Computing Surveys" height="20">
+- **2018** · [Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models](https://arxiv.org/abs/1805.12114)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
+- **2018** · [World Models](https://arxiv.org/abs/1803.10122)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="CoRR" height="20">
+- **2017** · [Recurrent Environment Simulators](https://openreview.net/forum?id=B1s6xvqlx)&nbsp;<img src="assets/readme/venues/conference-iclr.svg" alt="ICLR" title="International Conference on Learning Representations" height="20">
+- **2016** · [Churn Prediction in Mobile Social Games: Towards a Complete Assessment Using Survival Ensembles](https://arxiv.org/abs/1710.02264)&nbsp;<img src="assets/readme/venues/conference-ieee-dsaa.svg" alt="IEEE DSAA" title="IEEE International Conference on Data Science and Advanced Analytics (DSAA)" height="20">
+- **2016** · [Rapid Prediction of Player Retention in Free-to-Play Mobile Games](https://arxiv.org/abs/1607.03202)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1607.03202" height="20">
+- **2015** · [Action-Conditional Video Prediction Using Deep Networks in Atari Games](https://proceedings.neurips.cc/paper/2015/hash/6ba3af5d7b2790e73f0de32e5c8c1798-Abstract.html)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
+- **2015** · [Clustering Game Behavior Data](https://doi.org/10.1109/tciaig.2014.2376982)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
+- **2014** · [A Comparison of Methods for Player Clustering via Behavioral Telemetry](https://arxiv.org/abs/1407.3950)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1407.3950" height="20">
+- **2013** · [Behavior evolution in Tomb Raider Underworld](https://doi.org/10.1109/cig.2013.6633637)&nbsp;<img src="assets/readme/venues/conference-ieee-cig.svg" alt="IEEE CIG" title="2013 IEEE Conference on Computational Intelligence in Games (CIG)" height="20">
+- **2013** · [Player Modeling](https://drops.dagstuhl.de/entities/document/10.4230/DFU.Vol6.12191.45)&nbsp;<img src="assets/readme/venues/book-book-chapter.svg" alt="Book chapter" title="Artificial and Computational Intelligence in Games" height="20">
+- **2012** · [Guns, swords and data: Clustering of player behavior in computer games in the wild](https://doi.org/10.1109/cig.2012.6374152)&nbsp;<img src="assets/readme/venues/conference-ieee-cig.svg" alt="IEEE CIG" title="2012 IEEE Conference on Computational Intelligence and Games (CIG)" height="20">
+- **2011** · [An inclusive view of player modeling](https://doi.org/10.1145/2159365.2159419)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="Proceedings of the 6th International Conference on Foundations of Digital Games" height="20">
+- **2006** · [TrueSkill: A Bayesian Skill Rating System](https://proceedings.neurips.cc/paper/2006/hash/f44ee263952e65b3610b8ba51229d1f9-Abstract.html)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems 19" height="20">
+- **1990** · [Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming](https://doi.org/10.1016/B978-1-55860-141-3.50030-4)&nbsp;<img src="assets/readme/venues/conference-icml.svg" alt="ICML" title="International Conference on Machine Learning" height="20">
 
 ---
 
@@ -441,60 +384,27 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [SceneCraft: Automating Interactive Narrative Scene Generation in Digital Games with Large Language Models](https://doi.org/10.1609/aiide.v19i1.27504)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
 - [The Convergence of AI and Creativity: Introducing Ghostwriter](https://news.ubisoft.com/en-gb/article/7Cm07zbBGy4Xml6WgYi25d/the-convergence-of-ai-and-creativity-introducing-ghostwriter)&nbsp;<img src="assets/readme/venues/industry-ubisoft-news.svg" alt="Ubisoft News" title="Ubisoft News" height="20">
 
-### 2022 · 2 works
+### Before 2023 · 19 works
 
-- [On Mixed-Initiative Content Creation for Video Games](https://doi.org/10.1109/TG.2022.3176215)&nbsp;<img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="20">
-- [Puck: A Slow and Personal Automated Game Designer](https://doi.org/10.1609/aiide.v18i1.21968)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
-
-### 2021 · 1 work
-
-- [Fine-tuning GPT-2 on annotated RPG quests for NPC dialogue generation](https://doi.org/10.1145/3472538.3472595)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="The 16th International Conference on the Foundations of Digital Games (FDG) 2021" height="20">
-
-### 2020 · 1 work
-
-- [PCGRL: Procedural Content Generation via Reinforcement Learning](https://doi.org/10.1609/aiide.v16i1.7416)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
-
-### 2018 · 2 works
-
-- [Evolving Mario Levels in the Latent Space of a Deep Convolutional Generative Adversarial Network](https://arxiv.org/abs/1805.00728)&nbsp;<img src="assets/readme/venues/conference-gecco.svg" alt="GECCO" title="Proceedings of the Genetic and Evolutionary Computation Conference" height="20">
-- [Procedural Content Generation via Machine Learning (PCGML)](https://arxiv.org/abs/1702.00539)&nbsp;<img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="20">
-
-### 2017 · 1 work
-
-- [The ANGELINA Videogame Design System-Part I](https://doi.org/10.1109/TCIAIG.2016.2520256)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
-
-### 2016 · 1 work
-
-- [Super Mario as a String: Platformer Level Generation via LSTMs](https://doi.org/10.26503/dl.v2016i1.752)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="Proceedings of the First International Joint Conference of DiGRA and FDG" height="20">
-
-### 2014 · 1 work
-
-- [Automatic Game Design via Mechanic Generation](https://doi.org/10.1609/aaai.v28i1.8788)&nbsp;<img src="assets/readme/venues/conference-aaai.svg" alt="AAAI" title="Proceedings of the AAAI Conference on Artificial Intelligence" height="20">
-
-### 2013 · 3 works
-
-- [Mechanic Miner: Reflection-Driven Game Mechanic Discovery and Level Design](https://doi.org/10.1007/978-3-642-37192-9_29)&nbsp;<img src="assets/readme/venues/conference-evoapplications.svg" alt="EvoApplications" title="Applications of Evolutionary Computation (EvoApplications 2013)" height="20">
-- [Procedural Content Generation for Games: A Survey](https://doi.org/10.1145/2422956.2422957)&nbsp;<img src="assets/readme/venues/journal-acm-tomm.svg" alt="ACM TOMM" title="ACM Transactions on Multimedia Computing, Communications, and Applications" height="20">
-- [Sentient Sketchbook: Computer-Aided Game Level Authoring](https://www.antoniosliapis.com/papers/sentient_sketchbook.pdf)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="Proceedings of the 8th International Conference on Foundations of Digital Games" height="20">
-
-### 2011 · 4 works
-
-- [Answer Set Programming for Procedural Content Generation: A Design Space Approach](https://doi.org/10.1109/TCIAIG.2011.2158545)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
-- [Experience-Driven Procedural Content Generation](https://doi.org/10.1109/T-AFFC.2011.6)&nbsp;<img src="assets/readme/venues/journal-ieee-tac.svg" alt="IEEE TAC" title="IEEE Transactions on Affective Computing" height="20">
-- [Search-Based Procedural Content Generation: A Taxonomy and Survey](https://doi.org/10.1109/TCIAIG.2011.2148116)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
-- [Tanagra: Reactive Planning and Constraint Solving for Mixed-Initiative Level Design](https://doi.org/10.1109/TCIAIG.2011.2159716)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
-
-### 2010 · 1 work
-
-- [Evolutionary Game Design](https://doi.org/10.1109/TCIAIG.2010.2041928)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
-
-### 2007 · 1 work
-
-- [Towards Automated Game Design](https://doi.org/10.1007/978-3-540-74782-6_54)&nbsp;<img src="assets/readme/venues/other-ai-human-oriented-computing.svg" alt="AI/Human-Oriented Computing" title="Artificial Intelligence and Human-Oriented Computing" height="20">
-
-### 2006 · 1 work
-
-- [Procedural Level Design for Platform Games](https://doi.org/10.1609/aiide.v2i1.18755)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
+- **2022** · [On Mixed-Initiative Content Creation for Video Games](https://doi.org/10.1109/TG.2022.3176215)&nbsp;<img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="20">
+- **2022** · [Puck: A Slow and Personal Automated Game Designer](https://doi.org/10.1609/aiide.v18i1.21968)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
+- **2021** · [Fine-tuning GPT-2 on annotated RPG quests for NPC dialogue generation](https://doi.org/10.1145/3472538.3472595)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="The 16th International Conference on the Foundations of Digital Games (FDG) 2021" height="20">
+- **2020** · [PCGRL: Procedural Content Generation via Reinforcement Learning](https://doi.org/10.1609/aiide.v16i1.7416)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
+- **2018** · [Evolving Mario Levels in the Latent Space of a Deep Convolutional Generative Adversarial Network](https://arxiv.org/abs/1805.00728)&nbsp;<img src="assets/readme/venues/conference-gecco.svg" alt="GECCO" title="Proceedings of the Genetic and Evolutionary Computation Conference" height="20">
+- **2018** · [Procedural Content Generation via Machine Learning (PCGML)](https://arxiv.org/abs/1702.00539)&nbsp;<img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="20">
+- **2017** · [The ANGELINA Videogame Design System-Part I](https://doi.org/10.1109/TCIAIG.2016.2520256)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
+- **2016** · [Super Mario as a String: Platformer Level Generation via LSTMs](https://doi.org/10.26503/dl.v2016i1.752)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="Proceedings of the First International Joint Conference of DiGRA and FDG" height="20">
+- **2014** · [Automatic Game Design via Mechanic Generation](https://doi.org/10.1609/aaai.v28i1.8788)&nbsp;<img src="assets/readme/venues/conference-aaai.svg" alt="AAAI" title="Proceedings of the AAAI Conference on Artificial Intelligence" height="20">
+- **2013** · [Mechanic Miner: Reflection-Driven Game Mechanic Discovery and Level Design](https://doi.org/10.1007/978-3-642-37192-9_29)&nbsp;<img src="assets/readme/venues/conference-evoapplications.svg" alt="EvoApplications" title="Applications of Evolutionary Computation (EvoApplications 2013)" height="20">
+- **2013** · [Procedural Content Generation for Games: A Survey](https://doi.org/10.1145/2422956.2422957)&nbsp;<img src="assets/readme/venues/journal-acm-tomm.svg" alt="ACM TOMM" title="ACM Transactions on Multimedia Computing, Communications, and Applications" height="20">
+- **2013** · [Sentient Sketchbook: Computer-Aided Game Level Authoring](https://www.antoniosliapis.com/papers/sentient_sketchbook.pdf)&nbsp;<img src="assets/readme/venues/conference-fdg.svg" alt="FDG" title="Proceedings of the 8th International Conference on Foundations of Digital Games" height="20">
+- **2011** · [Answer Set Programming for Procedural Content Generation: A Design Space Approach](https://doi.org/10.1109/TCIAIG.2011.2158545)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
+- **2011** · [Experience-Driven Procedural Content Generation](https://doi.org/10.1109/T-AFFC.2011.6)&nbsp;<img src="assets/readme/venues/journal-ieee-tac.svg" alt="IEEE TAC" title="IEEE Transactions on Affective Computing" height="20">
+- **2011** · [Search-Based Procedural Content Generation: A Taxonomy and Survey](https://doi.org/10.1109/TCIAIG.2011.2148116)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
+- **2011** · [Tanagra: Reactive Planning and Constraint Solving for Mixed-Initiative Level Design](https://doi.org/10.1109/TCIAIG.2011.2159716)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
+- **2010** · [Evolutionary Game Design](https://doi.org/10.1109/TCIAIG.2010.2041928)&nbsp;<img src="assets/readme/venues/journal-ieee-t-ciaig.svg" alt="IEEE T-CIAIG" title="IEEE Transactions on Computational Intelligence and AI in Games" height="20">
+- **2007** · [Towards Automated Game Design](https://doi.org/10.1007/978-3-540-74782-6_54)&nbsp;<img src="assets/readme/venues/other-ai-human-oriented-computing.svg" alt="AI/Human-Oriented Computing" title="Artificial Intelligence and Human-Oriented Computing" height="20">
+- **2006** · [Procedural Level Design for Platform Games](https://doi.org/10.1609/aiide.v2i1.18755)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
 
 ---
 
@@ -580,77 +490,32 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [Language as Reality: A Co-Creative Storytelling Game Experience in 1001 Nights Using Generative AI](https://arxiv.org/abs/2308.12915)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
 - [Personalized Quest and Dialogue Generation in Role-Playing Games: A Knowledge Graph- and Language Model-based Approach](https://doi.org/10.1145/3544548.3581441)&nbsp;<img src="assets/readme/venues/conference-chi.svg" alt="CHI" title="Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems" height="20">
 
-### 2022 · 2 works
+### Before 2023 · 24 works
 
-- ["I Want To See How Smart This AI Really Is": Player Mental Model Development of an Adversarial AI Player](https://doi.org/10.1145/3549482)&nbsp;<img src="assets/readme/venues/journal-pacm-hci.svg" alt="PACM HCI" title="Proceedings of the ACM on Human-Computer Interaction" height="20">
-- [Craft an Iron Sword: Dynamically Generating Interactive Game Characters by Prompting Large Language Models Tuned on Code](https://aclanthology.org/2022.wordplay-1.3/)&nbsp;<img src="assets/readme/venues/conference-wordplay-workshop.svg" alt="Wordplay Workshop" title="Proceedings of the 3rd Wordplay: When Language Meets Games Workshop (Wordplay 2022)" height="20">
-
-### 2021 · 1 work
-
-- [Player-Centered AI for Automatic Game Personalization: Open Problems](https://arxiv.org/abs/2102.07548)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2102.07548" height="20">
-
-### 2020 · 1 work
-
-- [Dungeons & Replicants: Automated Game Balancing via Deep Player Behavior Modeling](https://doi.org/10.1109/CoG47356.2020.9231958)&nbsp;<img src="assets/readme/venues/conference-ieee-cog.svg" alt="IEEE CoG" title="2020 IEEE Conference on Games (CoG)" height="20">
-
-### 2019 · 3 works
-
-- [Dynamic Difficulty Adjustment Impact on Players' Confidence](https://doi.org/10.1145/3290605.3300693)&nbsp;<img src="assets/readme/venues/conference-chi.svg" alt="CHI" title="Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems" height="20">
-- [Learning to Speak and Act in a Fantasy Text Adventure Game](https://aclanthology.org/D19-1062/)&nbsp;<img src="assets/readme/venues/conference-emnlp-ijcnlp.svg" alt="EMNLP–IJCNLP" title="Proceedings of EMNLP-IJCNLP" height="20">
-- [Representation and Frequency of Player Choice in Player-Oriented Dynamic Difficulty Adjustment Systems](https://doi.org/10.1145/3311350.3347165)&nbsp;<img src="assets/readme/venues/conference-chi-play.svg" alt="CHI PLAY" title="Proceedings of the Annual Symposium on Computer-Human Interaction in Play" height="20">
-
-### 2018 · 2 works
-
-- [Dynamic Difficulty Adjustment (DDA) in Computer Games: A Review](https://doi.org/10.1155/2018/5681652)&nbsp;<img src="assets/readme/venues/journal-advances-in-hci.svg" alt="Advances in HCI" title="Advances in Human-Computer Interaction" height="20">
-- [I'm Glad You Are on My Side: How to Design Compelling Game Companions](https://doi.org/10.1145/3242671.3242709)&nbsp;<img src="assets/readme/venues/conference-chi-play.svg" alt="CHI PLAY" title="Proceedings of the 2018 Annual Symposium on Computer-Human Interaction in Play" height="20">
-
-### 2017 · 2 works
-
-- [Comparing Effects of Dynamic Difficulty Adjustment Systems on Video Game Experience](https://doi.org/10.1145/3116595.3116623)&nbsp;<img src="assets/readme/venues/conference-chi-play.svg" alt="CHI PLAY" title="Proceedings of the Annual Symposium on Computer-Human Interaction in Play" height="20">
-- [Dynamic Difficulty Adjustment for Maximized Engagement in Digital Games](https://doi.org/10.1145/3041021.3054170)&nbsp;<img src="assets/readme/venues/conference-www-companion.svg" alt="WWW Companion" title="Proceedings of the 26th International Conference on World Wide Web Companion - WWW &apos;17 Companion" height="20">
-
-### 2015 · 1 work
-
-- [Adaptation in Digital Games: The Effect of Challenge Adjustment on Player Performance and Experience](https://doi.org/10.1145/2793107.2793141)&nbsp;<img src="assets/readme/venues/conference-chi-play.svg" alt="CHI PLAY" title="Proceedings of the 2015 Annual Symposium on Computer-Human Interaction in Play" height="20">
-
-### 2013 · 1 work
-
-- [Interactive Narrative: An Intelligent Systems Approach](https://doi.org/10.1609/aimag.v34i1.2449)&nbsp;<img src="assets/readme/venues/journal-ai-magazine.svg" alt="AI Magazine" title="AI Magazine" height="20">
-
-### 2011 · 1 work
-
-- [Emotion Assessment From Physiological Signals for Adaptation of Game Difficulty](https://doi.org/10.1109/TSMCA.2011.2116000)&nbsp;<img src="assets/readme/venues/journal-ieee-tsmc-a.svg" alt="IEEE TSMC-A" title="IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans" height="20">
-
-### 2010 · 1 work
-
-- [Narrative Planning: Balancing Plot and Character](https://doi.org/10.1613/jair.2989)&nbsp;<img src="assets/readme/venues/journal-jair.svg" alt="JAIR" title="Journal of Artificial Intelligence Research" height="20">
-
-### 2009 · 2 works
-
-- [Agency Reconsidered](https://doi.org/10.26503/dl.v2009i1.369)&nbsp;<img src="assets/readme/venues/conference-digra.svg" alt="DiGRA" title="Proceedings of the 2009 Digital Games Research Association Conference" height="20">
-- [User Experience over Time: An Initial Framework](https://doi.org/10.1145/1518701.1518814)&nbsp;<img src="assets/readme/venues/conference-chi.svg" alt="CHI" title="Proceedings of the SIGCHI Conference on Human Factors in Computing Systems" height="20">
-
-### 2007 · 1 work
-
-- [Interactive Storytelling: A Player Modelling Approach](https://ojs.aaai.org/index.php/AIIDE/article/view/18780)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the Third Artificial Intelligence and Interactive Digital Entertainment Conference" height="20">
-
-### 2006 · 1 work
-
-- [The Motivational Pull of Video Games: A Self-Determination Theory Approach](https://doi.org/10.1007/s11031-006-9051-8)&nbsp;<img src="assets/readme/venues/journal-motivation-and-emotion.svg" alt="Motivation and Emotion" title="Motivation and Emotion" height="20">
-
-### 2005 · 3 works
-
-- [Establishing and Maintaining Long-Term Human-Computer Relationships](https://doi.org/10.1145/1067860.1067867)&nbsp;<img src="assets/readme/venues/journal-acm-tochi.svg" alt="ACM TOCHI" title="ACM Transactions on Computer-Human Interaction" height="20">
-- [Structuring Content in the Facade Interactive Drama Architecture](https://doi.org/10.1609/aiide.v1i1.18722)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
-- [The Case for Dynamic Difficulty Adjustment in Games](https://doi.org/10.1145/1178477.1178573)&nbsp;<img src="assets/readme/venues/conference-ace.svg" alt="ACE" title="Proceedings of the International Conference on Advances in Computer Entertainment Technology" height="20">
-
-### 2003 · 1 work
-
-- [Rules of Play: Game Design Fundamentals](https://mitpress.mit.edu/9780262240451/rules-of-play/)&nbsp;<img src="assets/readme/venues/book-the-mit-press.svg" alt="The MIT Press" title="The MIT Press" height="20">
-
-### 2001 · 1 work
-
-- [A Preliminary Poetics for Interactive Drama and Games](https://doi.org/10.1076/digc.12.3.140.3224)&nbsp;<img src="assets/readme/venues/journal-digital-creativity.svg" alt="Digital Creativity" title="Digital Creativity" height="20">
+- **2022** · ["I Want To See How Smart This AI Really Is": Player Mental Model Development of an Adversarial AI Player](https://doi.org/10.1145/3549482)&nbsp;<img src="assets/readme/venues/journal-pacm-hci.svg" alt="PACM HCI" title="Proceedings of the ACM on Human-Computer Interaction" height="20">
+- **2022** · [Craft an Iron Sword: Dynamically Generating Interactive Game Characters by Prompting Large Language Models Tuned on Code](https://aclanthology.org/2022.wordplay-1.3/)&nbsp;<img src="assets/readme/venues/conference-wordplay-workshop.svg" alt="Wordplay Workshop" title="Proceedings of the 3rd Wordplay: When Language Meets Games Workshop (Wordplay 2022)" height="20">
+- **2021** · [Player-Centered AI for Automatic Game Personalization: Open Problems](https://arxiv.org/abs/2102.07548)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2102.07548" height="20">
+- **2020** · [Dungeons & Replicants: Automated Game Balancing via Deep Player Behavior Modeling](https://doi.org/10.1109/CoG47356.2020.9231958)&nbsp;<img src="assets/readme/venues/conference-ieee-cog.svg" alt="IEEE CoG" title="2020 IEEE Conference on Games (CoG)" height="20">
+- **2019** · [Dynamic Difficulty Adjustment Impact on Players' Confidence](https://doi.org/10.1145/3290605.3300693)&nbsp;<img src="assets/readme/venues/conference-chi.svg" alt="CHI" title="Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems" height="20">
+- **2019** · [Learning to Speak and Act in a Fantasy Text Adventure Game](https://aclanthology.org/D19-1062/)&nbsp;<img src="assets/readme/venues/conference-emnlp-ijcnlp.svg" alt="EMNLP–IJCNLP" title="Proceedings of EMNLP-IJCNLP" height="20">
+- **2019** · [Representation and Frequency of Player Choice in Player-Oriented Dynamic Difficulty Adjustment Systems](https://doi.org/10.1145/3311350.3347165)&nbsp;<img src="assets/readme/venues/conference-chi-play.svg" alt="CHI PLAY" title="Proceedings of the Annual Symposium on Computer-Human Interaction in Play" height="20">
+- **2018** · [Dynamic Difficulty Adjustment (DDA) in Computer Games: A Review](https://doi.org/10.1155/2018/5681652)&nbsp;<img src="assets/readme/venues/journal-advances-in-hci.svg" alt="Advances in HCI" title="Advances in Human-Computer Interaction" height="20">
+- **2018** · [I'm Glad You Are on My Side: How to Design Compelling Game Companions](https://doi.org/10.1145/3242671.3242709)&nbsp;<img src="assets/readme/venues/conference-chi-play.svg" alt="CHI PLAY" title="Proceedings of the 2018 Annual Symposium on Computer-Human Interaction in Play" height="20">
+- **2017** · [Comparing Effects of Dynamic Difficulty Adjustment Systems on Video Game Experience](https://doi.org/10.1145/3116595.3116623)&nbsp;<img src="assets/readme/venues/conference-chi-play.svg" alt="CHI PLAY" title="Proceedings of the Annual Symposium on Computer-Human Interaction in Play" height="20">
+- **2017** · [Dynamic Difficulty Adjustment for Maximized Engagement in Digital Games](https://doi.org/10.1145/3041021.3054170)&nbsp;<img src="assets/readme/venues/conference-www-companion.svg" alt="WWW Companion" title="Proceedings of the 26th International Conference on World Wide Web Companion - WWW &apos;17 Companion" height="20">
+- **2015** · [Adaptation in Digital Games: The Effect of Challenge Adjustment on Player Performance and Experience](https://doi.org/10.1145/2793107.2793141)&nbsp;<img src="assets/readme/venues/conference-chi-play.svg" alt="CHI PLAY" title="Proceedings of the 2015 Annual Symposium on Computer-Human Interaction in Play" height="20">
+- **2013** · [Interactive Narrative: An Intelligent Systems Approach](https://doi.org/10.1609/aimag.v34i1.2449)&nbsp;<img src="assets/readme/venues/journal-ai-magazine.svg" alt="AI Magazine" title="AI Magazine" height="20">
+- **2011** · [Emotion Assessment From Physiological Signals for Adaptation of Game Difficulty](https://doi.org/10.1109/TSMCA.2011.2116000)&nbsp;<img src="assets/readme/venues/journal-ieee-tsmc-a.svg" alt="IEEE TSMC-A" title="IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans" height="20">
+- **2010** · [Narrative Planning: Balancing Plot and Character](https://doi.org/10.1613/jair.2989)&nbsp;<img src="assets/readme/venues/journal-jair.svg" alt="JAIR" title="Journal of Artificial Intelligence Research" height="20">
+- **2009** · [Agency Reconsidered](https://doi.org/10.26503/dl.v2009i1.369)&nbsp;<img src="assets/readme/venues/conference-digra.svg" alt="DiGRA" title="Proceedings of the 2009 Digital Games Research Association Conference" height="20">
+- **2009** · [User Experience over Time: An Initial Framework](https://doi.org/10.1145/1518701.1518814)&nbsp;<img src="assets/readme/venues/conference-chi.svg" alt="CHI" title="Proceedings of the SIGCHI Conference on Human Factors in Computing Systems" height="20">
+- **2007** · [Interactive Storytelling: A Player Modelling Approach](https://ojs.aaai.org/index.php/AIIDE/article/view/18780)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the Third Artificial Intelligence and Interactive Digital Entertainment Conference" height="20">
+- **2006** · [The Motivational Pull of Video Games: A Self-Determination Theory Approach](https://doi.org/10.1007/s11031-006-9051-8)&nbsp;<img src="assets/readme/venues/journal-motivation-and-emotion.svg" alt="Motivation and Emotion" title="Motivation and Emotion" height="20">
+- **2005** · [Establishing and Maintaining Long-Term Human-Computer Relationships](https://doi.org/10.1145/1067860.1067867)&nbsp;<img src="assets/readme/venues/journal-acm-tochi.svg" alt="ACM TOCHI" title="ACM Transactions on Computer-Human Interaction" height="20">
+- **2005** · [Structuring Content in the Facade Interactive Drama Architecture](https://doi.org/10.1609/aiide.v1i1.18722)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
+- **2005** · [The Case for Dynamic Difficulty Adjustment in Games](https://doi.org/10.1145/1178477.1178573)&nbsp;<img src="assets/readme/venues/conference-ace.svg" alt="ACE" title="Proceedings of the International Conference on Advances in Computer Entertainment Technology" height="20">
+- **2003** · [Rules of Play: Game Design Fundamentals](https://mitpress.mit.edu/9780262240451/rules-of-play/)&nbsp;<img src="assets/readme/venues/book-the-mit-press.svg" alt="The MIT Press" title="The MIT Press" height="20">
+- **2001** · [A Preliminary Poetics for Interactive Drama and Games](https://doi.org/10.1076/digc.12.3.140.3224)&nbsp;<img src="assets/readme/venues/journal-digital-creativity.svg" alt="Digital Creativity" title="Digital Creativity" height="20">
 
 ---
 
@@ -736,15 +601,12 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 - [The NetHack Learning Environment](https://arxiv.org/abs/2006.13760)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems 33" height="20">
 - [Using Deep Convolutional Neural Networks to Detect Rendered Glitches in Video Games](https://doi.org/10.1609/aiide.v16i1.7409)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
 
-### 2019 · 3 works
+### Before 2020 · 4 works
 
-- [Automated Playtesting with Procedural Personas through MCTS with Evolved Heuristics](https://doi.org/10.1109/TG.2018.2808198)&nbsp;<img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="20">
-- [The MineRL 2019 Competition on Sample Efficient Reinforcement Learning Using Human Priors](https://arxiv.org/abs/1904.10079)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1904.10079" height="20">
-- [Wuji: Automatic Online Combat Game Testing Using Evolutionary Deep Reinforcement Learning](https://doi.org/10.1109/ASE.2019.00077)&nbsp;<img src="assets/readme/venues/conference-ase.svg" alt="ASE" title="Proceedings of the IEEE/ACM International Conference on Automated Software Engineering" height="20">
-
-### 2018 · 1 work
-
-- [TextWorld: A Learning Environment for Text-Based Games](https://arxiv.org/abs/1806.11532)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="CoRR" height="20">
+- **2019** · [Automated Playtesting with Procedural Personas through MCTS with Evolved Heuristics](https://doi.org/10.1109/TG.2018.2808198)&nbsp;<img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="20">
+- **2019** · [The MineRL 2019 Competition on Sample Efficient Reinforcement Learning Using Human Priors](https://arxiv.org/abs/1904.10079)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1904.10079" height="20">
+- **2019** · [Wuji: Automatic Online Combat Game Testing Using Evolutionary Deep Reinforcement Learning](https://doi.org/10.1109/ASE.2019.00077)&nbsp;<img src="assets/readme/venues/conference-ase.svg" alt="ASE" title="Proceedings of the IEEE/ACM International Conference on Automated Software Engineering" height="20">
+- **2018** · [TextWorld: A Learning Environment for Text-Based Games](https://arxiv.org/abs/1806.11532)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="CoRR" height="20">
 
 ---
 
@@ -780,29 +642,14 @@ Foundational methods, historical context, adjacent surveys, and supporting techn
 - [Oasis: A Universe in a Transformer](https://oasis-model.github.io/)&nbsp;<img src="assets/readme/venues/industry-official-demo.svg" alt="Official demo" title="Official technical report and demonstration" height="20">
 - [Procedural Content Generation in Games: A Survey with Insights on Emerging LLM Integration](https://doi.org/10.1609/aiide.v20i1.31877)&nbsp;<img src="assets/readme/venues/conference-aiide.svg" alt="AIIDE" title="Proceedings of the Twentieth AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment" height="20">
 
-### 2022 · 1 work
+### Before 2024 · 6 works
 
-- [Towards Automated Video Game Testing: Still a Long Way to Go](https://doi.org/10.1145/3524494.3527627)&nbsp;<img src="assets/readme/venues/conference-games-se.svg" alt="Games &amp; SE" title="Proceedings of the 6th IEEE/ACM International Workshop on Games and Software Engineering" height="20">
-
-### 2021 · 1 work
-
-- [Deep Reinforcement Learning at the Edge of the Statistical Precipice](https://arxiv.org/abs/2108.13264)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
-
-### 2018 · 1 work
-
-- [Towards Accurate Generative Models of Video: A New Metric & Challenges](https://arxiv.org/abs/1812.01717v2)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1812.01717" height="20">
-
-### 2017 · 1 work
-
-- [EOMM: An Engagement Optimized Matchmaking Framework](https://arxiv.org/abs/1702.06820)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1702.06820" height="20">
-
-### 2015 · 1 work
-
-- [Procedural Personas as Critics for Dungeon Generation](https://www.antoniosliapis.com/papers/procedural_personas_as_critics_for_dungeon_generation.pdf)&nbsp;<img src="assets/readme/venues/conference-evoapplications.svg" alt="EvoApplications" title="Applications of Evolutionary Computation" height="20">
-
-### 2012 · 1 work
-
-- [Player Behavioural Modelling for Video Games](https://doi.org/10.1016/j.entcom.2011.12.001)&nbsp;<img src="assets/readme/venues/journal-entertainment-computing.svg" alt="Entertainment Computing" title="Entertainment Computing" height="20">
+- **2022** · [Towards Automated Video Game Testing: Still a Long Way to Go](https://doi.org/10.1145/3524494.3527627)&nbsp;<img src="assets/readme/venues/conference-games-se.svg" alt="Games &amp; SE" title="Proceedings of the 6th IEEE/ACM International Workshop on Games and Software Engineering" height="20">
+- **2021** · [Deep Reinforcement Learning at the Edge of the Statistical Precipice](https://arxiv.org/abs/2108.13264)&nbsp;<img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="20">
+- **2018** · [Towards Accurate Generative Models of Video: A New Metric & Challenges](https://arxiv.org/abs/1812.01717v2)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1812.01717" height="20">
+- **2017** · [EOMM: An Engagement Optimized Matchmaking Framework](https://arxiv.org/abs/1702.06820)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:1702.06820" height="20">
+- **2015** · [Procedural Personas as Critics for Dungeon Generation](https://www.antoniosliapis.com/papers/procedural_personas_as_critics_for_dungeon_generation.pdf)&nbsp;<img src="assets/readme/venues/conference-evoapplications.svg" alt="EvoApplications" title="Applications of Evolutionary Computation" height="20">
+- **2012** · [Player Behavioural Modelling for Video Games](https://doi.org/10.1016/j.entcom.2011.12.001)&nbsp;<img src="assets/readme/venues/journal-entertainment-computing.svg" alt="Entertainment Computing" title="Entertainment Computing" height="20">
 
 ## Contributing
 

@@ -14,6 +14,7 @@ const collections = [
     cardTitle: ['Play and Act'],
     accent: '#72afe0',
     icon: 'M8 5 19 12 8 19Z',
+    groupBefore: 2017,
   },
   {
     key: 'model',
@@ -22,6 +23,7 @@ const collections = [
     cardTitle: ['Model Games', 'and Players'],
     accent: '#89c668',
     icon: 'm12 3 9 5v8l-9 5-9-5V8Zm0 10 9-5m-9 5L3 8m9 5v8',
+    groupBefore: 2020,
   },
   {
     key: 'design',
@@ -30,6 +32,7 @@ const collections = [
     cardTitle: ['Design'],
     accent: '#9692e5',
     icon: 'm4 16 12-12 4 4L8 20H4Zm9-9 4 4',
+    groupBefore: 2023,
   },
   {
     key: 'build',
@@ -46,6 +49,7 @@ const collections = [
     cardTitle: ['Generate and Adapt', 'at Runtime'],
     accent: '#46d7d7',
     icon: 'M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l-1 1v-9.5A8.5 8.5 0 0 1 11.5 3H13m4 0v7m-3.5-3.5h7M7 12h8m-8 4h5',
+    groupBefore: 2023,
   },
   {
     key: 'test',
@@ -54,11 +58,13 @@ const collections = [
     cardTitle: ['Test and Evaluate'],
     accent: '#d2ad39',
     icon: 'm4 12 5 5L20 6M5 3H3v18h18v-2',
+    groupBefore: 2020,
   },
   {
     key: 'context',
     title: 'Foundations and Context',
     focus: 'Foundational methods, historical context, adjacent surveys, and supporting technical references.',
+    groupBefore: 2024,
   },
 ];
 
@@ -265,7 +271,7 @@ const lines = [
   '',
   '## Reading the index',
   '',
-  'Each work appears once under its primary role. Years follow the publication or source year recorded in the bibliography; within a year, titles are alphabetical. An older arXiv identifier may therefore appear under a later venue year. Venue chips distinguish conferences, journals, preprints, and official or industry sources. Their colors identify source type, not paper quality.',
+  'Each work appears once under its primary role. Where a role has a sparse early tail, those years are consolidated into a “Before YEAR” group and the exact year remains beside every title. Years follow the publication or source year recorded in the bibliography; an older arXiv identifier may therefore appear under a later venue year. Venue-chip colors identify source type, not paper quality.',
   '',
   '<p><img src="assets/readme/legend-conference.svg" alt="Conference source" height="20"> <img src="assets/readme/legend-journal.svg" alt="Journal source" height="20"> <img src="assets/readme/legend-preprint.svg" alt="Preprint source" height="20"> <img src="assets/readme/legend-industry.svg" alt="Official or industry source" height="20"> <img src="assets/readme/legend-book.svg" alt="Book source" height="20"></p>',
   '',
@@ -280,14 +286,21 @@ for (const collection of collections) {
   const entries = sorted.filter(paper => paper.primaryRole === collection.key);
   const perYear = new Map();
   for (const paper of entries) perYear.set(paper.year, (perYear.get(paper.year) ?? 0) + 1);
-  let currentYear;
+  const earlyCount = collection.groupBefore
+    ? entries.filter(paper => Number(paper.year) < collection.groupBefore).length
+    : 0;
+  let currentGroup;
   for (const paper of entries) {
-    if (paper.year !== currentYear) {
-      currentYear = paper.year;
-      const yearCount = perYear.get(currentYear);
-      lines.push('', `### ${currentYear} · ${yearCount} ${yearCount === 1 ? 'work' : 'works'}`, '');
+    const isEarly = Boolean(collection.groupBefore) && Number(paper.year) < collection.groupBefore;
+    const group = isEarly ? `before-${collection.groupBefore}` : paper.year;
+    if (group !== currentGroup) {
+      currentGroup = group;
+      const groupLabel = isEarly ? `Before ${collection.groupBefore}` : paper.year;
+      const groupCount = isEarly ? earlyCount : perYear.get(paper.year);
+      lines.push('', `### ${groupLabel} · ${groupCount} ${groupCount === 1 ? 'work' : 'works'}`, '');
     }
-    lines.push(`- [${escapeMarkdown(paper.title)}](${paper.url})&nbsp;${venueBadge(paper)}`);
+    const yearPrefix = isEarly ? `**${paper.year}** · ` : '';
+    lines.push(`- ${yearPrefix}[${escapeMarkdown(paper.title)}](${paper.url})&nbsp;${venueBadge(paper)}`);
   }
 }
 

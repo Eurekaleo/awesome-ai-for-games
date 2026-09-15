@@ -94,9 +94,9 @@ for (const [role, label] of Object.entries(expectedRoles)) {
   assert(readme.includes(`assets/readme/role-${role}.svg`), `README role card is missing: ${role}`);
   const listed = searchPapers(papers, {role}).length;
   const section = readme.split(`## ${readmeLabel}`)[1]?.split('\n## ')[0] ?? '';
-  assert.equal((section.match(/^- (?:⭐ )?\[/gm) ?? []).length, listed, `README ${role} count does not match the data`);
+  assert.equal((section.match(/^- (?:\*\*\d{4}\*\* · )?(?:⭐ )?\[/gm) ?? []).length, listed, `README ${role} count does not match the data`);
   assert(html.includes(`data-count="${role}">${listed}</b>`), `Website ${role} filter count is stale`);
   assert(new RegExp(`\\b${role}: \\{[\\s\\S]{0,100}count:${listed},`).test(guide), `Website ${role} fallback count is stale`);
 }
-assert.equal((readme.split('## Foundations and Context')[1]?.split('\n## ')[0].match(/^- (?:⭐ )?\[/gm) ?? []).length, contextCount);
+assert.equal((readme.split('## Foundations and Context')[1]?.split('\n## ')[0].match(/^- (?:\*\*\d{4}\*\* · )?(?:⭐ )?\[/gm) ?? []).length, contextCount);
 console.log('Catalog checks passed: records, metadata, categories, filters, search, sort, URLs, README synchronization, and escaping.');
