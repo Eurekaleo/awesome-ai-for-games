@@ -206,7 +206,7 @@ const sorted = [...papers].sort((a, b) =>
 );
 const counts = Object.fromEntries(collections.map(({key}) => [key, sorted.filter(paper => paper.primaryRole === key).length]));
 const coreCount = sorted.length - counts.context;
-const introductionVideoUrl = 'https://github.com/user-attachments/assets/54b63738-564f-4a8a-beca-dfc5de79b743';
+const introductionVideoUrl = 'https://github.com/user-attachments/assets/b6a01cca-edf2-45c9-a8a6-541b830623d7';
 const readmeAssetRoot = path.join(root, 'assets/readme');
 const venueAssetRoot = path.join(readmeAssetRoot, 'venues');
 await mkdir(venueAssetRoot, {recursive: true});

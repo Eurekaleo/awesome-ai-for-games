@@ -16,7 +16,7 @@
 
 ## 90-second paper overview
 
-https://github.com/user-attachments/assets/54b63738-564f-4a8a-beca-dfc5de79b743
+https://github.com/user-attachments/assets/b6a01cca-edf2-45c9-a8a6-541b830623d7
 
 ## About the survey
 

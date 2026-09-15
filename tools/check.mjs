@@ -88,7 +88,7 @@ const coreCount = papers.length - contextCount;
 assert(readme.includes(`references-${papers.length}`), 'README reference badge is stale');
 assert(readme.includes(`core%20works-${coreCount}`), 'README core-work badge is stale');
 assert(readme.includes('assets/readme/survey-banner.webp'), 'README survey banner is missing');
-assert(readme.includes('https://github.com/user-attachments/assets/54b63738-564f-4a8a-beca-dfc5de79b743'), 'README introduction video is missing');
+assert(readme.includes('https://github.com/user-attachments/assets/b6a01cca-edf2-45c9-a8a6-541b830623d7'), 'README introduction video is missing');
 for (const author of ['Meng Luo', 'Yanlin Li', 'Hao Li', 'Hongzhan Lin', 'Pengfei Zhou', 'Tianjie Ju', 'Ran Zhang', 'Yeying Jin', 'Mong-Li Lee', 'Wynne Hsu']) {
   assert(readme.includes(author), `README author is missing: ${author}`);
   assert(html.includes(author), `Website author is missing: ${author}`);
