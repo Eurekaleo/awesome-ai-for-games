@@ -21,7 +21,7 @@ Foundation models are changing more than how AI plays a given game. They can mod
 
 **Start here:** [Read the paper](paper/AI_for_Games_in_the_Foundation_Model_Era.pdf) · [Explore the project website](https://eurekaleo.github.io/awesome-ai-for-games/) · [Open the visual survey map](https://eurekaleo.github.io/awesome-ai-for-games/#map) · [Search the literature](https://eurekaleo.github.io/awesome-ai-for-games/#papers) · [Play the AI-crafted games](https://eurekaleo.github.io/awesome-ai-for-games/#playable-games)
 
-<p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/game-world.webp" width="900" alt="AI for Games project artwork: a robot, game world, castle, and playable path"></a></p>
+<p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/readme/survey-banner.webp" width="1000" alt="Panoramic AI for Games project banner connecting design, build, modeling, runtime generation, play, and testing"></a></p>
 
 ## Repository guide
 

@@ -87,7 +87,7 @@ const contextCount = searchPapers(papers, {role:'context'}).length;
 const coreCount = papers.length - contextCount;
 assert(readme.includes(`references-${papers.length}`), 'README reference badge is stale');
 assert(readme.includes(`core%20works-${coreCount}`), 'README core-work badge is stale');
-assert(readme.includes('assets/game-world.webp'), 'README project artwork is missing');
+assert(readme.includes('assets/readme/survey-banner.webp'), 'README survey banner is missing');
 for (const [, source] of readme.matchAll(/<img\s+[^>]*src="([^"]+)"/g)) {
   if (!/^https?:\/\//i.test(source)) await access(new URL(`../${source}`, import.meta.url));
 }
