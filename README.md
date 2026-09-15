@@ -1,17 +1,31 @@
 <div align="center">
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/project-logo.png" width="94" alt="AI for Games project logo"></a>
   <h1>Awesome AI for Games</h1>
-  <p><strong>Six research roles. One curated reading world.</strong></p>
-  <p>A living companion to <em>AI for Games in the Foundation Model Era</em>.</p>
+  <p><strong>The open literature companion to the survey</strong></p>
+  <h2><a href="paper/AI_for_Games_in_the_Foundation_Model_Era.pdf">AI for Games in the Foundation Model Era</a></h2>
+  <p>Six research roles · Three recurring questions · One evidence-centered map of the field</p>
 
-  <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
   <a href="paper/AI_for_Games_in_the_Foundation_Model_Era.pdf"><img src="https://img.shields.io/badge/read-paper-c78b1e?style=flat-square&logo=adobeacrobatreader&logoColor=white" alt="Read the paper"></a>
+  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-439-168f91?style=flat-square" alt="439 references"></a>
   <img src="https://img.shields.io/badge/core%20works-414-c78b1e?style=flat-square" alt="414 core works">
-  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20site-6f63d9?style=flat-square" alt="Explore the project website"></a>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
 </div>
 
+## About the survey
+
+Foundation models are changing more than how AI plays a given game. They can model game worlds and players, propose content and rules, build executable projects, generate and adapt live experiences, and produce evidence for testing. The survey organizes this expanding landscape by the immediate use of an AI output, keeping distinct the claims made for actions, predictions, designs, software, runtime changes, and test evidence.
+
+> [!IMPORTANT]
+> **Three questions guide the synthesis across every role.** **Boundary:** what is supplied by the game or workflow, and what is assigned to AI? **Transfer and reuse:** which capabilities transfer, which artifacts can be reused, and what remains setting-specific? **Evidence:** what claims does evaluation support where the output is actually used?
+
+**Start here:** [Read the paper](paper/AI_for_Games_in_the_Foundation_Model_Era.pdf) · [Explore the project website](https://eurekaleo.github.io/awesome-ai-for-games/) · [Open the visual survey map](https://eurekaleo.github.io/awesome-ai-for-games/#map) · [Search the literature](https://eurekaleo.github.io/awesome-ai-for-games/#papers) · [Play the AI-crafted games](https://eurekaleo.github.io/awesome-ai-for-games/#playable-games)
+
 <p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/game-world.webp" width="900" alt="AI for Games project artwork: a robot, game world, castle, and playable path"></a></p>
+
+## Repository guide
+
+[About the survey](#about-the-survey) · [Choose a research role](#choose-a-research-role) · [Read the index](#reading-the-index) · [Foundations and context](#foundations-and-context) · [Contribute](#contributing)
 
 ## Choose a research role
 
@@ -27,7 +41,7 @@ The six paths below follow what an AI output is used to do in a game or developm
   <a href="#test-and-evaluate"><img src="assets/readme/role-test.svg" width="246" alt="Test and Evaluate: 61 works"></a>
 </p>
 
-**436 survey references + 3 living additions.** [Read the paper](paper/AI_for_Games_in_the_Foundation_Model_Era.pdf) · [Explore the visual survey map](https://eurekaleo.github.io/awesome-ai-for-games/#map) · [Search all papers](https://eurekaleo.github.io/awesome-ai-for-games/#papers) · [Suggest a paper](https://github.com/Eurekaleo/awesome-ai-for-games/issues/new/choose)
+**436 survey references + 3 living additions.** [Search all papers](https://eurekaleo.github.io/awesome-ai-for-games/#papers) · [Suggest a paper](https://github.com/Eurekaleo/awesome-ai-for-games/issues/new/choose)
 
 ## Reading the index
 
