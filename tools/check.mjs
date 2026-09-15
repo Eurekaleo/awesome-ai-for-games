@@ -93,6 +93,10 @@ for (const author of ['Meng Luo', 'Yanlin Li', 'Hao Li', 'Hongzhan Lin', 'Pengfe
   assert(readme.includes(author), `README author is missing: ${author}`);
   assert(html.includes(author), `Website author is missing: ${author}`);
 }
+for (const authorUrl of ['eurekaleo.github.io/', 'liyanlin06.github.io/', 'scholar.google.com/citations?user=vF-UH7oAAAAJ', 'daniellin97.github.io/', 'lancezpf.github.io/', 'jometeorie.github.io/', 'openreview.net/profile?id=~Ran_Zhang18', 'jinyeying.github.io/', 'comp.nus.edu.sg/cs/people/leeml/', 'comp.nus.edu.sg/cs/people/whsu/']) {
+  assert(readme.includes(authorUrl), `README author link is missing: ${authorUrl}`);
+  assert(html.includes(authorUrl), `Website author link is missing: ${authorUrl}`);
+}
 assert(html.includes('assets/video/ai-for-games-introduction.mp4'), 'Website introduction video is missing');
 assert(html.includes('assets/video/ai-for-games-introduction-poster.webp'), 'Website introduction video poster is missing');
 for (const [, source] of readme.matchAll(/<img\s+[^>]*src="([^"]+)"/g)) {

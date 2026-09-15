@@ -255,7 +255,7 @@ const lines = [
   `  <img src="https://img.shields.io/badge/core%20works-${coreCount}-c78b1e?style=flat-square" alt="${coreCount} core works">`,
   '  <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>',
   '',
-  '  <p>Meng Luo<sup>1</sup> · Yanlin Li<sup>1</sup> · Hao Li<sup>1</sup> · Hongzhan Lin<sup>1</sup> · Pengfei Zhou<sup>1</sup> · Tianjie Ju<sup>1</sup> · Ran Zhang<sup>2</sup> · Yeying Jin<sup>1</sup> · Mong-Li Lee<sup>1</sup> · Wynne Hsu<sup>1</sup></p>',
+  '  <p><a href="https://eurekaleo.github.io/">Meng Luo</a><sup>1</sup> · <a href="https://liyanlin06.github.io/">Yanlin Li</a><sup>1</sup> · <a href="https://scholar.google.com/citations?user=vF-UH7oAAAAJ&amp;hl=zh-TW">Hao Li</a><sup>1</sup> · <a href="https://daniellin97.github.io/">Hongzhan Lin</a><sup>1</sup> · <a href="https://lancezpf.github.io/">Pengfei Zhou</a><sup>1</sup> · <a href="https://jometeorie.github.io/">Tianjie Ju</a><sup>1</sup> · <a href="https://openreview.net/profile?id=~Ran_Zhang18">Ran Zhang</a><sup>2</sup> · <a href="https://jinyeying.github.io/">Yeying Jin</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/leeml/">Mong-Li Lee</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/whsu/">Wynne Hsu</a><sup>1</sup></p>',
   '  <p><sub><sup>1</sup> National University of Singapore &nbsp;·&nbsp; <sup>2</sup> Nanyang Technological University</sub></p>',
   '</div>',
   '',
