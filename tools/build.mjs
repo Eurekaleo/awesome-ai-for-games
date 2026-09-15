@@ -32,10 +32,11 @@ const aiCraftedGameFiles = [
 ];
 
 // Publish an explicit public-file allowlist. Never copy a parent directory,
-// manuscript, Git metadata, source credentials, or local review material.
+// Git metadata, source credentials, or local review material.
 const files = [
   '.nojekyll', 'index.html', 'site/guide.css', 'site/guide.js', 'site/catalog.mjs',
   'data/references.json', 'data/survey-references.bib',
+  'paper/AI_for_Games_in_the_Foundation_Model_Era.pdf',
   'assets/project-logo.png', 'assets/project-favicon.png', 'assets/game-world.webp',
   'assets/CREDITS.md',
   ...['sec_intro', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6', 'sec7',
@@ -71,7 +72,8 @@ for (const [, ref] of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
     assert(files.includes(publicPath), `Unlisted local dependency: ${ref}`);
   }
 }
-assert(!/\.pdf(?:["?#\s]|$)|\.tex\b/i.test(html), 'A PDF or TeX source was linked from the public page');
+assert(!/\.tex\b/i.test(html), 'A TeX source was linked from the public page');
+assert(html.includes('paper/AI_for_Games_in_the_Foundation_Model_Era.pdf'), 'The final paper is not linked from the public page');
 const gameHtml = await readFile(path.join(out, 'games/little-worlds/index.html'), 'utf8');
 assert(!/\b(?:href|src)="\//.test(gameHtml), 'Playable game page contains a root-relative local reference');
 const gameManifest = JSON.parse(await readFile(path.join(out, 'games/little-worlds/data/manifest.json'), 'utf8'));
@@ -81,6 +83,6 @@ for (const game of Object.values(gameManifest.games)) {
   assert(game.levelsUrl.startsWith('./data/levels/'));
 }
 const publicFiles=await Promise.all(files.map(async file=>({file,info:await stat(path.join(out,file))})));
-assert(publicFiles.every(({file})=>!file.toLowerCase().endsWith('.pdf')),'The site build must never contain the manuscript PDF');
+assert.deepEqual(publicFiles.filter(({file})=>file.toLowerCase().endsWith('.pdf')).map(({file})=>file), ['paper/AI_for_Games_in_the_Foundation_Model_Era.pdf']);
 const bytes = publicFiles.reduce((n, {info}) => n+info.size, 0);
 console.log(`Public build ready: ${files.length} files, ${(bytes/1024/1024).toFixed(2)} MB. All local references and anchors resolved.`);

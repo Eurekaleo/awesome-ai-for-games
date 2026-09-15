@@ -7,6 +7,5 @@ __pycache__/
 /dist/
 /.openai/
 
-# The current manuscript is not released through the public companion yet.
-paper/AI_for_Games_in_the_Foundation_Model_Era.pdf
+# Keep editable manuscript sources private; the final PDF is published.
 paper/AI_for_Games_in_the_Foundation_Model_Era_Overleaf.zip

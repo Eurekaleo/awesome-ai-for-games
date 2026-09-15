@@ -71,6 +71,10 @@ for (const gameId of ['moon-garden', 'aurora-outpost']) {
 const readme = await readFile(new URL('../README.md', import.meta.url), 'utf8');
 const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const guide = await readFile(new URL('../site/guide.js', import.meta.url), 'utf8');
+const paperPath = 'paper/AI_for_Games_in_the_Foundation_Model_Era.pdf';
+await access(new URL(`../${paperPath}`, import.meta.url));
+assert(readme.includes(paperPath), 'README does not link the final paper');
+assert(html.includes(paperPath), 'Website does not link the final paper');
 const contextCount = searchPapers(papers, {role:'context'}).length;
 const coreCount = papers.length - contextCount;
 assert(readme.includes(`references-${papers.length}`), 'README reference badge is stale');
