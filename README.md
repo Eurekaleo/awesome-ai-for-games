@@ -10,7 +10,7 @@
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20site-6f63d9?style=flat-square" alt="Explore the project website"></a>
 </div>
 
-<p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/game-world.webp" width="900" alt="Original AI for Games concept artwork: a robot, game world, castle, and playable path"></a><br><sub>Original concept artwork for the project; not a research result.</sub></p>
+<p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/game-world.webp" width="900" alt="AI for Games project artwork: a robot, game world, castle, and playable path"></a></p>
 
 ## Choose a research role
 
