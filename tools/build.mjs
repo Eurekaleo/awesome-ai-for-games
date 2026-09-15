@@ -39,6 +39,7 @@ const files = [
   'paper/AI_for_Games_in_the_Foundation_Model_Era.pdf',
   'assets/project-logo.png', 'assets/project-favicon.png', 'assets/project-icon-192.png',
   'assets/project-icon-512.png', 'assets/apple-touch-icon.png', 'assets/game-world.webp',
+  'assets/video/ai-for-games-introduction.mp4', 'assets/video/ai-for-games-introduction-poster.webp',
   'assets/CREDITS.md',
   ...['sec_intro', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6', 'sec7',
     'figure-3-timeline', 'figure-4a-knowledge', 'figure-4b-knowledge']

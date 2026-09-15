@@ -206,6 +206,7 @@ const sorted = [...papers].sort((a, b) =>
 );
 const counts = Object.fromEntries(collections.map(({key}) => [key, sorted.filter(paper => paper.primaryRole === key).length]));
 const coreCount = sorted.length - counts.context;
+const introductionVideoUrl = 'https://github.com/user-attachments/assets/54b63738-564f-4a8a-beca-dfc5de79b743';
 const readmeAssetRoot = path.join(root, 'assets/readme');
 const venueAssetRoot = path.join(readmeAssetRoot, 'venues');
 await mkdir(venueAssetRoot, {recursive: true});
@@ -253,7 +254,14 @@ const lines = [
   `  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-${sorted.length}-168f91?style=flat-square" alt="${sorted.length} references"></a>`,
   `  <img src="https://img.shields.io/badge/core%20works-${coreCount}-c78b1e?style=flat-square" alt="${coreCount} core works">`,
   '  <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>',
+  '',
+  '  <p>Meng Luo<sup>1</sup> · Yanlin Li<sup>1</sup> · Hao Li<sup>1</sup> · Hongzhan Lin<sup>1</sup> · Pengfei Zhou<sup>1</sup> · Tianjie Ju<sup>1</sup> · Ran Zhang<sup>2</sup> · Yeying Jin<sup>1</sup> · Mong-Li Lee<sup>1</sup> · Wynne Hsu<sup>1</sup></p>',
+  '  <p><sub><sup>1</sup> National University of Singapore &nbsp;·&nbsp; <sup>2</sup> Nanyang Technological University</sub></p>',
   '</div>',
+  '',
+  '## 90-second paper overview',
+  '',
+  introductionVideoUrl,
   '',
   '## About the survey',
   '',
