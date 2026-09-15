@@ -245,7 +245,6 @@ const lines = [
   '<div align="center">',
   '  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/project-logo.png" width="94" alt="AI for Games project logo"></a>',
   '  <h1>Awesome AI for Games</h1>',
-  '  <p><strong>The open literature companion to the survey</strong></p>',
   '  <h2><a href="paper/AI_for_Games_in_the_Foundation_Model_Era.pdf">AI for Games in the Foundation Model Era</a></h2>',
   '  <p>Six research roles · Three recurring questions · One evidence-centered map of the field</p>',
   '',
@@ -287,8 +286,6 @@ const lines = [
   'Each work appears once under its primary role and carries a source-type badge. Sparse early years are consolidated into a “Before YEAR” group, with the exact year retained beside each title.',
   '',
   '<p><img src="assets/readme/legend-conference.svg" alt="Conference source" height="20"> <img src="assets/readme/legend-journal.svg" alt="Journal source" height="20"> <img src="assets/readme/legend-preprint.svg" alt="Preprint source" height="20"> <img src="assets/readme/legend-industry.svg" alt="Official or industry source" height="20"> <img src="assets/readme/legend-book.svg" alt="Book source" height="20"></p>',
-  '',
-  `[Foundations and context →](#foundations-and-context) · [Contributing →](#contributing)`,
 ];
 
 for (const collection of collections) {
