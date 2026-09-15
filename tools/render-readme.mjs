@@ -18,9 +18,9 @@ const collections = [
   },
   {
     key: 'model',
-    title: 'Model Games and Players',
-    focus: 'World models, learned simulators, state representations, dynamics prediction, and player modeling.',
-    cardTitle: ['Model Games', 'and Players'],
+    title: 'Model Players and Games',
+    focus: 'Player modeling, world models, learned simulators, state representations, and dynamics prediction.',
+    cardTitle: ['Model Players', 'and Games'],
     accent: '#89c668',
     icon: 'm12 3 9 5v8l-9 5-9-5V8Zm0 10 9-5m-9 5L3 8m9 5v8',
     groupBefore: 2020,

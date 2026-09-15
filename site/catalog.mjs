@@ -1,5 +1,5 @@
 export const ROLES = {
-  play: 'Play & Act', model: 'Model Games & Players', design: 'Design',
+  play: 'Play & Act', model: 'Model Players & Games', design: 'Design',
   build: 'Build & Maintain', runtime: 'Generate & Adapt at Runtime', test: 'Test & Evaluate',
 };
 export const FILTER_LABELS = {...ROLES, context: 'Foundations & context'};

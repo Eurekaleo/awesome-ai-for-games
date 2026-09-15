@@ -36,7 +36,7 @@ body:
       label: Best matching collection
       options:
         - Play and Act
-        - Model Games and Players
+        - Model Players and Games
         - Design
         - Build and Maintain
         - Generate and Adapt at Runtime

@@ -18,7 +18,7 @@ The six paths below follow what an AI output is used to do in a game or developm
 
 <p align="center">
   <a href="#play-and-act"><img src="assets/readme/role-play.svg" width="246" alt="Play and Act: 116 works"></a>
-  <a href="#model-games-and-players"><img src="assets/readme/role-model.svg" width="246" alt="Model Games and Players: 109 works"></a>
+  <a href="#model-players-and-games"><img src="assets/readme/role-model.svg" width="246" alt="Model Players and Games: 109 works"></a>
   <a href="#design"><img src="assets/readme/role-design.svg" width="246" alt="Design: 53 works"></a>
   <br>
   <a href="#build-and-maintain"><img src="assets/readme/role-build.svg" width="246" alt="Build and Maintain: 19 works"></a>
@@ -195,9 +195,9 @@ Across roles, the survey asks what the game supplies versus what AI contributes,
 
 ---
 
-## Model Games and Players
+## Model Players and Games
 
-<img src="assets/readme/icon-model.svg" alt="" width="24" height="24"> World models, learned simulators, state representations, dynamics prediction, and player modeling.
+<img src="assets/readme/icon-model.svg" alt="" width="24" height="24"> Player modeling, world models, learned simulators, state representations, and dynamics prediction.
 
 ### 2026 · 38 works
 

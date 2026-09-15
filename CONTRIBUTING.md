@@ -33,6 +33,6 @@ Please avoid pasted abstracts, rankings, unverified performance claims, and dupl
 
 ## Scope
 
-The core collection covers AI that directly plays and acts, models games and players, designs, builds and maintains, generates and adapts at runtime, or tests and evaluates interactive games. Foundations and contextual references are kept in a separate supporting collection.
+The core collection covers AI that directly plays and acts, models players and games, designs, builds and maintains, generates and adapts at runtime, or tests and evaluates interactive games. Foundations and contextual references are kept in a separate supporting collection.
 
 The public repository contains the literature index, project website, and two playable demonstrations. Manuscript PDFs and private review material are not accepted here.

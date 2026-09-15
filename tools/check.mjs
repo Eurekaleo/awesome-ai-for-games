@@ -10,7 +10,7 @@ const countBibEntries = source => [...source.matchAll(/^@\w+\s*\{/gm)].length;
 const paperReferenceCount = countBibEntries(paperBib);
 const livingAdditionCount = countBibEntries(additionsBib);
 const expectedRoles = {
-  play: 'Play & Act', model: 'Model Games & Players', design: 'Design',
+  play: 'Play & Act', model: 'Model Players & Games', design: 'Design',
   build: 'Build & Maintain', runtime: 'Generate & Adapt at Runtime', test: 'Test & Evaluate',
 };
 assert.deepEqual(Object.fromEntries(Object.entries(FILTER_LABELS).filter(([key]) => key !== 'context')), expectedRoles);
