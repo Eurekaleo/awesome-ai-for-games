@@ -1,0 +1,21 @@
+{
+  "name": "AI for Games in the Foundation Model Era",
+  "short_name": "AI for Games",
+  "description": "A survey and open literature collection for AI across the game lifecycle.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#10131b",
+  "theme_color": "#10131b",
+  "icons": [
+    {
+      "src": "assets/project-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/project-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

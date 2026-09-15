@@ -75,6 +75,14 @@ const paperPath = 'paper/AI_for_Games_in_the_Foundation_Model_Era.pdf';
 await access(new URL(`../${paperPath}`, import.meta.url));
 assert(readme.includes(paperPath), 'README does not link the final paper');
 assert(html.includes(paperPath), 'Website does not link the final paper');
+for (const asset of ['favicon.ico', 'site.webmanifest', 'assets/project-favicon.png', 'assets/apple-touch-icon.png', 'assets/project-icon-192.png', 'assets/project-icon-512.png']) {
+  await access(new URL(`../${asset}`, import.meta.url));
+}
+assert(html.includes('rel="icon" href="favicon.ico"'), 'Root favicon is not declared');
+assert(html.includes('rel="apple-touch-icon"'), 'Apple touch icon is not declared');
+assert(html.includes('rel="manifest" href="site.webmanifest"'), 'Web app manifest is not declared');
+assert(html.includes('property="og:image"'), 'Open Graph image is not declared');
+assert(html.includes('name="twitter:image"'), 'Twitter image is not declared');
 const contextCount = searchPapers(papers, {role:'context'}).length;
 const coreCount = papers.length - contextCount;
 assert(readme.includes(`references-${papers.length}`), 'README reference badge is stale');

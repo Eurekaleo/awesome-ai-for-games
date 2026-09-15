@@ -34,10 +34,11 @@ const aiCraftedGameFiles = [
 // Publish an explicit public-file allowlist. Never copy a parent directory,
 // Git metadata, source credentials, or local review material.
 const files = [
-  '.nojekyll', 'index.html', 'site/guide.css', 'site/guide.js', 'site/catalog.mjs',
+  '.nojekyll', 'favicon.ico', 'site.webmanifest', 'index.html', 'site/guide.css', 'site/guide.js', 'site/catalog.mjs',
   'data/references.json', 'data/survey-references.bib',
   'paper/AI_for_Games_in_the_Foundation_Model_Era.pdf',
-  'assets/project-logo.png', 'assets/project-favicon.png', 'assets/game-world.webp',
+  'assets/project-logo.png', 'assets/project-favicon.png', 'assets/project-icon-192.png',
+  'assets/project-icon-512.png', 'assets/apple-touch-icon.png', 'assets/game-world.webp',
   'assets/CREDITS.md',
   ...['sec_intro', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6', 'sec7',
     'figure-3-timeline', 'figure-4a-knowledge', 'figure-4b-knowledge']
