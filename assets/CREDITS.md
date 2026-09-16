@@ -19,6 +19,6 @@ The research gallery reproduces illustrative material from the following public 
 
 The gallery files are WebP conversions of the source-attributed images listed above.
 
-The six files in `playable/` are screenshots of this project's browser games: *Moonlight Garden*, *Aurora Outpost*, *Lulu Snow Night*, *Snow Dragon Rescue*, *Snow Fox Survival*, and *Revised Platform Route*. The first two use AI-generated rule kernels; the remaining four are AI-created or AI-revised prototypes.
+The nine files in `playable/` are screenshots of this project's browser games: *Cloud Sling*, *Sprout Guard*, *Neon Kart*, *Moonlight Garden*, *Aurora Outpost*, *Lulu Snow Night*, *Snow Dragon Rescue*, *Snow Fox Survival*, and *Revised Platform Route*. The first three form the Classic Arcade collection; *Moonlight Garden* and *Aurora Outpost* use AI-generated rule kernels; the remaining four are AI-created or AI-revised prototypes.
 
 For attribution corrections or removal requests, please [open an issue](https://github.com/Eurekaleo/awesome-ai-for-games/issues).

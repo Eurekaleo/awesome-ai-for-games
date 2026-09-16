@@ -30,6 +30,18 @@ const aiCraftedGameFiles = [
   ...['lulu-snow-night', 'snow-dragon-rescue', 'snow-fox-survival', 'revised-platform-route']
     .map(name => `games/ai-crafted-worlds/data/${name}.json`),
 ];
+const classicArcadeGameFiles = [
+  'games/classic-arcade/index.html',
+  'games/classic-arcade/favicon.svg',
+  'games/classic-arcade/THIRD_PARTY.md',
+  'games/classic-arcade/licenses/Matter-LICENSE.txt',
+  'games/classic-arcade/licenses/Three-LICENSE.txt',
+  ...['art-BG4L1Jxi.js', 'garden-BiGi3edg.js', 'index-DnjKx9R_.js',
+    'kart-CkkHUYKs.js', 'sling-F_lZp23b.js', 'index-BtmSr1TE.css']
+    .map(name => `games/classic-arcade/assets/${name}`),
+  ...['garden', 'garden-en', 'kart', 'kart-en', 'sling', 'sling-en']
+    .map(name => `games/classic-arcade/previews/${name}.png`),
+];
 
 // Publish an explicit public-file allowlist. Never copy a parent directory,
 // Git metadata, source credentials, or local review material.
@@ -46,10 +58,11 @@ const files = [
     .map(name => `assets/survey-map/${name}.webp`),
   ...['sophy', 'gamengen', 'mariogpt', 'gamecraft', 'nights', 'ea-testing']
     .map(name => `assets/gallery/${name}.webp`),
-  ...['moon-garden', 'aurora-outpost', 'lulu-snow-night', 'snow-dragon-rescue', 'snow-fox-survival', 'revised-platform-route']
+  ...['cloud-sling', 'sprout-guard', 'neon-kart', 'moon-garden', 'aurora-outpost', 'lulu-snow-night', 'snow-dragon-rescue', 'snow-fox-survival', 'revised-platform-route']
     .map(name => `assets/playable/${name}.webp`),
   ...gameFiles,
   ...aiCraftedGameFiles,
+  ...classicArcadeGameFiles,
 ];
 for (const file of files) {
   const info = await stat(path.join(root, file));
@@ -78,6 +91,8 @@ assert(!/\.tex\b/i.test(html), 'A TeX source was linked from the public page');
 assert(html.includes('paper/AI_for_Games_in_the_Foundation_Model_Era.pdf'), 'The final paper is not linked from the public page');
 const gameHtml = await readFile(path.join(out, 'games/little-worlds/index.html'), 'utf8');
 assert(!/\b(?:href|src)="\//.test(gameHtml), 'Playable game page contains a root-relative local reference');
+const classicArcadeHtml = await readFile(path.join(out, 'games/classic-arcade/index.html'), 'utf8');
+assert(!/\b(?:href|src)="\//.test(classicArcadeHtml), 'Classic Arcade contains a root-relative local reference');
 const gameManifest = JSON.parse(await readFile(path.join(out, 'games/little-worlds/data/manifest.json'), 'utf8'));
 assert.deepEqual(Object.keys(gameManifest.games).sort(), ['aurora-outpost', 'moon-garden']);
 for (const game of Object.values(gameManifest.games)) {

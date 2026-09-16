@@ -71,6 +71,18 @@ for (const gameId of ['moon-garden', 'aurora-outpost']) {
 const readme = await readFile(new URL('../README.md', import.meta.url), 'utf8');
 const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const guide = await readFile(new URL('../site/guide.js', import.meta.url), 'utf8');
+const playableCards = [...html.matchAll(/<article class="playable-card\b/g)];
+assert.equal(playableCards.length, 9, 'The website must present exactly nine playable game cards');
+assert(html.includes('NINE AI-CRAFTED WORLDS'), 'The playable-games heading is stale');
+for (const game of ['sling', 'garden', 'kart']) {
+  assert(html.includes(`games/classic-arcade/?game=${game}&amp;lang=en`), `Classic Arcade entry is missing: ${game}`);
+}
+for (const asset of ['cloud-sling', 'sprout-guard', 'neon-kart']) {
+  await access(new URL(`../assets/playable/${asset}.webp`, import.meta.url));
+}
+for (const asset of ['index.html', 'favicon.svg', 'THIRD_PARTY.md', 'licenses/Matter-LICENSE.txt', 'licenses/Three-LICENSE.txt']) {
+  await access(new URL(`../games/classic-arcade/${asset}`, import.meta.url));
+}
 const paperPath = 'paper/AI_for_Games_in_the_Foundation_Model_Era.pdf';
 await access(new URL(`../${paperPath}`, import.meta.url));
 assert(readme.includes(paperPath), 'README does not link the final paper');
