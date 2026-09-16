@@ -681,11 +681,11 @@ Repository code and original interface assets are released under the [MIT Licens
 ## Star History
 
 <p align="center">
-  <a href="https://www.star-history.com/#Eurekaleo/awesome-ai-for-games&Date">
+  <a href="https://github.com/Eurekaleo/awesome-ai-for-games/stargazers">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Eurekaleo/awesome-ai-for-games&type=Date&theme=dark">
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Eurekaleo/awesome-ai-for-games&type=Date">
-      <img alt="Star history of Eurekaleo/awesome-ai-for-games" src="https://api.star-history.com/svg?repos=Eurekaleo/awesome-ai-for-games&type=Date" width="800">
+      <source media="(prefers-color-scheme: dark)" srcset="assets/readme/star-history-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/readme/star-history-light.svg">
+      <img alt="Star history of Eurekaleo/awesome-ai-for-games since 15 September 2026" src="assets/readme/star-history-light.svg" width="800">
     </picture>
   </a>
 </p>

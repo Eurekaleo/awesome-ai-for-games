@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title description">
+  <title id="title">Star history for Eurekaleo/awesome-ai-for-games since 15 Sept 2026</title>
+  <desc id="description">62 stars recorded since 15 Sept 2026, shown as a cumulative timeline.</desc>
+  <defs>
+    <linearGradient id="line" x1="0" x2="1"><stop offset="0" stop-color="#ff983f"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2dd4bf" stop-opacity=".28"/><stop offset="1" stop-color="#2dd4bf" stop-opacity=".02"/></linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <style>
+    text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#f8fafc}
+    .eyebrow{font-size:13px;font-weight:750;letter-spacing:2.3px;fill:#ff983f}
+    .title{font-size:30px;font-weight:760;letter-spacing:-.7px}
+    .subtitle{font-size:15px;font-weight:500;fill:#9fb0c6}
+    .metric{font-size:35px;font-weight:780;letter-spacing:-1px}
+    .metric-label{font-size:13px;font-weight:700;letter-spacing:1.4px;fill:#9fb0c6}
+    .axis{font-size:12px;font-weight:560;fill:#72839a}
+    .footer{font-size:12px;font-weight:620;letter-spacing:.4px;fill:#9fb0c6}
+  </style>
+  <rect width="900" height="430" rx="24" fill="#0b1220"/>
+  <circle cx="820" cy="18" r="130" fill="#2dd4bf" opacity=".055"/>
+  <circle cx="52" cy="410" r="110" fill="#ff983f" opacity=".045"/>
+  <rect x="28" y="28" width="844" height="374" rx="19" fill="#111b2c" stroke="#26364d"/>
+  <circle cx="60" cy="66" r="15" fill="#ff983f" opacity=".16"/>
+  <path d="M60 55.5l3.3 6.7 7.4 1.1-5.4 5.2 1.3 7.4-6.6-3.5-6.6 3.5 1.3-7.4-5.4-5.2 7.4-1.1z" fill="#ff983f"/>
+  <text x="88" y="61" class="eyebrow">COMMUNITY MOMENTUM</text>
+  <text x="88" y="96" class="title">Star History</text>
+  <text x="88" y="122" class="subtitle">Cumulative stars since 15 Sept 2026 · UTC</text>
+  <text x="817" y="78" text-anchor="end" class="metric">+62</text>
+  <text x="817" y="103" text-anchor="end" class="metric-label">STARS SINCE 15 SEP</text>
+  
+    <line x1="76" y1="332" x2="854" y2="332" stroke="#2a3a50" stroke-width="1" stroke-dasharray="4 7"/>
+    <text x="58" y="337" text-anchor="end" class="axis">0</text>
+    <line x1="76" y1="288.5" x2="854" y2="288.5" stroke="#2a3a50" stroke-width="1" stroke-dasharray="4 7"/>
+    <text x="58" y="293.5" text-anchor="end" class="axis">20</text>
+    <line x1="76" y1="245" x2="854" y2="245" stroke="#2a3a50" stroke-width="1" stroke-dasharray="4 7"/>
+    <text x="58" y="250" text-anchor="end" class="axis">40</text>
+    <line x1="76" y1="201.5" x2="854" y2="201.5" stroke="#2a3a50" stroke-width="1" stroke-dasharray="4 7"/>
+    <text x="58" y="206.5" text-anchor="end" class="axis">60</text>
+    <line x1="76" y1="158" x2="854" y2="158" stroke="#2a3a50" stroke-width="1" stroke-dasharray="4 7"/>
+    <text x="58" y="163" text-anchor="end" class="axis">80</text>
+  
+    <text x="76" y="363" text-anchor="start" class="axis">15 Sept, 00:00</text>
+    <text x="270.5" y="363" text-anchor="middle" class="axis">15 Sept, 07:15</text>
+    <text x="465" y="363" text-anchor="middle" class="axis">15 Sept, 14:31</text>
+    <text x="659.5" y="363" text-anchor="middle" class="axis">15 Sept, 21:47</text>
+    <text x="854" y="363" text-anchor="end" class="axis">16 Sept, 05:03</text>
+  <path d="M 76.00 332.00 L 216.30 329.82 L 343.60 327.65 L 343.70 325.48 L 343.76 323.30 L 343.81 321.13 L 343.87 318.95 L 357.77 316.77 L 358.12 314.60 L 370.64 312.43 L 370.80 310.25 L 404.27 308.07 L 441.72 305.90 L 442.92 303.73 L 491.16 301.55 L 783.40 299.38 L 783.52 297.20 L 783.76 295.02 L 785.75 292.85 L 787.14 290.68 L 790.87 288.50 L 793.82 286.32 L 807.18 284.15 L 808.72 281.98 L 810.39 279.80 L 812.17 277.63 L 813.20 275.45 L 814.76 273.27 L 816.00 271.10 L 816.63 268.93 L 817.26 266.75 L 817.70 264.57 L 817.99 262.40 L 819.01 260.23 L 820.16 258.05 L 820.58 255.88 L 821.15 253.70 L 824.44 251.52 L 824.89 249.35 L 826.40 247.18 L 826.43 245.00 L 827.60 242.82 L 829.14 240.65 L 830.12 238.48 L 830.61 236.30 L 830.65 234.13 L 831.68 231.95 L 832.37 229.77 L 832.48 227.60 L 832.77 225.43 L 833.55 223.25 L 834.40 221.07 L 835.76 218.90 L 835.89 216.73 L 836.65 214.55 L 838.65 212.38 L 839.97 210.20 L 841.85 208.02 L 846.26 205.85 L 847.69 203.67 L 847.85 201.50 L 853.27 199.33 L 854.00 197.15 L 854.00 332 L 76 332 Z" fill="url(#area)"/>
+  <path d="M 76.00 332.00 L 216.30 329.82 L 343.60 327.65 L 343.70 325.48 L 343.76 323.30 L 343.81 321.13 L 343.87 318.95 L 357.77 316.77 L 358.12 314.60 L 370.64 312.43 L 370.80 310.25 L 404.27 308.07 L 441.72 305.90 L 442.92 303.73 L 491.16 301.55 L 783.40 299.38 L 783.52 297.20 L 783.76 295.02 L 785.75 292.85 L 787.14 290.68 L 790.87 288.50 L 793.82 286.32 L 807.18 284.15 L 808.72 281.98 L 810.39 279.80 L 812.17 277.63 L 813.20 275.45 L 814.76 273.27 L 816.00 271.10 L 816.63 268.93 L 817.26 266.75 L 817.70 264.57 L 817.99 262.40 L 819.01 260.23 L 820.16 258.05 L 820.58 255.88 L 821.15 253.70 L 824.44 251.52 L 824.89 249.35 L 826.40 247.18 L 826.43 245.00 L 827.60 242.82 L 829.14 240.65 L 830.12 238.48 L 830.61 236.30 L 830.65 234.13 L 831.68 231.95 L 832.37 229.77 L 832.48 227.60 L 832.77 225.43 L 833.55 223.25 L 834.40 221.07 L 835.76 218.90 L 835.89 216.73 L 836.65 214.55 L 838.65 212.38 L 839.97 210.20 L 841.85 208.02 L 846.26 205.85 L 847.69 203.67 L 847.85 201.50 L 853.27 199.33 L 854.00 197.15" fill="none" stroke="url(#line)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="854" cy="197.15" r="7" fill="#111b2c" stroke="#2dd4bf" stroke-width="4" filter="url(#glow)"/>
+  <text x="76" y="389" class="footer">Eurekaleo/awesome-ai-for-games</text>
+</svg>

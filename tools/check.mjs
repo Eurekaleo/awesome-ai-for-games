@@ -118,10 +118,12 @@ assert(readme.includes('## Citation'), 'README citation section is missing');
 assert(readme.includes('@misc{luo2026aigamesfoundationmodel,'), 'README BibTeX citation is missing');
 assert(readme.includes('url          = {https://arxiv.org/abs/2609.16679}'), 'README citation URL is malformed');
 assert(readme.includes('## Star History'), 'README star-history section is missing');
-assert(readme.includes('https://www.star-history.com/#Eurekaleo/awesome-ai-for-games&Date'), 'README interactive star-history link is missing');
-assert(readme.includes('https://api.star-history.com/svg?repos=Eurekaleo/awesome-ai-for-games&type=Date&theme=dark'), 'README dark-theme star-history chart is missing');
-assert(readme.includes('https://api.star-history.com/svg?repos=Eurekaleo/awesome-ai-for-games&type=Date'), 'README light-theme star-history chart is missing');
+assert(readme.includes('https://github.com/Eurekaleo/awesome-ai-for-games/stargazers'), 'README stargazer link is missing');
+assert(readme.includes('assets/readme/star-history-dark.svg'), 'README dark-theme star-history chart is missing');
+assert(readme.includes('assets/readme/star-history-light.svg'), 'README light-theme star-history chart is missing');
 assert(readme.indexOf('## Star History') < readme.indexOf('## Citation'), 'README citation must remain the final section after star history');
+await access(new URL('../assets/readme/star-history-light.svg', import.meta.url));
+await access(new URL('../assets/readme/star-history-dark.svg', import.meta.url));
 for (const author of ['Meng Luo', 'Yanlin Li', 'Hao Li', 'Hongzhan Lin', 'Pengfei Zhou', 'Tianjie Ju', 'Ran Zhang', 'Yeying Jin', 'Mong-Li Lee', 'Wynne Hsu']) {
   assert(readme.includes(author), `README author is missing: ${author}`);
   assert(html.includes(author), `Website author is missing: ${author}`);
