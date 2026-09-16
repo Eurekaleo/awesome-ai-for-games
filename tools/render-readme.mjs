@@ -298,6 +298,7 @@ const lines = [
   '  <p><strong><em>⭐ Star us if you find this useful!</em></strong></p>',
   '',
   '  <a href="https://arxiv.org/pdf/2609.16679"><img src="https://img.shields.io/badge/arXiv-2609.16679-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Read the paper on arXiv"></a>',
+  '  <a href="https://huggingface.co/papers/2609.16679"><img src="https://img.shields.io/badge/Hugging%20Face-Daily%20Paper-FFD21E?style=flat-square&logo=huggingface&logoColor=000000" alt="View the paper on Hugging Face Daily Papers"></a>',
   '  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>',
   `  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-${sorted.length}-168f91?style=flat-square" alt="${sorted.length} references"></a>`,
   `  <img src="https://img.shields.io/badge/core%20works-${coreCount}-c78b1e?style=flat-square" alt="${coreCount} core works">`,

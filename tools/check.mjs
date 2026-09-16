@@ -125,6 +125,7 @@ assert(readme.includes(`core%20works-${coreCount}`), 'README core-work badge is 
 assert(readme.includes('assets/readme/survey-banner.webp'), 'README survey banner is missing');
 assert(readme.includes('assets/readme/hero-banner.png'), 'README hero banner is missing');
 assert(!readme.includes('<h2><a href="https://arxiv.org/pdf/2609.16679">'), 'README paper title should not duplicate the arXiv link');
+assert(readme.includes('https://huggingface.co/papers/2609.16679'), 'README Hugging Face Daily Papers link is missing');
 assert(readme.includes('assets/video/ai-for-games-introduction-poster.webp'), 'README video cover is missing');
 assert(readme.includes('https://eurekaleo.github.io/awesome-ai-for-games/#video'), 'README introduction video link is missing');
 assert(!readme.includes('github.com/user-attachments/'), 'README should not expose a GitHub attachment player');
