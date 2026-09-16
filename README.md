@@ -674,3 +674,17 @@ Paper suggestions and corrections are welcome. Please read [CONTRIBUTING.md](CON
 ## License
 
 Repository code and original interface assets are released under the [MIT License](LICENSE). Linked papers, project media, and third-party resources remain subject to their original licenses and terms.
+
+## Citation
+
+```bibtex
+@misc{luo2026aigamesfoundationmodel,
+  title        = {AI for Games in the Foundation Model Era},
+  author       = {Meng Luo and Yanlin Li and Hao Li and Hongzhan Lin and Pengfei Zhou and Tianjie Ju and Ran Zhang and Yeying Jin and Mong-Li Lee and Wynne Hsu},
+  year         = {2026},
+  eprint       = {2609.16679},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.AI},
+  url          = {https://arxiv.org/abs/2609.16679},
+}
+```

@@ -109,6 +109,9 @@ assert(readme.includes('assets/video/ai-for-games-introduction-poster.webp'), 'R
 assert(readme.includes('https://eurekaleo.github.io/awesome-ai-for-games/#video'), 'README introduction video link is missing');
 assert(!readme.includes('github.com/user-attachments/'), 'README should not expose a GitHub attachment player');
 assert(!readme.includes('ai-for-games-introduction-new.mp4'), 'README should not expose an internal video filename');
+assert(readme.includes('## Citation'), 'README citation section is missing');
+assert(readme.includes('@misc{luo2026aigamesfoundationmodel,'), 'README BibTeX citation is missing');
+assert(readme.includes('url          = {https://arxiv.org/abs/2609.16679}'), 'README citation URL is malformed');
 for (const author of ['Meng Luo', 'Yanlin Li', 'Hao Li', 'Hongzhan Lin', 'Pengfei Zhou', 'Tianjie Ju', 'Ran Zhang', 'Yeying Jin', 'Mong-Li Lee', 'Wynne Hsu']) {
   assert(readme.includes(author), `README author is missing: ${author}`);
   assert(html.includes(author), `Website author is missing: ${author}`);
