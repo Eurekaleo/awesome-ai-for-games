@@ -125,6 +125,10 @@
     "zhao2026minwm": [{"type": "code", "url": "https://github.com/shengshu-ai/minWM"}],
     "shen2026game2world": [{"type": "code", "url": "https://github.com/Dongping-Chen/Game2World"}],
     "mao2025yume15": [{"type": "code", "url": "https://github.com/stdstu12/YUME"}],
-    "rao2024collaborative": [{"type": "code", "url": "https://github.com/microsoft/collaborative-quest-completion"}]
+    "rao2024collaborative": [{"type": "code", "url": "https://github.com/microsoft/collaborative-quest-completion"}],
+    "guo2026gamewam": [
+      {"type": "code", "url": "https://github.com/yunncheng/GameWAM"},
+      {"type": "project", "url": "https://yunncheng.github.io/GameWAM/"}
+    ]
   }
 }

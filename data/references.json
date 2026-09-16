@@ -3,7 +3,7 @@
   "source": "Living project bibliography",
   "sourceCounts": {
     "manuscript": 436,
-    "livingAdditions": 6
+    "livingAdditions": 7
   },
   "papers": [
     {
@@ -8463,6 +8463,37 @@
       "venue": "EMNLP 2026",
       "url": "https://arxiv.org/abs/2609.06563",
       "kind": "misc"
+    },
+    {
+      "id": "guo2026gamewam",
+      "title": "GameWAM: A World Action Model for Video Games",
+      "year": 2026,
+      "month": 8,
+      "authors": "Yuncheng Guo and Zhanqiu Zhang and Yiwen Guo and Weijia Li",
+      "shortAuthors": "Guo et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [
+        "generalist-foundation",
+        "multimodal-action",
+        "world-modeling",
+        "reasoning-planning"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.26200",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/yunncheng/GameWAM"
+        },
+        {
+          "type": "project",
+          "url": "https://yunncheng.github.io/GameWAM/"
+        }
+      ]
     },
     {
       "id": "choi2026d2e",

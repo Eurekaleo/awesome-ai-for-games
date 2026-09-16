@@ -58,6 +58,21 @@
       "url": "https://arxiv.org/abs/2609.06563"
     },
     {
+      "id": "guo2026gamewam",
+      "title": "GameWAM: A World Action Model for Video Games",
+      "year": 2026,
+      "month": 8,
+      "primaryRole": "play",
+      "topics": [
+        "generalist-foundation",
+        "multimodal-action",
+        "world-modeling",
+        "reasoning-planning"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.26200"
+    },
+    {
       "id": "landmark:add-trajectory",
       "title": "Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models",
       "year": 2026,

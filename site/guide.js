@@ -8,7 +8,7 @@ const ui = {search: $('#paper-search'), role: $('#role-filter'), year: $('#year-
 
 const collections = {
   play: {
-    number:'01', label:'PLAY AND ACT', count:117, title:'Learning to act.<br>Learning to cooperate.',
+    number:'01', label:'PLAY AND ACT', count:118, title:'Learning to act.<br>Learning to cooperate.',
     description:'From specialist policies to language-guided agents, this literature studies how AI perceives a game, chooses actions, and coordinates with other players.',
     topics:['Generalist policies','Planning & memory','Human–AI teamwork'],
     image:'sophy.webp', alt:'Gran Turismo 7 racing scene from an official GT Sophy announcement', caption:'Gran Turismo 7 / GT Sophy',

@@ -16,7 +16,7 @@ const expectedRoles = {
 };
 assert.deepEqual(Object.fromEntries(Object.entries(FILTER_LABELS).filter(([key]) => key !== 'context')), expectedRoles);
 assert.equal(paperReferenceCount, 436, 'The manuscript bibliography is not synchronized with the current paper');
-assert.equal(livingAdditionCount, 6, 'The catalog-only additions changed unexpectedly');
+assert.equal(livingAdditionCount, 7, 'The catalog-only additions changed unexpectedly');
 assert.equal(papers.length, paperReferenceCount + livingAdditionCount, 'The public collection is not the manuscript bibliography plus living additions');
 assert.deepEqual(sourceCounts, {manuscript:paperReferenceCount,livingAdditions:livingAdditionCount});
 assert.equal(new Set(papers.map(p => p.id)).size, papers.length);
@@ -31,7 +31,7 @@ for (const paper of papers) {
   const resourceUrls = [paper.url, ...resources.map(resource => resource.url)].map(url => url.toLowerCase().replace(/\/$/, ''));
   assert.equal(new Set(resourceUrls).size, resourceUrls.length, `Duplicate resource URL: ${paper.id}`);
 }
-assert.equal(Object.keys(officialResourceData.resources).length, 124, 'The verified official-resource index changed unexpectedly');
+assert.equal(Object.keys(officialResourceData.resources).length, 125, 'The verified official-resource index changed unexpectedly');
 assert.deepEqual(Object.keys(officialResourceData.resources).filter(key => !papers.some(paper => paper.id === key)), [], 'Official-resource index contains unknown references');
 const officialResourceCount = Object.values(officialResourceData.resources).flat().length;
 assert.equal(papers.reduce((total, paper) => total + (paper.resources?.length ?? 0), 0), officialResourceCount, 'Generated references lost official-resource metadata');
@@ -46,6 +46,8 @@ assert.equal(byId.get('huang2026guigames').primaryRole, 'build');
 assert.equal(byId.get('huang2026programmable').primaryRole, 'model');
 assert(byId.get('huang2026programmable').roles.includes('build'));
 assert.equal(byId.get('choi2026d2e').primaryRole, 'play');
+assert.equal(byId.get('guo2026gamewam').primaryRole, 'play');
+assert.deepEqual(byId.get('guo2026gamewam').resources.map(resource => resource.type), ['code', 'project']);
 assert.deepEqual(byId.get('choi2026d2e').topics.slice(0, 2), ['game-to-real-transfer', 'vision-action-pretraining']);
 assert.equal(byId.get('choi2026d2e').note, 'Game-to-real transfer · vision–action pretraining');
 assert.equal(byId.get('tong2026gamerl').primaryRole, 'context');
@@ -155,7 +157,8 @@ for (const [, source] of readme.matchAll(/<img\s+[^>]*src="([^"]+)"/g)) {
 }
 assert(html.includes(`bibliography of ${papers.length} references`), 'Website description count is stale');
 assert(html.includes(`id="paper-count">${papers.length}</strong>`), 'Website hero count is stale');
-assert(html.includes(`Search ${paperReferenceCount} current manuscript references and ${livingAdditionCount === 6 ? 'six' : livingAdditionCount} separately tracked public additions`), 'Website manuscript-versus-catalog distinction is stale');
+const livingAdditionLabel = ({6:'six',7:'seven'})[livingAdditionCount] ?? livingAdditionCount;
+assert(html.includes(`Search ${paperReferenceCount} current manuscript references and ${livingAdditionLabel} separately tracked public additions`), 'Website manuscript-versus-catalog distinction is stale');
 for (const figure of ['figure-3-timeline','figure-4a-knowledge','figure-4b-knowledge']) {
   assert(html.includes(`assets/survey-map/${figure}.webp`), `Manuscript visual is missing from the website: ${figure}`);
 }
