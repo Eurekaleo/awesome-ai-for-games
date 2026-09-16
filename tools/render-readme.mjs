@@ -196,20 +196,6 @@ const venueBadgeSvg = (label, type) => {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} 22" width="${width}" height="22" role="img" aria-label="${xmlEscape(label)}"><rect x=".5" y=".5" width="${width - 1}" height="21" rx="5" fill="${colors.fill}" stroke="${colors.stroke}"/><rect x="1" y="1" width="4" height="20" rx="2" fill="${colors.ink}"/><text x="14" y="15" fill="${colors.ink}" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700">${xmlEscape(label)}</text></svg>`;
 };
 
-const resourceStyles = {
-  paper: {label: 'paper', fill: '#eaf2ff', stroke: '#bfd3f5', ink: '#315f9c', icon: 'M4 2.5h7l3 3V17H4Zm7 0v3h3M7 9h4M7 12h4'},
-  code: {label: 'code', fill: '#edf0f4', stroke: '#cbd3dc', ink: '#445366', icon: 'm7 5-4 4 4 4m4-8 4 4-4 4'},
-  project: {label: 'project', fill: '#f0edff', stroke: '#d2c8f5', ink: '#6255a6', icon: 'M9 2.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm-6.2 6.5h12.4M9 2.5c1.8 1.8 2.7 4 2.7 6.5S10.8 13.7 9 15.5C7.2 13.7 6.3 11.5 6.3 9S7.2 4.3 9 2.5Z'},
-  source: {label: 'source', fill: '#fff2df', stroke: '#efd5aa', ink: '#8c5b1d', icon: 'M6 4H3v11h11v-3M9 3h6v6m0-6L8 10'},
-  book: {label: 'book', fill: '#eaf5f0', stroke: '#bedecb', ink: '#386f58', icon: 'M3 4.5h4.2c1 0 1.8.4 1.8 1.2v9.8c0-.8-.8-1.2-1.8-1.2H3Zm12 0h-4.2c-1 0-1.8.4-1.8 1.2v9.8c0-.8.8-1.2 1.8-1.2H15Z'},
-  results: {label: 'results', fill: '#e8f7f5', stroke: '#b8dfda', ink: '#2f746d', icon: 'M3 15V9m4 6V5m4 10v-4m4 4V2'},
-};
-
-const resourceBadgeSvg = ({label, fill, stroke, ink, icon}) => {
-  const width = Math.ceil(label.length * 6.2 + 33);
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} 22" width="${width}" height="22" role="img" aria-label="${label}"><rect x=".5" y=".5" width="${width - 1}" height="21" rx="11" fill="${fill}" stroke="${stroke}"/><path d="${icon}" transform="translate(4 2) scale(.92)" fill="none" stroke="${ink}" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"/><text x="25" y="15" fill="${ink}" font-family="Arial,Helvetica,sans-serif" font-size="10.5" font-weight="700">${label}</text></svg>`;
-};
-
 const resourceKind = paper => {
   let hostname = '';
   let pathname = '';
@@ -246,9 +232,7 @@ const coreCount = sorted.length - counts.context;
 const introductionVideoPageUrl = 'https://eurekaleo.github.io/awesome-ai-for-games/#video';
 const readmeAssetRoot = path.join(root, 'assets/readme');
 const venueAssetRoot = path.join(readmeAssetRoot, 'venues');
-const resourceAssetRoot = path.join(readmeAssetRoot, 'links');
 await mkdir(venueAssetRoot, {recursive: true});
-await mkdir(resourceAssetRoot, {recursive: true});
 for (const [index, collection] of collections.entries()) {
   if (!collection.accent) continue;
   await writeFile(path.join(readmeAssetRoot, `role-${collection.key}.svg`), roleCardSvg(collection, index, counts[collection.key]));
@@ -270,25 +254,24 @@ for (const [type, label] of [
 ]) {
   await writeFile(path.join(readmeAssetRoot, `legend-${type}.svg`), venueBadgeSvg(label, type));
 }
-for (const [kind, style] of Object.entries(resourceStyles)) {
-  await writeFile(path.join(resourceAssetRoot, `${kind}.svg`), resourceBadgeSvg(style));
-}
 const activeVenueFiles = new Set([...venueAssets.values()].map(({file}) => file));
 for (const file of await readdir(venueAssetRoot)) {
   if (file.endsWith('.svg') && !activeVenueFiles.has(file)) await unlink(path.join(venueAssetRoot, file));
 }
 
-const venueBadge = paper => {
-  const label = venueLabel(paper.venue);
-  const file = `${sourceType(paper)}-${slug(label)}.svg`;
-  return `<img src="assets/readme/venues/${file}" alt="${xmlEscape(label)}" title="${xmlEscape(paper.venue || label)}" height="20">`;
+const inlineCode = value => String(value ?? '')
+  .replaceAll('`', "'")
+  .replaceAll('&', '&amp;')
+  .replaceAll('<', '&lt;')
+  .replaceAll('>', '&gt;');
+
+const titleWithPeriod = value => {
+  const raw = String(value ?? '').trim();
+  const title = escapeMarkdown(raw);
+  return /[.!?]$/.test(raw) ? title : `${title}.`;
 };
 
-const resourceLink = paper => {
-  const kind = resourceKind(paper);
-  const label = resourceStyles[kind].label;
-  return `<a href="${xmlEscape(paper.url)}"><img src="assets/readme/links/${kind}.svg" alt="${label}" title="Open ${label}" height="20"></a>`;
-};
+const resourceLink = paper => `[[${resourceKind(paper)}](${paper.url})]`;
 
 const sectionHeading = (icon, title) => [
   `<img src="assets/readme/section-icons/${icon}.png" alt="" width="36" align="left">`,
@@ -346,9 +329,7 @@ const lines = [
   '',
   '## Reading the index',
   '',
-  'Each work appears once under its primary role. A source badge identifies the venue or publication type, while a compact resource link opens the paper, code repository, project page, primary source, book, or results. Sparse early years are consolidated into a “Before YEAR” group, with the exact year retained beside each title.',
-  '',
-  '<p><img src="assets/readme/legend-conference.svg" alt="Conference source" height="20"> <img src="assets/readme/legend-journal.svg" alt="Journal source" height="20"> <img src="assets/readme/legend-preprint.svg" alt="Preprint source" height="20"> <img src="assets/readme/legend-industry.svg" alt="Official or industry source" height="20"> <img src="assets/readme/legend-book.svg" alt="Book source" height="20"></p>',
+  'Each work appears once under its primary role. A compact venue tag precedes the title; paper, code, project, source, book, or results links follow it. Sparse early years are consolidated into a “Before YEAR” group, with the exact year retained in each venue tag.',
 ];
 
 for (const collection of collections) {
@@ -365,11 +346,11 @@ for (const collection of collections) {
       const groupLabel = isEarly ? `Before ${collection.groupBefore}` : paper.year;
       lines.push('', `### ${groupLabel}`, '');
     }
-    const yearPrefix = isEarly ? `**${paper.year}** · ` : '';
+    const venue = `${venueLabel(paper.venue)}${isEarly ? ` ${paper.year}` : ''}`;
     const annotation = paper.note
-      ? `&nbsp;<sub>${paper.highlight === 'award' ? '🏅' : paper.highlight === 'future' ? '🔭' : '•'} ${escapeMarkdown(paper.note)}</sub>`
+      ? ` <sub>${paper.highlight === 'award' ? '🏅' : paper.highlight === 'future' ? '🔭' : '•'} ${escapeMarkdown(paper.note)}</sub>`
       : '';
-    lines.push(`- ${yearPrefix}${venueBadge(paper)}&nbsp; ${escapeMarkdown(paper.title)} &nbsp;${resourceLink(paper)}${annotation}`);
+    lines.push(`- **\`${inlineCode(venue)}\`** ${titleWithPeriod(paper.title)} ${resourceLink(paper)}${annotation}`);
   }
 }
 
