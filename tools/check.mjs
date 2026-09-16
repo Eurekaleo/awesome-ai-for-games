@@ -6,6 +6,7 @@ const {papers, sourceCounts} = JSON.parse(await readFile(new URL('../data/refere
 const paperBib = await readFile(new URL('../data/paper-references.bib', import.meta.url), 'utf8');
 const additionsBib = await readFile(new URL('../data/living-additions.bib', import.meta.url), 'utf8');
 const roleMap = JSON.parse(await readFile(new URL('../data/role-citations.json', import.meta.url), 'utf8'));
+const officialResourceData = JSON.parse(await readFile(new URL('../data/official-resources.json', import.meta.url), 'utf8'));
 const countBibEntries = source => [...source.matchAll(/^@\w+\s*\{/gm)].length;
 const paperReferenceCount = countBibEntries(paperBib);
 const livingAdditionCount = countBibEntries(additionsBib);
@@ -22,6 +23,18 @@ assert.equal(new Set(papers.map(p => p.id)).size, papers.length);
 assert(papers.every(p => p.title && p.authors && p.year > 0 && p.url), 'Every reference needs a title, authors, year, and URL');
 assert(papers.every(p => Object.hasOwn(FILTER_LABELS, p.primaryRole)));
 assert(papers.every(p => !p.url || safePaperUrl(p.url)));
+const allowedResourceTypes = new Set(['code','project','demo','data','results']);
+for (const paper of papers) {
+  const resources = paper.resources ?? [];
+  assert(Array.isArray(resources), `Resources must be an array: ${paper.id}`);
+  assert(resources.every(resource => allowedResourceTypes.has(resource.type) && safePaperUrl(resource.url)), `Invalid resource metadata: ${paper.id}`);
+  const resourceUrls = [paper.url, ...resources.map(resource => resource.url)].map(url => url.toLowerCase().replace(/\/$/, ''));
+  assert.equal(new Set(resourceUrls).size, resourceUrls.length, `Duplicate resource URL: ${paper.id}`);
+}
+assert.equal(Object.keys(officialResourceData.resources).length, 124, 'The verified official-resource index changed unexpectedly');
+assert.deepEqual(Object.keys(officialResourceData.resources).filter(key => !papers.some(paper => paper.id === key)), [], 'Official-resource index contains unknown references');
+const officialResourceCount = Object.values(officialResourceData.resources).flat().length;
+assert.equal(papers.reduce((total, paper) => total + (paper.resources?.length ?? 0), 0), officialResourceCount, 'Generated references lost official-resource metadata');
 assert(papers.every(p => p.primaryRole==='context' || p.roles.includes(p.primaryRole)));
 const byId = new Map(papers.map(p => [p.id, p]));
 for (const [key, role] of Object.entries(roleMap.primary)) {
@@ -154,11 +167,13 @@ for (const [role, label] of Object.entries(expectedRoles)) {
   assert(readme.includes(`assets/readme/role-${role}.svg`), `README role card is missing: ${role}`);
   const listed = searchPapers(papers, {role}).length;
   const section = readme.split(`## ${readmeLabel}`)[1]?.split('\n## ')[0] ?? '';
-  assert.equal((section.match(/^- .*?\[\[(?:paper|code|project|source|book|results)\]\(https?:\/\/.*?\)\] <img src="assets\/readme\/venues\/[^"]+"[^>]*>/gm) ?? []).length, listed, `README ${role} count does not match the data`);
+  assert.equal((section.match(/^- .*?(?: \[\[(?:paper|code|project|demo|data|source|book|results)\]\(https?:\/\/.*?\)\])+ <img src="assets\/readme\/venues\/[^"]+"[^>]*>/gm) ?? []).length, listed, `README ${role} count does not match the data`);
   assert(html.includes(`data-count="${role}">${listed}</b>`), `Website ${role} filter count is stale`);
   assert(new RegExp(`\\b${role}: \\{[\\s\\S]{0,100}count:${listed},`).test(guide), `Website ${role} fallback count is stale`);
 }
-assert.equal((readme.split('## Foundations and Context')[1]?.split('\n## ')[0].match(/^- .*?\[\[(?:paper|code|project|source|book|results)\]\(https?:\/\/.*?\)\] <img src="assets\/readme\/venues\/[^"]+"[^>]*>/gm) ?? []).length, contextCount);
-assert.equal((readme.match(/\[\[(?:paper|code|project|source|book|results)\]\(https?:\/\//g) ?? []).length, papers.length, 'README resource-link count does not match the data');
+assert.equal((readme.split('## Foundations and Context')[1]?.split('\n## ')[0].match(/^- .*?(?: \[\[(?:paper|code|project|demo|data|source|book|results)\]\(https?:\/\/.*?\)\])+ <img src="assets\/readme\/venues\/[^"]+"[^>]*>/gm) ?? []).length, contextCount);
+assert.equal((readme.match(/\[\[(?:paper|code|project|demo|data|source|book|results)\]\(https?:\/\//g) ?? []).length, papers.length + officialResourceCount, 'README resource-link count does not match the data');
+assert(/\[\[paper\]\(https?:\/\//.test(readme) && /\[\[code\]\(https?:\/\//.test(readme) && /\[\[project\]\(https?:\/\//.test(readme), 'README resource labels are incomplete');
+assert(guide.includes('p.resources||[]') && guide.includes('paper-resource'), 'Website catalog does not expose verified resources');
 assert(!/^- (?:\*\*\d{4}\*\* · )?\[[^\]]+\]\(https?:\/\//m.test(readme), 'README paper titles should not be hyperlinks');
 console.log('Catalog checks passed: records, metadata, categories, filters, search, sort, URLs, README synchronization, and escaping.');

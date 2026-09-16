@@ -210,8 +210,15 @@ function paperRow(p){
   const venue=p.venue && !p.venue.includes('listed venue')?p.venue:(p.venue||'').split(' / ')[0];
   const link=url?'<a class="paper-title" href="'+e(url)+'" target="_blank" rel="noopener noreferrer">'+title+'</a>':'<span class="paper-title">'+title+'</span>';
   const authors=p.shortAuthors||p.authors||'';
+  const resources=(p.resources||[]).map(resource=>{
+    const resourceUrl=safePaperUrl(resource.url);
+    if(!resourceUrl) return '';
+    const label=resource.type==='code'?'Code':resource.type==='project'?'Project':resource.type==='demo'?'Demo':'Resource';
+    const icon=resource.type==='code'?'i-github':'i-north';
+    return '<a class="paper-resource" href="'+e(resourceUrl)+'" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#'+icon+'"/></svg>'+label+'</a>';
+  }).join('');
   const annotation=p.note?'<span class="topic">'+(p.highlight==='award'?'🏅 ':p.highlight==='future'?'🔭 ':'')+e(p.note)+'</span>':'';
-  return '<article class="paper-row"><span class="paper-year">'+e(p.year||'—')+'</span><div class="paper-main">'+link+(authors?'<p class="paper-authors">'+e(authors)+'</p>':'')+'<div class="paper-meta"><span class="venue">'+e(venue)+'</span><span>'+e(FILTER_LABELS[p.primaryRole]||'Research')+'</span>'+topics+annotation+'</div></div>'+(url?'<a class="paper-link" href="'+e(url)+'" target="_blank" rel="noopener noreferrer" aria-label="Open '+title+'"><svg class="icon"><use href="#i-north"/></svg></a>':'')+'</article>';
+  return '<article class="paper-row"><span class="paper-year">'+e(p.year||'—')+'</span><div class="paper-main">'+link+(authors?'<p class="paper-authors">'+e(authors)+'</p>':'')+'<div class="paper-meta">'+resources+'<span class="venue">'+e(venue)+'</span><span>'+e(FILTER_LABELS[p.primaryRole]||'Research')+'</span>'+topics+annotation+'</div></div>'+(url?'<a class="paper-link" href="'+e(url)+'" target="_blank" rel="noopener noreferrer" aria-label="Open '+title+'"><svg class="icon"><use href="#i-north"/></svg></a>':'')+'</article>';
 }
 function render({reset=false,updateUrl=true}={}){
   if(!state.loaded) return;

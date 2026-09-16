@@ -6,7 +6,7 @@ export const FILTER_LABELS = {...ROLES, context: 'Foundations & context'};
 export function searchPapers(papers, {query = '', role = '', year = ''} = {}) {
   const terms = query.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
   return papers.filter(p => (!role || p.primaryRole === role) && (!year || String(p.year) === String(year)) &&
-    terms.every(term => [p.title, p.authors, p.venue, p.url, p.aliases?.join(' '), ...(p.topics || [])].join(' ').replaceAll('-', ' ').toLocaleLowerCase().includes(term.replaceAll('-', ' '))));
+    terms.every(term => [p.title, p.authors, p.venue, p.url, p.aliases?.join(' '), ...(p.topics || []), ...(p.resources || []).flatMap(resource => [resource.type, resource.url])].join(' ').replaceAll('-', ' ').toLocaleLowerCase().includes(term.replaceAll('-', ' '))));
 }
 export function sortPapers(papers) {
   return [...papers].sort((a,b) => Number(b.year)-Number(a.year) || Number(b.month || 0)-Number(a.month || 0) || a.title.localeCompare(b.title));

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "2.0",
+  "schemaVersion": "2.1",
   "source": "Living project bibliography",
   "sourceCounts": {
     "manuscript": 436,
@@ -67,7 +67,13 @@
       "topics": [],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/5949a8750a110ce1f0631b1776c500a2-Abstract-Conference.html",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/iLearn-Lab/NeurIPS24-Optimus-1"
+        }
+      ]
     },
     {
       "id": "schrum2025mariodiffusion",
@@ -197,7 +203,13 @@
       "topics": [],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/c7b04e4e13bb77996d3ae2ff667231ac-Abstract-Conference.html",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/gdrtodd/gavel"
+        }
+      ]
     },
     {
       "id": "nasir2025mortar",
@@ -330,7 +342,13 @@
       "topics": [],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/250190819ff1dda47cd23cecc0c5a69b-Abstract-Conference.html",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/CSSLab/maia2"
+        }
+      ]
     },
     {
       "id": "monroe2026chessformer",
@@ -482,7 +500,13 @@
       "topics": [],
       "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
       "url": "https://arxiv.org/abs/2504.01014",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/TencentARC/AnimeGamer"
+        }
+      ]
     },
     {
       "id": "gallotta2024",
@@ -638,7 +662,13 @@
       ],
       "venue": "ACM Computing Surveys",
       "url": "https://arxiv.org/abs/2404.02039",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://github.com/git-disl/awesome-LLM-game-agent-papers"
+        }
+      ]
     },
     {
       "id": "xu2024gameplaying",
@@ -657,7 +687,13 @@
       ],
       "venue": "arXiv preprint arXiv:2403.10249",
       "url": "https://arxiv.org/abs/2403.10249",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://github.com/BAAI-Agents/GPA-LM"
+        }
+      ]
     },
     {
       "id": "vinyals2019alphastar",
@@ -717,7 +753,13 @@
       ],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://arxiv.org/abs/2206.11795",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/openai/Video-Pre-Training"
+        }
+      ]
     },
     {
       "id": "reed2022gato",
@@ -752,7 +794,13 @@
       ],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://arxiv.org/abs/2205.15241",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/google-research/google-research/tree/master/multi_game_dt"
+        }
+      ]
     },
     {
       "id": "cobbe2020procgen",
@@ -772,7 +820,13 @@
       ],
       "venue": "Proceedings of the 37th International Conference on Machine Learning",
       "url": "https://proceedings.mlr.press/v119/cobbe20a.html",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/openai/procgen"
+        }
+      ]
     },
     {
       "id": "fan2022minedojo",
@@ -793,7 +847,13 @@
       ],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://arxiv.org/abs/2206.08853",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/MineDojo/MineDojo"
+        }
+      ]
     },
     {
       "id": "wang2023deps",
@@ -813,7 +873,13 @@
       ],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://arxiv.org/abs/2302.01560",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/CraftJarvis/MC-Planner"
+        }
+      ]
     },
     {
       "id": "yuan2023plan4mc",
@@ -832,7 +898,13 @@
       ],
       "venue": "arXiv preprint arXiv:2303.16563",
       "url": "https://arxiv.org/abs/2303.16563",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/PKU-RL/Plan4MC"
+        }
+      ]
     },
     {
       "id": "wang2023voyager",
@@ -852,7 +924,13 @@
       ],
       "venue": "arXiv preprint arXiv:2305.16291",
       "url": "https://arxiv.org/abs/2305.16291",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/MineDojo/Voyager"
+        }
+      ]
     },
     {
       "id": "wang2023jarvis1",
@@ -873,7 +951,13 @@
       ],
       "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
       "url": "https://arxiv.org/abs/2311.05997",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/CraftJarvis/JARVIS-1"
+        }
+      ]
     },
     {
       "id": "shao2024swarmbrain",
@@ -892,7 +976,13 @@
       ],
       "venue": "arXiv preprint arXiv:2401.17749",
       "url": "https://arxiv.org/abs/2401.17749",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/ramsayxiaoshao/SwarmBrain"
+        }
+      ]
     },
     {
       "id": "zhang2026generalist",
@@ -1034,7 +1124,13 @@
       ],
       "venue": "arXiv preprint arXiv:2504.08388",
       "url": "https://arxiv.org/abs/2504.08388",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/microsoft/mineworld"
+        }
+      ]
     },
     {
       "id": "zhang2025matrixgame",
@@ -1055,7 +1151,13 @@
       ],
       "venue": "arXiv preprint arXiv:2506.18701",
       "url": "https://arxiv.org/abs/2506.18701",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/SkyworkAI/Matrix-Game"
+        }
+      ]
     },
     {
       "id": "he2025matrixgame2",
@@ -1174,7 +1276,13 @@
       ],
       "venue": "arXiv preprint arXiv:2603.16871",
       "url": "https://arxiv.org/abs/2603.16871",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/cvlab-kaist/WorldCam"
+        }
+      ]
     },
     {
       "id": "forgewm2026",
@@ -1211,7 +1319,13 @@
       ],
       "venue": "arXiv preprint arXiv:2605.30263",
       "url": "https://arxiv.org/abs/2605.30263",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/shengshu-ai/minWM"
+        }
+      ]
     },
     {
       "id": "garcin2026persist",
@@ -1265,7 +1379,13 @@
       ],
       "venue": "arXiv preprint arXiv:2606.16519",
       "url": "https://arxiv.org/abs/2606.16519",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/LinghuiiShen/BadWorld"
+        }
+      ]
     },
     {
       "id": "ding2026playworld",
@@ -1324,7 +1444,13 @@
       ],
       "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
       "url": "https://arxiv.org/abs/2503.09527",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/ChenVoid/CombatVLA"
+        }
+      ]
     },
     {
       "id": "jarvisvla2025",
@@ -1385,7 +1511,13 @@
       "url": "https://arxiv.org/abs/2601.02427",
       "kind": "inproceedings",
       "highlight": "award",
-      "note": "CVPR 2026 Best Paper Honorable Mention"
+      "note": "CVPR 2026 Best Paper Honorable Mention",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/MineDojo/NitroGen"
+        }
+      ]
     },
     {
       "id": "sima22025",
@@ -1446,7 +1578,13 @@
       ],
       "venue": "arXiv preprint arXiv:2601.16690",
       "url": "https://arxiv.org/abs/2601.16690",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/InternLM/EMemBench"
+        }
+      ]
     },
     {
       "id": "zhang2026gameverse",
@@ -1466,7 +1604,13 @@
       ],
       "venue": "International Conference on Machine Learning",
       "url": "https://arxiv.org/abs/2603.06656",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/THUSI-Lab/GameVerse"
+        }
+      ]
     },
     {
       "id": "paglieri2024balrog",
@@ -1487,7 +1631,13 @@
       ],
       "venue": "International Conference on Learning Representations",
       "url": "https://arxiv.org/abs/2411.13543",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/balrog-ai/BALROG"
+        }
+      ]
     },
     {
       "id": "guertler2025textarena",
@@ -1506,7 +1656,13 @@
       ],
       "venue": "arXiv preprint arXiv:2504.11442",
       "url": "https://arxiv.org/abs/2504.11442",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/TextArena/TextArena"
+        }
+      ]
     },
     {
       "id": "yang2025unigen",
@@ -1687,7 +1843,13 @@
       ],
       "venue": "arXiv preprint arXiv:2510.16952",
       "url": "https://arxiv.org/abs/2510.16952",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/austin-the-drake/real-time-world-crafting-wordplay-demo"
+        }
+      ]
     },
     {
       "id": "figueiredo2025scaffolded",
@@ -1727,7 +1889,13 @@
       ],
       "venue": "arXiv preprint arXiv:2407.03460",
       "url": "https://arxiv.org/abs/2407.03460",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/microsoft/collaborative-quest-completion"
+        }
+      ]
     },
     {
       "id": "hafnar2025zeroshot",
@@ -1748,7 +1916,13 @@
       ],
       "venue": "IEEE Transactions on Games",
       "url": "https://doi.org/10.1109/TG.2024.3421590",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/dhafnar/match3"
+        }
+      ]
     },
     {
       "id": "hsu2026doubleedged",
@@ -2036,7 +2210,13 @@
       ],
       "venue": "arXiv preprint arXiv:2606.17861",
       "url": "https://arxiv.org/abs/2606.17861",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/FreedomIntelligence/gamecraft-bench"
+        }
+      ]
     },
     {
       "id": "lu2026personalized",
@@ -2070,7 +2250,13 @@
       "topics": [],
       "venue": "International Conference on Machine Learning",
       "url": "https://arxiv.org/abs/2605.03941",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/EmbodiedCity/iWorld-Bench"
+        }
+      ]
     },
     {
       "id": "yang2026worldexam",
@@ -2084,7 +2270,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2608.02603",
       "url": "https://arxiv.org/abs/2608.02603",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/YuxueYang1204/WorldExam"
+        }
+      ]
     },
     {
       "id": "ouyang2026gameworld",
@@ -2104,7 +2296,13 @@
       ],
       "venue": "arXiv preprint arXiv:2604.07429",
       "url": "https://arxiv.org/abs/2604.07429",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/gameworld-project/GameWorld"
+        }
+      ]
     },
     {
       "id": "zhang2025videogamebench",
@@ -2143,7 +2341,13 @@
       ],
       "venue": "arXiv preprint arXiv:2506.04098",
       "url": "https://arxiv.org/abs/2506.04098",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/Lww007/Text-Atari-Agents"
+        }
+      ]
     },
     {
       "id": "park2025orak",
@@ -2181,7 +2385,13 @@
       "topics": [],
       "venue": "Proceedings of the 42nd International Conference on Machine Learning",
       "url": "https://proceedings.mlr.press/v267/tan25h.html",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/BAAI-Agents/Cradle"
+        }
+      ]
     },
     {
       "id": "skoutnev2026twin",
@@ -2261,7 +2471,13 @@
       ],
       "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
       "url": "https://arxiv.org/abs/2501.08325",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/KlingAIResearch/GameFactory"
+        }
+      ]
     },
     {
       "id": "chen2025modelgame",
@@ -2629,7 +2845,13 @@
       ],
       "venue": "Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology",
       "url": "https://arxiv.org/abs/2304.03442",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/joonspk-research/generative_agents"
+        }
+      ]
     },
     {
       "id": "smirnov2024behaviorstructformer",
@@ -2824,7 +3046,13 @@
       ],
       "venue": "CoRR",
       "url": "https://arxiv.org/abs/1806.11532",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/microsoft/TextWorld"
+        }
+      ]
     },
     {
       "id": "hafner2019planet",
@@ -2844,7 +3072,13 @@
       ],
       "venue": "Proceedings of the 36th International Conference on Machine Learning",
       "url": "https://proceedings.mlr.press/v97/hafner19a.html",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/google-research/planet"
+        }
+      ]
     },
     {
       "id": "ha2018worldmodels",
@@ -2903,7 +3137,13 @@
       ],
       "venue": "Proceedings of EMNLP-IJCNLP",
       "url": "https://aclanthology.org/D19-1062/",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/facebookresearch/LIGHT"
+        }
+      ]
     },
     {
       "id": "carroll2019overcooked",
@@ -2922,7 +3162,13 @@
       ],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://proceedings.neurips.cc/paper/2019/hash/f5b1b89d98b7286673128a5fb112cb9a-Abstract.html",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/HumanCompatibleAI/overcooked_ai"
+        }
+      ]
     },
     {
       "id": "bard2020hanabi",
@@ -3062,7 +3308,13 @@
       ],
       "venue": "CoRR",
       "url": "https://arxiv.org/abs/2306.00937",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/Shalev-Lifshitz/STEVE-1"
+        }
+      ]
     },
     {
       "id": "sima2024",
@@ -3101,7 +3353,13 @@
       ],
       "venue": "International Conference on Learning Representations",
       "url": "https://arxiv.org/abs/1903.00374",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/tensorflow/tensor2tensor"
+        }
+      ]
     },
     {
       "id": "hafner2020dreamer",
@@ -3121,7 +3379,13 @@
       ],
       "venue": "International Conference on Learning Representations",
       "url": "https://openreview.net/forum?id=S1lOTC4tDS",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/danijar/dreamer"
+        }
+      ]
     },
     {
       "id": "khalifa2020pcgrl",
@@ -3140,7 +3404,13 @@
       ],
       "venue": "Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment",
       "url": "https://doi.org/10.1609/aiide.v16i1.7416",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/amidos2006/gym-pcgrl"
+        }
+      ]
     },
     {
       "id": "zook2014mechanics",
@@ -3409,7 +3679,13 @@
       ],
       "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
       "url": "https://doi.org/10.1609/aaai.v34i05.6297",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/microsoft/jericho"
+        }
+      ]
     },
     {
       "id": "compton2006procedural",
@@ -3484,7 +3760,13 @@
       ],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://arxiv.org/abs/2302.05981",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/shyamsn97/mario-gpt"
+        }
+      ]
     },
     {
       "id": "nelson2007automated",
@@ -3638,7 +3920,13 @@
       ],
       "venue": "International Conference on Learning Representations",
       "url": "https://arxiv.org/abs/2209.00588",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/eloialonso/iris"
+        }
+      ]
     },
     {
       "id": "alonso2024diamond",
@@ -3657,7 +3945,13 @@
       ],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://arxiv.org/abs/2405.12399",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/eloialonso/diamond"
+        }
+      ]
     },
     {
       "id": "cai2024rocket1",
@@ -3676,7 +3970,13 @@
       ],
       "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
       "url": "https://arxiv.org/abs/2410.17856",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/CraftJarvis/ROCKET-1"
+        }
+      ]
     },
     {
       "id": "zhu2023calypso",
@@ -3946,7 +4246,13 @@
       ],
       "venue": "arXiv preprint arXiv:2605.23345",
       "url": "https://arxiv.org/abs/2605.23345",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/z2tong/SCOPE"
+        }
+      ]
     },
     {
       "id": "chen2026gamexpert",
@@ -3984,7 +4290,13 @@
       ],
       "venue": "arXiv preprint arXiv:2608.24680",
       "url": "https://arxiv.org/abs/2608.24680",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/Dongping-Chen/Game2World"
+        }
+      ]
     },
     {
       "id": "zhou2026trajectory",
@@ -4024,7 +4336,13 @@
       ],
       "venue": "International Conference on Learning Representations",
       "url": "https://arxiv.org/abs/2411.00769",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/GameGen-X/GameGen-X"
+        }
+      ]
     },
     {
       "id": "tang2025hgc2",
@@ -4061,7 +4379,13 @@
       ],
       "venue": "arXiv preprint arXiv:2601.20540",
       "url": "https://arxiv.org/abs/2601.20540",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/Robbyant/lingbot-world"
+        }
+      ]
     },
     {
       "id": "xiong2026actworld",
@@ -4286,7 +4610,13 @@
       ],
       "venue": "arXiv preprint arXiv:2606.11129",
       "url": "https://arxiv.org/abs/2606.11129",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/alibaba-damo-academy/WorldOlympiad"
+        }
+      ]
     },
     {
       "id": "parkerholder2024genie2",
@@ -4366,7 +4696,13 @@
       ],
       "venue": "arXiv preprint arXiv:2607.26754",
       "url": "https://arxiv.org/abs/2607.26754",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/Jimntu/StatePlay"
+        }
+      ]
     },
     {
       "id": "wang2026reactivegwmsteeringnpcreactive",
@@ -4388,7 +4724,13 @@
       ],
       "venue": "arXiv preprint arXiv:2605.15256",
       "url": "https://arxiv.org/abs/2605.15256",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/INV-WZQ/ReactiveGWM"
+        }
+      ]
     },
     {
       "id": "zhu2026incantationnaturallanguageaction",
@@ -4409,7 +4751,13 @@
       ],
       "venue": "arXiv preprint arXiv:2605.18601",
       "url": "https://arxiv.org/abs/2605.18601",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/zhushangwen/Incantation"
+        }
+      ]
     },
     {
       "id": "dreamxteam2026dreamxworld10generalpurposeinteractive",
@@ -4425,7 +4773,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2606.16993",
       "url": "https://arxiv.org/abs/2606.16993",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/AMAP-ML/DreamX-World"
+        }
+      ]
     },
     {
       "id": "meng2026marionettepredictingworldstates",
@@ -4441,7 +4795,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2608.14530",
       "url": "https://arxiv.org/abs/2608.14530",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/AlayaLab/Marionette"
+        }
+      ]
     },
     {
       "id": "xu2026worldroambenchopenworldbenchmarklonghorizon",
@@ -4476,7 +4836,13 @@
       ],
       "venue": "arXiv preprint arXiv:2608.23565",
       "url": "https://arxiv.org/abs/2608.23565",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/zhifeichen097/ReWorld"
+        }
+      ]
     },
     {
       "id": "volum2022craft",
@@ -4492,7 +4858,13 @@
       "topics": [],
       "venue": "Proceedings of the 3rd Wordplay: When Language Meets Games Workshop (Wordplay 2022)",
       "url": "https://aclanthology.org/2022.wordplay-1.3/",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/microsoft/interactive-minecraft-npcs"
+        }
+      ]
     },
     {
       "id": "chen2021decisiontransformer",
@@ -4508,7 +4880,13 @@
       "topics": [],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://arxiv.org/abs/2106.01345",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/kzl/decision-transformer"
+        }
+      ]
     },
     {
       "id": "wu2023spring",
@@ -4524,7 +4902,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2305.15486",
       "url": "https://arxiv.org/abs/2305.15486",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/Holmeswww/SPRING"
+        }
+      ]
     },
     {
       "id": "parisotto2020gtrxl",
@@ -4572,7 +4956,13 @@
       "topics": [],
       "venue": "Proceedings of the 35th International Conference on Machine Learning",
       "url": "https://proceedings.mlr.press/v80/rashid18a.html",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/oxwhirl/pymarl"
+        }
+      ]
     },
     {
       "id": "hu2020otherplay",
@@ -4637,7 +5027,13 @@
       "topics": [],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://arxiv.org/abs/1805.12114",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/kchua/handful-of-trials"
+        }
+      ]
     },
     {
       "id": "chen2024diffusionforcing",
@@ -4653,7 +5049,13 @@
       "topics": [],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://arxiv.org/abs/2407.01392",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/buoyancy99/diffusion-forcing"
+        }
+      ]
     },
     {
       "id": "volz2018mariogan",
@@ -4672,7 +5074,13 @@
       ],
       "venue": "Proceedings of the Genetic and Evolutionary Computation Conference",
       "url": "https://arxiv.org/abs/1805.00728",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/CIGbalance/DagstuhlGAN"
+        }
+      ]
     },
     {
       "id": "dai2024singlediffusion",
@@ -4783,7 +5191,13 @@
       "topics": [],
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://arxiv.org/abs/2108.13264",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/google-research/rliable"
+        }
+      ]
     },
     {
       "id": "sun2025dramallama",
@@ -4881,7 +5295,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2506.18903",
       "url": "https://arxiv.org/abs/2506.18903",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/runjiali-rl/vmem"
+        }
+      ]
     },
     {
       "id": "kidambi2020morel",
@@ -4913,7 +5333,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2006.01855",
       "url": "https://arxiv.org/abs/2006.01855",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/CSSLab/maia-chess"
+        }
+      ]
     },
     {
       "id": "melhart2021arousal",
@@ -4945,7 +5371,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2005.13239",
       "url": "https://arxiv.org/abs/2005.13239",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/tianheyu927/mopo"
+        }
+      ]
     },
     {
       "id": "mcilroyyoung2020learning",
@@ -4961,7 +5393,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2008.10086",
       "url": "https://arxiv.org/abs/2008.10086",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/CSSLab/maia-individual"
+        }
+      ]
     },
     {
       "id": "green2022predicting",
@@ -5043,7 +5481,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2506.08009",
       "url": "https://arxiv.org/abs/2506.08009",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/guandeh17/Self-Forcing"
+        }
+      ]
     },
     {
       "id": "drachen2014comparison",
@@ -5075,7 +5519,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2005.05960",
       "url": "https://arxiv.org/abs/2005.05960",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/ramanans1/plan2explore"
+        }
+      ]
     },
     {
       "id": "makantasis2019pixels",
@@ -5155,7 +5605,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2504.12626",
       "url": "https://arxiv.org/abs/2504.12626",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/lllyasviel/FramePack"
+        }
+      ]
     },
     {
       "id": "makantasis2021pixels",
@@ -5187,7 +5643,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2412.07772",
       "url": "https://arxiv.org/abs/2412.07772",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/tianweiy/CausVid"
+        }
+      ]
     },
     {
       "id": "dainese2024generating",
@@ -5203,7 +5665,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2405.15383",
       "url": "https://arxiv.org/abs/2405.15383",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/nicoladainese96/code-world-models"
+        }
+      ]
     },
     {
       "id": "goel2024label",
@@ -5430,7 +5898,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:1711.00832",
       "url": "https://arxiv.org/abs/1711.00832",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/google-deepmind/open_spiel"
+        }
+      ]
     },
     {
       "id": "zhang2025beyond",
@@ -5463,7 +5937,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2007.13544",
       "url": "https://arxiv.org/abs/2007.13544",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/facebookresearch/rebel"
+        }
+      ]
     },
     {
       "id": "yu2021surprising",
@@ -5479,7 +5959,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2103.01955",
       "url": "https://arxiv.org/abs/2103.01955",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/marlbenchmark/on-policy"
+        }
+      ]
     },
     {
       "id": "chen2017eomm",
@@ -5603,7 +6089,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2502.17878",
       "url": "https://arxiv.org/abs/2502.17878",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/gingasan/interactive-drama"
+        }
+      ]
     },
     {
       "id": "boberirizar2024skill",
@@ -5651,7 +6143,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2201.06865",
       "url": "https://arxiv.org/abs/2201.06865",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/RosaliaTufano/rlgameauthors"
+        }
+      ]
     },
     {
       "id": "macklon2022automatically",
@@ -5667,7 +6165,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2208.02335",
       "url": "https://arxiv.org/abs/2208.02335",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/asgaardlab/canvas-visual-bugs-testbed"
+        }
+      ]
     },
     {
       "id": "zhao2021maximum",
@@ -5683,7 +6187,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2112.11701",
       "url": "https://arxiv.org/abs/2112.11701",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/ruizhaogit/maximum_entropy_population_based_training"
+        }
+      ]
     },
     {
       "id": "al2024project",
@@ -5699,7 +6209,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2411.00114",
       "url": "https://arxiv.org/abs/2411.00114",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/altera-al/project-sid"
+        }
+      ]
     },
     {
       "id": "bergdahl2021augmenting",
@@ -5747,7 +6263,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2502.14606",
       "url": "https://arxiv.org/abs/2502.14606",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/iv4xr-project/iv4xr-rlbt"
+        }
+      ]
     },
     {
       "id": "xu2023exploring",
@@ -5763,7 +6285,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2309.04658",
       "url": "https://arxiv.org/abs/2309.04658",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/xuyuzhuang11/Werewolf"
+        }
+      ]
     },
     {
       "id": "chen2021glib",
@@ -5779,7 +6307,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2106.10507",
       "url": "https://arxiv.org/abs/2106.10507",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/GLIB-game/GLIB"
+        }
+      ]
     },
     {
       "id": "gordillo2021improving",
@@ -5811,7 +6345,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:1906.02330",
       "url": "https://arxiv.org/abs/1906.02330",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/Detry322/DeepRole"
+        }
+      ]
     },
     {
       "id": "yu2023learning",
@@ -5827,7 +6367,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2302.01605",
       "url": "https://arxiv.org/abs/2302.01605",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/samjia2000/HSP"
+        }
+      ]
     },
     {
       "id": "light2023avalonbench",
@@ -5846,7 +6392,13 @@
       ],
       "venue": "arXiv preprint arXiv:2310.05036",
       "url": "https://arxiv.org/abs/2310.05036",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/jonathanmli/Avalon-LLM"
+        }
+      ]
     },
     {
       "id": "xu2023language",
@@ -5945,7 +6497,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:1706.05125",
       "url": "https://arxiv.org/abs/1706.05125",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/facebookresearch/end-to-end-negotiator"
+        }
+      ]
     },
     {
       "id": "bailis2024werewolf",
@@ -5964,7 +6522,13 @@
       ],
       "venue": "arXiv preprint arXiv:2407.13943",
       "url": "https://arxiv.org/abs/2407.13943",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/google/werewolf_arena"
+        }
+      ]
     },
     {
       "id": "piao2025agentsociety",
@@ -5980,7 +6544,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2502.08691",
       "url": "https://arxiv.org/abs/2502.08691",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/tsinghua-fib-lab/AgentSociety"
+        }
+      ]
     },
     {
       "id": "mirsky2022survey",
@@ -6016,7 +6586,13 @@
       ],
       "venue": "arXiv preprint arXiv:1902.04043",
       "url": "https://arxiv.org/abs/1902.04043",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/oxwhirl/smac"
+        }
+      ]
     },
     {
       "id": "foerster2017learning",
@@ -6032,7 +6608,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:1709.04326",
       "url": "https://arxiv.org/abs/1709.04326",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/alshedivat/lola"
+        }
+      ]
     },
     {
       "id": "taesiri2023glitchbench",
@@ -6160,7 +6742,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2604.07818",
       "url": "https://arxiv.org/abs/2604.07818",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/SandyyyZheng/GliDe"
+        }
+      ]
     },
     {
       "id": "helff2026llms",
@@ -6208,7 +6796,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2411.15594",
       "url": "https://arxiv.org/abs/2411.15594",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://github.com/DataArcTech/LLM-as-a-Judge"
+        }
+      ]
     },
     {
       "id": "politowski2021survey",
@@ -6256,7 +6850,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2410.10934",
       "url": "https://arxiv.org/abs/2410.10934",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/metauto-ai/agent-as-a-judge"
+        }
+      ]
     },
     {
       "id": "tan2024judgebench",
@@ -6272,7 +6872,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2410.12784",
       "url": "https://arxiv.org/abs/2410.12784",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/ScalerLab/JudgeBench"
+        }
+      ]
     },
     {
       "id": "yu2026resp",
@@ -6304,7 +6910,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2402.04788",
       "url": "https://arxiv.org/abs/2402.04788",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/Dongping-Chen/MLLM-Judge"
+        }
+      ]
     },
     {
       "id": "zhao2025llm",
@@ -6352,7 +6964,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2501.10970",
       "url": "https://arxiv.org/abs/2501.10970",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/nitaytech/AltTest"
+        }
+      ]
     },
     {
       "id": "li2024generation",
@@ -6368,7 +6986,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2411.16594",
       "url": "https://arxiv.org/abs/2411.16594",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://github.com/llm-as-a-judge/Awesome-LLM-as-a-judge"
+        }
+      ]
     },
     {
       "id": "jiang2026gbqa",
@@ -6828,7 +7452,13 @@
       "topics": [],
       "venue": "2023 IEEE Conference on Games (CoG)",
       "url": "https://arxiv.org/abs/2303.15662",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://github.com/chatgpt4pcg/chatgpt4pcg.github.io"
+        }
+      ]
     },
     {
       "id": "taveekitworachai2024chatgpt4pcg2",
@@ -6914,7 +7544,13 @@
       "topics": [],
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2305.17144",
-      "kind": "misc"
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/OpenGVLab/GITM"
+        }
+      ]
     },
     {
       "id": "zhou2025minedreamer",
@@ -6930,7 +7566,13 @@
       "topics": [],
       "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
       "url": "https://arxiv.org/abs/2403.12037v2",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/Zhoues/MineDreamer"
+        }
+      ]
     },
     {
       "id": "yue2025pixels",
@@ -6981,7 +7623,13 @@
       ],
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2412.00887v1",
-      "kind": "misc"
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/GreatX3/Playable-Game-Generation"
+        }
+      ]
     },
     {
       "id": "vezhnevets2025concordia",
@@ -7032,7 +7680,13 @@
       ],
       "venue": "Advances in Neural Information Processing Systems 33",
       "url": "https://arxiv.org/abs/2006.13760",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/facebookresearch/nle"
+        }
+      ]
     },
     {
       "id": "hafner2022crafter",
@@ -7051,7 +7705,13 @@
       ],
       "venue": "International Conference on Learning Representations",
       "url": "https://arxiv.org/abs/2109.06780",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/danijar/crafter"
+        }
+      ]
     },
     {
       "id": "gong2024mindagent",
@@ -7083,7 +7743,13 @@
       "topics": [],
       "venue": "Findings of the Association for Computational Linguistics: ACL 2024",
       "url": "https://aclanthology.org/2024.findings-acl.964/",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/cnsdqd-dyb/VillagerAgent-Minecraft-multiagent-framework"
+        }
+      ]
     },
     {
       "id": "ahn2025flashadventure",
@@ -7377,7 +8043,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:1810.00123",
       "url": "https://arxiv.org/abs/1810.00123",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/JesseFarebro/dqn-ale"
+        }
+      ]
     },
     {
       "id": "unterthiner2018fvd",
@@ -7407,7 +8079,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2603.23497",
       "url": "https://arxiv.org/abs/2603.23497",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/AlayaLab/WildWorld"
+        }
+      ]
     },
     {
       "id": "huang2026worldrenderer",
@@ -7423,7 +8101,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2604.02329",
       "url": "https://arxiv.org/abs/2604.02329v1",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/AlayaLab/AlayaRenderer"
+        }
+      ]
     },
     {
       "id": "lin2026rendererflash",
@@ -7454,7 +8138,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2604.21686",
       "url": "https://arxiv.org/abs/2604.21686v2",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/AlayaLab/WorldMark"
+        }
+      ]
     },
     {
       "id": "li2026autobg",
@@ -7487,7 +8177,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2607.02255",
       "url": "https://arxiv.org/abs/2607.02255v1",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/AlayaLab/AgenticSTS"
+        }
+      ]
     },
     {
       "id": "cao2026shadowdancer",
@@ -7535,7 +8231,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2608.15659",
       "url": "https://arxiv.org/abs/2608.15659v2",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/AlayaLab/WorldRover"
+        }
+      ]
     },
     {
       "id": "niu2026worldsculpt",
@@ -7551,7 +8253,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2609.05416",
       "url": "https://arxiv.org/abs/2609.05416v2",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/AlayaLab/WorldSculpt"
+        }
+      ]
     },
     {
       "id": "huang2026programmable",
@@ -7590,7 +8298,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2512.22096",
       "url": "https://arxiv.org/abs/2512.22096",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/stdstu12/YUME"
+        }
+      ]
     },
     {
       "id": "zhu2026cubepart",
@@ -7622,7 +8336,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2608.13492",
       "url": "https://arxiv.org/abs/2608.13492v1",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/AlayaLab/AlayaWorld"
+        }
+      ]
     },
     {
       "id": "yin2026evoke",
@@ -7638,7 +8358,13 @@
       "topics": [],
       "venue": "arXiv preprint arXiv:2608.13546",
       "url": "https://arxiv.org/abs/2608.13546v2",
-      "kind": "article"
+      "kind": "article",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/AlayaLab/Evoke"
+        }
+      ]
     },
     {
       "id": "nvidia2024mechabreak",
@@ -7710,7 +8436,13 @@
       ],
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2609.09059",
-      "kind": "misc"
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/heyodog0/playtrain"
+        }
+      ]
     },
     {
       "id": "hwang2026marbo",
@@ -7753,7 +8485,13 @@
       "venue": "International Conference on Learning Representations",
       "url": "https://arxiv.org/abs/2510.05684",
       "kind": "inproceedings",
-      "note": "Game-to-real transfer · vision–action pretraining"
+      "note": "Game-to-real transfer · vision–action pretraining",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/worv-ai/D2E"
+        }
+      ]
     },
     {
       "id": "tong2026gamerl",
@@ -7774,7 +8512,13 @@
       ],
       "venue": "International Conference on Learning Representations",
       "url": "https://arxiv.org/abs/2505.13886",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/tongjingqi/Game-RL"
+        }
+      ]
     },
     {
       "id": "kang2026simworldstudio",

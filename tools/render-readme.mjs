@@ -265,7 +265,19 @@ const titleWithPeriod = value => {
   return /[.!?]$/.test(raw) ? title : `${title}.`;
 };
 
-const resourceLink = paper => `[[${resourceKind(paper)}](${paper.url})]`;
+const normalizedResourceUrl = value => String(value ?? '').trim().toLowerCase().replace(/\/$/, '');
+const resourceLinks = paper => {
+  const seen = new Set();
+  return [
+    {type: resourceKind(paper), url: paper.url},
+    ...(paper.resources ?? []),
+  ].filter(({url}) => {
+    const normalized = normalizedResourceUrl(url);
+    if (!normalized || seen.has(normalized)) return false;
+    seen.add(normalized);
+    return true;
+  }).map(({type, url}) => `[[${type}](${url})]`).join(' ');
+};
 
 const venueBadge = paper => {
   const label = venueLabel(paper.venue);
@@ -350,7 +362,7 @@ for (const collection of collections) {
     const annotation = paper.note
       ? ` <sub>${paper.highlight === 'award' ? '🏅' : paper.highlight === 'future' ? '🔭' : '•'} ${escapeMarkdown(paper.note)}</sub>`
       : '';
-    lines.push(`- ${yearPrefix}${titleWithPeriod(paper.title)} ${resourceLink(paper)} ${venueBadge(paper)}${annotation}`);
+    lines.push(`- ${yearPrefix}${titleWithPeriod(paper.title)} ${resourceLinks(paper)} ${venueBadge(paper)}${annotation}`);
   }
 }
 

@@ -19,15 +19,11 @@ For each suggestion, include:
 - venue or publication status; and
 - the best matching primary role.
 
-Code, model, dataset, and demo links are welcome when they come from the authors or an official project.
+Code, model, dataset, and demo links are welcome when they come from the authors or an official project. Please do not submit third-party reproductions as official resources.
 
 ## Pull requests
 
-Keep each entry concise and follow the existing Markdown format:
-
-```markdown
-- [Paper title](https://canonical-paper-url) — *Venue or status*.
-```
+The root `README.md` is generated; update the source records in `data/` rather than editing a rendered bibliography line. Add catalog-only papers to `living-additions.bib`, role and topic metadata to `catalog-seed.json`, and verified companion links to `official-resources.json`. Then run the generation and validation commands listed in `data/README.md`.
 
 Please avoid pasted abstracts, rankings, unverified performance claims, and duplicate links. A paper may relate to several topics, but it should appear once under the role that best reflects how its main output is used and what its central empirical claim evaluates.
 
@@ -35,4 +31,4 @@ Please avoid pasted abstracts, rankings, unverified performance claims, and dupl
 
 The core collection covers AI that directly plays and acts, models players and games, designs, builds and maintains, generates and adapts at runtime, or tests and evaluates interactive games. Foundations and contextual references are kept in a separate supporting collection.
 
-The public repository contains the literature index, project website, and two playable demonstrations. Manuscript PDFs and private review material are not accepted here.
+The public repository contains the literature index, project website, final paper, and browser-playable game demonstrations. Private review material is not accepted here.
