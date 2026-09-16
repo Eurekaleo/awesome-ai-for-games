@@ -104,7 +104,9 @@ assert(readme.includes(`references-${papers.length}`), 'README reference badge i
 assert(readme.includes(`core%20works-${coreCount}`), 'README core-work badge is stale');
 assert(readme.includes('assets/readme/survey-banner.webp'), 'README survey banner is missing');
 assert(readme.includes('assets/video/ai-for-games-introduction-poster.webp'), 'README video cover is missing');
-assert(readme.includes('https://github.com/user-attachments/assets/b6a01cca-edf2-45c9-a8a6-541b830623d7'), 'README introduction video is missing');
+assert(readme.includes('https://eurekaleo.github.io/awesome-ai-for-games/#video'), 'README introduction video link is missing');
+assert(!readme.includes('github.com/user-attachments/'), 'README should not expose a GitHub attachment player');
+assert(!readme.includes('ai-for-games-introduction-new.mp4'), 'README should not expose an internal video filename');
 for (const author of ['Meng Luo', 'Yanlin Li', 'Hao Li', 'Hongzhan Lin', 'Pengfei Zhou', 'Tianjie Ju', 'Ran Zhang', 'Yeying Jin', 'Mong-Li Lee', 'Wynne Hsu']) {
   assert(readme.includes(author), `README author is missing: ${author}`);
   assert(html.includes(author), `Website author is missing: ${author}`);

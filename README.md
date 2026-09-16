@@ -16,14 +16,9 @@
 
 ## 90-second paper overview
 
-<p align="center"><img src="assets/video/ai-for-games-introduction-poster.webp" width="1000" alt="AI for Games paper overview video cover"></p>
+<p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/#video"><img src="assets/video/ai-for-games-introduction-poster.webp" width="1000" alt="Watch AI for Games — 90-Second Paper Overview"></a></p>
 
-<details>
-<summary><strong>▶ Play the 90-second overview</strong></summary>
-
-https://github.com/user-attachments/assets/b6a01cca-edf2-45c9-a8a6-541b830623d7
-
-</details>
+<p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/#video"><strong>▶ Watch AI for Games — 90-Second Paper Overview</strong></a></p>
 
 ## About the survey
 

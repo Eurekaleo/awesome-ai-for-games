@@ -206,7 +206,7 @@ const sorted = [...papers].sort((a, b) =>
 );
 const counts = Object.fromEntries(collections.map(({key}) => [key, sorted.filter(paper => paper.primaryRole === key).length]));
 const coreCount = sorted.length - counts.context;
-const introductionVideoUrl = 'https://github.com/user-attachments/assets/b6a01cca-edf2-45c9-a8a6-541b830623d7';
+const introductionVideoPageUrl = 'https://eurekaleo.github.io/awesome-ai-for-games/#video';
 const readmeAssetRoot = path.join(root, 'assets/readme');
 const venueAssetRoot = path.join(readmeAssetRoot, 'venues');
 await mkdir(venueAssetRoot, {recursive: true});
@@ -261,14 +261,9 @@ const lines = [
   '',
   '## 90-second paper overview',
   '',
-  '<p align="center"><img src="assets/video/ai-for-games-introduction-poster.webp" width="1000" alt="AI for Games paper overview video cover"></p>',
+  `<p align="center"><a href="${introductionVideoPageUrl}"><img src="assets/video/ai-for-games-introduction-poster.webp" width="1000" alt="Watch AI for Games — 90-Second Paper Overview"></a></p>`,
   '',
-  '<details>',
-  '<summary><strong>▶ Play the 90-second overview</strong></summary>',
-  '',
-  introductionVideoUrl,
-  '',
-  '</details>',
+  `<p align="center"><a href="${introductionVideoPageUrl}"><strong>▶ Watch AI for Games — 90-Second Paper Overview</strong></a></p>`,
   '',
   '## About the survey',
   '',
