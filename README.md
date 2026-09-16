@@ -13,11 +13,15 @@
   <p><sub><sup>1</sup> National University of Singapore &nbsp;·&nbsp; <sup>2</sup> Nanyang Technological University</sub></p>
 </div>
 
+<img src="assets/readme/section-icons/overview.png" alt="" width="36" align="left">
+
 ## 90-second paper overview
 
 <p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/#video"><img src="assets/video/ai-for-games-introduction-poster.webp" width="1000" alt="Watch AI for Games — 90-Second Paper Overview"></a></p>
 
 <p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/#video"><strong>▶ Watch AI for Games — 90-Second Paper Overview</strong></a></p>
+
+<img src="assets/readme/section-icons/about.png" alt="" width="36" align="left">
 
 ## About the survey
 
@@ -29,6 +33,8 @@ Foundation models now do more than play a given game: they can model games and p
 **Explore:** [Visual survey map](https://eurekaleo.github.io/awesome-ai-for-games/#map) · [Literature search](https://eurekaleo.github.io/awesome-ai-for-games/#papers) · [AI-crafted games](https://eurekaleo.github.io/awesome-ai-for-games/#playable-games)
 
 <p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/readme/survey-banner.webp" width="1000" alt="Panoramic AI for Games project banner connecting design, build, modeling, runtime generation, play, and testing"></a></p>
+
+<img src="assets/readme/section-icons/guide.png" alt="" width="36" align="left">
 
 ## Repository guide
 
@@ -55,6 +61,8 @@ Each work appears once under its primary role and carries a source-type badge. S
 <p><img src="assets/readme/legend-conference.svg" alt="Conference source" height="20"> <img src="assets/readme/legend-journal.svg" alt="Journal source" height="20"> <img src="assets/readme/legend-preprint.svg" alt="Preprint source" height="20"> <img src="assets/readme/legend-industry.svg" alt="Official or industry source" height="20"> <img src="assets/readme/legend-book.svg" alt="Book source" height="20"></p>
 
 ---
+
+<img src="assets/readme/section-icons/play.png" alt="" width="36" align="left">
 
 ## Play and Act
 
@@ -212,6 +220,8 @@ Each work appears once under its primary role and carries a source-type badge. S
 
 ---
 
+<img src="assets/readme/section-icons/model.png" alt="" width="36" align="left">
+
 ## Model Players and Games
 
 <img src="assets/readme/icon-model.svg" alt="" width="24" height="24"> Player modeling, world models, learned simulators, state representations, and dynamics prediction.
@@ -351,6 +361,8 @@ Each work appears once under its primary role and carries a source-type badge. S
 
 ---
 
+<img src="assets/readme/section-icons/design.png" alt="" width="36" align="left">
+
 ## Design
 
 <img src="assets/readme/icon-design.svg" alt="" width="24" height="24"> Assets, levels, worlds, rules, mechanics, narratives, procedural generation, and co-creative tools.
@@ -425,6 +437,8 @@ Each work appears once under its primary role and carries a source-type badge. S
 
 ---
 
+<img src="assets/readme/section-icons/build.png" alt="" width="36" align="left">
+
 ## Build and Maintain
 
 <img src="assets/readme/icon-build.svg" alt="" width="24" height="24"> Code, scenes, engine projects, development agents, debugging, repair, revision, and maintenance.
@@ -459,6 +473,8 @@ Each work appears once under its primary role and carries a source-type badge. S
 - [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html)&nbsp;<img src="assets/readme/venues/conference-iclr.svg" alt="ICLR" title="International Conference on Learning Representations" height="20">
 
 ---
+
+<img src="assets/readme/section-icons/runtime.png" alt="" width="36" align="left">
 
 ## Generate and Adapt at Runtime
 
@@ -536,6 +552,8 @@ Each work appears once under its primary role and carries a source-type badge. S
 - **2001** · [A Preliminary Poetics for Interactive Drama and Games](https://doi.org/10.1076/digc.12.3.140.3224)&nbsp;<img src="assets/readme/venues/journal-digital-creativity.svg" alt="Digital Creativity" title="Digital Creativity" height="20">
 
 ---
+
+<img src="assets/readme/section-icons/test.png" alt="" width="36" align="left">
 
 ## Test and Evaluate
 
@@ -627,6 +645,8 @@ Each work appears once under its primary role and carries a source-type badge. S
 - **2018** · [TextWorld: A Learning Environment for Text-Based Games](https://arxiv.org/abs/1806.11532)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="CoRR" height="20">
 
 ---
+
+<img src="assets/readme/section-icons/foundations.png" alt="" width="36" align="left">
 
 ## Foundations and Context
 
