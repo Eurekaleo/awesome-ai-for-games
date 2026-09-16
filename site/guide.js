@@ -8,7 +8,7 @@ const ui = {search: $('#paper-search'), role: $('#role-filter'), year: $('#year-
 
 const collections = {
   play: {
-    number:'01', label:'PLAY AND ACT', count:116, title:'Learning to act.<br>Learning to cooperate.',
+    number:'01', label:'PLAY AND ACT', count:117, title:'Learning to act.<br>Learning to cooperate.',
     description:'From specialist policies to language-guided agents, this literature studies how AI perceives a game, chooses actions, and coordinates with other players.',
     topics:['Generalist policies','Planning & memory','Human–AI teamwork'],
     image:'sophy.webp', alt:'Gran Turismo 7 racing scene from an official GT Sophy announcement', caption:'Gran Turismo 7 / GT Sophy',
@@ -32,7 +32,7 @@ const collections = {
     example:'MarioGPT turns text descriptions into tile-based levels, making familiar design elements accessible through a language interface.',
   },
   build: {
-    number:'04', label:'BUILD AND MAINTAIN', count:19, title:'From an idea<br>to a running game.',
+    number:'04', label:'BUILD AND MAINTAIN', count:20, title:'From an idea<br>to a running game.',
     description:'Development systems use code, tools, and engine feedback to assemble scenes, implement mechanics, diagnose failures, and revise projects.',
     topics:['Code & engine tools','Execution feedback','Debugging & repair'],
     image:'gamecraft.webp', alt:'Signal Rail Dispatcher game in the GameCraft-Bench public gallery', caption:'Signal Rail Dispatcher / GameCraft-Bench gallery',
@@ -210,7 +210,8 @@ function paperRow(p){
   const venue=p.venue && !p.venue.includes('listed venue')?p.venue:(p.venue||'').split(' / ')[0];
   const link=url?'<a class="paper-title" href="'+e(url)+'" target="_blank" rel="noopener noreferrer">'+title+'</a>':'<span class="paper-title">'+title+'</span>';
   const authors=p.shortAuthors||p.authors||'';
-  return '<article class="paper-row"><span class="paper-year">'+e(p.year||'—')+'</span><div class="paper-main">'+link+(authors?'<p class="paper-authors">'+e(authors)+'</p>':'')+'<div class="paper-meta"><span class="venue">'+e(venue)+'</span><span>'+e(FILTER_LABELS[p.primaryRole]||'Research')+'</span>'+topics+'</div></div>'+(url?'<a class="paper-link" href="'+e(url)+'" target="_blank" rel="noopener noreferrer" aria-label="Open '+title+'"><svg class="icon"><use href="#i-north"/></svg></a>':'')+'</article>';
+  const annotation=p.note?'<span class="topic">'+(p.highlight==='award'?'🏅 ':p.highlight==='future'?'🔭 ':'')+e(p.note)+'</span>':'';
+  return '<article class="paper-row"><span class="paper-year">'+e(p.year||'—')+'</span><div class="paper-main">'+link+(authors?'<p class="paper-authors">'+e(authors)+'</p>':'')+'<div class="paper-meta"><span class="venue">'+e(venue)+'</span><span>'+e(FILTER_LABELS[p.primaryRole]||'Research')+'</span>'+topics+annotation+'</div></div>'+(url?'<a class="paper-link" href="'+e(url)+'" target="_blank" rel="noopener noreferrer" aria-label="Open '+title+'"><svg class="icon"><use href="#i-north"/></svg></a>':'')+'</article>';
 }
 function render({reset=false,updateUrl=true}={}){
   if(!state.loaded) return;

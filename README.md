@@ -5,8 +5,8 @@
 
   <a href="https://arxiv.org/pdf/2609.16679"><img src="https://img.shields.io/badge/arXiv-2609.16679-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Read the paper on arXiv"></a>
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>
-  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-439-168f91?style=flat-square" alt="439 references"></a>
-  <img src="https://img.shields.io/badge/core%20works-414-c78b1e?style=flat-square" alt="414 core works">
+  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-442-168f91?style=flat-square" alt="442 references"></a>
+  <img src="https://img.shields.io/badge/core%20works-416-c78b1e?style=flat-square" alt="416 core works">
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
 
   <p><a href="https://eurekaleo.github.io/">Meng Luo</a><sup>1</sup> · <a href="https://liyanlin06.github.io/">Yanlin Li</a><sup>1</sup> · <a href="https://scholar.google.com/citations?user=vF-UH7oAAAAJ&amp;hl=zh-TW">Hao Li</a><sup>1</sup> · <a href="https://daniellin97.github.io/">Hongzhan Lin</a><sup>1</sup> · <a href="https://lancezpf.github.io/">Pengfei Zhou</a><sup>1</sup> · <a href="https://jometeorie.github.io/">Tianjie Ju</a><sup>1</sup><br><a href="https://openreview.net/profile?id=~Ran_Zhang18">Ran Zhang</a><sup>2</sup> · <a href="https://jinyeying.github.io/">Yeying Jin</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/leeml/">Mong-Li Lee</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/whsu/">Wynne Hsu</a><sup>1</sup></p>
@@ -39,11 +39,11 @@ Foundation models now do more than play a given game: they can model games and p
 Select a role to jump directly to its papers.
 
 <p align="center">
-  <a href="#play-and-act"><img src="assets/readme/role-play.svg" width="246" alt="Play and Act: 116 works"></a>
+  <a href="#play-and-act"><img src="assets/readme/role-play.svg" width="246" alt="Play and Act: 117 works"></a>
   <a href="#model-players-and-games"><img src="assets/readme/role-model.svg" width="246" alt="Model Players and Games: 109 works"></a>
   <a href="#design"><img src="assets/readme/role-design.svg" width="246" alt="Design: 53 works"></a>
   <br>
-  <a href="#build-and-maintain"><img src="assets/readme/role-build.svg" width="246" alt="Build and Maintain: 19 works"></a>
+  <a href="#build-and-maintain"><img src="assets/readme/role-build.svg" width="246" alt="Build and Maintain: 20 works"></a>
   <a href="#generate-and-adapt-at-runtime"><img src="assets/readme/role-runtime.svg" width="246" alt="Generate and Adapt at Runtime: 56 works"></a>
   <a href="#test-and-evaluate"><img src="assets/readme/role-test.svg" width="246" alt="Test and Evaluate: 61 works"></a>
 </p>
@@ -67,11 +67,12 @@ Each work appears once under its primary role and carries a source-type badge. S
 - [AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents](https://arxiv.org/abs/2607.02255v1)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2607.02255" height="20">
 - [AI-Native Games: A Survey and Roadmap](https://arxiv.org/abs/2607.00527)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2607.00527" height="20">
 - [CASCADE: A Cascading Architecture for Social Coordination with Controllable Emergence at Low Cost](https://arxiv.org/abs/2604.03091)&nbsp;<img src="assets/readme/venues/conference-chi-ea.svg" alt="CHI EA" title="Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems" height="20">
+- [D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to Embodied AI](https://arxiv.org/abs/2510.05684)&nbsp;<img src="assets/readme/venues/conference-iclr.svg" alt="ICLR" title="International Conference on Learning Representations" height="20">
 - [EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents](https://arxiv.org/abs/2601.16690)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2601.16690" height="20">
 - [FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs](https://aclanthology.org/2026.acl-long.2015/)&nbsp;<img src="assets/readme/venues/conference-acl.svg" alt="ACL" title="Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)" height="20">
 - [GameVerse: Can Vision-Language Models Learn from Video-Based Reflection?](https://arxiv.org/abs/2603.06656)&nbsp;<img src="assets/readme/venues/conference-icml.svg" alt="ICML" title="International Conference on Machine Learning" height="20">
 - [MARBO: Relational Belief Grounding for LLM Agents in Social Deduction Games](https://arxiv.org/abs/2609.06563)&nbsp;<img src="assets/readme/venues/conference-emnlp-accepted.svg" alt="EMNLP (accepted)" title="Accepted to EMNLP 2026" height="20">
-- [NitroGen: An Open Foundation Model for Generalist Gaming Agents](https://arxiv.org/abs/2601.02427)&nbsp;<img src="assets/readme/venues/conference-cvpr.svg" alt="CVPR" title="Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition" height="20">
+- [NitroGen: An Open Foundation Model for Generalist Gaming Agents](https://arxiv.org/abs/2601.02427)&nbsp;<img src="assets/readme/venues/conference-cvpr.svg" alt="CVPR" title="Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition" height="20">&nbsp;<sub>🏅 CVPR 2026 Best Paper Honorable Mention</sub>
 - [One Policy, Infinite NPCs: Persona-Traceable Shared RL Policies for Scalable Game Agents](https://arxiv.org/abs/2605.23652)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2605.23652" height="20">
 - [Orak: A Foundational Benchmark for Training and Evaluating LLM Agents on Diverse Video Games](https://arxiv.org/abs/2506.03610)&nbsp;<img src="assets/readme/venues/conference-iclr.svg" alt="ICLR" title="International Conference on Learning Representations" height="20">
 - [PUBG: BATTLEGROUNDS Patch Notes-Update 42.1](https://www.pubg.com/en/news/10179)&nbsp;<img src="assets/readme/venues/industry-official-patch-notes.svg" alt="Official patch notes" title="Official patch notes" height="20">
@@ -444,6 +445,7 @@ Each work appears once under its primary role and carries a source-type badge. S
 - [Playco Cut Manual Fixes 50% Prototyping Games with GPT-6 Astra](https://openai.com/index/playco-game-prototyping-with-astra/)&nbsp;<img src="assets/readme/venues/industry-openai-case-study.svg" alt="OpenAI case study" title="OpenAI customer case study" height="20">
 - [PlayCoder: Making LLM-Generated GUI Code Playable](https://arxiv.org/abs/2604.19742)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2604.19742" height="20">
 - [PlayTrain: An Efficient Reinforcement Learning Framework for LLM-Generated Adaptable JavaScript Games](https://arxiv.org/abs/2609.09059)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="20">
+- [SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](https://arxiv.org/abs/2605.09423)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="20">&nbsp;<sub>🔭 Future-facing direction</sub>
 - [Unity's AI Tools in Beta: What's Included and How to Get Started](https://unity.com/blog/unity-ai-how-to-get-started)&nbsp;<img src="assets/readme/venues/industry-unity-blog.svg" alt="Unity Blog" title="Unity Blog" height="20">
 
 ### 2025
@@ -635,6 +637,7 @@ Foundational methods, historical context, adjacent surveys, and supporting techn
 - [ARC-AGI-3: A New Challenge for Frontier Agentic Intelligence](https://arxiv.org/abs/2603.24621v2)&nbsp;<img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="20">
 - [Book of Infinity: 1001 Nights: Demo and AI Content Disclosure](https://store.steampowered.com/app/2542850/1001_Nights/)&nbsp;<img src="assets/readme/venues/industry-game-store.svg" alt="Game store" title="Official game store page" height="20">
 - [Claude Opus 5: Verified ARC-AGI Results](https://arcprize.org/results/anthropic-claude-opus-5)&nbsp;<img src="assets/readme/venues/industry-official-results.svg" alt="Official results" title="Official benchmark results" height="20">
+- [Game-RL: Synthesizing Multimodal Verifiable Game Data to Boost VLMs' General Reasoning](https://arxiv.org/abs/2505.13886)&nbsp;<img src="assets/readme/venues/conference-iclr.svg" alt="ICLR" title="International Conference on Learning Representations" height="20">
 - [GameDevBench: Official Repository and Results](https://github.com/waynchi/gamedevbench/blob/3a80dfdfd01209485185909cb88ac1687dff925e/results/leaderboard.csv)&nbsp;<img src="assets/readme/venues/industry-project-repository.svg" alt="Project repository" title="Official project repository" height="20">
 - [GPT-5.6 Series: Verified ARC-AGI Results](https://arcprize.org/results/openai-gpt-5-6)&nbsp;<img src="assets/readme/venues/industry-official-results.svg" alt="Official results" title="Official benchmark results" height="20">
 - [GPT-6 Astra: Verified ARC-AGI Results](https://arcprize.org/results/openai-gpt-6-astra)&nbsp;<img src="assets/readme/venues/industry-official-results.svg" alt="Official results" title="Official benchmark results" height="20">

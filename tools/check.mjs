@@ -15,7 +15,7 @@ const expectedRoles = {
 };
 assert.deepEqual(Object.fromEntries(Object.entries(FILTER_LABELS).filter(([key]) => key !== 'context')), expectedRoles);
 assert.equal(paperReferenceCount, 436, 'The manuscript bibliography is not synchronized with the current paper');
-assert.equal(livingAdditionCount, 3, 'The catalog-only additions changed unexpectedly');
+assert.equal(livingAdditionCount, 6, 'The catalog-only additions changed unexpectedly');
 assert.equal(papers.length, paperReferenceCount + livingAdditionCount, 'The public collection is not the manuscript bibliography plus living additions');
 assert.deepEqual(sourceCounts, {manuscript:paperReferenceCount,livingAdditions:livingAdditionCount});
 assert.equal(new Set(papers.map(p => p.id)).size, papers.length);
@@ -32,6 +32,11 @@ assert.deepEqual(byId.get('huang2026guigames').roles.filter(role => ['build','te
 assert.equal(byId.get('huang2026guigames').primaryRole, 'build');
 assert.equal(byId.get('huang2026programmable').primaryRole, 'model');
 assert(byId.get('huang2026programmable').roles.includes('build'));
+assert.equal(byId.get('choi2026d2e').primaryRole, 'play');
+assert.equal(byId.get('tong2026gamerl').primaryRole, 'context');
+assert.equal(byId.get('kang2026simworldstudio').primaryRole, 'build');
+assert.equal(byId.get('magne2026nitrogen').note, 'CVPR 2026 Best Paper Honorable Mention');
+assert.equal(byId.get('kang2026simworldstudio').note, 'Future-facing direction');
 assert(papers.filter(p=>p.primaryRole==='context').length > 0, 'Supporting context is missing');
 const normalizedUrls = papers.map(p => p.url
   .replace(/^https?:\/\/(?:www\.)?/i, '')
@@ -127,7 +132,7 @@ for (const [, source] of readme.matchAll(/<img\s+[^>]*src="([^"]+)"/g)) {
 }
 assert(html.includes(`bibliography of ${papers.length} references`), 'Website description count is stale');
 assert(html.includes(`id="paper-count">${papers.length}</strong>`), 'Website hero count is stale');
-assert(html.includes(`Search ${paperReferenceCount} current manuscript references and ${livingAdditionCount === 3 ? 'three' : livingAdditionCount} separately tracked public additions`), 'Website manuscript-versus-catalog distinction is stale');
+assert(html.includes(`Search ${paperReferenceCount} current manuscript references and ${livingAdditionCount === 6 ? 'six' : livingAdditionCount} separately tracked public additions`), 'Website manuscript-versus-catalog distinction is stale');
 for (const figure of ['figure-3-timeline','figure-4a-knowledge','figure-4b-knowledge']) {
   assert(html.includes(`assets/survey-map/${figure}.webp`), `Manuscript visual is missing from the website: ${figure}`);
 }

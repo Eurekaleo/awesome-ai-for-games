@@ -133,6 +133,8 @@ const papers=parsed.map(({type,key,fields})=>{
     primaryRole,roles:citedRoles.length?citedRoles:(match?.primaryRole?[match.primaryRole]:[]),
     topics:match?.topics||[],venue:venueFor(fields,type),url,kind:type,
   };
+  if(match?.highlight)record.highlight=match.highlight;
+  if(match?.note)record.note=match.note;
   if(title==='Diffusion Models Are Real-Time Game Engines')record.aliases=['GameNGen'];
   return record;
 });

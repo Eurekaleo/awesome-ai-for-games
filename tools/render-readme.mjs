@@ -324,7 +324,10 @@ for (const collection of collections) {
       lines.push('', `### ${groupLabel}`, '');
     }
     const yearPrefix = isEarly ? `**${paper.year}** · ` : '';
-    lines.push(`- ${yearPrefix}[${escapeMarkdown(paper.title)}](${paper.url})&nbsp;${venueBadge(paper)}`);
+    const annotation = paper.note
+      ? `&nbsp;<sub>${paper.highlight === 'award' ? '🏅' : paper.highlight === 'future' ? '🔭' : '•'} ${escapeMarkdown(paper.note)}</sub>`
+      : '';
+    lines.push(`- ${yearPrefix}[${escapeMarkdown(paper.title)}](${paper.url})&nbsp;${venueBadge(paper)}${annotation}`);
   }
 }
 

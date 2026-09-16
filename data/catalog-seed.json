@@ -1092,7 +1092,9 @@
         "evaluation-data"
       ],
       "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2601.02427"
+      "url": "https://arxiv.org/abs/2601.02427",
+      "highlight": "award",
+      "note": "CVPR 2026 Best Paper Honorable Mention"
     },
     {
       "id": "19a30dea08",
@@ -4452,6 +4454,53 @@
       ],
       "venue": "Philosophical Magazine",
       "url": "https://doi.org/10.1080/14786445008521796"
+    },
+    {
+      "id": "choi2026d2e",
+      "title": "D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to Embodied AI",
+      "year": 2026,
+      "month": 0,
+      "primaryRole": "play",
+      "topics": [
+        "game-to-real-transfer",
+        "generalist-foundation",
+        "multimodal-action",
+        "learning-training"
+      ],
+      "venue": "ICLR 2026",
+      "url": "https://arxiv.org/abs/2510.05684"
+    },
+    {
+      "id": "tong2026gamerl",
+      "title": "Game-RL: Synthesizing Multimodal Verifiable Game Data to Boost VLMs' General Reasoning",
+      "year": 2026,
+      "month": 0,
+      "primaryRole": "context",
+      "topics": [
+        "game-derived-training",
+        "multimodal-reasoning",
+        "evaluation-data",
+        "learning-training"
+      ],
+      "venue": "ICLR 2026",
+      "url": "https://arxiv.org/abs/2505.13886"
+    },
+    {
+      "id": "kang2026simworldstudio",
+      "title": "SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning",
+      "year": 2026,
+      "month": 5,
+      "primaryRole": "build",
+      "topics": [
+        "future-direction",
+        "engine-tools",
+        "learning-training",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.09423",
+      "highlight": "future",
+      "note": "Future-facing direction"
     }
   ]
 }
