@@ -314,7 +314,7 @@ const lines = [
   '',
   ...sectionHeading('guide', 'Repository guide'),
   '',
-  '[About the survey](#about-the-survey) · [Choose a research role](#choose-a-research-role) · [Read the index](#reading-the-index) · [Foundations and context](#foundations-and-context) · [Contribute](#contributing) · [Star history](#star-history)',
+  '[About the survey](#about-the-survey) · [Choose a research role](#choose-a-research-role) · [Publication key](#publication-key) · [Foundations and context](#foundations-and-context) · [Contribute](#contributing) · [Star history](#star-history)',
   '',
   '## Choose a research role',
   '',
@@ -327,9 +327,7 @@ const lines = [
   ]),
   '</p>',
   '',
-  '## Reading the index',
-  '',
-  'Each work appears once under its primary role. Titles remain easy to scan, venue chips identify the publication source, and the compact links open the corresponding paper, code, project, source, book, or results. Sparse early years are consolidated into a “Before YEAR” group.',
+  '## Publication key',
   '',
   '<p align="center"><img src="assets/readme/legend-conference.svg" alt="Conference" height="18">&nbsp; <img src="assets/readme/legend-journal.svg" alt="Journal" height="18">&nbsp; <img src="assets/readme/legend-preprint.svg" alt="Preprint" height="18">&nbsp; <img src="assets/readme/legend-industry.svg" alt="Official or industry" height="18">&nbsp; <img src="assets/readme/legend-book.svg" alt="Book" height="18"></p>',
 ];
@@ -352,7 +350,7 @@ for (const collection of collections) {
     const annotation = paper.note
       ? ` <sub>${paper.highlight === 'award' ? '🏅' : paper.highlight === 'future' ? '🔭' : '•'} ${escapeMarkdown(paper.note)}</sub>`
       : '';
-    lines.push(`- ${yearPrefix}${titleWithPeriod(paper.title)} ${venueBadge(paper)} ${resourceLink(paper)}${annotation}`);
+    lines.push(`- ${yearPrefix}${titleWithPeriod(paper.title)} ${resourceLink(paper)} ${venueBadge(paper)}${annotation}`);
   }
 }
 
