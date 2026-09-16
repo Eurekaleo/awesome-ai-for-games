@@ -187,18 +187,6 @@ const roleCardSvg = (collection, index, count) => {
     : `<text x="64" y="38" font-size="15" font-weight="700">${xmlEscape(first)}</text>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246 70" width="246" height="70" role="img" aria-label="${xmlEscape(collection.title)}, ${count} works"><rect x=".5" y=".5" width="245" height="69" rx="9" fill="#141c29" stroke="#334358"/><path d="M9 1h1v68H9z" fill="${collection.accent}"/><rect x="19" y="18" width="36" height="36" rx="9" fill="#213043"/><path d="${collection.icon}" transform="translate(25 24)" fill="none" stroke="${collection.accent}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><g fill="#f4f7fb" font-family="Arial,Helvetica,sans-serif">${title}</g><text x="230" y="18" fill="${collection.accent}" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="700" text-anchor="end">0${index + 1}</text><text x="230" y="58" fill="#97a7ba" font-family="Arial,Helvetica,sans-serif" font-size="10" text-anchor="end">${count} works</text></svg>`;
 };
-const paperTitleSvg = () => {
-  const roles = [
-    {x: 48, width: 122, label: 'PLAY & ACT', color: '#72afe0'},
-    {x: 182, width: 174, label: 'MODEL PLAYERS & GAMES', color: '#89c668'},
-    {x: 368, width: 112, label: 'DESIGN', color: '#9692e5'},
-    {x: 492, width: 128, label: 'BUILD', color: '#e48748'},
-    {x: 632, width: 166, label: 'RUNTIME', color: '#46d7d7'},
-    {x: 810, width: 142, label: 'TEST & EVALUATE', color: '#d2ad39'},
-  ];
-  const pills = roles.map(({x, width, label, color}) => `<g><rect x="${x}" y="133" width="${width}" height="28" rx="14" fill="#162336" stroke="${color}" stroke-opacity=".72"/><circle cx="${x + 15}" cy="147" r="4" fill="${color}"/><text x="${x + 27}" y="151" fill="#dce6f2" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing=".55">${xmlEscape(label)}</text></g>`).join('');
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 184" width="1000" height="184" role="img" aria-label="AI for Games in the Foundation Model Era"><defs><linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111d2d"/><stop offset="1" stop-color="#0b1421"/></linearGradient><radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(870 20) rotate(135) scale(350 210)" gradientUnits="userSpaceOnUse"><stop stop-color="#244c72" stop-opacity=".48"/><stop offset="1" stop-color="#0b1421" stop-opacity="0"/></radialGradient></defs><rect x="1" y="1" width="998" height="182" rx="18" fill="url(#panel)" stroke="#32455d"/><rect x="1" y="1" width="998" height="182" rx="18" fill="url(#glow)"/><path d="M48 30h46" stroke="#46d7d7" stroke-width="3" stroke-linecap="round"/><text x="106" y="35" fill="#91a4bb" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">SIX ROLES · THREE QUESTIONS · EVIDENCE-CENTERED SYNTHESIS</text><text x="48" y="87" fill="#f5f8fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="35" font-weight="750" letter-spacing="-.55">AI for Games in the Foundation Model Era</text><text x="48" y="115" fill="#9fb0c3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">A structured map of how foundation models play, model, design, build, adapt, and test games.</text>${pills}</svg>`;
-};
 const venueBadgeSvg = (label, type) => {
   const colors = badgePalette[type];
   const width = Math.max(54, Math.ceil(label.length * 6.35 + 27));
@@ -222,7 +210,6 @@ const introductionVideoPageUrl = 'https://eurekaleo.github.io/awesome-ai-for-gam
 const readmeAssetRoot = path.join(root, 'assets/readme');
 const venueAssetRoot = path.join(readmeAssetRoot, 'venues');
 await mkdir(venueAssetRoot, {recursive: true});
-await writeFile(path.join(readmeAssetRoot, 'paper-title.svg'), paperTitleSvg());
 for (const [index, collection] of collections.entries()) {
   if (!collection.accent) continue;
   await writeFile(path.join(readmeAssetRoot, `role-${collection.key}.svg`), roleCardSvg(collection, index, counts[collection.key]));
@@ -257,9 +244,7 @@ const venueBadge = paper => {
 
 const lines = [
   '<div align="center">',
-  '  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/project-logo.png" width="94" alt="AI for Games project logo"></a>',
-  '  <h1>Awesome AI for Games</h1>',
-  '  <img src="assets/readme/paper-title.svg" width="1000" alt="AI for Games in the Foundation Model Era — six roles, three questions, and an evidence-centered synthesis">',
+  '  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/readme/hero-banner.png" width="1000" alt="Awesome AI for Games — AI for Games in the Foundation Model Era"></a>',
   '',
   '  <a href="https://arxiv.org/pdf/2609.16679"><img src="https://img.shields.io/badge/arXiv-2609.16679-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Read the paper on arXiv"></a>',
   '  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>',
@@ -371,3 +356,4 @@ lines.push(
 
 await writeFile(readmePath, lines.join('\n'));
 console.log(`README rendered: ${sorted.length} references across ${collections.length} collections.`);
+
