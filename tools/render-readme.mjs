@@ -242,6 +242,12 @@ const venueBadge = paper => {
   return `<img src="assets/readme/venues/${file}" alt="${xmlEscape(label)}" title="${xmlEscape(paper.venue || label)}" height="20">`;
 };
 
+const sectionHeading = (icon, title) => [
+  `<img src="assets/readme/section-icons/${icon}.png" alt="" width="36" align="left">`,
+  '',
+  `## ${title}`,
+];
+
 const lines = [
   '<div align="center">',
   '  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/readme/hero-banner.png" width="1000" alt="Awesome AI for Games — AI for Games in the Foundation Model Era"></a>',
@@ -258,13 +264,13 @@ const lines = [
   '  <p><sub><sup>1</sup> National University of Singapore &nbsp;·&nbsp; <sup>2</sup> Nanyang Technological University</sub></p>',
   '</div>',
   '',
-  '## 90-second paper overview',
+  ...sectionHeading('overview', '90-second paper overview'),
   '',
   `<p align="center"><a href="${introductionVideoPageUrl}"><img src="assets/video/ai-for-games-introduction-poster.webp" width="1000" alt="Watch AI for Games — 90-Second Paper Overview"></a></p>`,
   '',
   `<p align="center"><a href="${introductionVideoPageUrl}"><strong>▶ Watch AI for Games — 90-Second Paper Overview</strong></a></p>`,
   '',
-  '## About the survey',
+  ...sectionHeading('about', 'About the survey'),
   '',
   'Foundation models now do more than play a given game: they can model games and players, design content and rules, build executable projects, shape live experiences, and support testing. This repository organizes the survey literature into six roles according to how each AI output is used.',
   '',
@@ -275,7 +281,7 @@ const lines = [
   '',
   '<p align="center"><a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/readme/survey-banner.webp" width="1000" alt="Panoramic AI for Games project banner connecting design, build, modeling, runtime generation, play, and testing"></a></p>',
   '',
-  '## Repository guide',
+  ...sectionHeading('guide', 'Repository guide'),
   '',
   '[About the survey](#about-the-survey) · [Choose a research role](#choose-a-research-role) · [Read the index](#reading-the-index) · [Foundations and context](#foundations-and-context) · [Contribute](#contributing) · [Star history](#star-history)',
   '',
@@ -299,7 +305,8 @@ const lines = [
 
 for (const collection of collections) {
   const roleIcon = collection.accent ? `<img src="assets/readme/icon-${collection.key}.svg" alt="" width="24" height="24"> ` : '';
-  lines.push('', '---', '', `## ${collection.title}`, '', `${roleIcon}${collection.focus}`);
+  const sectionIcon = collection.key === 'context' ? 'foundations' : collection.key;
+  lines.push('', '---', '', ...sectionHeading(sectionIcon, collection.title), '', `${roleIcon}${collection.focus}`);
   const entries = sorted.filter(paper => paper.primaryRole === collection.key);
   let currentGroup;
   for (const paper of entries) {
