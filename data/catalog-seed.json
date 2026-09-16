@@ -4463,12 +4463,14 @@
       "primaryRole": "play",
       "topics": [
         "game-to-real-transfer",
+        "vision-action-pretraining",
         "generalist-foundation",
         "multimodal-action",
         "learning-training"
       ],
       "venue": "ICLR 2026",
-      "url": "https://arxiv.org/abs/2510.05684"
+      "url": "https://arxiv.org/abs/2510.05684",
+      "note": "Game-to-real transfer · vision–action pretraining"
     },
     {
       "id": "tong2026gamerl",

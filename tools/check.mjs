@@ -33,6 +33,8 @@ assert.equal(byId.get('huang2026guigames').primaryRole, 'build');
 assert.equal(byId.get('huang2026programmable').primaryRole, 'model');
 assert(byId.get('huang2026programmable').roles.includes('build'));
 assert.equal(byId.get('choi2026d2e').primaryRole, 'play');
+assert.deepEqual(byId.get('choi2026d2e').topics.slice(0, 2), ['game-to-real-transfer', 'vision-action-pretraining']);
+assert.equal(byId.get('choi2026d2e').note, 'Game-to-real transfer · vision–action pretraining');
 assert.equal(byId.get('tong2026gamerl').primaryRole, 'context');
 assert.equal(byId.get('kang2026simworldstudio').primaryRole, 'build');
 assert.equal(byId.get('magne2026nitrogen').note, 'CVPR 2026 Best Paper Honorable Mention');

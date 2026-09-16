@@ -73,7 +73,7 @@ Each work appears once under its primary role. A compact venue tag precedes the 
 - **`arXiv`** AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents. [[paper](https://arxiv.org/abs/2607.02255v1)]
 - **`arXiv`** AI-Native Games: A Survey and Roadmap. [[paper](https://arxiv.org/abs/2607.00527)]
 - **`CHI EA`** CASCADE: A Cascading Architecture for Social Coordination with Controllable Emergence at Low Cost. [[paper](https://arxiv.org/abs/2604.03091)]
-- **`ICLR`** D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to Embodied AI. [[paper](https://arxiv.org/abs/2510.05684)]
+- **`ICLR`** D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to Embodied AI. [[paper](https://arxiv.org/abs/2510.05684)] <sub>• Game-to-real transfer · vision–action pretraining</sub>
 - **`arXiv`** EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents. [[paper](https://arxiv.org/abs/2601.16690)]
 - **`ACL`** FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs. [[paper](https://aclanthology.org/2026.acl-long.2015/)]
 - **`ICML`** GameVerse: Can Vision-Language Models Learn from Video-Based Reflection? [[paper](https://arxiv.org/abs/2603.06656)]

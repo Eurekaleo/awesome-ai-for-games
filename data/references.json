@@ -7745,13 +7745,15 @@
       ],
       "topics": [
         "game-to-real-transfer",
+        "vision-action-pretraining",
         "generalist-foundation",
         "multimodal-action",
         "learning-training"
       ],
       "venue": "International Conference on Learning Representations",
       "url": "https://arxiv.org/abs/2510.05684",
-      "kind": "inproceedings"
+      "kind": "inproceedings",
+      "note": "Game-to-real transfer · vision–action pretraining"
     },
     {
       "id": "tong2026gamerl",
