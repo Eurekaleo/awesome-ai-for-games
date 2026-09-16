@@ -16,7 +16,14 @@
 
 ## 90-second paper overview
 
+<p align="center"><img src="assets/video/ai-for-games-introduction-poster.webp" width="1000" alt="AI for Games paper overview video cover"></p>
+
+<details>
+<summary><strong>▶ Play the 90-second overview</strong></summary>
+
 https://github.com/user-attachments/assets/b6a01cca-edf2-45c9-a8a6-541b830623d7
+
+</details>
 
 ## About the survey
 
