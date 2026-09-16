@@ -84,9 +84,12 @@ for (const asset of ['index.html', 'favicon.svg', 'THIRD_PARTY.md', 'licenses/Ma
   await access(new URL(`../games/classic-arcade/${asset}`, import.meta.url));
 }
 const paperPath = 'paper/AI_for_Games_in_the_Foundation_Model_Era.pdf';
+const paperUrl = 'https://arxiv.org/pdf/2609.16679';
 await access(new URL(`../${paperPath}`, import.meta.url));
-assert(readme.includes(paperPath), 'README does not link the final paper');
-assert(html.includes(paperPath), 'Website does not link the final paper');
+assert(readme.includes(paperUrl), 'README does not link the arXiv paper');
+assert(html.includes(paperUrl), 'Website does not link the arXiv paper');
+assert(!readme.includes(`href="${paperPath}"`), 'README still links the repository PDF');
+assert(!html.includes(`href="${paperPath}"`), 'Website still links the repository PDF');
 for (const asset of ['favicon.ico', 'site.webmanifest', 'assets/project-favicon.png', 'assets/apple-touch-icon.png', 'assets/project-icon-192.png', 'assets/project-icon-512.png']) {
   await access(new URL(`../${asset}`, import.meta.url));
 }

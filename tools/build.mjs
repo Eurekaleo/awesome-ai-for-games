@@ -88,7 +88,7 @@ for (const [, ref] of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
   }
 }
 assert(!/\.tex\b/i.test(html), 'A TeX source was linked from the public page');
-assert(html.includes('paper/AI_for_Games_in_the_Foundation_Model_Era.pdf'), 'The final paper is not linked from the public page');
+assert(html.includes('https://arxiv.org/pdf/2609.16679'), 'The arXiv paper is not linked from the public page');
 const gameHtml = await readFile(path.join(out, 'games/little-worlds/index.html'), 'utf8');
 assert(!/\b(?:href|src)="\//.test(gameHtml), 'Playable game page contains a root-relative local reference');
 const classicArcadeHtml = await readFile(path.join(out, 'games/classic-arcade/index.html'), 'utf8');
