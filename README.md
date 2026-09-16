@@ -1,7 +1,5 @@
 <div align="center">
-  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/project-logo.png" width="94" alt="AI for Games project logo"></a>
-  <h1>Awesome AI for Games</h1>
-  <img src="assets/readme/paper-title.svg" width="1000" alt="AI for Games in the Foundation Model Era — six roles, three questions, and an evidence-centered synthesis">
+  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/readme/hero-banner.png" width="1000" alt="Awesome AI for Games — AI for Games in the Foundation Model Era"></a>
 
   <a href="https://arxiv.org/pdf/2609.16679"><img src="https://img.shields.io/badge/arXiv-2609.16679-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Read the paper on arXiv"></a>
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>
@@ -703,3 +701,4 @@ Repository code and original interface assets are released under the [MIT Licens
   url          = {https://arxiv.org/abs/2609.16679},
 }
 ```
+
