@@ -32,7 +32,7 @@ Foundation models now do more than play a given game: they can model games and p
 
 ## Repository guide
 
-[About the survey](#about-the-survey) · [Choose a research role](#choose-a-research-role) · [Read the index](#reading-the-index) · [Foundations and context](#foundations-and-context) · [Contribute](#contributing)
+[About the survey](#about-the-survey) · [Choose a research role](#choose-a-research-role) · [Read the index](#reading-the-index) · [Foundations and context](#foundations-and-context) · [Contribute](#contributing) · [Star history](#star-history)
 
 ## Choose a research role
 
@@ -677,6 +677,18 @@ Paper suggestions and corrections are welcome. Please read [CONTRIBUTING.md](CON
 ## License
 
 Repository code and original interface assets are released under the [MIT License](LICENSE). Linked papers, project media, and third-party resources remain subject to their original licenses and terms.
+
+## Star History
+
+<p align="center">
+  <a href="https://www.star-history.com/#Eurekaleo/awesome-ai-for-games&Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Eurekaleo/awesome-ai-for-games&type=Date&theme=dark">
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Eurekaleo/awesome-ai-for-games&type=Date">
+      <img alt="Star history of Eurekaleo/awesome-ai-for-games" src="https://api.star-history.com/svg?repos=Eurekaleo/awesome-ai-for-games&type=Date" width="800">
+    </picture>
+  </a>
+</p>
 
 ## Citation
 
