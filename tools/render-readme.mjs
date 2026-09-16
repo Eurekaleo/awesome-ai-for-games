@@ -71,6 +71,9 @@ const collections = [
 const {papers} = JSON.parse(await readFile(referencesPath, 'utf8'));
 
 const escapeMarkdown = value => String(value ?? '')
+  .replaceAll('&', '&amp;')
+  .replaceAll('<', '&lt;')
+  .replaceAll('>', '&gt;')
   .replaceAll('\\', '\\\\')
   .replaceAll('[', '\\[')
   .replaceAll(']', '\\]');
@@ -193,6 +196,26 @@ const venueBadgeSvg = (label, type) => {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} 22" width="${width}" height="22" role="img" aria-label="${xmlEscape(label)}"><rect x=".5" y=".5" width="${width - 1}" height="21" rx="5" fill="${colors.fill}" stroke="${colors.stroke}"/><rect x="1" y="1" width="4" height="20" rx="2" fill="${colors.ink}"/><text x="14" y="15" fill="${colors.ink}" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700">${xmlEscape(label)}</text></svg>`;
 };
 
+const resourceKind = paper => {
+  let hostname = '';
+  let pathname = '';
+  try {
+    const parsed = new URL(paper.url);
+    hostname = parsed.hostname.toLowerCase();
+    pathname = parsed.pathname.toLowerCase();
+  } catch {}
+  const venue = String(paper.venue ?? '');
+  if (/results|leaderboard/i.test(`${paper.title} ${venue}`)) return 'results';
+  if (hostname === 'github.com') {
+    if (/results|leaderboard|\.csv(?:$|\/)/i.test(pathname)) return 'results';
+    return 'code';
+  }
+  if (paper.kind === 'book' || paper.kind === 'incollection') return 'book';
+  if (hostname.endsWith('.github.io') || /Official project repository|Project or technical resource/i.test(venue)) return 'project';
+  if (sourceType(paper) === 'industry') return 'source';
+  return 'paper';
+};
+
 const anchorFor = title => title
   .toLowerCase()
   .replaceAll('&', '')
@@ -236,11 +259,19 @@ for (const file of await readdir(venueAssetRoot)) {
   if (file.endsWith('.svg') && !activeVenueFiles.has(file)) await unlink(path.join(venueAssetRoot, file));
 }
 
-const venueBadge = paper => {
-  const label = venueLabel(paper.venue);
-  const file = `${sourceType(paper)}-${slug(label)}.svg`;
-  return `<img src="assets/readme/venues/${file}" alt="${xmlEscape(label)}" title="${xmlEscape(paper.venue || label)}" height="20">`;
+const inlineCode = value => String(value ?? '')
+  .replaceAll('`', "'")
+  .replaceAll('&', '&amp;')
+  .replaceAll('<', '&lt;')
+  .replaceAll('>', '&gt;');
+
+const titleWithPeriod = value => {
+  const raw = String(value ?? '').trim();
+  const title = escapeMarkdown(raw);
+  return /[.!?]$/.test(raw) ? title : `${title}.`;
 };
+
+const resourceLink = paper => `[[${resourceKind(paper)}](${paper.url})]`;
 
 const sectionHeading = (icon, title) => [
   `<img src="assets/readme/section-icons/${icon}.png" alt="" width="36" align="left">`,
@@ -298,9 +329,7 @@ const lines = [
   '',
   '## Reading the index',
   '',
-  'Each work appears once under its primary role and carries a source-type badge. Sparse early years are consolidated into a “Before YEAR” group, with the exact year retained beside each title.',
-  '',
-  '<p><img src="assets/readme/legend-conference.svg" alt="Conference source" height="20"> <img src="assets/readme/legend-journal.svg" alt="Journal source" height="20"> <img src="assets/readme/legend-preprint.svg" alt="Preprint source" height="20"> <img src="assets/readme/legend-industry.svg" alt="Official or industry source" height="20"> <img src="assets/readme/legend-book.svg" alt="Book source" height="20"></p>',
+  'Each work appears once under its primary role. A compact venue tag precedes the title; paper, code, project, source, book, or results links follow it. Sparse early years are consolidated into a “Before YEAR” group, with the exact year retained in each venue tag.',
 ];
 
 for (const collection of collections) {
@@ -317,11 +346,11 @@ for (const collection of collections) {
       const groupLabel = isEarly ? `Before ${collection.groupBefore}` : paper.year;
       lines.push('', `### ${groupLabel}`, '');
     }
-    const yearPrefix = isEarly ? `**${paper.year}** · ` : '';
+    const venue = `${venueLabel(paper.venue)}${isEarly ? ` ${paper.year}` : ''}`;
     const annotation = paper.note
-      ? `&nbsp;<sub>${paper.highlight === 'award' ? '🏅' : paper.highlight === 'future' ? '🔭' : '•'} ${escapeMarkdown(paper.note)}</sub>`
+      ? ` <sub>${paper.highlight === 'award' ? '🏅' : paper.highlight === 'future' ? '🔭' : '•'} ${escapeMarkdown(paper.note)}</sub>`
       : '';
-    lines.push(`- ${yearPrefix}[${escapeMarkdown(paper.title)}](${paper.url})&nbsp;${venueBadge(paper)}${annotation}`);
+    lines.push(`- **\`${inlineCode(venue)}\`** ${titleWithPeriod(paper.title)} ${resourceLink(paper)}${annotation}`);
   }
 }
 
