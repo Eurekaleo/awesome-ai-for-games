@@ -129,6 +129,11 @@
     "guo2026gamewam": [
       {"type": "code", "url": "https://github.com/yunncheng/GameWAM"},
       {"type": "project", "url": "https://yunncheng.github.io/GameWAM/"}
+    ],
+    "mineamongus2026": [
+      {"type": "code", "url": "https://github.com/JunseoKim0103/Lies-We-Can-See"},
+      {"type": "project", "url": "https://junseokim0103.github.io/Lies-We-Can-See/"},
+      {"type": "data", "url": "https://huggingface.co/datasets/JasonKim00/lies-we-can-see"}
     ]
   }
 }

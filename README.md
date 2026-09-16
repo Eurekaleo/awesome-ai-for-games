@@ -6,8 +6,8 @@
   <a href="https://arxiv.org/pdf/2609.16679"><img src="https://img.shields.io/badge/arXiv-2609.16679-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Read the paper on arXiv"></a>
   <a href="https://huggingface.co/papers/2609.16679"><img src="https://img.shields.io/badge/Hugging%20Face-Daily%20Paper-FFD21E?style=flat-square&logo=huggingface&logoColor=000000" alt="View the paper on Hugging Face Daily Papers"></a>
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>
-  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-443-168f91?style=flat-square" alt="443 references"></a>
-  <img src="https://img.shields.io/badge/core%20works-417-c78b1e?style=flat-square" alt="417 core works">
+  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-444-168f91?style=flat-square" alt="444 references"></a>
+  <img src="https://img.shields.io/badge/core%20works-418-c78b1e?style=flat-square" alt="418 core works">
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
 
   <p><a href="https://eurekaleo.github.io/">Meng Luo</a><sup>1</sup> · <a href="https://liyanlin06.github.io/">Yanlin Li</a><sup>1</sup> · <a href="https://scholar.google.com/citations?user=vF-UH7oAAAAJ&amp;hl=zh-TW">Hao Li</a><sup>1</sup> · <a href="https://daniellin97.github.io/">Hongzhan Lin</a><sup>1</sup> · <a href="https://lancezpf.github.io/">Pengfei Zhou</a><sup>1</sup> · <a href="https://jometeorie.github.io/">Tianjie Ju</a><sup>1</sup><br><a href="https://openreview.net/profile?id=~Ran_Zhang18">Ran Zhang</a><sup>2</sup> · <a href="https://jinyeying.github.io/">Yeying Jin</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/leeml/">Mong-Li Lee</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/whsu/">Wynne Hsu</a><sup>1</sup></p>
@@ -46,7 +46,7 @@ Foundation models now do more than play a given game: they can model games and p
 Select a role to jump directly to its papers.
 
 <p align="center">
-  <a href="#play-and-act"><img src="assets/readme/role-play.svg" width="246" alt="Play and Act: 118 works"></a>
+  <a href="#play-and-act"><img src="assets/readme/role-play.svg" width="246" alt="Play and Act: 119 works"></a>
   <a href="#model-players-and-games"><img src="assets/readme/role-model.svg" width="246" alt="Model Players and Games: 109 works"></a>
   <a href="#design"><img src="assets/readme/role-design.svg" width="246" alt="Design: 53 works"></a>
   <br>
@@ -79,6 +79,7 @@ Select a role to jump directly to its papers.
 - FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs. [[paper](https://aclanthology.org/2026.acl-long.2015/)] <img src="assets/readme/venues/conference-acl.svg" alt="ACL" title="Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)" height="18">
 - GameVerse: Can Vision-Language Models Learn from Video-Based Reflection? [[paper](https://arxiv.org/abs/2603.06656)] [[code](https://github.com/THUSI-Lab/GameVerse)] <img src="assets/readme/venues/conference-icml.svg" alt="ICML" title="International Conference on Machine Learning" height="18">
 - GameWAM: A World Action Model for Video Games. [[paper](https://arxiv.org/abs/2608.26200)] [[code](https://github.com/yunncheng/GameWAM)] [[project](https://yunncheng.github.io/GameWAM/)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
+- Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions. [[paper](https://arxiv.org/abs/2608.30428)] [[code](https://github.com/JunseoKim0103/Lies-We-Can-See)] [[project](https://junseokim0103.github.io/Lies-We-Can-See/)] [[data](https://huggingface.co/datasets/JasonKim00/lies-we-can-see)] <img src="assets/readme/venues/conference-wab-colm.svg" alt="WAB @ COLM" title="Workshop on Agent Behavior at COLM 2026" height="18">
 - MARBO: Relational Belief Grounding for LLM Agents in Social Deduction Games. [[paper](https://arxiv.org/abs/2609.06563)] <img src="assets/readme/venues/conference-emnlp.svg" alt="EMNLP" title="EMNLP 2026" height="18">
 - NitroGen: An Open Foundation Model for Generalist Gaming Agents. [[paper](https://arxiv.org/abs/2601.02427)] [[code](https://github.com/MineDojo/NitroGen)] <img src="assets/readme/venues/conference-cvpr.svg" alt="CVPR" title="Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition" height="18"> <sub>🏅 CVPR 2026 Best Paper Honorable Mention</sub>
 - One Policy, Infinite NPCs: Persona-Traceable Shared RL Policies for Scalable Game Agents. [[paper](https://arxiv.org/abs/2605.23652)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2605.23652" height="18">

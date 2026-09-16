@@ -3,7 +3,7 @@
   "source": "Living project bibliography",
   "sourceCounts": {
     "manuscript": 436,
-    "livingAdditions": 7
+    "livingAdditions": 8
   },
   "papers": [
     {
@@ -8463,6 +8463,41 @@
       "venue": "EMNLP 2026",
       "url": "https://arxiv.org/abs/2609.06563",
       "kind": "misc"
+    },
+    {
+      "id": "mineamongus2026",
+      "title": "Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions",
+      "year": 2026,
+      "month": 8,
+      "authors": "Jaewoo Ahn and Junseo Kim and Hyunseo Kim and Heeseung Yun and Jaehyeon Son and Zsolt Kira and Gunhee Kim",
+      "shortAuthors": "Ahn et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [
+        "social-agents",
+        "multimodal-action",
+        "multi-agent-games",
+        "behavioral-evaluation"
+      ],
+      "venue": "Workshop on Agent Behavior at COLM 2026",
+      "url": "https://arxiv.org/abs/2608.30428",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/JunseoKim0103/Lies-We-Can-See"
+        },
+        {
+          "type": "project",
+          "url": "https://junseokim0103.github.io/Lies-We-Can-See/"
+        },
+        {
+          "type": "data",
+          "url": "https://huggingface.co/datasets/JasonKim00/lies-we-can-see"
+        }
+      ]
     },
     {
       "id": "guo2026gamewam",
