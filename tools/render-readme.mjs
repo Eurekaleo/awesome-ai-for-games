@@ -246,6 +246,8 @@ const lines = [
   '<div align="center">',
   '  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/readme/hero-banner.png" width="1000" alt="Awesome AI for Games — AI for Games in the Foundation Model Era"></a>',
   '',
+  '  <p><strong><em>⭐ Star us if you find this useful!</em></strong></p>',
+  '',
   '  <a href="https://arxiv.org/pdf/2609.16679"><img src="https://img.shields.io/badge/arXiv-2609.16679-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Read the paper on arXiv"></a>',
   '  <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>',
   `  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-${sorted.length}-168f91?style=flat-square" alt="${sorted.length} references"></a>`,
@@ -356,4 +358,3 @@ lines.push(
 
 await writeFile(readmePath, lines.join('\n'));
 console.log(`README rendered: ${sorted.length} references across ${collections.length} collections.`);
-
