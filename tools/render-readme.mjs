@@ -192,8 +192,8 @@ const roleCardSvg = (collection, index, count) => {
 };
 const venueBadgeSvg = (label, type) => {
   const colors = badgePalette[type];
-  const width = Math.max(54, Math.ceil(label.length * 6.35 + 27));
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} 22" width="${width}" height="22" role="img" aria-label="${xmlEscape(label)}"><rect x=".5" y=".5" width="${width - 1}" height="21" rx="5" fill="${colors.fill}" stroke="${colors.stroke}"/><rect x="1" y="1" width="4" height="20" rx="2" fill="${colors.ink}"/><text x="14" y="15" fill="${colors.ink}" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700">${xmlEscape(label)}</text></svg>`;
+  const width = Math.max(48, Math.ceil(label.length * 6.05 + 22));
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} 20" width="${width}" height="20" role="img" aria-label="${xmlEscape(label)}"><rect x=".5" y=".5" width="${width - 1}" height="19" rx="4.5" fill="${colors.fill}" stroke="${colors.stroke}"/><path d="M4.5 1h.5v18h-.5A4 4 0 0 1 .5 15V5a4 4 0 0 1 4-4Z" fill="${colors.ink}"/><text x="11" y="13.5" fill="${colors.ink}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="10.5" font-weight="650">${xmlEscape(label)}</text></svg>`;
 };
 
 const resourceKind = paper => {
@@ -259,12 +259,6 @@ for (const file of await readdir(venueAssetRoot)) {
   if (file.endsWith('.svg') && !activeVenueFiles.has(file)) await unlink(path.join(venueAssetRoot, file));
 }
 
-const inlineCode = value => String(value ?? '')
-  .replaceAll('`', "'")
-  .replaceAll('&', '&amp;')
-  .replaceAll('<', '&lt;')
-  .replaceAll('>', '&gt;');
-
 const titleWithPeriod = value => {
   const raw = String(value ?? '').trim();
   const title = escapeMarkdown(raw);
@@ -272,6 +266,12 @@ const titleWithPeriod = value => {
 };
 
 const resourceLink = paper => `[[${resourceKind(paper)}](${paper.url})]`;
+
+const venueBadge = paper => {
+  const label = venueLabel(paper.venue);
+  const file = `${sourceType(paper)}-${slug(label)}.svg`;
+  return `<img src="assets/readme/venues/${file}" alt="${xmlEscape(label)}" title="${xmlEscape(paper.venue || label)}" height="18">`;
+};
 
 const sectionHeading = (icon, title) => [
   `<img src="assets/readme/section-icons/${icon}.png" alt="" width="36" align="left">`,
@@ -329,7 +329,9 @@ const lines = [
   '',
   '## Reading the index',
   '',
-  'Each work appears once under its primary role. A compact venue tag precedes the title; paper, code, project, source, book, or results links follow it. Sparse early years are consolidated into a “Before YEAR” group, with the exact year retained in each venue tag.',
+  'Each work appears once under its primary role. Titles remain easy to scan, venue chips identify the publication source, and the compact links open the corresponding paper, code, project, source, book, or results. Sparse early years are consolidated into a “Before YEAR” group.',
+  '',
+  '<p align="center"><img src="assets/readme/legend-conference.svg" alt="Conference" height="18">&nbsp; <img src="assets/readme/legend-journal.svg" alt="Journal" height="18">&nbsp; <img src="assets/readme/legend-preprint.svg" alt="Preprint" height="18">&nbsp; <img src="assets/readme/legend-industry.svg" alt="Official or industry" height="18">&nbsp; <img src="assets/readme/legend-book.svg" alt="Book" height="18"></p>',
 ];
 
 for (const collection of collections) {
@@ -346,11 +348,11 @@ for (const collection of collections) {
       const groupLabel = isEarly ? `Before ${collection.groupBefore}` : paper.year;
       lines.push('', `### ${groupLabel}`, '');
     }
-    const venue = `${venueLabel(paper.venue)}${isEarly ? ` ${paper.year}` : ''}`;
+    const yearPrefix = isEarly ? `**${paper.year}** · ` : '';
     const annotation = paper.note
       ? ` <sub>${paper.highlight === 'award' ? '🏅' : paper.highlight === 'future' ? '🔭' : '•'} ${escapeMarkdown(paper.note)}</sub>`
       : '';
-    lines.push(`- **\`${inlineCode(venue)}\`** ${titleWithPeriod(paper.title)} ${resourceLink(paper)}${annotation}`);
+    lines.push(`- ${yearPrefix}${titleWithPeriod(paper.title)} ${venueBadge(paper)} ${resourceLink(paper)}${annotation}`);
   }
 }
 
