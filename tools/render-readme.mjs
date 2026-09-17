@@ -64,6 +64,8 @@ const collections = [
     key: 'context',
     title: 'Foundations and Context',
     focus: 'Foundational methods, historical context, adjacent surveys, and supporting technical references.',
+    accent: '#7aa2e3',
+    icon: 'M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2Zm20 0h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7Z',
     groupBefore: 2024,
   },
 ];
@@ -236,7 +238,9 @@ const venueAssetRoot = path.join(readmeAssetRoot, 'venues');
 await mkdir(venueAssetRoot, {recursive: true});
 for (const [index, collection] of collections.entries()) {
   if (!collection.accent) continue;
-  await writeFile(path.join(readmeAssetRoot, `role-${collection.key}.svg`), roleCardSvg(collection, index, counts[collection.key]));
+  if (collection.key !== 'context') {
+    await writeFile(path.join(readmeAssetRoot, `role-${collection.key}.svg`), roleCardSvg(collection, index, counts[collection.key]));
+  }
   await writeFile(path.join(readmeAssetRoot, `icon-${collection.key}.svg`), iconSvg(collection));
 }
 const venueAssets = new Map();
