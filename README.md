@@ -651,7 +651,7 @@ Select a role to jump directly to its papers.
 
 ## Foundations and Context
 
-Foundational methods, historical context, adjacent surveys, and supporting technical references.
+<img src="assets/readme/icon-context.svg" alt="" width="24" height="24"> Foundational methods, historical context, adjacent surveys, and supporting technical references.
 
 ### 2026
 
