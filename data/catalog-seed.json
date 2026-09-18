@@ -4533,6 +4533,20 @@
       "url": "https://arxiv.org/abs/2605.09423",
       "highlight": "future",
       "note": "Future-facing direction"
+    },
+    {
+      "id": "jang2026coverage",
+      "title": "Coverage-Aware Guidance for Novelty-Driven Exploration in Automated Game Testing Under Sparse-Reward 3-D Environments",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "test",
+      "topics": [
+        "behavioral-evaluation",
+        "evaluation-data",
+        "learning-training"
+      ],
+      "venue": "IEEE Access",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11677062"
     }
   ]
 }

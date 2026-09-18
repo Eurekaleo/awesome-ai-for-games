@@ -134,6 +134,7 @@
       {"type": "code", "url": "https://github.com/JunseoKim0103/Lies-We-Can-See"},
       {"type": "project", "url": "https://junseokim0103.github.io/Lies-We-Can-See/"},
       {"type": "data", "url": "https://huggingface.co/datasets/JasonKim00/lies-we-can-see"}
-    ]
+    ],
+    "jang2026coverage": [{"type": "code", "url": "https://github.com/jangjangtae/coverageguidedexploration"}]
   }
 }
