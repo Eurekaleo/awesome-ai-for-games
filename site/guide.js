@@ -48,7 +48,7 @@ const collections = {
     example:'Official artwork for 1001 Nights, where player storytelling becomes part of AI-generated narrative and imagery.',
   },
   test: {
-    number:'06', label:'TEST AND EVALUATE', count:61, title:'Play it.<br>Then question it.',
+    number:'06', label:'TEST AND EVALUATE', count:62, title:'Play it.<br>Then question it.',
     description:'Automated players explore game behavior; oracles decide whether something went wrong. Benchmarks and human studies test different kinds of claims.',
     topics:['Automated playtesting','Bug detection','Benchmarks & validation'],
     image:'ea-testing.webp', alt:'Battlefield 2042 helicopter navigation under an EA SEED production test with debug overlays', caption:'Battlefield 2042 / EA SEED production testing',
