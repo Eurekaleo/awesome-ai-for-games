@@ -64,7 +64,7 @@ const collections = [
     key: 'context',
     title: 'Foundations and Context',
     focus: 'Foundational methods, historical context, adjacent surveys, and supporting technical references.',
-    accent: '#7aa2e3',
+    iconAccent: '#7aa2e3',
     icon: 'M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2Zm20 0h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7Z',
     groupBefore: 2024,
   },
@@ -184,7 +184,7 @@ const xmlEscape = value => String(value)
   .replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
   .replaceAll('"', '&quot;').replaceAll("'", '&apos;');
 const slug = value => String(value).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const iconSvg = collection => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"><rect x="1" y="1" width="34" height="34" rx="9" fill="#182231" stroke="${collection.accent}" stroke-opacity=".68"/><path d="${collection.icon}" transform="translate(6 6)" fill="none" stroke="${collection.accent}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const iconSvg = collection => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"><rect x="1" y="1" width="34" height="34" rx="9" fill="#182231" stroke="${collection.iconAccent ?? collection.accent}" stroke-opacity=".68"/><path d="${collection.icon}" transform="translate(6 6)" fill="none" stroke="${collection.iconAccent ?? collection.accent}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const roleCardSvg = (collection, index, count) => {
   const first = collection.cardTitle[0];
   const second = collection.cardTitle[1];
@@ -237,11 +237,12 @@ const readmeAssetRoot = path.join(root, 'assets/readme');
 const venueAssetRoot = path.join(readmeAssetRoot, 'venues');
 await mkdir(venueAssetRoot, {recursive: true});
 for (const [index, collection] of collections.entries()) {
-  if (!collection.accent) continue;
-  if (collection.key !== 'context') {
+  if (collection.accent) {
     await writeFile(path.join(readmeAssetRoot, `role-${collection.key}.svg`), roleCardSvg(collection, index, counts[collection.key]));
   }
-  await writeFile(path.join(readmeAssetRoot, `icon-${collection.key}.svg`), iconSvg(collection));
+  if (collection.accent || collection.iconAccent) {
+    await writeFile(path.join(readmeAssetRoot, `icon-${collection.key}.svg`), iconSvg(collection));
+  }
 }
 const venueAssets = new Map();
 for (const paper of sorted) {
@@ -351,7 +352,7 @@ const lines = [
 ];
 
 for (const collection of collections) {
-  const roleIcon = collection.accent ? `<img src="assets/readme/icon-${collection.key}.svg" alt="" width="24" height="24"> ` : '';
+  const roleIcon = collection.accent || collection.iconAccent ? `<img src="assets/readme/icon-${collection.key}.svg" alt="" width="24" height="24"> ` : '';
   const sectionIcon = collection.key === 'context' ? 'foundations' : collection.key;
   lines.push('', '---', '', ...sectionHeading(sectionIcon, collection.title), '', `${roleIcon}${collection.focus}`);
   const entries = sorted.filter(paper => paper.primaryRole === collection.key);
