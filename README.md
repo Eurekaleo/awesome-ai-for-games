@@ -6,8 +6,8 @@
   <a href="https://arxiv.org/pdf/2609.16679"><img src="https://img.shields.io/badge/arXiv-2609.16679-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Read the paper on arXiv"></a>
   <a href="https://huggingface.co/papers/2609.16679"><img src="https://img.shields.io/badge/Hugging%20Face-Daily%20Paper-FFD21E?style=flat-square&logo=huggingface&logoColor=000000" alt="View the paper on Hugging Face Daily Papers"></a>
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>
-  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-444-168f91?style=flat-square" alt="444 references"></a>
-  <img src="https://img.shields.io/badge/core%20works-418-c78b1e?style=flat-square" alt="418 core works">
+  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-445-168f91?style=flat-square" alt="445 references"></a>
+  <img src="https://img.shields.io/badge/core%20works-419-c78b1e?style=flat-square" alt="419 core works">
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
 
   <p><a href="https://eurekaleo.github.io/">Meng Luo</a><sup>1</sup> · <a href="https://liyanlin06.github.io/">Yanlin Li</a><sup>1</sup> · <a href="https://scholar.google.com/citations?user=vF-UH7oAAAAJ&amp;hl=zh-TW">Hao Li</a><sup>1</sup> · <a href="https://daniellin97.github.io/">Hongzhan Lin</a><sup>1</sup> · <a href="https://lancezpf.github.io/">Pengfei Zhou</a><sup>1</sup> · <a href="https://jometeorie.github.io/">Tianjie Ju</a><sup>1</sup><br><a href="https://openreview.net/profile?id=~Ran_Zhang18">Ran Zhang</a><sup>2</sup> · <a href="https://jinyeying.github.io/">Yeying Jin</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/leeml/">Mong-Li Lee</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/whsu/">Wynne Hsu</a><sup>1</sup></p>
@@ -52,7 +52,7 @@ Select a role to jump directly to its papers.
   <br>
   <a href="#build-and-maintain"><img src="assets/readme/role-build.svg" width="246" alt="Build and Maintain: 20 works"></a>
   <a href="#generate-and-adapt-at-runtime"><img src="assets/readme/role-runtime.svg" width="246" alt="Generate and Adapt at Runtime: 56 works"></a>
-  <a href="#test-and-evaluate"><img src="assets/readme/role-test.svg" width="246" alt="Test and Evaluate: 61 works"></a>
+  <a href="#test-and-evaluate"><img src="assets/readme/role-test.svg" width="246" alt="Test and Evaluate: 62 works"></a>
 </p>
 
 ## Publication key
@@ -563,6 +563,7 @@ Select a role to jump directly to its papers.
 ### 2026
 
 - CA2: Code-Aware Agent for Automated Game Testing. [[paper](https://proceedings.mlr.press/v318/adaikkappan26a.html)] <img src="assets/readme/venues/conference-canadian-ai.svg" alt="Canadian AI" title="Proceedings of the 39th Canadian Conference on Artificial Intelligence" height="18">
+- Coverage-Aware Guidance for Novelty-Driven Exploration in Automated Game Testing Under Sparse-Reward 3-D Environments. [[paper](https://ieeexplore.ieee.org/abstract/document/11677062)] [[code](https://github.com/jangjangtae/coverageguidedexploration)] <img src="assets/readme/venues/journal-ieee-access.svg" alt="IEEE Access" title="IEEE Access" height="18">
 - GameEngineBench: Evaluating Coding Agents on Real C++ Runtime Environments. [[paper](https://arxiv.org/abs/2607.03525)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2607.03525" height="18">
 - GameGen-Verifier: Parallel Keypoint-Based Verification for LLM-Generated Games via Runtime State Injection. [[paper](https://arxiv.org/abs/2605.07442)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2605.07442" height="18">
 - GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents. [[paper](https://arxiv.org/abs/2604.07429)] [[code](https://github.com/gameworld-project/GameWorld)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2604.07429" height="18">
