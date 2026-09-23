@@ -42,11 +42,15 @@ const classicArcadeGameFiles = [
   ...['garden', 'garden-en', 'kart', 'kart-en', 'sling', 'sling-en']
     .map(name => `games/classic-arcade/previews/${name}.png`),
 ];
+const topicPageFiles = [
+  'game-agents', 'game-world-models', 'ai-game-design', 'ai-game-development',
+  'runtime-generation', 'automated-game-testing',
+].map(slug => `${slug}/index.html`);
 
 // Publish an explicit public-file allowlist. Never copy a parent directory,
 // Git metadata, source credentials, or local review material.
 const files = [
-  '.nojekyll', 'favicon.ico', 'robots.txt', 'sitemap.xml', 'site.webmanifest', 'index.html', 'site/guide.css', 'site/guide.js', 'site/catalog.mjs',
+  '.nojekyll', 'favicon.ico', 'robots.txt', 'sitemap.xml', 'site.webmanifest', 'index.html', 'site/guide.css', 'site/guide.js', 'site/catalog.mjs', 'site/topic.css',
   'data/references.json', 'data/survey-references.bib',
   'paper/AI_for_Games_in_the_Foundation_Model_Era.pdf',
   'assets/project-logo.png', 'assets/project-favicon.png', 'assets/project-icon-192.png',
@@ -63,6 +67,7 @@ const files = [
   ...gameFiles,
   ...aiCraftedGameFiles,
   ...classicArcadeGameFiles,
+  ...topicPageFiles,
 ];
 for (const file of files) {
   const info = await stat(path.join(root, file));
@@ -85,6 +90,20 @@ for (const [, ref] of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
     const localPath = ref.split(/[?#]/)[0];
     const publicPath = localPath.endsWith('/') ? `${localPath}index.html` : localPath;
     assert(files.includes(publicPath), `Unlisted local dependency: ${ref}`);
+  }
+}
+for (const topicFile of topicPageFiles) {
+  const topicHtml = await readFile(path.join(out, topicFile), 'utf8');
+  const topicIds = [...topicHtml.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
+  assert.equal(new Set(topicIds).size, topicIds.length, `Duplicate HTML IDs: ${topicFile}`);
+  for (const [, ref] of topicHtml.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
+    if (ref.startsWith('#')) assert(topicIds.includes(ref.slice(1)), `Missing anchor in ${topicFile}: ${ref}`);
+    else if (!/^(https?:|data:|mailto:)/.test(ref)) {
+      const localPath = ref.split(/[?#]/)[0];
+      const publicPath = localPath.endsWith('/') ? `${localPath}index.html` : localPath;
+      const resolved = path.posix.normalize(path.posix.join(path.posix.dirname(topicFile), publicPath));
+      assert(files.includes(resolved), `Unlisted local dependency in ${topicFile}: ${ref}`);
+    }
   }
 }
 assert(!/\.tex\b/i.test(html), 'A TeX source was linked from the public page');
