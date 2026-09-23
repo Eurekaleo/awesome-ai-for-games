@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Runtime Generation and Adaptation with Foundation Models | AI for Games</title>
+  <meta name="description" content="A concise guide to runtime generation and adaptation with foundation models for dialogue, quests, characters, content, memory, rules, and personalization.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://eurekaleo.github.io/awesome-ai-for-games/runtime-generation/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://eurekaleo.github.io/awesome-ai-for-games/runtime-generation/">
+  <meta property="og:title" content="Runtime Generation and Adaptation with Foundation Models">
+  <meta property="og:description" content="How foundation models generate and adapt live game experiences while preserving state, control, and latency budgets.">
+  <meta property="og:image" content="https://eurekaleo.github.io/awesome-ai-for-games/assets/project-icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="stylesheet" href="../site/topic.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;650&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Runtime Generation and Adaptation with Foundation Models","url":"https://eurekaleo.github.io/awesome-ai-for-games/runtime-generation/","description":"How foundation models generate and adapt live game experiences while preserving state, control, and latency budgets.","isPartOf":{"@type":"CreativeWork","name":"AI for Games in the Foundation Model Era","url":"https://eurekaleo.github.io/awesome-ai-for-games/"}}</script>
+</head>
+<body class="role-runtime">
+  <header class="site-header"><div class="shell header-inner"><a class="brand" href="../"><img src="../assets/project-logo.png" alt="">AI for GAMES+</a><nav class="header-nav" aria-label="Topic navigation"><a href="../#map">Survey map</a><a href="../#papers">Literature</a><a href="https://arxiv.org/pdf/2609.16679">Paper</a></nav></div></header>
+  <main>
+    <section class="topic-hero"><div class="shell"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">AI for Games</a><span>/</span><span>Generate &amp; Adapt at Runtime</span></nav><p class="role-label">05 · Generate &amp; Adapt at Runtime</p><h1>Runtime Generation and Adaptation with Foundation Models</h1><p class="topic-deck">How models create dialogue, quests, characters, content, rules, and personalized experiences while a game is being played.</p></div></section>
+    <article class="shell topic-main">
+      <div class="answer-grid"><p class="section-kicker">Direct answer</p><div>
+        <p class="topic-answer"><strong>Runtime generation and adaptation with foundation models</strong> changes a game while it is being played. Systems can generate dialogue, speech, quests, props, characters, narrative events, or other content in response to player actions and current world state. They can also adapt difficulty, pacing, recommendations, companion behavior, or story direction using player models and session history. Unlike offline design tools, runtime systems operate under latency, safety, consistency, and reversibility constraints: an output must arrive on time, fit the active rules, respect prior events, and avoid placing the game in an invalid state. Long-term memory introduces further questions about what characters know, what the world records, and whether different players or agents share a consistent history. Voice interaction adds recognition, synthesis, turn-taking, interruption, and performance budgets. Personalization should be evaluated against a non-adaptive control and should distinguish temporary context from stable player preferences. Useful evidence includes response latency, content validity, state agreement, controllability, recovery from model failures, and measured effects on player outcomes across repeated sessions. A fluent response is only a proposal until the engine validates and applies the corresponding game action.</p>
+        <p class="survey-note">This topic is surveyed in <a href="../"><em>AI for Games in the Foundation Model Era</em></a>.</p>
+      </div></div>
+      <section class="topic-section" aria-labelledby="runtime-covers"><div class="section-head"><p class="section-kicker">Research scope</p><h2 id="runtime-covers">What this topic covers</h2></div><div class="topic-grid"><div class="topic-card"><span>01</span><h3>Characters, narrative, and content</h3><p>Dialogue, speech, quests, props, events, and co-created material generated during play.</p></div><div class="topic-card"><span>02</span><h3>Rules, state, and memory</h3><p>Engine validation, long-term character memory, shared history, and persistent world consistency.</p></div><div class="topic-card"><span>03</span><h3>Personalization and adaptation</h3><p>Difficulty, pacing, recommendations, and interventions conditioned on player behavior.</p></div></div></section>
+      <section class="topic-section" aria-labelledby="runtime-evidence"><div class="section-head"><p class="section-kicker">Evidence</p><h2 id="runtime-evidence">What should evaluation establish?</h2></div><div class="evidence-grid"><p class="evidence-copy">Runtime evaluation must test complete sessions, not isolated responses. It should compare against non-adaptive controls, revisit prior state, measure timing and failures, and show whether an intervention improves the intended player or game outcome.</p><ul class="evidence-list"><li>Latency and operational reliability</li><li>State, memory, and rule consistency</li><li>Player control and reversibility</li><li>Effects on player experience and outcomes</li></ul></div></section>
+      <section class="topic-section" aria-labelledby="runtime-anchors"><div class="section-head"><p class="section-kicker">Starting points</p><h2 id="runtime-anchors">Representative anchors</h2></div><div class="anchor-list"><a href="https://doi.org/10.1609/aiide.v20i1.31868">NarrativeGenie <span>↗</span></a><a href="https://arxiv.org/abs/2608.12195">IF:CARGO <span>↗</span></a><a href="https://www.1001nights.ai/">1001 Nights <span>↗</span></a></div></section>
+    </article>
+  </main>
+  <nav class="topic-nav" aria-label="All AI for Games topics"><div class="shell"><h2>Explore the six survey topics</h2><div class="topic-nav-links"><a href="../game-agents/">Game agents</a><a href="../game-world-models/">World models</a><a href="../ai-game-design/">Game design</a><a href="../ai-game-development/">Game development</a><a href="../runtime-generation/" aria-current="page">Runtime generation</a><a href="../automated-game-testing/">Automated testing</a></div></div></nav>
+  <footer class="site-footer"><div class="shell footer-inner"><span>AI for Games in the Foundation Model Era</span><div class="footer-links"><a href="../">Project home</a><a href="https://arxiv.org/pdf/2609.16679">Paper</a><a href="https://github.com/Eurekaleo/awesome-ai-for-games">GitHub</a></div></div></footer>
+</body>
+</html>
