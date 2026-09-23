@@ -97,6 +97,15 @@ for (const gameId of ['moon-garden', 'aurora-outpost']) {
 const readme = await readFile(new URL('../README.md', import.meta.url), 'utf8');
 const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const guide = await readFile(new URL('../site/guide.js', import.meta.url), 'utf8');
+const robots = await readFile(new URL('../robots.txt', import.meta.url), 'utf8');
+const sitemap = await readFile(new URL('../sitemap.xml', import.meta.url), 'utf8');
+const siteUrl = 'https://eurekaleo.github.io/awesome-ai-for-games/';
+assert.match(robots, /User-agent: OAI-SearchBot\s+Allow: \//, 'OAI-SearchBot must be allowed to crawl the site');
+assert.match(robots, /User-agent: GPTBot\s+Disallow: \//, 'GPTBot must remain disallowed from training crawls');
+assert(robots.includes(`Sitemap: ${siteUrl}sitemap.xml`), 'robots.txt must advertise the sitemap');
+assert(sitemap.includes(`<loc>${siteUrl}</loc>`), 'The canonical homepage is missing from the sitemap');
+assert(html.includes('<meta name="robots" content="index, follow">'), 'The homepage must remain indexable');
+assert(html.includes('<link rel="sitemap" type="application/xml" href="sitemap.xml">'), 'The homepage must advertise the sitemap');
 const playableCards = [...html.matchAll(/<article class="playable-card\b/g)];
 assert.equal(playableCards.length, 9, 'The website must present exactly nine playable game cards');
 assert(html.includes('NINE AI-CRAFTED WORLDS'), 'The playable-games heading is stale');

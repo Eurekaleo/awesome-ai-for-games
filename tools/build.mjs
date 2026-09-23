@@ -46,7 +46,7 @@ const classicArcadeGameFiles = [
 // Publish an explicit public-file allowlist. Never copy a parent directory,
 // Git metadata, source credentials, or local review material.
 const files = [
-  '.nojekyll', 'favicon.ico', 'site.webmanifest', 'index.html', 'site/guide.css', 'site/guide.js', 'site/catalog.mjs',
+  '.nojekyll', 'favicon.ico', 'robots.txt', 'sitemap.xml', 'site.webmanifest', 'index.html', 'site/guide.css', 'site/guide.js', 'site/catalog.mjs',
   'data/references.json', 'data/survey-references.bib',
   'paper/AI_for_Games_in_the_Foundation_Model_Era.pdf',
   'assets/project-logo.png', 'assets/project-favicon.png', 'assets/project-icon-192.png',
