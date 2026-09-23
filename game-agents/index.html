@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foundation Models and LLM Agents for Games | AI for Games</title>
+  <meta name="description" content="A concise guide to foundation models, LLM agents, multimodal game-playing agents, planning, memory, control, NPCs, and human-AI cooperation in games.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://eurekaleo.github.io/awesome-ai-for-games/game-agents/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://eurekaleo.github.io/awesome-ai-for-games/game-agents/">
+  <meta property="og:title" content="Foundation Models and LLM Agents for Games">
+  <meta property="og:description" content="How foundation models perceive, plan, act, adapt, and cooperate inside games.">
+  <meta property="og:image" content="https://eurekaleo.github.io/awesome-ai-for-games/assets/project-icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="stylesheet" href="../site/topic.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;650&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Foundation Models and LLM Agents for Games","url":"https://eurekaleo.github.io/awesome-ai-for-games/game-agents/","description":"How foundation models perceive, plan, act, adapt, and cooperate inside games.","isPartOf":{"@type":"CreativeWork","name":"AI for Games in the Foundation Model Era","url":"https://eurekaleo.github.io/awesome-ai-for-games/"}}</script>
+</head>
+<body class="role-play">
+  <header class="site-header"><div class="shell header-inner"><a class="brand" href="../"><img src="../assets/project-logo.png" alt="">AI for GAMES+</a><nav class="header-nav" aria-label="Topic navigation"><a href="../#map">Survey map</a><a href="../#papers">Literature</a><a href="https://arxiv.org/pdf/2609.16679">Paper</a></nav></div></header>
+  <main>
+    <section class="topic-hero">
+      <div class="shell">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">AI for Games</a><span>/</span><span>Play &amp; Act</span></nav>
+        <p class="role-label">01 · Play &amp; Act</p>
+        <h1>Foundation Models and LLM Agents for Games</h1>
+        <p class="topic-deck">How pretrained language, vision-language, and multimodal models become players, teammates, non-player characters, and generalist interactive agents.</p>
+      </div>
+    </section>
+    <article class="shell topic-main">
+      <div class="answer-grid">
+        <p class="section-kicker">Direct answer</p>
+        <div>
+          <p class="topic-answer"><strong>Foundation models and LLM agents for games</strong> use pretrained language, vision-language, or multimodal models to interpret game observations, reason about goals, plan actions, communicate, and control characters. They range from agents specialized for one game to generalist systems that operate across many environments through text, pixels, APIs, keyboard and mouse input, or native controllers. Language models can supply high-level plans, tool selection, memory, and dialogue, while learned policies or control modules translate those decisions into timely actions. Important research questions include how an agent grounds language in game state, handles partial information, learns unfamiliar rules, adapts at test time, and coordinates with human or AI partners. Strong performance in one interface does not automatically transfer to another: a model that explains a strategy may still fail to execute it under real-time constraints. Evaluation therefore considers task completion, progress, efficiency, robustness to changed appearance or controls, memory across long episodes, and cooperative behavior. NPCs and teammates add another requirement: their actions and messages must remain useful, legible, and consistent with the shared game state.</p>
+          <p class="survey-note">This topic is surveyed in <a href="../"><em>AI for Games in the Foundation Model Era</em></a>.</p>
+        </div>
+      </div>
+      <section class="topic-section" aria-labelledby="agents-covers"><div class="section-head"><p class="section-kicker">Research scope</p><h2 id="agents-covers">What this topic covers</h2></div><div class="topic-grid">
+        <div class="topic-card"><span>01</span><h3>Generalist game agents</h3><p>Policies and multimodal agents that act across games, interfaces, tasks, or visual settings.</p></div>
+        <div class="topic-card"><span>02</span><h3>Planning, memory, and control</h3><p>Hierarchical decisions, tool use, long-horizon memory, test-time adaptation, and action execution.</p></div>
+        <div class="topic-card"><span>03</span><h3>NPCs and cooperation</h3><p>Teammates, companions, opponents, and characters that coordinate through actions and language.</p></div>
+      </section>
+      <section class="topic-section" aria-labelledby="agents-evidence"><div class="section-head"><p class="section-kicker">Evidence</p><h2 id="agents-evidence">What should evaluation establish?</h2></div><div class="evidence-grid"><p class="evidence-copy">A convincing agent evaluation separates reasoning from execution and names what changed between training and testing. It should show whether competence survives new visuals, controls, rules, goals, partners, or interaction budgets—not only whether the model can describe the right move.</p><ul class="evidence-list"><li>Completion, progress, and action efficiency</li><li>Transfer across games and interfaces</li><li>Memory and adaptation over long episodes</li><li>Coordination with people or other agents</li></ul></div></section>
+      <section class="topic-section" aria-labelledby="agents-anchors"><div class="section-head"><p class="section-kicker">Starting points</p><h2 id="agents-anchors">Representative anchors</h2></div><div class="anchor-list"><a href="https://arxiv.org/abs/2305.16291">Voyager <span>↗</span></a><a href="https://arxiv.org/abs/2512.04797">SIMA 2 <span>↗</span></a><a href="https://arxiv.org/abs/2601.02427">NitroGen <span>↗</span></a></div></section>
+    </article>
+  </main>
+  <nav class="topic-nav" aria-label="All AI for Games topics"><div class="shell"><h2>Explore the six survey topics</h2><div class="topic-nav-links"><a href="../game-agents/" aria-current="page">Game agents</a><a href="../game-world-models/">World models</a><a href="../ai-game-design/">Game design</a><a href="../ai-game-development/">Game development</a><a href="../runtime-generation/">Runtime generation</a><a href="../automated-game-testing/">Automated testing</a></div></div></nav>
+  <footer class="site-footer"><div class="shell footer-inner"><span>AI for Games in the Foundation Model Era</span><div class="footer-links"><a href="../">Project home</a><a href="https://arxiv.org/pdf/2609.16679">Paper</a><a href="https://github.com/Eurekaleo/awesome-ai-for-games">GitHub</a></div></div></footer>
+</body>
+</html>
