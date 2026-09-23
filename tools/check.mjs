@@ -111,6 +111,34 @@ assert(summaryStart > html.indexOf('class="hero"') && summaryStart < html.indexO
 for (const phrase of ['foundation models for games', 'LLMs', 'game-playing agents', 'world models', 'AI-assisted game design and development', 'automated game testing', 'Play &amp; Act', 'Test &amp; Evaluate']) {
   assert(html.includes(phrase), `Survey summary is missing a key concept: ${phrase}`);
 }
+const topicPages = {
+  'game-agents': 'Foundation Models and LLM Agents for Games',
+  'game-world-models': 'Foundation Models for Game World and Player Modeling',
+  'ai-game-design': 'AI and Foundation Models for Game Design',
+  'ai-game-development': 'Foundation Models for Game Development and Maintenance',
+  'runtime-generation': 'Runtime Generation and Adaptation with Foundation Models',
+  'automated-game-testing': 'AI and Foundation Models for Automated Game Testing and Evaluation',
+};
+for (const [slug, title] of Object.entries(topicPages)) {
+  const topicHtml = await readFile(new URL(`../${slug}/index.html`, import.meta.url), 'utf8');
+  const topicUrl = `${siteUrl}${slug}/`;
+  assert(topicHtml.includes(`<title>${title} | AI for Games</title>`), `Topic title is missing: ${slug}`);
+  assert(topicHtml.includes(`<h1>${title}</h1>`), `Topic H1 is missing: ${slug}`);
+  assert(topicHtml.includes(`<link rel="canonical" href="${topicUrl}">`), `Topic canonical URL is missing: ${slug}`);
+  assert(topicHtml.includes('<meta name="description"'), `Topic description is missing: ${slug}`);
+  assert(topicHtml.includes('<meta name="robots" content="index, follow">'), `Topic is not explicitly indexable: ${slug}`);
+  assert(topicHtml.includes('<script type="application/ld+json">'), `Topic structured data is missing: ${slug}`);
+  assert(topicHtml.includes('This topic is surveyed in'), `Survey attribution is missing: ${slug}`);
+  const answer = topicHtml.match(/<p class="topic-answer">([\s\S]*?)<\/p>/)?.[1]
+    .replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').trim();
+  const answerWords = answer?.split(/\s+/).length ?? 0;
+  assert(answerWords >= 150 && answerWords <= 250, `Topic answer must be 150–250 words: ${slug} has ${answerWords}`);
+  assert(html.includes(`href="${slug}/"`), `Homepage does not link to topic: ${slug}`);
+  assert(sitemap.includes(`<loc>${topicUrl}</loc>`), `Sitemap does not include topic: ${slug}`);
+  for (const relatedSlug of Object.keys(topicPages)) {
+    assert(topicHtml.includes(`href="../${relatedSlug}/"`), `Topic navigation is incomplete in ${slug}: ${relatedSlug}`);
+  }
+}
 const playableCards = [...html.matchAll(/<article class="playable-card\b/g)];
 assert.equal(playableCards.length, 9, 'The website must present exactly nine playable game cards');
 assert(html.includes('NINE AI-CRAFTED WORLDS'), 'The playable-games heading is stale');
