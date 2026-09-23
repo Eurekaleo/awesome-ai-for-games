@@ -106,6 +106,27 @@ assert(robots.includes(`Sitemap: ${siteUrl}sitemap.xml`), 'robots.txt must adver
 assert(sitemap.includes(`<loc>${siteUrl}</loc>`), 'The canonical homepage is missing from the sitemap');
 assert(html.includes('<meta name="robots" content="index, follow">'), 'The homepage must remain indexable');
 assert(html.includes('<link rel="sitemap" type="application/xml" href="sitemap.xml">'), 'The homepage must advertise the sitemap');
+const citationMeta = Object.fromEntries([...html.matchAll(/<meta name="(citation_[^"]+)" content="([^"]*)">/g)].map(([, name, content]) => [name, content]));
+const citationAuthors = [...html.matchAll(/<meta name="citation_author" content="([^"]+)">/g)].map(([, author]) => author);
+const expectedArticleAuthors = ['Meng Luo', 'Yanlin Li', 'Hao Li', 'Hongzhan Lin', 'Pengfei Zhou', 'Tianjie Ju', 'Ran Zhang', 'Yeying Jin', 'Mong-Li Lee', 'Wynne Hsu'];
+assert.equal(citationMeta.citation_title, 'AI for Games in the Foundation Model Era', 'Scholarly citation title is missing');
+assert.deepEqual(citationAuthors, expectedArticleAuthors, 'Scholarly citation authors are missing or out of order');
+assert.equal(citationMeta.citation_publication_date, '2026-09-15', 'Scholarly publication date is incorrect');
+assert.equal(citationMeta.citation_arxiv_id, '2609.16679', 'arXiv identifier is incorrect');
+assert.equal(citationMeta.citation_doi, '10.48550/arXiv.2609.16679', 'arXiv DOI is incorrect');
+assert.equal(citationMeta.citation_pdf_url, 'https://arxiv.org/pdf/2609.16679', 'Scholarly PDF URL is incorrect');
+assert(citationMeta.citation_abstract.includes('six roles'), 'Scholarly abstract is incomplete');
+const scholarlyMatch = html.match(/<script type="application\/ld\+json">\s*({[\s\S]*?})\s*<\/script>/);
+assert(scholarlyMatch, 'ScholarlyArticle JSON-LD is missing');
+const scholarlyArticle = JSON.parse(scholarlyMatch[1]);
+assert.equal(scholarlyArticle['@type'], 'ScholarlyArticle', 'JSON-LD type must be ScholarlyArticle');
+assert.equal(scholarlyArticle.datePublished, '2026-09-15', 'JSON-LD publication date is incorrect');
+assert.deepEqual(scholarlyArticle.author.map(author => author.name), expectedArticleAuthors, 'JSON-LD authors are missing or out of order');
+assert(scholarlyArticle.identifier.some(identifier => identifier?.propertyID === 'arXiv' && identifier.value === '2609.16679'), 'JSON-LD arXiv identifier is missing');
+assert(scholarlyArticle.sameAs.includes(siteUrl), 'JSON-LD project page relationship is missing');
+assert(scholarlyArticle.sameAs.includes('https://github.com/Eurekaleo/awesome-ai-for-games'), 'JSON-LD GitHub relationship is missing');
+assert.equal(scholarlyArticle.mainEntityOfPage['@id'], siteUrl, 'JSON-LD main entity page is incorrect');
+assert(scholarlyArticle.keywords.includes('automated game testing'), 'JSON-LD keywords are incomplete');
 const summaryStart = html.indexOf('id="survey-summary"');
 assert(summaryStart > html.indexOf('class="hero"') && summaryStart < html.indexOf('id="authors"'), 'The machine-readable survey summary must stay near the top of the homepage');
 for (const phrase of ['foundation models for games', 'LLMs', 'game-playing agents', 'world models', 'AI-assisted game design and development', 'automated game testing', 'Play &amp; Act', 'Test &amp; Evaluate']) {
