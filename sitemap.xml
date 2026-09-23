@@ -3,4 +3,22 @@
   <url>
     <loc>https://eurekaleo.github.io/awesome-ai-for-games/</loc>
   </url>
+  <url>
+    <loc>https://eurekaleo.github.io/awesome-ai-for-games/game-agents/</loc>
+  </url>
+  <url>
+    <loc>https://eurekaleo.github.io/awesome-ai-for-games/game-world-models/</loc>
+  </url>
+  <url>
+    <loc>https://eurekaleo.github.io/awesome-ai-for-games/ai-game-design/</loc>
+  </url>
+  <url>
+    <loc>https://eurekaleo.github.io/awesome-ai-for-games/ai-game-development/</loc>
+  </url>
+  <url>
+    <loc>https://eurekaleo.github.io/awesome-ai-for-games/runtime-generation/</loc>
+  </url>
+  <url>
+    <loc>https://eurekaleo.github.io/awesome-ai-for-games/automated-game-testing/</loc>
+  </url>
 </urlset>
