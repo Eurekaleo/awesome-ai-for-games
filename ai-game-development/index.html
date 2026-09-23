@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foundation Models for Game Development and Maintenance | AI for Games</title>
+  <meta name="description" content="A concise guide to foundation models for game development, engine agents, code generation, scene construction, debugging, repair, maintenance, and handoff.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://eurekaleo.github.io/awesome-ai-for-games/ai-game-development/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://eurekaleo.github.io/awesome-ai-for-games/ai-game-development/">
+  <meta property="og:title" content="Foundation Models for Game Development and Maintenance">
+  <meta property="og:description" content="How foundation models build, debug, repair, and maintain executable game projects.">
+  <meta property="og:image" content="https://eurekaleo.github.io/awesome-ai-for-games/assets/project-icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="stylesheet" href="../site/topic.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;650&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Foundation Models for Game Development and Maintenance","url":"https://eurekaleo.github.io/awesome-ai-for-games/ai-game-development/","description":"How foundation models build, debug, repair, and maintain executable game projects.","isPartOf":{"@type":"CreativeWork","name":"AI for Games in the Foundation Model Era","url":"https://eurekaleo.github.io/awesome-ai-for-games/"}}</script>
+</head>
+<body class="role-build">
+  <header class="site-header"><div class="shell header-inner"><a class="brand" href="../"><img src="../assets/project-logo.png" alt="">AI for GAMES+</a><nav class="header-nav" aria-label="Topic navigation"><a href="../#map">Survey map</a><a href="../#papers">Literature</a><a href="https://arxiv.org/pdf/2609.16679">Paper</a></nav></div></header>
+  <main>
+    <section class="topic-hero"><div class="shell"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">AI for Games</a><span>/</span><span>Build &amp; Maintain</span></nav><p class="role-label">04 · Build &amp; Maintain</p><h1>Foundation Models for Game Development and Maintenance</h1><p class="topic-deck">How coding and tool-using agents turn specifications into executable scenes, mechanics, engine projects, repairs, and maintainable software.</p></div></section>
+    <article class="shell topic-main">
+      <div class="answer-grid"><p class="section-kicker">Direct answer</p><div>
+        <p class="topic-answer"><strong>Foundation models for game development</strong> assist with the engineering work required to turn ideas and specifications into running, revisable games. They can generate or edit code, create scenes, configure assets, invoke engine tools, inspect runtime output, diagnose failures, repair bugs, and coordinate changes across a project. Tool-using development agents extend code generation by acting inside engines and editors, where scripts, prefabs, scene graphs, resources, input mappings, physics, and build settings must agree. Execution feedback is essential because plausible code may compile yet fail at launch, violate requirements, break another mechanic, or become difficult to maintain. The field therefore studies closed loops in which a model proposes a change, runs or observes the game, interprets errors and behavior, and revises the project. Long-term usefulness also depends on maintenance: systems should handle changed requirements, regression tests, multiple project versions, documentation, and handoff to another developer. Evaluation should measure launchability, functional requirements, repair success, regression safety, iteration cost, and whether the produced project can be understood and modified later. This role is distinct from design: proposing a level or mechanic defines an artifact, while development must implement it within executable engine constraints.</p>
+        <p class="survey-note">This topic is surveyed in <a href="../"><em>AI for Games in the Foundation Model Era</em></a>.</p>
+      </div></div>
+      <section class="topic-section" aria-labelledby="build-covers"><div class="section-head"><p class="section-kicker">Research scope</p><h2 id="build-covers">What this topic covers</h2></div><div class="topic-grid"><div class="topic-card"><span>01</span><h3>Code, scenes, and engine projects</h3><p>Implementation across scripts, assets, bindings, components, resources, and project configuration.</p></div><div class="topic-card"><span>02</span><h3>Execution, debugging, and repair</h3><p>Agents that run projects, inspect feedback, locate failures, and revise implementations.</p></div><div class="topic-card"><span>03</span><h3>Maintenance and handoff</h3><p>Regression-safe revision, multi-version work, documentation, and reproducible project transfer.</p></div></div></section>
+      <section class="topic-section" aria-labelledby="build-evidence"><div class="section-head"><p class="section-kicker">Evidence</p><h2 id="build-evidence">What should evaluation establish?</h2></div><div class="evidence-grid"><p class="evidence-copy">A development system should be evaluated on executable outcomes rather than screenshots or code plausibility alone. Strong tests exercise requirements, failures, later revisions, and whether another developer can reproduce and continue the work.</p><ul class="evidence-list"><li>Launchability and requirement completion</li><li>Debugging and repair success</li><li>Regression safety across revisions</li><li>Maintainability, reproducibility, and handoff</li></ul></div></section>
+      <section class="topic-section" aria-labelledby="build-anchors"><div class="section-head"><p class="section-kicker">Starting points</p><h2 id="build-anchors">Representative anchors</h2></div><div class="anchor-list"><a href="https://arxiv.org/abs/2606.17861">GameCraft-Bench <span>↗</span></a><a href="https://arxiv.org/abs/2605.28258">Play2Code <span>↗</span></a><a href="https://arxiv.org/abs/2607.03525">GameEngineBench <span>↗</span></a></div></section>
+    </article>
+  </main>
+  <nav class="topic-nav" aria-label="All AI for Games topics"><div class="shell"><h2>Explore the six survey topics</h2><div class="topic-nav-links"><a href="../game-agents/">Game agents</a><a href="../game-world-models/">World models</a><a href="../ai-game-design/">Game design</a><a href="../ai-game-development/" aria-current="page">Game development</a><a href="../runtime-generation/">Runtime generation</a><a href="../automated-game-testing/">Automated testing</a></div></div></nav>
+  <footer class="site-footer"><div class="shell footer-inner"><span>AI for Games in the Foundation Model Era</span><div class="footer-links"><a href="../">Project home</a><a href="https://arxiv.org/pdf/2609.16679">Paper</a><a href="https://github.com/Eurekaleo/awesome-ai-for-games">GitHub</a></div></div></footer>
+</body>
+</html>
