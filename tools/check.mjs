@@ -106,6 +106,11 @@ assert(robots.includes(`Sitemap: ${siteUrl}sitemap.xml`), 'robots.txt must adver
 assert(sitemap.includes(`<loc>${siteUrl}</loc>`), 'The canonical homepage is missing from the sitemap');
 assert(html.includes('<meta name="robots" content="index, follow">'), 'The homepage must remain indexable');
 assert(html.includes('<link rel="sitemap" type="application/xml" href="sitemap.xml">'), 'The homepage must advertise the sitemap');
+const summaryStart = html.indexOf('id="survey-summary"');
+assert(summaryStart > html.indexOf('class="hero"') && summaryStart < html.indexOf('id="authors"'), 'The machine-readable survey summary must stay near the top of the homepage');
+for (const phrase of ['foundation models for games', 'LLMs', 'game-playing agents', 'world models', 'AI-assisted game design and development', 'automated game testing', 'Play &amp; Act', 'Test &amp; Evaluate']) {
+  assert(html.includes(phrase), `Survey summary is missing a key concept: ${phrase}`);
+}
 const playableCards = [...html.matchAll(/<article class="playable-card\b/g)];
 assert.equal(playableCards.length, 9, 'The website must present exactly nine playable game cards');
 assert(html.includes('NINE AI-CRAFTED WORLDS'), 'The playable-games heading is stale');
