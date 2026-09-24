@@ -132,15 +132,41 @@ assert(summaryStart > html.indexOf('class="hero"') && summaryStart < html.indexO
 for (const phrase of ['foundation models for games', 'LLMs', 'game-playing agents', 'world models', 'AI-assisted game design and development', 'automated game testing', 'Play &amp; Act', 'Test &amp; Evaluate']) {
   assert(html.includes(phrase), `Survey summary is missing a key concept: ${phrase}`);
 }
+assert(html.includes('Questions this AI for games survey helps answer'), 'Homepage query guide is missing');
+assert(html.includes('generative AI for games'), 'Homepage query guide is missing its generative-AI framing');
 const topicPages = {
-  'game-agents': 'Foundation Models and LLM Agents for Games',
-  'game-world-models': 'Foundation Models for Game World and Player Modeling',
-  'ai-game-design': 'AI and Foundation Models for Game Design',
-  'ai-game-development': 'Foundation Models for Game Development and Maintenance',
-  'runtime-generation': 'Runtime Generation and Adaptation with Foundation Models',
-  'automated-game-testing': 'AI and Foundation Models for Automated Game Testing and Evaluation',
+  'game-agents': {
+    title: 'Foundation Models and LLM Agents for Games',
+    question: 'How are LLMs used in games?',
+    queries: ['LLMs in games', 'LLM game agents', 'AI NPCs'],
+  },
+  'game-world-models': {
+    title: 'Foundation Models for Game World and Player Modeling',
+    question: 'What are world models for games?',
+    queries: ['World models for games'],
+  },
+  'ai-game-design': {
+    title: 'AI and Foundation Models for Game Design',
+    question: 'What is generative game design?',
+    queries: ['Generative game design', 'Generative AI for games'],
+  },
+  'ai-game-development': {
+    title: 'Foundation Models for Game Development and Maintenance',
+    question: 'How is AI used in game development?',
+    queries: ['AI game development'],
+  },
+  'runtime-generation': {
+    title: 'Runtime Generation and Adaptation with Foundation Models',
+    question: 'How does generative AI adapt games at runtime?',
+    queries: ['Generative AI for games at runtime'],
+  },
+  'automated-game-testing': {
+    title: 'AI and Foundation Models for Automated Game Testing and Evaluation',
+    question: 'What are automated game testing and AI playtesting?',
+    queries: ['Automated game testing', 'AI playtesting'],
+  },
 };
-for (const [slug, title] of Object.entries(topicPages)) {
+for (const [slug, {title, question, queries}] of Object.entries(topicPages)) {
   const topicHtml = await readFile(new URL(`../${slug}/index.html`, import.meta.url), 'utf8');
   const topicUrl = `${siteUrl}${slug}/`;
   assert(topicHtml.includes(`<title>${title} | AI for Games</title>`), `Topic title is missing: ${slug}`);
@@ -150,10 +176,16 @@ for (const [slug, title] of Object.entries(topicPages)) {
   assert(topicHtml.includes('<meta name="robots" content="index, follow">'), `Topic is not explicitly indexable: ${slug}`);
   assert(topicHtml.includes('<script type="application/ld+json">'), `Topic structured data is missing: ${slug}`);
   assert(topicHtml.includes('This topic is surveyed in'), `Survey attribution is missing: ${slug}`);
-  const answer = topicHtml.match(/<p class="topic-answer">([\s\S]*?)<\/p>/)?.[1]
-    .replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').trim();
-  const answerWords = answer?.split(/\s+/).length ?? 0;
-  assert(answerWords >= 150 && answerWords <= 250, `Topic answer must be 150–250 words: ${slug} has ${answerWords}`);
+  assert(topicHtml.includes(`>${question}</h2>`), `Natural-language topic question is missing: ${slug}`);
+  const answerBlock = topicHtml.match(/<div class="topic-answer-copy">([\s\S]*?)<p class="survey-note">/)?.[1] ?? '';
+  const answerParagraphs = [...answerBlock.matchAll(/<p class="topic-answer">([\s\S]*?)<\/p>/g)].map(match => match[1]);
+  assert(answerParagraphs.length >= 2 && answerParagraphs.length <= 4, `Topic answer must use 2–4 paragraphs: ${slug}`);
+  const answer = answerParagraphs.join(' ').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').trim();
+  const answerWords = answer ? answer.split(/\s+/).length : 0;
+  assert(answerWords >= 150 && answerWords <= 300, `Topic answer must be 150–300 words: ${slug} has ${answerWords}`);
+  for (const query of queries) {
+    assert(answer.toLowerCase().includes(query.toLowerCase()), `Topic answer is missing a natural query phrase in ${slug}: ${query}`);
+  }
   assert(html.includes(`href="${slug}/"`), `Homepage does not link to topic: ${slug}`);
   assert(sitemap.includes(`<loc>${topicUrl}</loc>`), `Sitemap does not include topic: ${slug}`);
   for (const relatedSlug of Object.keys(topicPages)) {
