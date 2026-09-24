@@ -47,7 +47,9 @@ h1 { max-width: 900px; margin-top: 18px; font: 550 clamp(3rem, 6vw, 5.7rem)/1.04
 .topic-main { padding: 68px 0 94px; }
 .answer-grid { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 52px; align-items: start; }
 .section-kicker { color: #607178; font-size: .72rem; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; }
+.topic-answer-heading { max-width: 850px; margin-bottom: 24px; font: 550 clamp(1.8rem, 3vw, 2.75rem)/1.18 var(--display); letter-spacing: -.04em; }
 .topic-answer { max-width: 850px; color: #34464d; font-size: 1.08rem; line-height: 1.85; }
+.topic-answer + .topic-answer { margin-top: 18px; }
 .topic-answer strong { color: var(--ink); font-weight: 650; }
 .survey-note { max-width: 850px; margin-top: 25px; padding: 18px 21px; border-left: 3px solid var(--role); background: #edf3f2; color: #45595e; font-size: .92rem; }
 .survey-note a { color: #1d6f69; font-weight: 650; }
@@ -98,6 +100,7 @@ body.role-test { --role: #d2ad39; }
   .topic-deck { font-size: 1rem; }
   .topic-main { padding: 50px 0 68px; }
   .answer-grid, .section-head { grid-template-columns: 1fr; gap: 14px; }
+  .topic-answer-heading { margin-bottom: 19px; font-size: 1.75rem; }
   .topic-answer { font-size: 1rem; line-height: 1.8; }
   .topic-section { margin-top: 56px; padding-top: 42px; }
   .topic-grid, .anchor-list { grid-template-columns: 1fr; }
