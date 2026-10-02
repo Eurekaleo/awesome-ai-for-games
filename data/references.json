@@ -3,7 +3,7 @@
   "source": "Living project bibliography",
   "sourceCounts": {
     "manuscript": 436,
-    "livingAdditions": 23
+    "livingAdditions": 24
   },
   "papers": [
     {
@@ -8599,6 +8599,36 @@
       ]
     },
     {
+      "id": "doerschuktiberi2026gamearena",
+      "title": "Game Arena: Strategic LLM Evaluation in Competitive Environments",
+      "year": 2026,
+      "month": 9,
+      "authors": "Bovard Doerschuk-Tiberi and Yao Yan and Justin Chiu and Hann Wang and Timothy Chung and Martyna Plomecka and John Schultz and Jon Lipovetz and Clayton Drazner and Yuchen Zhuang and Jaimie Hwang and Nate Keating and Riley Jones and Andrew Lee and Oran Kelly and Ian Gemp and Michael Aaron and Laurel Prince and Kate Larson and Jeff Moser and Harrison Jobe and Chad Woodford and Siqi Liu and Andrew Wang and Bo Chang and Christopher D'Mello and Diane Chaleff and Addison Howard and Johnny Yip and Chuck Sugnet and Antonio Gulli and Meghan O'Connell and Will Cukierski and Nenad Tomasev and Dima Yeroshenko and Kinjal Parekh and Roxanne Daniel and Marc Lanctot and Domino Weir and Elsa Dong and Daniel Hennes and Melissa Nalubwama and Robert Fraser and Ryan Trostle and Jun Peng and Tom Mason and Lloyd Hightower and Chiamaka Chukwuka and Yuexiang Zhai and Phoebe Kirk and Yi Su and Yuting Han and Jie Ren and Chris Prichard and Sahand Sharifzadeh and Karim Hakimzadeh and DJ Sterling and Meg Risdal and Kate Olszewska and Ya Xu and Orhan Firat and Minmin Chen",
+      "shortAuthors": "Doerschuk-Tiberi et al.",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "reasoning-planning",
+        "multi-agent-games",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.31473",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/google-deepmind/game_arena"
+        },
+        {
+          "type": "project",
+          "url": "https://www.kaggle.com/game-arena"
+        }
+      ]
+    },
+    {
       "id": "gu2026unityinsight",
       "title": "Unity Insight: A Production Code-Asset Index for LLM Coding Agents in Unity Projects",
       "year": 2026,
@@ -8901,7 +8931,6 @@
       "venue": "International Conference on Learning Representations",
       "url": "https://arxiv.org/abs/2510.05684",
       "kind": "inproceedings",
-      "note": "Game-to-real transfer · vision–action pretraining",
       "resources": [
         {
           "type": "code",

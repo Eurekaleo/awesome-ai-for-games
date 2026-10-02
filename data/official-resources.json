@@ -143,6 +143,10 @@
     "lee2026a2zgamespecbench": [{"type": "project", "url": "https://a2z-gamespec-bench.github.io/"}],
     "che2026gamelogicbench": [{"type": "code", "url": "https://github.com/NJU-LINK/GameLogicBench"}],
     "ashok2026gameboyworlds": [{"type": "code", "url": "https://github.com/DhananjayAshok/GameBoyWorlds"}],
+    "doerschuktiberi2026gamearena": [
+      {"type": "code", "url": "https://github.com/google-deepmind/game_arena"},
+      {"type": "project", "url": "https://www.kaggle.com/game-arena"}
+    ],
     "wang2026gamehorizon": [
       {"type": "code", "url": "https://github.com/TencentARC/GameHorizon"},
       {"type": "project", "url": "https://gamehorizon-suite.github.io/"}
