@@ -3,7 +3,7 @@
   "source": "Living project bibliography",
   "sourceCounts": {
     "manuscript": 436,
-    "livingAdditions": 9
+    "livingAdditions": 10
   },
   "papers": [
     {
@@ -8397,6 +8397,41 @@
       "venue": "Developer documentation",
       "url": "https://docs.nvidia.com/ace/latest/workflows/kairos/ace-unreal-plugin-audio2face.html",
       "kind": "misc"
+    },
+    {
+      "id": "wu2026rsigame",
+      "title": "RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement",
+      "year": 2026,
+      "month": 9,
+      "authors": "Wenyi Wu and Minghao Fu and Jieyu You and Kun Zhou and Siqi Liu and Aayush Salvi and Yiheng Lin and Ce Zhang and Xiaohan Lan and Jiahui Zhu and Yujie Zhong and Qi She and Biwei Huang",
+      "shortAuthors": "Wu et al.",
+      "primaryRole": "build",
+      "roles": [
+        "build"
+      ],
+      "topics": [
+        "generation-toolchain",
+        "executable-feedback",
+        "agent-training",
+        "behavioral-evaluation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.39045",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/WenyiWU0111/RSIGame"
+        },
+        {
+          "type": "project",
+          "url": "https://huggingface.co/spaces/RSIGame/rsigame-page"
+        },
+        {
+          "type": "data",
+          "url": "https://huggingface.co/datasets/RSIGame/RSIGame-TableArtifacts"
+        }
+      ]
     },
     {
       "id": "qiao2026valerant",

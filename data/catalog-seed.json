@@ -2,6 +2,21 @@
   "schemaVersion": "1.0",
   "papers": [
     {
+      "id": "2609.39045",
+      "title": "RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "build",
+      "topics": [
+        "generation-toolchain",
+        "executable-feedback",
+        "agent-training",
+        "behavioral-evaluation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.39045"
+    },
+    {
       "id": "2609.10540",
       "title": "Programmable World Model",
       "year": 2026,

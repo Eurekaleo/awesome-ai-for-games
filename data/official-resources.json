@@ -135,6 +135,11 @@
       {"type": "project", "url": "https://junseokim0103.github.io/Lies-We-Can-See/"},
       {"type": "data", "url": "https://huggingface.co/datasets/JasonKim00/lies-we-can-see"}
     ],
-    "jang2026coverage": [{"type": "code", "url": "https://github.com/jangjangtae/coverageguidedexploration"}]
+    "jang2026coverage": [{"type": "code", "url": "https://github.com/jangjangtae/coverageguidedexploration"}],
+    "wu2026rsigame": [
+      {"type": "code", "url": "https://github.com/WenyiWU0111/RSIGame"},
+      {"type": "project", "url": "https://huggingface.co/spaces/RSIGame/rsigame-page"},
+      {"type": "data", "url": "https://huggingface.co/datasets/RSIGame/RSIGame-TableArtifacts"}
+    ]
   }
 }
