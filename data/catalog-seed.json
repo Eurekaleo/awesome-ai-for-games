@@ -114,6 +114,20 @@
       "url": "https://arxiv.org/abs/2609.32093"
     },
     {
+      "id": "2609.31473",
+      "title": "Game Arena: Strategic LLM Evaluation in Competitive Environments",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "test",
+      "topics": [
+        "reasoning-planning",
+        "multi-agent-games",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.31473"
+    },
+    {
       "id": "2609.27585",
       "title": "Unity Insight: A Production Code--Asset Index for LLM Coding Agents in Unity Projects",
       "year": 2026,
@@ -4695,8 +4709,7 @@
         "learning-training"
       ],
       "venue": "ICLR 2026",
-      "url": "https://arxiv.org/abs/2510.05684",
-      "note": "Game-to-real transfer · vision–action pretraining"
+      "url": "https://arxiv.org/abs/2510.05684"
     },
     {
       "id": "tong2026gamerl",
