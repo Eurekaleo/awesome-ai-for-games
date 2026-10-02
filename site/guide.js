@@ -8,7 +8,7 @@ const ui = {search: $('#paper-search'), role: $('#role-filter'), year: $('#year-
 
 const collections = {
   play: {
-    number:'01', label:'PLAY AND ACT', count:119, title:'Learning to act.<br>Learning to cooperate.',
+    number:'01', label:'PLAY AND ACT', count:122, title:'Learning to act.<br>Learning to cooperate.',
     description:'From specialist policies to language-guided agents, this literature studies how AI perceives a game, chooses actions, and coordinates with other players.',
     topics:['Generalist policies','Planning & memory','Human–AI teamwork'],
     image:'sophy.webp', alt:'Gran Turismo 7 racing scene from an official GT Sophy announcement', caption:'Gran Turismo 7 / GT Sophy',
@@ -32,7 +32,7 @@ const collections = {
     example:'MarioGPT turns text descriptions into tile-based levels, making familiar design elements accessible through a language interface.',
   },
   build: {
-    number:'04', label:'BUILD AND MAINTAIN', count:21, title:'From an idea<br>to a running game.',
+    number:'04', label:'BUILD AND MAINTAIN', count:22, title:'From an idea<br>to a running game.',
     description:'Development systems use code, tools, and engine feedback to assemble scenes, implement mechanics, diagnose failures, and revise projects.',
     topics:['Code & engine tools','Execution feedback','Debugging & repair'],
     image:'gamecraft.webp', alt:'Signal Rail Dispatcher game in the GameCraft-Bench public gallery', caption:'Signal Rail Dispatcher / GameCraft-Bench gallery',
@@ -40,7 +40,7 @@ const collections = {
     example:'Signal Rail Dispatcher is a Seele02-pro example from GameCraft-Bench’s public gallery of generated games.',
   },
   runtime: {
-    number:'05', label:'GENERATE AND ADAPT AT RUNTIME', count:56, title:'A story that<br>answers back.',
+    number:'05', label:'GENERATE AND ADAPT AT RUNTIME', count:57, title:'A story that<br>answers back.',
     description:'Runtime systems create dialogue, speech, quests, characters, or content during play. Voice adds recognition, synthesis, turn-taking, and latency to the state-consistency problem.',
     topics:['Voiced characters','Interactive narrative','Personalization'],
     image:'nights.webp', alt:'Official artwork for the AI storytelling game 1001 Nights', caption:'Co-creative storytelling / 1001 Nights',
@@ -48,7 +48,7 @@ const collections = {
     example:'Official artwork for 1001 Nights, where player storytelling becomes part of AI-generated narrative and imagery.',
   },
   test: {
-    number:'06', label:'TEST AND EVALUATE', count:62, title:'Play it.<br>Then question it.',
+    number:'06', label:'TEST AND EVALUATE', count:70, title:'Play it.<br>Then question it.',
     description:'Automated players explore game behavior; oracles decide whether something went wrong. Benchmarks and human studies test different kinds of claims.',
     topics:['Automated playtesting','Bug detection','Benchmarks & validation'],
     image:'ea-testing.webp', alt:'Battlefield 2042 helicopter navigation under an EA SEED production test with debug overlays', caption:'Battlefield 2042 / EA SEED production testing',

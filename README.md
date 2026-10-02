@@ -1,15 +1,13 @@
 <div align="center">
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="assets/readme/hero-banner.png" width="1000" alt="Awesome AI for Games — AI for Games in the Foundation Model Era"></a>
 
-
-
   <p><strong><em>⭐ Star us if you find this useful!</em></strong></p>
 
   <a href="https://arxiv.org/pdf/2609.16679"><img src="https://img.shields.io/badge/arXiv-2609.16679-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Read the paper on arXiv"></a>
   <a href="https://huggingface.co/papers/2609.16679"><img src="https://img.shields.io/badge/Hugging%20Face-Daily%20Paper-FFD21E?style=flat-square&logo=huggingface&logoColor=000000" alt="View the paper on Hugging Face Daily Papers"></a>
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>
-  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-446-168f91?style=flat-square" alt="446 references"></a>
-  <img src="https://img.shields.io/badge/core%20works-420-c78b1e?style=flat-square" alt="420 core works">
+  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-459-168f91?style=flat-square" alt="459 references"></a>
+  <img src="https://img.shields.io/badge/core%20works-433-c78b1e?style=flat-square" alt="433 core works">
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
 
   <p><a href="https://eurekaleo.github.io/">Meng Luo</a><sup>1</sup> · <a href="https://liyanlin06.github.io/">Yanlin Li</a><sup>1</sup> · <a href="https://scholar.google.com/citations?user=vF-UH7oAAAAJ&amp;hl=zh-TW">Hao Li</a><sup>1</sup> · <a href="https://daniellin97.github.io/">Hongzhan Lin</a><sup>1</sup> · <a href="https://lancezpf.github.io/">Pengfei Zhou</a><sup>1</sup> · <a href="https://jometeorie.github.io/">Tianjie Ju</a><sup>1</sup><br><a href="https://openreview.net/profile?id=~Ran_Zhang18">Ran Zhang</a><sup>2</sup> · <a href="https://jinyeying.github.io/">Yeying Jin</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/leeml/">Mong-Li Lee</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/whsu/">Wynne Hsu</a><sup>1</sup></p>
@@ -48,13 +46,13 @@ Foundation models now do more than play a given game: they can model games and p
 Select a role to jump directly to its papers.
 
 <p align="center">
-  <a href="#play-and-act"><img src="assets/readme/role-play.svg" width="246" alt="Play and Act: 119 works"></a>
+  <a href="#play-and-act"><img src="assets/readme/role-play.svg" width="246" alt="Play and Act: 122 works"></a>
   <a href="#model-players-and-games"><img src="assets/readme/role-model.svg" width="246" alt="Model Players and Games: 109 works"></a>
   <a href="#design"><img src="assets/readme/role-design.svg" width="246" alt="Design: 53 works"></a>
   <br>
-  <a href="#build-and-maintain"><img src="assets/readme/role-build.svg" width="246" alt="Build and Maintain: 21 works"></a>
-  <a href="#generate-and-adapt-at-runtime"><img src="assets/readme/role-runtime.svg" width="246" alt="Generate and Adapt at Runtime: 56 works"></a>
-  <a href="#test-and-evaluate"><img src="assets/readme/role-test.svg" width="246" alt="Test and Evaluate: 62 works"></a>
+  <a href="#build-and-maintain"><img src="assets/readme/role-build.svg" width="246" alt="Build and Maintain: 22 works"></a>
+  <a href="#generate-and-adapt-at-runtime"><img src="assets/readme/role-runtime.svg" width="246" alt="Generate and Adapt at Runtime: 57 works"></a>
+  <a href="#test-and-evaluate"><img src="assets/readme/role-test.svg" width="246" alt="Test and Evaluate: 70 works"></a>
 </p>
 
 ## Publication key
@@ -76,9 +74,10 @@ Select a role to jump directly to its papers.
 - AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents. [[paper](https://arxiv.org/abs/2607.02255v1)] [[code](https://github.com/AlayaLab/AgenticSTS)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2607.02255" height="18">
 - AI-Native Games: A Survey and Roadmap. [[paper](https://arxiv.org/abs/2607.00527)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2607.00527" height="18">
 - CASCADE: A Cascading Architecture for Social Coordination with Controllable Emergence at Low Cost. [[paper](https://arxiv.org/abs/2604.03091)] <img src="assets/readme/venues/conference-chi-ea.svg" alt="CHI EA" title="Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems" height="18">
-- D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to Embodied AI. [[paper](https://arxiv.org/abs/2510.05684)] [[code](https://github.com/worv-ai/D2E)] <img src="assets/readme/venues/conference-iclr.svg" alt="ICLR" title="International Conference on Learning Representations" height="18">
+- D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to Embodied AI. [[paper](https://arxiv.org/abs/2510.05684)] [[code](https://github.com/worv-ai/D2E)] <img src="assets/readme/venues/conference-iclr.svg" alt="ICLR" title="International Conference on Learning Representations" height="18"> <sub>• Game-to-real transfer · vision–action pretraining</sub>
 - EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents. [[paper](https://arxiv.org/abs/2601.16690)] [[code](https://github.com/InternLM/EMemBench)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2601.16690" height="18">
 - FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs. [[paper](https://aclanthology.org/2026.acl-long.2015/)] <img src="assets/readme/venues/conference-acl.svg" alt="ACL" title="Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)" height="18">
+- Faynt: Scaling and Optimizing Policies for Competitive Melee. [[paper](https://arxiv.org/abs/2610.02144)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - GameVerse: Can Vision-Language Models Learn from Video-Based Reflection? [[paper](https://arxiv.org/abs/2603.06656)] [[code](https://github.com/THUSI-Lab/GameVerse)] <img src="assets/readme/venues/conference-icml.svg" alt="ICML" title="International Conference on Machine Learning" height="18">
 - GameWAM: A World Action Model for Video Games. [[paper](https://arxiv.org/abs/2608.26200)] [[code](https://github.com/yunncheng/GameWAM)] [[project](https://yunncheng.github.io/GameWAM/)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions. [[paper](https://arxiv.org/abs/2608.30428)] [[code](https://github.com/JunseoKim0103/Lies-We-Can-See)] [[project](https://junseokim0103.github.io/Lies-We-Can-See/)] [[data](https://huggingface.co/datasets/JasonKim00/lies-we-can-see)] <img src="assets/readme/venues/conference-wab-colm.svg" alt="WAB @ COLM" title="Workshop on Agent Behavior at COLM 2026" height="18">
@@ -89,8 +88,10 @@ Select a role to jump directly to its papers.
 - PUBG: BATTLEGROUNDS Patch Notes-Update 42.1. [[source](https://www.pubg.com/en/news/10179)] <img src="assets/readme/venues/industry-official-patch-notes.svg" alt="Official patch notes" title="Official patch notes" height="18">
 - Q&amp;A: How KRAFTON Built PUBG Ally, a Co-Playable Character Powered by NVIDIA ACE. [[source](https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace/)] <img src="assets/readme/venues/industry-nvidia-blog.svg" alt="NVIDIA blog" title="NVIDIA Technical Blog" height="18">
 - S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement? [[paper](https://arxiv.org/abs/2608.31100v1)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2608.31100" height="18">
+- STRATA: Self-Learning Through Role-Aligned Tiered Agents for Real-Time Strategy Games. [[paper](https://arxiv.org/abs/2609.38881)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse. [[paper](https://arxiv.org/abs/2605.09965)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2605.09965" height="18">
 - Twin: Playing an Unknown Game with a Test-Time Digital Twin. [[paper](https://arxiv.org/abs/2608.14490)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2608.14490" height="18">
+- VISTA: A Visual Harness for Reasoning in an Interactive World. [[paper](https://arxiv.org/abs/2610.02200)] [[code](https://github.com/joshhhhhan/VISTA)] [[project](https://vista-research.github.io/)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 
 ### 2025
 
@@ -464,6 +465,7 @@ Select a role to jump directly to its papers.
 - PlayTrain: An Efficient Reinforcement Learning Framework for LLM-Generated Adaptable JavaScript Games. [[paper](https://arxiv.org/abs/2609.09059)] [[code](https://github.com/heyodog0/playtrain)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement. [[paper](https://arxiv.org/abs/2609.39045)] [[code](https://github.com/WenyiWU0111/RSIGame)] [[project](https://huggingface.co/spaces/RSIGame/rsigame-page)] [[data](https://huggingface.co/datasets/RSIGame/RSIGame-TableArtifacts)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning. [[paper](https://arxiv.org/abs/2605.09423)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18"> <sub>🔭 Future-facing direction</sub>
+- Unity Insight: A Production Code-Asset Index for LLM Coding Agents in Unity Projects. [[paper](https://arxiv.org/abs/2609.27585)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - Unity's AI Tools in Beta: What's Included and How to Get Started. [[source](https://unity.com/blog/unity-ai-how-to-get-started)] <img src="assets/readme/venues/industry-unity-blog.svg" alt="Unity Blog" title="Unity Blog" height="18">
 
 ### 2025
@@ -495,6 +497,7 @@ Select a role to jump directly to its papers.
 - LeagueBot: A Voice LLM Companion of Cognitive and Emotional Support for Novice Players in Competitive Games. [[paper](https://arxiv.org/abs/2602.01213)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2602.01213" height="18">
 - Proact-VL: A Proactive VideoLLM for Real-Time AI Companions. [[paper](https://arxiv.org/abs/2603.03447)] <img src="assets/readme/venues/conference-icml.svg" alt="ICML" title="International Conference on Machine Learning" height="18">
 - The Double-Edged Sword of Open-Ended Interaction: How LLM-Driven NPCs Affect Players' Cognitive Load and Gaming Experience. [[paper](https://arxiv.org/abs/2604.10107)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2604.10107" height="18">
+- Waypoint-1.5: A Real-Time Video World Model for Consumer Hardware. [[paper](https://arxiv.org/abs/2609.37107)] [[code](https://github.com/Overworldai/world_engine)] [[project](https://over.world/blog/waypoint-1-5)] [[demo](https://overworld.stream/)] [[data](https://huggingface.co/Overworld/Waypoint-1.5-1B)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - When NPCs take their time: Token latency effects in LLM-driven game conversations. [[paper](https://doi.org/10.1016/j.entcom.2026.101213)] <img src="assets/readme/venues/journal-entertainment-computing.svg" alt="Entertainment Computing" title="Entertainment Computing" height="18">
 
 ### 2025
@@ -565,10 +568,16 @@ Select a role to jump directly to its papers.
 
 ### 2026
 
+- A2Z GameSpec-Bench: How Faithfully Can Coding Agents Generate Games from Game Design Specifications? [[paper](https://arxiv.org/abs/2609.39564)] [[project](https://a2z-gamespec-bench.github.io/)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - CA2: Code-Aware Agent for Automated Game Testing. [[paper](https://proceedings.mlr.press/v318/adaikkappan26a.html)] <img src="assets/readme/venues/conference-canadian-ai.svg" alt="Canadian AI" title="Proceedings of the 39th Canadian Conference on Artificial Intelligence" height="18">
 - Coverage-Aware Guidance for Novelty-Driven Exploration in Automated Game Testing Under Sparse-Reward 3-D Environments. [[paper](https://ieeexplore.ieee.org/abstract/document/11677062)] [[code](https://github.com/jangjangtae/coverageguidedexploration)] <img src="assets/readme/venues/journal-ieee-access.svg" alt="IEEE Access" title="IEEE Access" height="18">
+- CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine. [[paper](https://arxiv.org/abs/2609.23142)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
+- GameBoyWorlds: A Testbed for Self-Improvement in Embodied Video Games. [[paper](https://arxiv.org/abs/2609.32093)] [[code](https://github.com/DhananjayAshok/GameBoyWorlds)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - GameEngineBench: Evaluating Coding Agents on Real C++ Runtime Environments. [[paper](https://arxiv.org/abs/2607.03525)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2607.03525" height="18">
 - GameGen-Verifier: Parallel Keypoint-Based Verification for LLM-Generated Games via Runtime State Injection. [[paper](https://arxiv.org/abs/2605.07442)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2605.07442" height="18">
+- GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay. [[paper](https://arxiv.org/abs/2609.25001)] [[code](https://github.com/TencentARC/GameHorizon)] [[project](https://gamehorizon-suite.github.io/)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
+- GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions. [[paper](https://arxiv.org/abs/2609.21562)] [[code](https://github.com/NJU-LINK/GameLogicBench)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
+- GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents. [[paper](https://arxiv.org/abs/2609.22308)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents. [[paper](https://arxiv.org/abs/2604.07429)] [[code](https://github.com/gameworld-project/GameWorld)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2604.07429" height="18">
 - GBQA: A Game Benchmark for Evaluating LLMs as Quality Assurance Engineers. [[paper](https://arxiv.org/abs/2604.02648)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2604.02648" height="18">
 - How Far Can VLMs Go for Visual Bug Detection? Studying 19,738 Keyframes from 41 Hours of Gameplay Videos. [[paper](https://arxiv.org/abs/2603.22706)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2603.22706" height="18">
@@ -578,6 +587,8 @@ Select a role to jump directly to its papers.
 - PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives. [[paper](https://arxiv.org/abs/2608.13552v2)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2608.13552" height="18">
 - RESP: Reference-guided Sequential Prompting for Visual Glitch Detection in Video Games. [[paper](https://arxiv.org/abs/2604.11082)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2604.11082" height="18">
 - Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use. [[paper](https://arxiv.org/abs/2605.02964)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2605.02964" height="18">
+- ROWBench: Do Video Models Render What the Program Specifies? [[paper](https://arxiv.org/abs/2610.02205)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
+- SWE-Game: Can Coding Agents Build the Games We Want? [[paper](https://arxiv.org/abs/2609.33678)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - WebGameBench: Requirement-to-Application Evaluation for Coding Agents via Browser-Native Games. [[paper](https://arxiv.org/abs/2605.17637)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2605.17637" height="18">
 - WorldOlympiad: Can Your World Model Survive a Triathlon? [[paper](https://arxiv.org/abs/2606.11129)] [[code](https://github.com/alibaba-damo-academy/WorldOlympiad)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2606.11129" height="18">
 
