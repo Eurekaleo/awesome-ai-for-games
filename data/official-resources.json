@@ -157,6 +157,9 @@
       {"type": "demo", "url": "https://overworld.stream/"},
       {"type": "data", "url": "https://huggingface.co/Overworld/Waypoint-1.5-1B"}
     ],
+    "majercik2026solvability": [
+      {"type": "project", "url": "https://zandermajercik.github.io/interactive-obstacle-course-feedback/"}
+    ],
     "wu2026rsigame": [
       {"type": "code", "url": "https://github.com/WenyiWU0111/RSIGame"},
       {"type": "project", "url": "https://huggingface.co/spaces/RSIGame/rsigame-page"},

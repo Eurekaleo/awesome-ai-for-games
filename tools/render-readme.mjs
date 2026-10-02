@@ -99,6 +99,7 @@ const venueLabel = value => {
   if (/Machine Learning/i.test(venue) && /Conference/i.test(venue)) return 'ICML';
   if (/Computer Vision and Pattern Recognition/i.test(venue)) return 'CVPR';
   if (/International Conference on Computer Vision/i.test(venue)) return 'ICCV';
+  if (/SIGGRAPH Asia/i.test(venue)) return 'SIGGRAPH Asia';
   if (/Extended Abstracts.*CHI Conference/i.test(venue)) return 'CHI EA';
   if (/(?:Human-Computer|Computer-Human) Interaction in Play/i.test(venue)) return 'CHI PLAY';
   if (/CHI Conference on Human Factors|SIGCHI Conference on Human Factors/i.test(venue)) return 'CHI';

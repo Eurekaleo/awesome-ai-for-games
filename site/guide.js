@@ -24,7 +24,7 @@ const collections = {
     example:'GameNGen generates the next DOOM frame from past observations and actions, turning a video model into an interactive simulator for a specific game.',
   },
   design: {
-    number:'03', label:'DESIGN', count:53, title:'Imagine the rules.<br>Shape the possibility.',
+    number:'03', label:'DESIGN', count:54, title:'Imagine the rules.<br>Shape the possibility.',
     description:'Generative methods propose levels, mechanics, stories, and assets. A visual asset becomes game content only when it retains the structure needed for placement, animation, or interaction.',
     topics:['Functional assets','Levels & worlds','Rules & mechanics'],
     image:'mariogpt.webp', alt:'Text-conditioned Mario level generation from the MarioGPT project', caption:'Text-to-level generation / MarioGPT',

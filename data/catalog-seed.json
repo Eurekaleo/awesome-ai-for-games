@@ -86,6 +86,20 @@
       "url": "https://arxiv.org/abs/2609.37107"
     },
     {
+      "id": "2609.36225",
+      "title": "Providing Rapid Design Feedback for 3D Obstacle Course Games Using Constrained Solvability Queries",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "design",
+      "topics": [
+        "engine-tools",
+        "executable-feedback",
+        "behavioral-evaluation"
+      ],
+      "venue": "SIGGRAPH Asia 2026",
+      "url": "https://arxiv.org/abs/2609.36225"
+    },
+    {
       "id": "2609.33678",
       "title": "SWE-Game: Can Coding Agents Build the Games We Want?",
       "year": 2026,
