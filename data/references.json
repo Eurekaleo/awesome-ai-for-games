@@ -3,7 +3,7 @@
   "source": "Living project bibliography",
   "sourceCounts": {
     "manuscript": 436,
-    "livingAdditions": 10
+    "livingAdditions": 23
   },
   "papers": [
     {
@@ -8397,6 +8397,321 @@
       "venue": "Developer documentation",
       "url": "https://docs.nvidia.com/ace/latest/workflows/kairos/ace-unreal-plugin-audio2face.html",
       "kind": "misc"
+    },
+    {
+      "id": "huang2026rowbench",
+      "title": "ROWBench: Do Video Models Render What the Program Specifies?",
+      "year": 2026,
+      "month": 10,
+      "authors": "Zheng-Hui Huang and Guixu Lin and Yu-Ju Tsai and Jian-Kai Zhu and Fengbo Lan and Yu-Lun Liu and Yung-Yu Chuang and Kaipeng Zhang and Zhixiang Wang",
+      "shortAuthors": "Huang et al.",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "world-modeling",
+        "state-and-mechanics",
+        "behavioral-evaluation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.02205",
+      "kind": "misc"
+    },
+    {
+      "id": "han2026vista",
+      "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+      "year": 2026,
+      "month": 10,
+      "authors": "Qiushi Han and Keya Hu and Linlu Qiu and Cathy Wu and Kaiming He",
+      "shortAuthors": "Han et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [
+        "multimodal-action",
+        "reasoning-planning",
+        "behavioral-evaluation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.02200",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/joshhhhhan/VISTA"
+        },
+        {
+          "type": "project",
+          "url": "https://vista-research.github.io/"
+        }
+      ]
+    },
+    {
+      "id": "janati2026faynt",
+      "title": "Faynt: Scaling and Optimizing Policies for Competitive Melee",
+      "year": 2026,
+      "month": 10,
+      "authors": "Ali Janati and Nikita Kuzmin and Rohit Swamy and Charles Niu",
+      "shortAuthors": "Janati et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [
+        "agent-training",
+        "learning-training",
+        "multimodal-action"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.02144",
+      "kind": "misc"
+    },
+    {
+      "id": "lee2026a2zgamespecbench",
+      "title": "A2Z GameSpec-Bench: How Faithfully Can Coding Agents Generate Games from Game Design Specifications?",
+      "year": 2026,
+      "month": 9,
+      "authors": "Seonho Lee and Wonryeol Jeong and Alberto Cereser and Inha Kang and Hyeonjong Kim and Seungmin Kwak and Dongmin Park",
+      "shortAuthors": "Lee et al.",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "generation-toolchain",
+        "executable-feedback",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.39564",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://a2z-gamespec-bench.github.io/"
+        }
+      ]
+    },
+    {
+      "id": "tian2026strata",
+      "title": "STRATA: Self-Learning Through Role-Aligned Tiered Agents for Real-Time Strategy Games",
+      "year": 2026,
+      "month": 9,
+      "authors": "Xinhe Tian and Xiaoyue Zhang and Ziyou Zhang and Jiacheng Li and Xiaoqiang Jin and Qianchuan Zhao and Gaochen Cui",
+      "shortAuthors": "Tian et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [
+        "multi-agent-games",
+        "agent-training",
+        "reasoning-planning"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.38881",
+      "kind": "misc"
+    },
+    {
+      "id": "rajpal2026waypoint15",
+      "title": "Waypoint-1.5: A Real-Time Video World Model for Consumer Hardware",
+      "year": 2026,
+      "month": 9,
+      "authors": "Rajit Rajpal and Shahbuland Matiana and Liew Wei Pyn and Anmol Agarwal and Ryan Craig and Andrew Lapp and Mithun Hunsur and Sami BuGhanem and Scottie Fox and Aaron Sanders and Carson Poole and Irene Park and Dave Rossi and Spencer Frazier and Louis Castricato",
+      "shortAuthors": "Rajpal et al.",
+      "primaryRole": "runtime",
+      "roles": [
+        "runtime"
+      ],
+      "topics": [
+        "world-modeling",
+        "real-time-efficiency",
+        "multimodal-action"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.37107",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/Overworldai/world_engine"
+        },
+        {
+          "type": "project",
+          "url": "https://over.world/blog/waypoint-1-5"
+        },
+        {
+          "type": "demo",
+          "url": "https://overworld.stream/"
+        },
+        {
+          "type": "data",
+          "url": "https://huggingface.co/Overworld/Waypoint-1.5-1B"
+        }
+      ]
+    },
+    {
+      "id": "chen2026swegame",
+      "title": "SWE-Game: Can Coding Agents Build the Games We Want?",
+      "year": 2026,
+      "month": 9,
+      "authors": "Xiaoyu Chen and Lai Wei and Jin Wang and Xiangyu Zou and Ruochen Fan and Enze Luo and Mingzhe Yao and Jiahui Zhu and Yuhua Wen and Linghe Kong and Weiran Huang",
+      "shortAuthors": "Chen et al.",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "generation-toolchain",
+        "executable-feedback",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.33678",
+      "kind": "misc"
+    },
+    {
+      "id": "ashok2026gameboyworlds",
+      "title": "GameBoyWorlds: A Testbed for Self-Improvement in Embodied Video Games",
+      "year": 2026,
+      "month": 9,
+      "authors": "Dhananjay Ashok and Adam Shen and Aslan Huo Feng and Chinmay Khanna and Jun Rui Huang and Raghav Sarmukaddam and Surendira Balaji Natarajan and Xiaotong Cui and Xincan Zhang and Thomson Yen and Hongseok Namkoong and Jonathan May and Jesse Thomason",
+      "shortAuthors": "Ashok et al.",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "agent-training",
+        "behavioral-evaluation",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.32093",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/DhananjayAshok/GameBoyWorlds"
+        }
+      ]
+    },
+    {
+      "id": "gu2026unityinsight",
+      "title": "Unity Insight: A Production Code-Asset Index for LLM Coding Agents in Unity Projects",
+      "year": 2026,
+      "month": 9,
+      "authors": "Shenhua Gu and Hongqiang Zhu and Fan Zhang and Jinming Zhang and Hao Chen",
+      "shortAuthors": "Gu et al.",
+      "primaryRole": "build",
+      "roles": [
+        "build"
+      ],
+      "topics": [
+        "engine-tools",
+        "generation-toolchain"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.27585",
+      "kind": "misc"
+    },
+    {
+      "id": "wang2026gamehorizon",
+      "title": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
+      "year": 2026,
+      "month": 9,
+      "authors": "Yiran Wang and Xingyilang Yin and Junfu Pu and Guangzhi Wang and Kaifeng Li and Mingyu Ouyang and Huiqiang Sun and Lingen Li and Cheng Cheng and Wangbo Yu and Honghao Chen and Xiaodong Cun and Chi-Man Pun and Zhiguo Cao and Ying Shan",
+      "shortAuthors": "Wang et al.",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "evaluation-data",
+        "long-horizon-memory",
+        "multimodal-action"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.25001",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/TencentARC/GameHorizon"
+        },
+        {
+          "type": "project",
+          "url": "https://gamehorizon-suite.github.io/"
+        }
+      ]
+    },
+    {
+      "id": "wu2026craftbenchue",
+      "title": "CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine",
+      "year": 2026,
+      "month": 9,
+      "authors": "Shutong Wu and Kevin Calderone and Andy Tsen",
+      "shortAuthors": "Wu et al.",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "engine-tools",
+        "executable-feedback",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.23142",
+      "kind": "misc"
+    },
+    {
+      "id": "qiao2026gamereplica",
+      "title": "GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents",
+      "year": 2026,
+      "month": 9,
+      "authors": "Boyu Qiao and Zixin Tang and Xiaoshuai Hao and Wenbo Li",
+      "shortAuthors": "Qiao et al.",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "generation-toolchain",
+        "behavioral-evaluation",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.22308",
+      "kind": "misc"
+    },
+    {
+      "id": "che2026gamelogicbench",
+      "title": "GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions",
+      "year": 2026,
+      "month": 9,
+      "authors": "Xinyu Che and Yunfei Ge and Shihao Li and Yanchen Liu and Hang Yan and Xinping Lei and Yanghai Wang and Zixuan Dong and Yifan Yao and Qianqian Xie and Letian Zhu and Jiaheng Liu",
+      "shortAuthors": "Che et al.",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "state-and-mechanics",
+        "executable-feedback",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.21562",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/NJU-LINK/GameLogicBench"
+        }
+      ]
     },
     {
       "id": "wu2026rsigame",

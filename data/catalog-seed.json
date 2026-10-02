@@ -2,6 +2,187 @@
   "schemaVersion": "1.0",
   "papers": [
     {
+      "id": "2610.02205",
+      "title": "ROWBench: Do Video Models Render What the Program Specifies?",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "world-modeling",
+        "state-and-mechanics",
+        "behavioral-evaluation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.02205"
+    },
+    {
+      "id": "2610.02200",
+      "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "multimodal-action",
+        "reasoning-planning",
+        "behavioral-evaluation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.02200"
+    },
+    {
+      "id": "2610.02144",
+      "title": "Faynt: Scaling and Optimizing Policies for Competitive Melee",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "agent-training",
+        "learning-training",
+        "multimodal-action"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.02144"
+    },
+    {
+      "id": "2609.39564",
+      "title": "A2Z GameSpec-Bench: How Faithfully Can Coding Agents Generate Games from Game Design Specifications?",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "test",
+      "topics": [
+        "generation-toolchain",
+        "executable-feedback",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.39564"
+    },
+    {
+      "id": "2609.38881",
+      "title": "STRATA: Self-Learning Through Role-Aligned Tiered Agents for Real-Time Strategy Games",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "play",
+      "topics": [
+        "multi-agent-games",
+        "agent-training",
+        "reasoning-planning"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.38881"
+    },
+    {
+      "id": "2609.37107",
+      "title": "Waypoint-1.5: A Real-Time Video World Model for Consumer Hardware",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "runtime",
+      "topics": [
+        "world-modeling",
+        "real-time-efficiency",
+        "multimodal-action"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.37107"
+    },
+    {
+      "id": "2609.33678",
+      "title": "SWE-Game: Can Coding Agents Build the Games We Want?",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "test",
+      "topics": [
+        "generation-toolchain",
+        "executable-feedback",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.33678"
+    },
+    {
+      "id": "2609.32093",
+      "title": "GameBoyWorlds: A Testbed for Self-Improvement in Embodied Video Games",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "test",
+      "topics": [
+        "agent-training",
+        "behavioral-evaluation",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.32093"
+    },
+    {
+      "id": "2609.27585",
+      "title": "Unity Insight: A Production Code--Asset Index for LLM Coding Agents in Unity Projects",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "build",
+      "topics": [
+        "engine-tools",
+        "generation-toolchain"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.27585"
+    },
+    {
+      "id": "2609.25001",
+      "title": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "test",
+      "topics": [
+        "evaluation-data",
+        "long-horizon-memory",
+        "multimodal-action"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.25001"
+    },
+    {
+      "id": "2609.23142",
+      "title": "CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "test",
+      "topics": [
+        "engine-tools",
+        "executable-feedback",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.23142"
+    },
+    {
+      "id": "2609.22308",
+      "title": "GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "test",
+      "topics": [
+        "generation-toolchain",
+        "behavioral-evaluation",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.22308"
+    },
+    {
+      "id": "2609.21562",
+      "title": "GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions",
+      "year": 2026,
+      "month": 9,
+      "primaryRole": "test",
+      "topics": [
+        "state-and-mechanics",
+        "executable-feedback",
+        "evaluation-data"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.21562"
+    },
+    {
       "id": "2609.39045",
       "title": "RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement",
       "year": 2026,

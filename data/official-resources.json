@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "verifiedAt": "2026-09-16",
+  "verifiedAt": "2026-10-02",
   "resources": {
     "li2024optimus": [{"type": "code", "url": "https://github.com/iLearn-Lab/NeurIPS24-Optimus-1"}],
     "todd2024gavel": [{"type": "code", "url": "https://github.com/gdrtodd/gavel"}],
@@ -136,6 +136,23 @@
       {"type": "data", "url": "https://huggingface.co/datasets/JasonKim00/lies-we-can-see"}
     ],
     "jang2026coverage": [{"type": "code", "url": "https://github.com/jangjangtae/coverageguidedexploration"}],
+    "han2026vista": [
+      {"type": "code", "url": "https://github.com/joshhhhhan/VISTA"},
+      {"type": "project", "url": "https://vista-research.github.io/"}
+    ],
+    "lee2026a2zgamespecbench": [{"type": "project", "url": "https://a2z-gamespec-bench.github.io/"}],
+    "che2026gamelogicbench": [{"type": "code", "url": "https://github.com/NJU-LINK/GameLogicBench"}],
+    "ashok2026gameboyworlds": [{"type": "code", "url": "https://github.com/DhananjayAshok/GameBoyWorlds"}],
+    "wang2026gamehorizon": [
+      {"type": "code", "url": "https://github.com/TencentARC/GameHorizon"},
+      {"type": "project", "url": "https://gamehorizon-suite.github.io/"}
+    ],
+    "rajpal2026waypoint15": [
+      {"type": "code", "url": "https://github.com/Overworldai/world_engine"},
+      {"type": "project", "url": "https://over.world/blog/waypoint-1-5"},
+      {"type": "demo", "url": "https://overworld.stream/"},
+      {"type": "data", "url": "https://huggingface.co/Overworld/Waypoint-1.5-1B"}
+    ],
     "wu2026rsigame": [
       {"type": "code", "url": "https://github.com/WenyiWU0111/RSIGame"},
       {"type": "project", "url": "https://huggingface.co/spaces/RSIGame/rsigame-page"},
