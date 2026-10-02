@@ -16,7 +16,7 @@ const expectedRoles = {
 };
 assert.deepEqual(Object.fromEntries(Object.entries(FILTER_LABELS).filter(([key]) => key !== 'context')), expectedRoles);
 assert.equal(paperReferenceCount, 436, 'The manuscript bibliography is not synchronized with the current paper');
-assert.equal(livingAdditionCount, 24, 'The catalog-only additions changed unexpectedly');
+assert.equal(livingAdditionCount, 25, 'The catalog-only additions changed unexpectedly');
 assert.equal(papers.length, paperReferenceCount + livingAdditionCount, 'The public collection is not the manuscript bibliography plus living additions');
 assert.deepEqual(sourceCounts, {manuscript:paperReferenceCount,livingAdditions:livingAdditionCount});
 assert.equal(new Set(papers.map(p => p.id)).size, papers.length);
@@ -31,7 +31,7 @@ for (const paper of papers) {
   const resourceUrls = [paper.url, ...resources.map(resource => resource.url)].map(url => url.toLowerCase().replace(/\/$/, ''));
   assert.equal(new Set(resourceUrls).size, resourceUrls.length, `Duplicate resource URL: ${paper.id}`);
 }
-assert.equal(Object.keys(officialResourceData.resources).length, 135, 'The verified official-resource index changed unexpectedly');
+assert.equal(Object.keys(officialResourceData.resources).length, 136, 'The verified official-resource index changed unexpectedly');
 assert.deepEqual(Object.keys(officialResourceData.resources).filter(key => !papers.some(paper => paper.id === key)), [], 'Official-resource index contains unknown references');
 const officialResourceCount = Object.values(officialResourceData.resources).flat().length;
 assert.equal(papers.reduce((total, paper) => total + (paper.resources?.length ?? 0), 0), officialResourceCount, 'Generated references lost official-resource metadata');
@@ -62,6 +62,9 @@ assert.equal(byId.get('lee2026a2zgamespecbench').primaryRole, 'test');
 assert.equal(byId.get('tian2026strata').primaryRole, 'play');
 assert.equal(byId.get('rajpal2026waypoint15').primaryRole, 'runtime');
 assert.deepEqual(byId.get('rajpal2026waypoint15').resources.map(resource => resource.type), ['code', 'project', 'demo', 'data']);
+assert.equal(byId.get('majercik2026solvability').primaryRole, 'design');
+assert.equal(byId.get('majercik2026solvability').venue, 'ACM SIGGRAPH Asia 2026 Conference Papers');
+assert.deepEqual(byId.get('majercik2026solvability').resources.map(resource => resource.type), ['project']);
 assert.equal(byId.get('chen2026swegame').primaryRole, 'test');
 assert.equal(byId.get('ashok2026gameboyworlds').primaryRole, 'test');
 assert.equal(byId.get('doerschuktiberi2026gamearena').primaryRole, 'test');

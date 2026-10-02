@@ -6,8 +6,8 @@
   <a href="https://arxiv.org/pdf/2609.16679"><img src="https://img.shields.io/badge/arXiv-2609.16679-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Read the paper on arXiv"></a>
   <a href="https://huggingface.co/papers/2609.16679"><img src="https://img.shields.io/badge/Hugging%20Face-Daily%20Paper-FFD21E?style=flat-square&logo=huggingface&logoColor=000000" alt="View the paper on Hugging Face Daily Papers"></a>
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>
-  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-460-168f91?style=flat-square" alt="460 references"></a>
-  <img src="https://img.shields.io/badge/core%20works-434-c78b1e?style=flat-square" alt="434 core works">
+  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-461-168f91?style=flat-square" alt="461 references"></a>
+  <img src="https://img.shields.io/badge/core%20works-435-c78b1e?style=flat-square" alt="435 core works">
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
 
   <p><a href="https://eurekaleo.github.io/">Meng Luo</a><sup>1</sup> · <a href="https://liyanlin06.github.io/">Yanlin Li</a><sup>1</sup> · <a href="https://scholar.google.com/citations?user=vF-UH7oAAAAJ&amp;hl=zh-TW">Hao Li</a><sup>1</sup> · <a href="https://daniellin97.github.io/">Hongzhan Lin</a><sup>1</sup> · <a href="https://lancezpf.github.io/">Pengfei Zhou</a><sup>1</sup> · <a href="https://jometeorie.github.io/">Tianjie Ju</a><sup>1</sup><br><a href="https://openreview.net/profile?id=~Ran_Zhang18">Ran Zhang</a><sup>2</sup> · <a href="https://jinyeying.github.io/">Yeying Jin</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/leeml/">Mong-Li Lee</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/whsu/">Wynne Hsu</a><sup>1</sup></p>
@@ -48,7 +48,7 @@ Select a role to jump directly to its papers.
 <p align="center">
   <a href="#play-and-act"><img src="assets/readme/role-play.svg" width="246" alt="Play and Act: 122 works"></a>
   <a href="#model-players-and-games"><img src="assets/readme/role-model.svg" width="246" alt="Model Players and Games: 109 works"></a>
-  <a href="#design"><img src="assets/readme/role-design.svg" width="246" alt="Design: 53 works"></a>
+  <a href="#design"><img src="assets/readme/role-design.svg" width="246" alt="Design: 54 works"></a>
   <br>
   <a href="#build-and-maintain"><img src="assets/readme/role-build.svg" width="246" alt="Build and Maintain: 22 works"></a>
   <a href="#generate-and-adapt-at-runtime"><img src="assets/readme/role-runtime.svg" width="246" alt="Generate and Adapt at Runtime: 57 works"></a>
@@ -379,6 +379,7 @@ Select a role to jump directly to its papers.
 - LLMs are the Ideal Candidate for Mixed-Initiative Game Design Pillar Workflows. [[paper](https://arxiv.org/abs/2605.09767)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2605.09767" height="18">
 - Mortar: Evolving Mechanics for Automatic Game Design. [[paper](https://doi.org/10.1145/3795095.3805100)] <img src="assets/readme/venues/conference-gecco.svg" alt="GECCO" title="Proceedings of the Genetic and Evolutionary Computation Conference" height="18">
 - Multiverse: Language-Conditioned Multi-Game Level Blending via Shared Representation. [[paper](https://arxiv.org/abs/2603.26782v2)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
+- Providing Rapid Design Feedback for 3D Obstacle Course Games Using Constrained Solvability Queries. [[paper](https://arxiv.org/abs/2609.36225)] [[project](https://zandermajercik.github.io/interactive-obstacle-course-feedback/)] <img src="assets/readme/venues/conference-siggraph-asia.svg" alt="SIGGRAPH Asia" title="ACM SIGGRAPH Asia 2026 Conference Papers" height="18">
 - RPGAgent: Driving Coherent Story-to-Play Generation with an LLM-Based Multi-Agent System. [[paper](https://doi.org/10.1145/3772318.3790326)] <img src="assets/readme/venues/conference-chi.svg" alt="CHI" title="Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems" height="18">
 - Valerant: An Automatic Navigable Game Map Generator via Action-Conditioned World Model Exploration. [[paper](https://arxiv.org/abs/2609.09418)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - WorldSculpt: Generating Compositional Worlds from Grounded Videos. [[paper](https://arxiv.org/abs/2609.05416v2)] [[code](https://github.com/AlayaLab/WorldSculpt)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2609.05416" height="18">

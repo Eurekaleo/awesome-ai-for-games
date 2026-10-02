@@ -3,7 +3,7 @@
   "source": "Living project bibliography",
   "sourceCounts": {
     "manuscript": 436,
-    "livingAdditions": 24
+    "livingAdditions": 25
   },
   "papers": [
     {
@@ -8549,6 +8549,32 @@
         {
           "type": "data",
           "url": "https://huggingface.co/Overworld/Waypoint-1.5-1B"
+        }
+      ]
+    },
+    {
+      "id": "majercik2026solvability",
+      "title": "Providing Rapid Design Feedback for 3D Obstacle Course Games Using Constrained Solvability Queries",
+      "year": 2026,
+      "month": 9,
+      "authors": "Zander Majercik and Sharon Zhang and William Wang and Tejan Karmali and Fangjun Zhou and Yucheng Yuan and Jean-Peïc Chou and Maneesh Agrawala and Kayvon Fatahalian",
+      "shortAuthors": "Majercik et al.",
+      "primaryRole": "design",
+      "roles": [
+        "design"
+      ],
+      "topics": [
+        "engine-tools",
+        "executable-feedback",
+        "behavioral-evaluation"
+      ],
+      "venue": "ACM SIGGRAPH Asia 2026 Conference Papers",
+      "url": "https://arxiv.org/abs/2609.36225",
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://zandermajercik.github.io/interactive-obstacle-course-feedback/"
         }
       ]
     },
