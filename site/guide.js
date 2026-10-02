@@ -32,7 +32,7 @@ const collections = {
     example:'MarioGPT turns text descriptions into tile-based levels, making familiar design elements accessible through a language interface.',
   },
   build: {
-    number:'04', label:'BUILD AND MAINTAIN', count:20, title:'From an idea<br>to a running game.',
+    number:'04', label:'BUILD AND MAINTAIN', count:21, title:'From an idea<br>to a running game.',
     description:'Development systems use code, tools, and engine feedback to assemble scenes, implement mechanics, diagnose failures, and revise projects.',
     topics:['Code & engine tools','Execution feedback','Debugging & repair'],
     image:'gamecraft.webp', alt:'Signal Rail Dispatcher game in the GameCraft-Bench public gallery', caption:'Signal Rail Dispatcher / GameCraft-Bench gallery',

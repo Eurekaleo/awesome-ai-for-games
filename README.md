@@ -8,8 +8,8 @@
   <a href="https://arxiv.org/pdf/2609.16679"><img src="https://img.shields.io/badge/arXiv-2609.16679-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Read the paper on arXiv"></a>
   <a href="https://huggingface.co/papers/2609.16679"><img src="https://img.shields.io/badge/Hugging%20Face-Daily%20Paper-FFD21E?style=flat-square&logo=huggingface&logoColor=000000" alt="View the paper on Hugging Face Daily Papers"></a>
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>
-  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-445-168f91?style=flat-square" alt="445 references"></a>
-  <img src="https://img.shields.io/badge/core%20works-419-c78b1e?style=flat-square" alt="419 core works">
+  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-446-168f91?style=flat-square" alt="446 references"></a>
+  <img src="https://img.shields.io/badge/core%20works-420-c78b1e?style=flat-square" alt="420 core works">
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
 
   <p><a href="https://eurekaleo.github.io/">Meng Luo</a><sup>1</sup> · <a href="https://liyanlin06.github.io/">Yanlin Li</a><sup>1</sup> · <a href="https://scholar.google.com/citations?user=vF-UH7oAAAAJ&amp;hl=zh-TW">Hao Li</a><sup>1</sup> · <a href="https://daniellin97.github.io/">Hongzhan Lin</a><sup>1</sup> · <a href="https://lancezpf.github.io/">Pengfei Zhou</a><sup>1</sup> · <a href="https://jometeorie.github.io/">Tianjie Ju</a><sup>1</sup><br><a href="https://openreview.net/profile?id=~Ran_Zhang18">Ran Zhang</a><sup>2</sup> · <a href="https://jinyeying.github.io/">Yeying Jin</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/leeml/">Mong-Li Lee</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/whsu/">Wynne Hsu</a><sup>1</sup></p>
@@ -52,7 +52,7 @@ Select a role to jump directly to its papers.
   <a href="#model-players-and-games"><img src="assets/readme/role-model.svg" width="246" alt="Model Players and Games: 109 works"></a>
   <a href="#design"><img src="assets/readme/role-design.svg" width="246" alt="Design: 53 works"></a>
   <br>
-  <a href="#build-and-maintain"><img src="assets/readme/role-build.svg" width="246" alt="Build and Maintain: 20 works"></a>
+  <a href="#build-and-maintain"><img src="assets/readme/role-build.svg" width="246" alt="Build and Maintain: 21 works"></a>
   <a href="#generate-and-adapt-at-runtime"><img src="assets/readme/role-runtime.svg" width="246" alt="Generate and Adapt at Runtime: 56 works"></a>
   <a href="#test-and-evaluate"><img src="assets/readme/role-test.svg" width="246" alt="Test and Evaluate: 62 works"></a>
 </p>
@@ -462,6 +462,7 @@ Select a role to jump directly to its papers.
 - Playco Cut Manual Fixes 50% Prototyping Games with GPT-6 Astra. [[source](https://openai.com/index/playco-game-prototyping-with-astra/)] <img src="assets/readme/venues/industry-openai-case-study.svg" alt="OpenAI case study" title="OpenAI customer case study" height="18">
 - PlayCoder: Making LLM-Generated GUI Code Playable. [[paper](https://arxiv.org/abs/2604.19742)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2604.19742" height="18">
 - PlayTrain: An Efficient Reinforcement Learning Framework for LLM-Generated Adaptable JavaScript Games. [[paper](https://arxiv.org/abs/2609.09059)] [[code](https://github.com/heyodog0/playtrain)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
+- RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement. [[paper](https://arxiv.org/abs/2609.39045)] [[code](https://github.com/WenyiWU0111/RSIGame)] [[project](https://huggingface.co/spaces/RSIGame/rsigame-page)] [[data](https://huggingface.co/datasets/RSIGame/RSIGame-TableArtifacts)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning. [[paper](https://arxiv.org/abs/2605.09423)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18"> <sub>🔭 Future-facing direction</sub>
 - Unity's AI Tools in Beta: What's Included and How to Get Started. [[source](https://unity.com/blog/unity-ai-how-to-get-started)] <img src="assets/readme/venues/industry-unity-blog.svg" alt="Unity Blog" title="Unity Blog" height="18">
 
