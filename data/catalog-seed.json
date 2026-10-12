@@ -2,6 +2,649 @@
   "schemaVersion": "1.0",
   "papers": [
     {
+      "id": "2610.11663",
+      "title": "Constrained Command-Conditioned Reinforcement Learning with Bandit Strategy Selection in Real-Time Strategy Games",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "agent-training",
+        "control-hierarchy",
+        "opponent-modeling"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.11663"
+    },
+    {
+      "id": "2610.08033",
+      "title": "Learning in Dreams, Winning in Reality: A Continuous Dyna Loop for a Ten-Hero MOBA",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "world-modeling",
+        "agent-training",
+        "executable-feedback"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.08033"
+    },
+    {
+      "id": "2610.06025",
+      "title": "Grounded Joint-Attention Other-Play for Zero-Shot Coordination",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "social-agents",
+        "agent-training",
+        "zero-shot-coordination"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.06025"
+    },
+    {
+      "id": "2610.05041",
+      "title": "Communication Shapes Collective Inference in Self-Adapting LLM Societies: Evidence from Mafia",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "social-agents",
+        "memory-adaptation",
+        "communication"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.05041"
+    },
+    {
+      "id": "2610.04810",
+      "title": "Separating Decision Time from Decision Quality in the Real-Time Gap of Distilled Deciders: Evidence from a Game and a Conveyor Simulator",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "real-time-efficiency",
+        "agent-training",
+        "evaluation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.04810"
+    },
+    {
+      "id": "2610.11692",
+      "title": "Can Jev be Your Q or Policy in Reinforcement Learning?",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "generalist-foundation",
+        "agent-training",
+        "reasoning-planning"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.11692"
+    },
+    {
+      "id": "2610.09683",
+      "title": "System Switch: When Should a Fast Decision Model Stop and Think?",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "control-hierarchy",
+        "real-time-efficiency",
+        "reasoning-planning"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.09683"
+    },
+    {
+      "id": "2610.11794",
+      "title": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "world-modeling",
+        "memory-adaptation",
+        "executable-feedback"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.11794"
+    },
+    {
+      "id": "2610.07785",
+      "title": "Attacca: Goal-Directed Control under State Continuity for Long-Horizon Embodied Agents",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "multimodal-action",
+        "agent-training",
+        "long-horizon-control"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.07785"
+    },
+    {
+      "id": "2610.10061",
+      "title": "TRACK: Telemetry-Based Racing Analysis and Coaching Kit in Sim Racing Games",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "player-modeling",
+        "behavioral-inference",
+        "transfer"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.10061"
+    },
+    {
+      "id": "2610.09191",
+      "title": "R-CNN-Based Chess Position Recognition",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "state-and-mechanics",
+        "visual-perception"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.09191"
+    },
+    {
+      "id": "2610.13706",
+      "title": "GLIMPSE: Global-Local Indexing with Multi-Precision Spectral Encoding for Explorable Video World Models",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "persistent-memory",
+        "camera-control"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.13706"
+    },
+    {
+      "id": "2610.13172",
+      "title": "RoleWorld: Knowledge Transfer in World Modeling with Functional Role Abstractions",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "state-and-mechanics",
+        "transfer"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.13172"
+    },
+    {
+      "id": "2610.12789",
+      "title": "EvoBelief: Falsifiable World Models for Self-Improving LLM Agents",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "state-and-mechanics",
+        "memory-adaptation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.12789"
+    },
+    {
+      "id": "2610.12412",
+      "title": "WorldCast: Distributed Multiplayer World Models",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "multiplayer",
+        "state-and-mechanics"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.12412"
+    },
+    {
+      "id": "2610.12299",
+      "title": "Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "multiplayer",
+        "multimodal-action"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.12299"
+    },
+    {
+      "id": "2610.12016",
+      "title": "CausalDreamer: Learning Predictive World Models with Latent Disentanglement",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "representation-learning",
+        "reasoning-planning"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.12016"
+    },
+    {
+      "id": "2610.11444",
+      "title": "Learning to Retrieve: Internalizing Memory Retrieval for Video World Models",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "persistent-memory",
+        "camera-control"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.11444"
+    },
+    {
+      "id": "2610.08777",
+      "title": "CtrlCache: Accelerating Interactive Video World Models with Control-Aware Caching",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "real-time-efficiency",
+        "action-control"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.08777"
+    },
+    {
+      "id": "2610.06637",
+      "title": "Long-Horizon Textual World Modeling through Structured Reasoning",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "state-and-mechanics",
+        "long-horizon-prediction"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.06637"
+    },
+    {
+      "id": "2610.05739",
+      "title": "HLA-WM: Hybrid Linear Attention for Long-Horizon Video World Models",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "persistent-memory",
+        "real-time-efficiency"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.05739"
+    },
+    {
+      "id": "2610.04920",
+      "title": "PWM: Personalized World Models with Online Reinforcement Learning",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "personalization",
+        "agent-training"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.04920"
+    },
+    {
+      "id": "2610.12374",
+      "title": "AgentGarten: Code Worlds for Evolving Agents",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-modeling",
+        "state-and-mechanics",
+        "neural-rendering"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.12374"
+    },
+    {
+      "id": "2610.08621",
+      "title": "Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "build",
+      "topics": [
+        "game-development",
+        "iterative-repair",
+        "executable-feedback"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.08621"
+    },
+    {
+      "id": "2610.05033",
+      "title": "Code2Games: Enabling Coding Agents for Gaming World Generation",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "build",
+      "topics": [
+        "game-development",
+        "engine-integration",
+        "executable-feedback"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.05033"
+    },
+    {
+      "id": "2610.04301",
+      "title": "EnvDreamer: Large-Scale Multimodal-to-Environment Generation for Embodied AI",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "build",
+      "topics": [
+        "engine-integration",
+        "environment-generation",
+        "embodied-learning"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.04301"
+    },
+    {
+      "id": "2610.08760",
+      "title": "WorldSonus: Bringing Sound to Worlds",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "runtime",
+      "topics": [
+        "generative-audio",
+        "real-time-efficiency",
+        "world-modeling"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.08760"
+    },
+    {
+      "id": "2610.09326",
+      "title": "VIS-Ground: Video Interactive Storytelling with Contextual Grounding",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "runtime",
+      "topics": [
+        "interactive-narrative",
+        "grounding",
+        "multimodal-generation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.09326"
+    },
+    {
+      "id": "2610.13948",
+      "title": "Can Language Models Play the Wikipedia Game?",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "reasoning-planning",
+        "game-agents"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.13948"
+    },
+    {
+      "id": "2610.12596",
+      "title": "SpireBench: Evaluating Long-Horizon Strategic Play of Agentic Models with Slay the Spire",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "long-horizon-control",
+        "game-agents"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.12596"
+    },
+    {
+      "id": "2610.12341",
+      "title": "Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Competition",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "agent-training",
+        "executable-feedback"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.12341"
+    },
+    {
+      "id": "2610.11450",
+      "title": "Tracing the Thoughts of a Coding Agent Playing ARC-AGI-3: Lessons for Continual Learning",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "memory-adaptation",
+        "continual-learning"
+      ],
+      "venue": "NeurIPS CL4FMAgents Workshop",
+      "url": "https://arxiv.org/abs/2610.11450"
+    },
+    {
+      "id": "2610.08593",
+      "title": "Multi-Label Perceptual Bug Detection in Video Games using Deep Learning on Gameplay Footage",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "visual-bug-detection",
+        "game-testing",
+        "dataset"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.08593"
+    },
+    {
+      "id": "2610.08215",
+      "title": "Learn2Play Bench: How Well Do LLM Agents Learn from Experience in Unfamiliar Environments?",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "memory-adaptation",
+        "game-agents"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.08215"
+    },
+    {
+      "id": "2610.08076",
+      "title": "SpeedrunBench: Challenging LLM Agents with Video Game Speedrunning",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "long-horizon-control",
+        "game-agents"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.08076"
+    },
+    {
+      "id": "2610.07686",
+      "title": "BluffJAX: Adversarial Imperfect Information Games in JAX",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "imperfect-information",
+        "training-environments"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.07686"
+    },
+    {
+      "id": "2610.07127",
+      "title": "PlaySuite: A Large-Scale Benchmark for Interactive Visual Intelligence",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "generalist-foundation",
+        "multimodal-action"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.07127"
+    },
+    {
+      "id": "2610.05569",
+      "title": "Factoriax: A GPU-Accelerated Factorio-Style Simulator for Reinforcement Learning",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "training-environments",
+        "long-horizon-control"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.05569"
+    },
+    {
+      "id": "2610.04672",
+      "title": "MASBench: Benchmarking LLM-based Multi-Agent Collaboration under Partial Observability",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "social-agents",
+        "partial-observability"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.04672"
+    },
+    {
+      "id": "2610.04441",
+      "title": "LocusRL: Diagnosing LLM Reward and Policy Interventions in Competitive Games",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "game-testing",
+        "reward-design",
+        "executable-feedback"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.04441"
+    },
+    {
+      "id": "2610.11723",
+      "title": "MultiWorldBench: Do Independently Controlled Views Describe One Shared World?",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "world-modeling",
+        "multiplayer"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.11723"
+    },
+    {
+      "id": "2610.13829",
+      "title": "MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "memory-adaptation",
+        "transfer"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.13829"
+    },
+    {
+      "id": "2610.11328",
+      "title": "Mine Odyssey: Benchmarking Spatial Agentic Intelligence in the Wild",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "spatial-reasoning",
+        "game-agents"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.11328"
+    },
+    {
+      "id": "2610.09305",
+      "title": "Kuration SDK: Addressing the Virtual2Real Gap via Data Curation",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "world-modeling",
+        "data-curation",
+        "state-and-mechanics"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.09305"
+    },
+    {
+      "id": "2610.09285",
+      "title": "LeCuration: A Tiny World Model as a Data Curation Multi-Tool",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "world-modeling",
+        "data-curation",
+        "anomaly-detection"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.09285"
+    },
+    {
+      "id": "2610.06511",
+      "title": "ArtifactArena: Evaluating Models by What They Build in the Physical World",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "benchmark",
+        "executable-feedback",
+        "agent-training"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.06511"
+    },
+    {
       "id": "2609.34342",
       "title": "SAGE: Structured Strategic Reasoning for Efficient LLM Game Playing",
       "year": 2026,
