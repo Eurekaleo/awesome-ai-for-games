@@ -2,6 +2,413 @@
   "schemaVersion": "1.0",
   "papers": [
     {
+      "id": "2610.35398",
+      "title": "Belief-Conditioned Multi-Agent Actor Critic for Decentralized LLM Collaboration",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "multi-agent-collaboration",
+        "belief-modeling",
+        "Minecraft"
+      ],
+      "venue": "NeurIPS PTA Workshop",
+      "url": "https://arxiv.org/abs/2610.35398"
+    },
+    {
+      "id": "2610.36925",
+      "title": "Vision-Language Agents Can Learn in Their Own Latent Worlds",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "latent-world-models",
+        "model-based-reinforcement-learning",
+        "visual-agents"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.36925"
+    },
+    {
+      "id": "2610.37397",
+      "title": "Game-Theoretic Solvers with Bayesian Opponent Modeling and Moral Rhetoric Framing for GLEE",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "opponent-modeling",
+        "strategic-communication",
+        "game-playing"
+      ],
+      "venue": "NeurIPS IAB Workshop",
+      "url": "https://arxiv.org/abs/2610.37397"
+    },
+    {
+      "id": "2610.39049",
+      "title": "Reinforcement Learning for the Game of Balatro: A Fast Simulator and Two-Policy Training Approach",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "Balatro",
+        "reinforcement-learning",
+        "control-hierarchy"
+      ],
+      "venue": "EXAG 2026 Workshop at AIIDE",
+      "url": "https://arxiv.org/abs/2610.39049"
+    },
+    {
+      "id": "2610.40227",
+      "title": "EpiAgent: Epistemic Self-Play for LLM Agents",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "epistemic-modeling",
+        "self-play",
+        "multi-agent-interaction"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40227"
+    },
+    {
+      "id": "2610.40276",
+      "title": "TaskFrame: Connecting Task-Level Planning with Frame-Level Control for Game Agents",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "planner-controller",
+        "keyboard-mouse-control",
+        "Minecraft"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40276"
+    },
+    {
+      "id": "2610.41264",
+      "title": "Rome Wasn't Built in One Turn: Replay-Grounded Reward Signals for Long-Horizon Freeciv Agents",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "play",
+      "topics": [
+        "Freeciv",
+        "long-horizon-control",
+        "reward-learning"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.41264"
+    },
+    {
+      "id": "2610.35529",
+      "title": "WorldPager: Zero-Stall Tiered Memory for Long-Horizon World Models on a Single Consumer GPU",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-model-memory",
+        "streaming-inference",
+        "long-horizon-generation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.35529"
+    },
+    {
+      "id": "2610.36371",
+      "title": "BoxWorld: Let World Engines Control and Video Generators Render",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "executable-state",
+        "neural-rendering",
+        "rule-control"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.36371"
+    },
+    {
+      "id": "2610.36729",
+      "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "interactive-world-generation",
+        "language-control",
+        "camera-control"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.36729"
+    },
+    {
+      "id": "2610.37257",
+      "title": "GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "gameplay-dataset",
+        "long-horizon-world-models",
+        "camera-annotation"
+      ],
+      "venue": "Advances in Neural Information Processing Systems",
+      "url": "https://arxiv.org/abs/2610.37257"
+    },
+    {
+      "id": "2610.37427",
+      "title": "Time-Dynamic Semantic-Activity Entanglement: Quantifying Communication-Based Synchrony in Collaborative VR",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "player-modeling",
+        "team-communication",
+        "collaborative-VR"
+      ],
+      "venue": "Companion Proceedings of the 2026 ACM International Conference on Interactive Surfaces and Spaces",
+      "url": "https://arxiv.org/abs/2610.37427"
+    },
+    {
+      "id": "2610.38304",
+      "title": "Inner-Learning: From Hand-Coded Beliefs to Declarative Knowledge in Trick-Taking Games",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "belief-state-modeling",
+        "trick-taking-games",
+        "declarative-rules"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.38304"
+    },
+    {
+      "id": "2610.38980",
+      "title": "Context Compaction for World Models",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "world-model-memory",
+        "context-compaction",
+        "scene-revisits"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.38980"
+    },
+    {
+      "id": "2610.40339",
+      "title": "Wizard: Manipulate Any World in Real Time via Agentic Control",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "agentic-world-models",
+        "character-control",
+        "neural-rendering"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40339"
+    },
+    {
+      "id": "2610.40503",
+      "title": "Algebraic World Model: From Exploration to Proofs",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "executable-world-models",
+        "formal-verification",
+        "interactive-reasoning"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40503"
+    },
+    {
+      "id": "2610.40607",
+      "title": "Fight World Model: Customizable Combat through Visual Interaction Proxies",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "combat-simulation",
+        "mechanics-consistency",
+        "neural-rendering"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40607"
+    },
+    {
+      "id": "2610.40614",
+      "title": "L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "3D-memory",
+        "interactive-world-models",
+        "spatial-consistency"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40614"
+    },
+    {
+      "id": "2610.41022",
+      "title": "Density-Guided Bootstrap Boundaries for Latent World-Model Reinforcement Learning",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "model",
+      "topics": [
+        "model-based-reinforcement-learning",
+        "imagination-horizon",
+        "uncertainty"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.41022"
+    },
+    {
+      "id": "2610.38987",
+      "title": "Syntactic Segmentation and Collage Generation for Videogame Levels with Perceptual Distance",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "design",
+      "topics": [
+        "level-generation",
+        "level-analysis",
+        "procedural-content-generation"
+      ],
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment",
+      "url": "https://arxiv.org/abs/2610.38987"
+    },
+    {
+      "id": "2610.40599",
+      "title": "HairDeck: Animation-Ready Stylized Hair Cards from a Single Image",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "design",
+      "topics": [
+        "game-assets",
+        "animation-ready-hair",
+        "3D-generation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40599"
+    },
+    {
+      "id": "2610.35980",
+      "title": "UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "build",
+      "topics": [
+        "Unity",
+        "engine-coding",
+        "project-level-evaluation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.35980"
+    },
+    {
+      "id": "2610.38468",
+      "title": "Cinematize from Unreal: Agentic Choreography for Controllable World Simulation",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "build",
+      "topics": [
+        "Unreal-Engine",
+        "scene-construction",
+        "code-generation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.38468"
+    },
+    {
+      "id": "2610.35773",
+      "title": "A Unified Arena for LLM Agents across Diverse Eurogame",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "Eurogames",
+        "agent-evaluation",
+        "multi-agent-benchmark"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.35773"
+    },
+    {
+      "id": "2610.37567",
+      "title": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "real-time-evaluation",
+        "game-benchmark",
+        "environment-generation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.37567"
+    },
+    {
+      "id": "2610.37988",
+      "title": "Opening Rankings from Engine Self-Play Are Less Certain Than They Look: Sampling Error, Draws, and Strength Dependence in Strength-Limited Stockfish Games",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "chess",
+        "engine-self-play",
+        "evaluation-reliability"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.37988"
+    },
+    {
+      "id": "2610.38975",
+      "title": "Dungeons & Dragons Encounter Analysis with Semi-Random Simulation in Foundry VTT",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "encounter-evaluation",
+        "Dungeons-and-Dragons",
+        "game-simulation"
+      ],
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment",
+      "url": "https://arxiv.org/abs/2610.38975"
+    },
+    {
+      "id": "2610.39353",
+      "title": "CoToan: Executable Rules and a Representation Contract for Reproducible Game AI Evaluation",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "test",
+      "topics": [
+        "executable-rules",
+        "game-representation",
+        "evaluation-reproducibility"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.39353",
+      "note": "Accepted at RIVF 2027"
+    },
+    {
+      "id": "2610.40191",
+      "title": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement",
+      "year": 2026,
+      "month": 10,
+      "primaryRole": "context",
+      "topics": [
+        "agentic-world-models",
+        "video-generation",
+        "recursive-self-improvement"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40191"
+    },
+    {
       "id": "2610.18229",
       "title": "When Does Opponent Modeling Pay Off? Spatial Inference Stabilises Reinforcement Learning under Partial Observability",
       "year": 2026,

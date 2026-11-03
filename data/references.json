@@ -3,7 +3,7 @@
   "source": "Living project bibliography",
   "sourceCounts": {
     "manuscript": 436,
-    "livingAdditions": 181
+    "livingAdditions": 210
   },
   "papers": [
     {
@@ -8397,6 +8397,725 @@
       "venue": "Developer documentation",
       "url": "https://docs.nvidia.com/ace/latest/workflows/kairos/ace-unreal-plugin-audio2face.html",
       "kind": "misc"
+    },
+    {
+      "id": "chen2026bcmaac",
+      "title": "Belief-Conditioned Multi-Agent Actor Critic for Decentralized LLM Collaboration",
+      "year": 2026,
+      "month": 10,
+      "authors": "Tianle Chen and Shuo Liu and Christopher Amato",
+      "shortAuthors": "Chen et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [
+        "multi-agent-collaboration",
+        "belief-modeling",
+        "Minecraft"
+      ],
+      "venue": "NeurIPS PTA Workshop",
+      "url": "https://arxiv.org/abs/2610.35398",
+      "kind": "inproceedings"
+    },
+    {
+      "id": "li2026dwell",
+      "title": "Vision-Language Agents Can Learn in Their Own Latent Worlds",
+      "year": 2026,
+      "month": 10,
+      "authors": "Haoxi Li and Sikai Bai and Jianfei Ma and Qinglin Hou and Xiaocheng Lu and Tao Han and Jie Zhang and Song Guo",
+      "shortAuthors": "Li et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [
+        "latent-world-models",
+        "model-based-reinforcement-learning",
+        "visual-agents"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.36925",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/Tom111-lhx/Dwell"
+        }
+      ]
+    },
+    {
+      "id": "arnold2026gleesolvers",
+      "title": "Game-Theoretic Solvers with Bayesian Opponent Modeling and Moral Rhetoric Framing for GLEE",
+      "year": 2026,
+      "month": 10,
+      "authors": "Hayden Arnold",
+      "shortAuthors": "Hayden Arnold",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [
+        "opponent-modeling",
+        "strategic-communication",
+        "game-playing"
+      ],
+      "venue": "NeurIPS IAB Workshop",
+      "url": "https://arxiv.org/abs/2610.37397",
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/haydenarnold/GameTheoreticSolvers"
+        }
+      ]
+    },
+    {
+      "id": "periasami2026balatrorl",
+      "title": "Reinforcement Learning for the Game of Balatro: A Fast Simulator and Two-Policy Training Approach",
+      "year": 2026,
+      "month": 10,
+      "authors": "Ajay Vikram Periasami and Anjaneya Gupta and Ethan Cheng and Ivan Rosales",
+      "shortAuthors": "Periasami et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [
+        "Balatro",
+        "reinforcement-learning",
+        "control-hierarchy"
+      ],
+      "venue": "EXAG 2026 Workshop at AIIDE",
+      "url": "https://arxiv.org/abs/2610.39049",
+      "kind": "inproceedings"
+    },
+    {
+      "id": "jin2026epiagent",
+      "title": "EpiAgent: Epistemic Self-Play for LLM Agents",
+      "year": 2026,
+      "month": 10,
+      "authors": "Xuanfa Jin and Xinyu Cui and Zhijian Ma and Xue Yan and Jian Zhao and Haifeng Zhang and Jun Wang",
+      "shortAuthors": "Jin et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [
+        "epistemic-modeling",
+        "self-play",
+        "multi-agent-interaction"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40227",
+      "kind": "misc"
+    },
+    {
+      "id": "wang2026taskframe",
+      "title": "TaskFrame: Connecting Task-Level Planning with Frame-Level Control for Game Agents",
+      "year": 2026,
+      "month": 10,
+      "authors": "Guangzhi Wang and Junfu Pu and Yiran Wang and Xingyilang Yin and Honghao Chen and Cheng Cheng and Lingen Li and Yinan Zhou and Jiarui Wu and Yinuo Jiang and Hongbo Jin and Xiaodong Cun and Ying Shan",
+      "shortAuthors": "Wang et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [
+        "planner-controller",
+        "keyboard-mouse-control",
+        "Minecraft"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40276",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://task-frame.github.io/"
+        }
+      ]
+    },
+    {
+      "id": "liu2026civmarshmallow",
+      "title": "Rome Wasn't Built in One Turn: Replay-Grounded Reward Signals for Long-Horizon Freeciv Agents",
+      "year": 2026,
+      "month": 10,
+      "authors": "Yanchen Liu and Xinyu Che and Brihi Joshi and Renzo Fukuda and Junhua Liu and Ruifeng Li and Yunfei Ge and Hang Yan and Xiang Ren",
+      "shortAuthors": "Liu et al.",
+      "primaryRole": "play",
+      "roles": [
+        "play"
+      ],
+      "topics": [
+        "Freeciv",
+        "long-horizon-control",
+        "reward-learning"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.41264",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/jamesnulliu/CivMarshmallow"
+        }
+      ]
+    },
+    {
+      "id": "liu2026worldpager",
+      "title": "WorldPager: Zero-Stall Tiered Memory for Long-Horizon World Models on a Single Consumer GPU",
+      "year": 2026,
+      "month": 10,
+      "authors": "Bingnan Liu and Ruini Xue",
+      "shortAuthors": "Liu & Xue",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [
+        "world-model-memory",
+        "streaming-inference",
+        "long-horizon-generation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.35529",
+      "kind": "misc"
+    },
+    {
+      "id": "wu2026boxworld",
+      "title": "BoxWorld: Let World Engines Control and Video Generators Render",
+      "year": 2026,
+      "month": 10,
+      "authors": "Zike Wu and Ahmed Hatem and Chintan Trivedi and Wallace Michel Pinto Lira and Xuebin Qin and Lele Wang and Renjie Liao",
+      "shortAuthors": "Wu et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [
+        "executable-state",
+        "neural-rendering",
+        "rule-control"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.36371",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://boxworld-web.github.io"
+        }
+      ]
+    },
+    {
+      "id": "chen2026hynomas",
+      "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
+      "year": 2026,
+      "month": 10,
+      "authors": "Qiaoling Chen and Jiaxiang Cheng and Xueqing Deng and Tiankai Hang and Ji Hou and Jiaqi Li and Yifan Liu and Tao Lu and Junshu Tang and Yu Tang and Yao Teng and Yu Tian and Heng Wang and Weizhi Wang and Xiyao Wang and Xilun Wu and Mingyu Yang and Yangbin Yu and Rui Zhao and Longjun Cao and Linghao Chen and Haoyi Duan and Jiaming Han and Mingji Han and Enhua Jiang and Shunkai Li and Yanzhe Liang and Qinwei Ma and Cong Wang and Lei Wang and Bing Wu and Ke Xing and Ray Ying and Zhentao Yu and Key Zhang and Yuan Zhou and Zhengguang Zhou and Kai Zou",
+      "shortAuthors": "Chen et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [
+        "interactive-world-generation",
+        "language-control",
+        "camera-control"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.36729",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/Tencent-Hunyuan/Hy-Nomas"
+        },
+        {
+          "type": "project",
+          "url": "https://hy-nomas.hy.tencent.com/"
+        },
+        {
+          "type": "data",
+          "url": "https://huggingface.co/datasets/tencent/Hy-Nomas-Bench"
+        }
+      ]
+    },
+    {
+      "id": "he2026gameversedata",
+      "title": "GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling",
+      "year": 2026,
+      "month": 10,
+      "authors": "Kang He and Wenshuo Peng and Chuanhao Li and Zihui Gao and Xiaojie Xu and Zhengyuan Lin and Yuzhe Ding and Donghong Ji and Kaipeng Zhang and Yongtao Ge",
+      "shortAuthors": "He et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [
+        "gameplay-dataset",
+        "long-horizon-world-models",
+        "camera-annotation"
+      ],
+      "venue": "Advances in Neural Information Processing Systems",
+      "url": "https://arxiv.org/abs/2610.37257",
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/kangverse/GameVerse"
+        },
+        {
+          "type": "project",
+          "url": "https://kangverse.github.io/GameVerse/"
+        },
+        {
+          "type": "data",
+          "url": "https://huggingface.co/datasets/Kangverse/GameVerse"
+        }
+      ]
+    },
+    {
+      "id": "pol2026tsae",
+      "title": "Time-Dynamic Semantic-Activity Entanglement: Quantifying Communication-Based Synchrony in Collaborative VR",
+      "year": 2026,
+      "month": 10,
+      "authors": "Pooja Pol and Jianing Zhang and Qing Huang",
+      "shortAuthors": "Pol et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [
+        "player-modeling",
+        "team-communication",
+        "collaborative-VR"
+      ],
+      "venue": "Companion Proceedings of the 2026 ACM International Conference on Interactive Surfaces and Spaces",
+      "url": "https://arxiv.org/abs/2610.37427",
+      "kind": "inproceedings"
+    },
+    {
+      "id": "edelkamp2026innerlearning",
+      "title": "Inner-Learning: From Hand-Coded Beliefs to Declarative Knowledge in Trick-Taking Games",
+      "year": 2026,
+      "month": 10,
+      "authors": "Stefan Edelkamp",
+      "shortAuthors": "Stefan Edelkamp",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [
+        "belief-state-modeling",
+        "trick-taking-games",
+        "declarative-rules"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.38304",
+      "kind": "misc"
+    },
+    {
+      "id": "tirmazi2026contextcompaction",
+      "title": "Context Compaction for World Models",
+      "year": 2026,
+      "month": 10,
+      "authors": "Hayder Tirmazi",
+      "shortAuthors": "Hayder Tirmazi",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [
+        "world-model-memory",
+        "context-compaction",
+        "scene-revisits"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.38980",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/jadidbourbaki/context-compaction-world-models"
+        }
+      ]
+    },
+    {
+      "id": "wu2026wizard",
+      "title": "Wizard: Manipulate Any World in Real Time via Agentic Control",
+      "year": 2026,
+      "month": 10,
+      "authors": "Yuzhe Wu and Zijun Lin and Yeying Jin",
+      "shortAuthors": "Wu et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [
+        "agentic-world-models",
+        "character-control",
+        "neural-rendering"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40339",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://wyzardwu.github.io/wizard"
+        }
+      ]
+    },
+    {
+      "id": "pan2026algebraicworldmodel",
+      "title": "Algebraic World Model: From Exploration to Proofs",
+      "year": 2026,
+      "month": 10,
+      "authors": "Guancheng Pan and Qixin Tan and Yang Yuan and Andrew Chi-Chih Yao",
+      "shortAuthors": "Pan et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [
+        "executable-world-models",
+        "formal-verification",
+        "interactive-reasoning"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40503",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://ephemeral6.github.io/awm-site/"
+        }
+      ]
+    },
+    {
+      "id": "li2026fightworldmodel",
+      "title": "Fight World Model: Customizable Combat through Visual Interaction Proxies",
+      "year": 2026,
+      "month": 10,
+      "authors": "Jiahua Li and Zixu John and Tom Zhong and Fuping Wu and Tianhao Xu and Ruicheng Zhang and Jun Zhou and Zunnan Xu",
+      "shortAuthors": "Li et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [
+        "combat-simulation",
+        "mechanics-consistency",
+        "neural-rendering"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40607",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://fight-world-model.github.io"
+        }
+      ]
+    },
+    {
+      "id": "choi2026l3gworld",
+      "title": "L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory",
+      "year": 2026,
+      "month": 10,
+      "authors": "Jinhyeok Choi and JoungBin Lee and Jongmin Lee and Minkyeong Jeon and Jiyoung Kim and Kaeun Han and Yoonjin Yoon and Seungryong Kim",
+      "shortAuthors": "Choi et al.",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [
+        "3D-memory",
+        "interactive-world-models",
+        "spatial-consistency"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40614",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://cvlab-kaist.github.io/L3G-World/"
+        }
+      ]
+    },
+    {
+      "id": "gupta2026bootstrapboundaries",
+      "title": "Density-Guided Bootstrap Boundaries for Latent World-Model Reinforcement Learning",
+      "year": 2026,
+      "month": 10,
+      "authors": "Shashank Gupta and Pilhwa Lee",
+      "shortAuthors": "Gupta & Lee",
+      "primaryRole": "model",
+      "roles": [
+        "model"
+      ],
+      "topics": [
+        "model-based-reinforcement-learning",
+        "imagination-horizon",
+        "uncertainty"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.41022",
+      "kind": "misc"
+    },
+    {
+      "id": "mawhorter2026perceptuallevels",
+      "title": "Syntactic Segmentation and Collage Generation for Videogame Levels with Perceptual Distance",
+      "year": 2026,
+      "month": 10,
+      "authors": "Ross Mawhorter and Matthew Guzdial",
+      "shortAuthors": "Mawhorter & Guzdial",
+      "primaryRole": "design",
+      "roles": [
+        "design"
+      ],
+      "topics": [
+        "level-generation",
+        "level-analysis",
+        "procedural-content-generation"
+      ],
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment",
+      "url": "https://arxiv.org/abs/2610.38987",
+      "kind": "inproceedings"
+    },
+    {
+      "id": "he2026hairdeck",
+      "title": "HairDeck: Animation-Ready Stylized Hair Cards from a Single Image",
+      "year": 2026,
+      "month": 10,
+      "authors": "Yuze He and Yixiang Wei and Wang Zhao and Chuhao Chen and Yanning Zhou and Yong-Jin Liu",
+      "shortAuthors": "He et al.",
+      "primaryRole": "design",
+      "roles": [
+        "design"
+      ],
+      "topics": [
+        "game-assets",
+        "animation-ready-hair",
+        "3D-generation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40599",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/hyz317/HairDeck"
+        },
+        {
+          "type": "project",
+          "url": "https://hyzcluster.github.io/HairDeck"
+        },
+        {
+          "type": "demo",
+          "url": "https://huggingface.co/spaces/hyz317/HairDeck"
+        }
+      ]
+    },
+    {
+      "id": "zhou2026unitybenchmini3d",
+      "title": "UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity",
+      "year": 2026,
+      "month": 10,
+      "authors": "Yijun Zhou and Minghao Shao and Ke Zhang and Renkai Yuan and Hongbo Yuan and Bin Hu and Bozhao Qian and Hongxia Shen and Yanhong Liu and Yuting Chen and Yuntao Shi and Zhongxuan Xu and Shuo Mao and Haijia Zhou and Zhendong Li and Tao Zhang and Chenggang Li and Yuxuan Wang and Zinan Zheng and Calvin Zhang and Jia Li and Heng Chang and Jie Feng",
+      "shortAuthors": "Zhou et al.",
+      "primaryRole": "build",
+      "roles": [
+        "build"
+      ],
+      "topics": [
+        "Unity",
+        "engine-coding",
+        "project-level-evaluation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.35980",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://github.com/Unity-China/UnityBench-Mini3D"
+        }
+      ]
+    },
+    {
+      "id": "song2026cineu",
+      "title": "Cinematize from Unreal: Agentic Choreography for Controllable World Simulation",
+      "year": 2026,
+      "month": 10,
+      "authors": "Zifan Song and Caihua Shan and Kaitao Song and Yifan Yang and Dongsheng Li and Cairong Zhao",
+      "shortAuthors": "Song et al.",
+      "primaryRole": "build",
+      "roles": [
+        "build"
+      ],
+      "topics": [
+        "Unreal-Engine",
+        "scene-construction",
+        "code-generation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.38468",
+      "kind": "misc"
+    },
+    {
+      "id": "zhang2026dece",
+      "title": "A Unified Arena for LLM Agents across Diverse Eurogame",
+      "year": 2026,
+      "month": 10,
+      "authors": "Fengrui Zhang and Xiang Li and Ruomeng Ding and Jiayi Yuan and Yuchen Huang and Zhaoyang Han and Xiaoliang Wang and Daoyuan Chen and Yaliang Li",
+      "shortAuthors": "Zhang et al.",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "Eurogames",
+        "agent-evaluation",
+        "multi-agent-benchmark"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.35773",
+      "kind": "misc"
+    },
+    {
+      "id": "aggarwal2026gymanythingrt",
+      "title": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
+      "year": 2026,
+      "month": 10,
+      "authors": "Pranjal Aggarwal and Sean Welleck",
+      "shortAuthors": "Aggarwal & Welleck",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "real-time-evaluation",
+        "game-benchmark",
+        "environment-generation"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.37567",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/gym-anything/gym-anything-rt"
+        }
+      ]
+    },
+    {
+      "id": "flick2026openingrankings",
+      "title": "Opening Rankings from Engine Self-Play Are Less Certain Than They Look: Sampling Error, Draws, and Strength Dependence in Strength-Limited Stockfish Games",
+      "year": 2026,
+      "month": 10,
+      "authors": "Conrad Flick and Jaysen Jensen and Jingyu Huang and Mario Camara Paslar",
+      "shortAuthors": "Flick et al.",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "chess",
+        "engine-self-play",
+        "evaluation-reliability"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.37988",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "data",
+          "url": "https://doi.org/10.5281/zenodo.23357406"
+        }
+      ]
+    },
+    {
+      "id": "hardcastle2026magehand",
+      "title": "Dungeons & Dragons Encounter Analysis with Semi-Random Simulation in Foundry VTT",
+      "year": 2026,
+      "month": 10,
+      "authors": "ravyn Hardcastle and Matthew Guzdial",
+      "shortAuthors": "Hardcastle & Guzdial",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "encounter-evaluation",
+        "Dungeons-and-Dragons",
+        "game-simulation"
+      ],
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment",
+      "url": "https://arxiv.org/abs/2610.38975",
+      "kind": "inproceedings",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/ravynhardcastle/Mage-Hand"
+        }
+      ]
+    },
+    {
+      "id": "nguyen2026cotoan",
+      "title": "CoToan: Executable Rules and a Representation Contract for Reproducible Game AI Evaluation",
+      "year": 2026,
+      "month": 10,
+      "authors": "Ha-Thanh Nguyen",
+      "shortAuthors": "Ha-Thanh Nguyen",
+      "primaryRole": "test",
+      "roles": [
+        "test"
+      ],
+      "topics": [
+        "executable-rules",
+        "game-representation",
+        "evaluation-reproducibility"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.39353",
+      "kind": "misc",
+      "note": "Accepted at RIVF 2027",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/nguyenthanhasia/cotoan"
+        }
+      ]
+    },
+    {
+      "id": "fan2026agenticvideogen",
+      "title": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement",
+      "year": 2026,
+      "month": 10,
+      "authors": "Liaoyuan Fan and Yuhao Zheng and Dongxing Mao and Hangyu Ran and Siyuan Hu and Weijia Mao and Rui Zhao and Weijia Wu and Guian Fang and Yanzhe Chen and Zeyu Zhu and Yuxin Jiang and Yiren Song and Yuchao Gu and Junchao Yi and Qi Hu and Dan Kong and Alex Jinpeng Wang and Kevin Qinghong Lin and Mike Zheng Shou and Wei Liu",
+      "shortAuthors": "Fan et al.",
+      "primaryRole": "context",
+      "roles": [
+        "context"
+      ],
+      "topics": [
+        "agentic-world-models",
+        "video-generation",
+        "recursive-self-improvement"
+      ],
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2610.40191",
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "project",
+          "url": "https://agentic-videogen.github.io/"
+        }
+      ]
     },
     {
       "id": "petran2026spatialopponent",

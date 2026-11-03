@@ -87,6 +87,8 @@ const venueLabel = value => {
   if (/^EMNLP(?:\s+\d{4})?$/i.test(venue)) return 'EMNLP';
   if (/Workshop on Agent Behavior.*COLM/i.test(venue)) return 'WAB @ COLM';
   if (/AIWolfDial Workshop.*INLG/i.test(venue)) return 'AIWolfDial @ INLG';
+  if (/^EXAG.*Workshop.*AIIDE/i.test(venue)) return 'EXAG @ AIIDE';
+  if (/Companion Proceedings.*Interactive Surfaces and Spaces/i.test(venue)) return 'ACM ISS Companion';
   if (/Findings of .*NAACL/i.test(venue)) return 'Findings of NAACL';
   if (/Findings of .*ACL/i.test(venue)) return 'Findings of ACL';
   if (/EMNLP-IJCNLP/i.test(venue)) return 'EMNLP–IJCNLP';
