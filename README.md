@@ -712,7 +712,7 @@ Select a role to jump directly to its papers.
 
 ### 2026
 
-- A Unified Arena for LLM Agents across Diverse Eurogame. [[paper](https://arxiv.org/abs/2610.35773)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
+- A Unified Arena for LLM Agents across Diverse Eurogame. [[paper](https://arxiv.org/abs/2610.35773)] [[code](https://github.com/fengrui-z/AgentBGA)] [[project](https://fengrui-z.github.io/AgentBGA/)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - A2Z GameSpec-Bench: How Faithfully Can Coding Agents Generate Games from Game Design Specifications? [[paper](https://arxiv.org/abs/2609.39564)] [[project](https://a2z-gamespec-bench.github.io/)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - ArtifactArena: Evaluating Models by What They Build in the Physical World. [[paper](https://arxiv.org/abs/2610.06511)] [[code](https://github.com/ArtifactArena/design-lab-harness)] [[code](https://github.com/ArtifactArena/harness-public)] [[project](https://artifactarena.ai)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - Benchmarking Prompt Optimization of Large Language Models With Chess. [[paper](https://arxiv.org/abs/2610.00416)] [[project](https://github.com/imec-ailabs/Automatic-Prompt-Optimization-with-Chess)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
