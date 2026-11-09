@@ -2,6 +2,7 @@
   "schemaVersion": "1.0",
   "verifiedAt": "2026-10-02",
   "resources": {
+    "zhang2026dece": [{"type": "code", "url": "https://github.com/fengrui-z/AgentBGA"}, {"type": "project", "url": "https://fengrui-z.github.io/AgentBGA/"}],
     "li2026dwell": [{"type": "code", "url": "https://github.com/Tom111-lhx/Dwell"}],
     "arnold2026gleesolvers": [{"type": "code", "url": "https://github.com/haydenarnold/GameTheoreticSolvers"}],
     "wang2026taskframe": [{"type": "project", "url": "https://task-frame.github.io/"}],

@@ -8984,7 +8984,17 @@
       ],
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2610.35773",
-      "kind": "misc"
+      "kind": "misc",
+      "resources": [
+        {
+          "type": "code",
+          "url": "https://github.com/fengrui-z/AgentBGA"
+        },
+        {
+          "type": "project",
+          "url": "https://fengrui-z.github.io/AgentBGA/"
+        }
+      ]
     },
     {
       "id": "aggarwal2026gymanythingrt",
