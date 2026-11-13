@@ -6,8 +6,8 @@
   <a href="https://arxiv.org/pdf/2609.16679"><img src="https://img.shields.io/badge/arXiv-2609.16679-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Read the paper on arXiv"></a>
   <a href="https://huggingface.co/papers/2609.16679"><img src="https://img.shields.io/badge/Hugging%20Face-Daily%20Paper-FFD21E?style=flat-square&logo=huggingface&logoColor=000000" alt="View the paper on Hugging Face Daily Papers"></a>
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>
-  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-646-168f91?style=flat-square" alt="646 references"></a>
-  <img src="https://img.shields.io/badge/core%20works-618-c78b1e?style=flat-square" alt="618 core works">
+  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-647-168f91?style=flat-square" alt="647 references"></a>
+  <img src="https://img.shields.io/badge/core%20works-619-c78b1e?style=flat-square" alt="619 core works">
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
 
   <p><a href="https://eurekaleo.github.io/">Meng Luo</a><sup>1</sup> · <a href="https://liyanlin06.github.io/">Yanlin Li</a><sup>1</sup> · <a href="https://scholar.google.com/citations?user=vF-UH7oAAAAJ&amp;hl=zh-TW">Hao Li</a><sup>1</sup> · <a href="https://daniellin97.github.io/">Hongzhan Lin</a><sup>1</sup> · <a href="https://lancezpf.github.io/">Pengfei Zhou</a><sup>1</sup> · <a href="https://jometeorie.github.io/">Tianjie Ju</a><sup>1</sup><br><a href="https://openreview.net/profile?id=~Ran_Zhang18">Ran Zhang</a><sup>2</sup> · <a href="https://jinyeying.github.io/">Yeying Jin</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/leeml/">Mong-Li Lee</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/whsu/">Wynne Hsu</a><sup>1</sup></p>
@@ -47,7 +47,7 @@ Select a role to jump directly to its papers.
 
 <p align="center">
   <a href="#play-and-act"><img src="assets/readme/role-play.svg" width="246" alt="Play and Act: 171 works"></a>
-  <a href="#model-players-and-games"><img src="assets/readme/role-model.svg" width="246" alt="Model Players and Games: 174 works"></a>
+  <a href="#model-players-and-games"><img src="assets/readme/role-model.svg" width="246" alt="Model Players and Games: 175 works"></a>
   <a href="#design"><img src="assets/readme/role-design.svg" width="246" alt="Design: 65 works"></a>
   <br>
   <a href="#build-and-maintain"><img src="assets/readme/role-build.svg" width="246" alt="Build and Maintain: 28 works"></a>
@@ -311,6 +311,7 @@ Select a role to jump directly to its papers.
 - DreamX-World 1.0: A General-Purpose Interactive World Model. [[paper](https://arxiv.org/abs/2606.16993)] [[code](https://github.com/AMAP-ML/DreamX-World)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2606.16993" height="18">
 - EvoBelief: Falsifiable World Models for Self-Improving LLM Agents. [[paper](https://arxiv.org/abs/2610.12789)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - Fight World Model: Customizable Combat through Visual Interaction Proxies. [[paper](https://arxiv.org/abs/2610.40607)] [[project](https://fight-world-model.github.io)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
+- FlockWorld: Toward Population-Scale Multi-Agent Video World Models through Artificial Life Simulation. [[paper](https://arxiv.org/abs/2610.34564)] [[code](https://github.com/wangyz1999/flockworld)] <img src="assets/readme/venues/conference-neurips.svg" alt="NeurIPS" title="Advances in Neural Information Processing Systems" height="18">
 - ForgeWM: Progressive Causal Training for Few-Step Action-Conditioned Video World Models. [[paper](https://arxiv.org/abs/2608.14022)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2608.14022" height="18">
 - From Pixels to States: Rethinking Interactive World Models as Game Engines. [[paper](https://arxiv.org/abs/2607.14076v1)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2607.14076" height="18">
 - From Single-Actor Environments to Multi-Actor Event Worlds: Can LLMs Be Event World Models? [[paper](https://arxiv.org/abs/2610.30488)] [[code](https://github.com/LingFengGold/EventWorld)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
