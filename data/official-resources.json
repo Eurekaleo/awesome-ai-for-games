@@ -277,6 +277,7 @@
       {"type": "code", "url": "https://github.com/WenyiWU0111/RSIGame"},
       {"type": "project", "url": "https://huggingface.co/spaces/RSIGame/rsigame-page"},
       {"type": "data", "url": "https://huggingface.co/datasets/RSIGame/RSIGame-TableArtifacts"}
-    ]
+    ],
+    "koksal2026flockworld": [{"type": "code", "url": "https://github.com/wangyz1999/flockworld"}]
   }
 }
