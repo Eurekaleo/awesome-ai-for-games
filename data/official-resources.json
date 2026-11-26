@@ -2,6 +2,11 @@
   "schemaVersion": "1.0",
   "verifiedAt": "2026-10-02",
   "resources": {
+    "karten2026pokeagent": [{"type": "project", "url": "https://pokeagentchallenge.com/"}],
+    "milani2023bedd": [{"type": "code", "url": "https://github.com/minerllabs/basalt-benchmark"}],
+    "kanervisto2022minerl": [{"type": "code", "url": "https://github.com/minerllabs/minerl"}],
+    "shah2021basaltcompetition": [{"type": "code", "url": "https://github.com/minerllabs/minerl"}],
+    "guss2021minerl2020": [{"type": "code", "url": "https://github.com/minerllabs/minerl"}],
     "zhang2026dece": [{"type": "code", "url": "https://github.com/fengrui-z/AgentBGA"}, {"type": "project", "url": "https://fengrui-z.github.io/AgentBGA/"}],
     "li2026dwell": [{"type": "code", "url": "https://github.com/Tom111-lhx/Dwell"}],
     "arnold2026gleesolvers": [{"type": "code", "url": "https://github.com/haydenarnold/GameTheoreticSolvers"}],

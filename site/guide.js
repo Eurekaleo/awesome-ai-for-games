@@ -8,7 +8,7 @@ const ui = {search: $('#paper-search'), role: $('#role-filter'), year: $('#year-
 
 const collections = {
   play: {
-    number:'01', label:'PLAY AND ACT', count:171, title:'Learning to act.<br>Learning to cooperate.',
+    number:'01', label:'PLAY AND ACT', count:173, title:'Learning to act.<br>Learning to cooperate.',
     description:'From specialist policies to language-guided agents, this literature studies how AI perceives a game, chooses actions, and coordinates with other players.',
     topics:['Generalist policies','Planning & memory','Human–AI teamwork'],
     image:'sophy.webp', alt:'Gran Turismo 7 racing scene from an official GT Sophy announcement', caption:'Gran Turismo 7 / GT Sophy',
@@ -48,7 +48,7 @@ const collections = {
     example:'Official artwork for 1001 Nights, where player storytelling becomes part of AI-generated narrative and imagery.',
   },
   test: {
-    number:'06', label:'TEST AND EVALUATE', count:111, title:'Play it.<br>Then question it.',
+    number:'06', label:'TEST AND EVALUATE', count:118, title:'Play it.<br>Then question it.',
     description:'Automated players explore game behavior; oracles decide whether something went wrong. Benchmarks and human studies test different kinds of claims.',
     topics:['Automated playtesting','Bug detection','Benchmarks & validation'],
     image:'ea-testing.webp', alt:'Battlefield 2042 helicopter navigation under an EA SEED production test with debug overlays', caption:'Battlefield 2042 / EA SEED production testing',

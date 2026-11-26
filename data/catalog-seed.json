@@ -2,6 +2,118 @@
   "schemaVersion": "1.0",
   "papers": [
     {
+      "id": "jucys2024interpretabilityinaction",
+      "title": "Interpretability in Action: Exploratory Analysis of VPT, a Minecraft Agent",
+      "year": 2024,
+      "month": 7,
+      "primaryRole": "play",
+      "topics": [
+        "interpretability",
+        "multimodal-action",
+        "Minecraft"
+      ],
+      "venue": "ICML 2024 Workshop on Mechanistic Interpretability",
+      "url": "https://arxiv.org/abs/2407.12161"
+    },
+    {
+      "id": "milani2023bedd",
+      "title": "BEDD: The MineRL BASALT Evaluation and Demonstrations Dataset for Training and Benchmarking Agents that Solve Fuzzy Tasks",
+      "year": 2023,
+      "month": 12,
+      "primaryRole": "test",
+      "topics": [
+        "evaluation-data",
+        "learning-training",
+        "Minecraft"
+      ],
+      "venue": "Advances in Neural Information Processing Systems 36, Datasets and Benchmarks Track",
+      "url": "https://papers.nips.cc/paper/2023/hash/67a6726dcd555b982cabb3446ffac01d-Abstract-Datasets_and_Benchmarks.html"
+    },
+    {
+      "id": "milani2023basaltretrospective",
+      "title": "Towards Solving Fuzzy Tasks with Human Feedback: A Retrospective of the MineRL BASALT 2022 Competition",
+      "year": 2023,
+      "month": 8,
+      "primaryRole": "test",
+      "topics": [
+        "evaluation-data",
+        "behavioral-evaluation",
+        "learning-training",
+        "Minecraft"
+      ],
+      "venue": "Proceedings of the NeurIPS 2022 Competitions Track",
+      "url": "https://proceedings.mlr.press/v220/milani23a.html"
+    },
+    {
+      "id": "milani2023navigateslikeme",
+      "title": "Navigates Like Me: Understanding How People Evaluate Human-Like AI in Video Games",
+      "year": 2023,
+      "month": 4,
+      "primaryRole": "test",
+      "topics": [
+        "behavioral-evaluation",
+        "player-modeling"
+      ],
+      "venue": "Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems",
+      "url": "https://doi.org/10.1145/3544548.3581348"
+    },
+    {
+      "id": "kanervisto2022minerl",
+      "title": "MineRL Diamond 2021 Competition: Overview, Results, and Lessons Learned",
+      "year": 2022,
+      "month": 7,
+      "primaryRole": "test",
+      "topics": [
+        "evaluation-data",
+        "learning-training",
+        "Minecraft"
+      ],
+      "venue": "Proceedings of the NeurIPS 2021 Competitions and Demonstrations Track",
+      "url": "https://proceedings.mlr.press/v176/kanervisto22a.html"
+    },
+    {
+      "id": "zuniga2022humansperceive",
+      "title": "How Humans Perceive Human-like Behavior in Video Game Navigation",
+      "year": 2022,
+      "month": 4,
+      "primaryRole": "test",
+      "topics": [
+        "behavioral-evaluation",
+        "player-modeling"
+      ],
+      "venue": "Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems",
+      "url": "https://doi.org/10.1145/3491101.3519735"
+    },
+    {
+      "id": "shah2021basaltcompetition",
+      "title": "The MineRL BASALT Competition on Learning from Human Feedback",
+      "year": 2021,
+      "month": 7,
+      "primaryRole": "test",
+      "topics": [
+        "evaluation-data",
+        "behavioral-evaluation",
+        "learning-training",
+        "Minecraft"
+      ],
+      "venue": "NeurIPS 2021 Competition Track",
+      "url": "https://arxiv.org/abs/2107.01969"
+    },
+    {
+      "id": "guss2021minerl2020",
+      "title": "The MineRL 2020 Competition on Sample Efficient Reinforcement Learning using Human Priors",
+      "year": 2021,
+      "month": 1,
+      "primaryRole": "test",
+      "topics": [
+        "evaluation-data",
+        "learning-training",
+        "Minecraft"
+      ],
+      "venue": "NeurIPS 2020 Competition Track",
+      "url": "https://arxiv.org/abs/2101.11071"
+    },
+    {
       "id": "2610.35398",
       "title": "Belief-Conditioned Multi-Agent Actor Critic for Decentralized LLM Collaboration",
       "year": 2026,
