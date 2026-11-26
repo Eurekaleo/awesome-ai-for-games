@@ -6,8 +6,8 @@
   <a href="https://arxiv.org/pdf/2609.16679"><img src="https://img.shields.io/badge/arXiv-2609.16679-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Read the paper on arXiv"></a>
   <a href="https://huggingface.co/papers/2609.16679"><img src="https://img.shields.io/badge/Hugging%20Face-Daily%20Paper-FFD21E?style=flat-square&logo=huggingface&logoColor=000000" alt="View the paper on Hugging Face Daily Papers"></a>
   <a href="https://eurekaleo.github.io/awesome-ai-for-games/"><img src="https://img.shields.io/badge/explore-project%20website-6f63d9?style=flat-square" alt="Explore the project website"></a>
-  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-646-168f91?style=flat-square" alt="646 references"></a>
-  <img src="https://img.shields.io/badge/core%20works-618-c78b1e?style=flat-square" alt="618 core works">
+  <a href="https://eurekaleo.github.io/awesome-ai-for-games/#papers"><img src="https://img.shields.io/badge/references-655-168f91?style=flat-square" alt="655 references"></a>
+  <img src="https://img.shields.io/badge/core%20works-627-c78b1e?style=flat-square" alt="627 core works">
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
 
   <p><a href="https://eurekaleo.github.io/">Meng Luo</a><sup>1</sup> · <a href="https://liyanlin06.github.io/">Yanlin Li</a><sup>1</sup> · <a href="https://scholar.google.com/citations?user=vF-UH7oAAAAJ&amp;hl=zh-TW">Hao Li</a><sup>1</sup> · <a href="https://daniellin97.github.io/">Hongzhan Lin</a><sup>1</sup> · <a href="https://lancezpf.github.io/">Pengfei Zhou</a><sup>1</sup> · <a href="https://jometeorie.github.io/">Tianjie Ju</a><sup>1</sup><br><a href="https://openreview.net/profile?id=~Ran_Zhang18">Ran Zhang</a><sup>2</sup> · <a href="https://jinyeying.github.io/">Yeying Jin</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/leeml/">Mong-Li Lee</a><sup>1</sup> · <a href="https://www.comp.nus.edu.sg/cs/people/whsu/">Wynne Hsu</a><sup>1</sup></p>
@@ -46,13 +46,13 @@ Foundation models now do more than play a given game: they can model games and p
 Select a role to jump directly to its papers.
 
 <p align="center">
-  <a href="#play-and-act"><img src="assets/readme/role-play.svg" width="246" alt="Play and Act: 171 works"></a>
+  <a href="#play-and-act"><img src="assets/readme/role-play.svg" width="246" alt="Play and Act: 173 works"></a>
   <a href="#model-players-and-games"><img src="assets/readme/role-model.svg" width="246" alt="Model Players and Games: 174 works"></a>
   <a href="#design"><img src="assets/readme/role-design.svg" width="246" alt="Design: 65 works"></a>
   <br>
   <a href="#build-and-maintain"><img src="assets/readme/role-build.svg" width="246" alt="Build and Maintain: 28 works"></a>
   <a href="#generate-and-adapt-at-runtime"><img src="assets/readme/role-runtime.svg" width="246" alt="Generate and Adapt at Runtime: 69 works"></a>
-  <a href="#test-and-evaluate"><img src="assets/readme/role-test.svg" width="246" alt="Test and Evaluate: 111 works"></a>
+  <a href="#test-and-evaluate"><img src="assets/readme/role-test.svg" width="246" alt="Test and Evaluate: 118 works"></a>
 </p>
 
 ## Publication key
@@ -132,6 +132,7 @@ Select a role to jump directly to its papers.
 - System Switch: When Should a Fast Decision Model Stop and Think? [[paper](https://arxiv.org/abs/2610.09683)] [[code](https://github.com/dexmac221/system-switch)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - TaskFrame: Connecting Task-Level Planning with Frame-Level Control for Game Agents. [[paper](https://arxiv.org/abs/2610.40276)] [[project](https://task-frame.github.io/)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - Teaching AI Agent to Play Poker Strategically Through Preference Optimization. [[paper](https://arxiv.org/abs/2610.27028)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
+- The PokeAgent Challenge: Competitive and Long-Context Learning at Scale. [[paper](https://arxiv.org/abs/2603.15563)] [[project](https://pokeagentchallenge.com/)] <img src="assets/readme/venues/other-neurips-2025-competition-track.svg" alt="NeurIPS 2025 Competition Track" title="NeurIPS 2025 Competition Track" height="18">
 - The Predictive-Optimization Gap in GuanDan Self-Play. [[paper](https://arxiv.org/abs/2610.29411)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - The Surprising Effectiveness of Approximate Value Iteration in Self-Play. [[paper](https://arxiv.org/abs/2609.09094)] [[code](https://github.com/Egiob/avi)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv" height="18">
 - Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse. [[paper](https://arxiv.org/abs/2605.09965)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2605.09965" height="18">
@@ -167,6 +168,7 @@ Select a role to jump directly to its papers.
 
 - A Survey on Game Playing Agents and Large Models: Methods, Applications, and Challenges. [[paper](https://arxiv.org/abs/2403.10249)] [[project](https://github.com/BAAI-Agents/GPA-LM)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2403.10249" height="18">
 - Collaborative Quest Completion with LLM-Driven Non-Player Characters in Minecraft. [[paper](https://arxiv.org/abs/2407.03460)] [[code](https://github.com/microsoft/collaborative-quest-completion)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2407.03460" height="18">
+- Interpretability in Action: Exploratory Analysis of VPT, a Minecraft Agent. [[paper](https://arxiv.org/abs/2407.12161)] <img src="assets/readme/venues/conference-icml-2024-workshop-on-mechanistic-interpretability.svg" alt="ICML 2024 Workshop on Mechanistic Interpretability" title="ICML 2024 Workshop on Mechanistic Interpretability" height="18">
 - Large Language Models and Games: A Survey and Roadmap. [[paper](https://arxiv.org/abs/2402.18659)] <img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="18">
 - Large Language Models and Video Games: A Preliminary Scoping Review. [[paper](https://doi.org/10.1145/3640794.3665582)] <img src="assets/readme/venues/conference-acm-cui.svg" alt="ACM CUI" title="Proceedings of the 6th ACM Conference on Conversational User Interfaces" height="18">
 - MindAgent: Emergent Gaming Interaction. [[paper](https://aclanthology.org/2024.findings-naacl.200/)] <img src="assets/readme/venues/conference-findings-of-naacl.svg" alt="Findings of NAACL" title="Findings of the Association for Computational Linguistics: NAACL 2024" height="18">
@@ -809,18 +811,23 @@ Select a role to jump directly to its papers.
 
 ### 2023
 
+- BEDD: The MineRL BASALT Evaluation and Demonstrations Dataset for Training and Benchmarking Agents that Solve Fuzzy Tasks. [[paper](https://papers.nips.cc/paper/2023/hash/67a6726dcd555b982cabb3446ffac01d-Abstract-Datasets_and_Benchmarks.html)] [[code](https://github.com/minerllabs/basalt-benchmark)] <img src="assets/readme/venues/conference-neurips-d-b.svg" alt="NeurIPS D&amp;B" title="Advances in Neural Information Processing Systems 36, Datasets and Benchmarks Track" height="18">
 - Deriving and Evaluating a Detailed Taxonomy of Game Bugs. [[paper](https://arxiv.org/abs/2311.16645)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2311.16645" height="18">
 - GlitchBench: Can large multimodal models detect video game glitches? [[paper](https://arxiv.org/abs/2312.05291)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2312.05291" height="18">
+- Navigates Like Me: Understanding How People Evaluate Human-Like AI in Video Games. [[paper](https://doi.org/10.1145/3544548.3581348)] <img src="assets/readme/venues/conference-chi.svg" alt="CHI" title="Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems" height="18">
 - Playtesting: What is Beyond Personas. [[paper](https://doi.org/10.1109/TG.2022.3165882)] <img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="18">
 - Preference-conditioned Pixel-based AI Agent For Game Testing. [[paper](https://arxiv.org/abs/2308.09289)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2308.09289" height="18">
 - Technical Challenges of Deploying Reinforcement Learning Agents for Game Testing in AAA Games. [[paper](https://arxiv.org/abs/2307.11105)] <img src="assets/readme/venues/conference-ieee-cog.svg" alt="IEEE CoG" title="Proceedings of the IEEE Conference on Games" height="18">
+- Towards Solving Fuzzy Tasks with Human Feedback: A Retrospective of the MineRL BASALT 2022 Competition. [[paper](https://proceedings.mlr.press/v220/milani23a.html)] <img src="assets/readme/venues/conference-neurips-2022-competitions-track.svg" alt="NeurIPS 2022 Competitions Track" title="Proceedings of the NeurIPS 2022 Competitions Track" height="18">
 - Video Game Automated Testing Approaches: An Assessment Framework. [[paper](https://doi.org/10.1109/TG.2020.3032796)] <img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="18">
 
 ### 2022
 
 - An Agent-based Approach to Automated Game Testing: an Experience Report. [[paper](https://arxiv.org/abs/2211.06386)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2211.06386" height="18">
 - Automatically Detecting Visual Bugs in HTML5 &lt;canvas&gt; Games. [[paper](https://arxiv.org/abs/2208.02335)] [[code](https://github.com/asgaardlab/canvas-visual-bugs-testbed)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2208.02335" height="18">
+- How Humans Perceive Human-like Behavior in Video Game Navigation. [[paper](https://doi.org/10.1145/3491101.3519735)] <img src="assets/readme/venues/conference-chi-ea.svg" alt="CHI EA" title="Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems" height="18">
 - Inspector: Pixel-Based Automated Game Testing via Exploration, Detection, and Investigation. [[paper](https://arxiv.org/abs/2207.08379)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2207.08379" height="18">
+- MineRL Diamond 2021 Competition: Overview, Results, and Lessons Learned. [[results](https://proceedings.mlr.press/v176/kanervisto22a.html)] [[code](https://github.com/minerllabs/minerl)] <img src="assets/readme/venues/conference-neurips-c-d.svg" alt="NeurIPS C&amp;D" title="Proceedings of the NeurIPS 2021 Competitions and Demonstrations Track" height="18">
 - Retrospective on the 2021 MineRL BASALT Competition on Learning from Human Feedback. [[paper](https://proceedings.mlr.press/v176/shah22a.html)] <img src="assets/readme/venues/conference-neurips-c-d.svg" alt="NeurIPS C&amp;D" title="Proceedings of the NeurIPS 2021 Competitions and Demonstrations Track" height="18">
 - Using Reinforcement Learning for Load Testing of Video Games. [[paper](https://arxiv.org/abs/2201.06865)] [[code](https://github.com/RosaliaTufano/rlgameauthors)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2201.06865" height="18">
 
@@ -830,6 +837,8 @@ Select a role to jump directly to its papers.
 - Automated Video Game Testing Using Synthetic and Humanlike Agents. [[paper](https://doi.org/10.1109/TG.2019.2947597)] <img src="assets/readme/venues/journal-ieee-tog.svg" alt="IEEE ToG" title="IEEE Transactions on Games" height="18">
 - GLIB: Towards Automated Test Oracle for Graphically-Rich Applications. [[paper](https://arxiv.org/abs/2106.10507)] [[code](https://github.com/GLIB-game/GLIB)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2106.10507" height="18">
 - Improving Playtesting Coverage via Curiosity Driven Reinforcement Learning Agents. [[paper](https://arxiv.org/abs/2103.13798)] <img src="assets/readme/venues/preprint-arxiv.svg" alt="arXiv" title="arXiv preprint arXiv:2103.13798" height="18">
+- The MineRL 2020 Competition on Sample Efficient Reinforcement Learning using Human Priors. [[paper](https://arxiv.org/abs/2101.11071)] [[code](https://github.com/minerllabs/minerl)] <img src="assets/readme/venues/other-neurips-2020-competition-track.svg" alt="NeurIPS 2020 Competition Track" title="NeurIPS 2020 Competition Track" height="18">
+- The MineRL BASALT Competition on Learning from Human Feedback. [[paper](https://arxiv.org/abs/2107.01969)] [[code](https://github.com/minerllabs/minerl)] <img src="assets/readme/venues/other-neurips-2021-competition-track.svg" alt="NeurIPS 2021 Competition Track" title="NeurIPS 2021 Competition Track" height="18">
 
 ### 2020
 
